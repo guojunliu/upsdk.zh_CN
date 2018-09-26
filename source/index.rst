@@ -7,14 +7,19 @@ UPSDK互动广告SDK接入文档
 ============================
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 3
    :caption: 互推互动广告文档:
 
-   interactive
+   interactive/android
+   interactive/rewarded
+   interactive/interstitial
+   interactive/demo
+   interactive/eclipse
+   interactive/ads
 
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 3
    :caption: IOS说明文档:
 
    ios/sdk
