@@ -12,7 +12,7 @@ IOS SDK帮助文档
 Contents:
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :glob:
 
    ../help/*
