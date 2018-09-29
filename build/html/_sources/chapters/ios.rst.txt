@@ -15,4 +15,5 @@ Contents:
    :maxdepth: 1
    :glob:
 
+   ../help/*
    ../c02/*
