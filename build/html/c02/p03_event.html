@@ -1,0 +1,196 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>事件打点 &#8212; UPInteractive Document  documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="next" title="登录打点" href="p04_login.html" />
+    <link rel="prev" title="初始化" href="p02_init.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="">
+<span id="id1"></span><h1>事件打点<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="">
+<span id="id2"></span><h2>事件打点<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="p">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">logWithKey:</span><span class="p">(</span><span class="bp">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">key</span> <span class="nf">value:</span><span class="p">(</span><span class="kt">id</span><span class="p">)</span><span class="nv">value</span><span class="p">;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>key：事件id</li>
+<li>value：可以为nil，NSString，数组与字典</li>
+</ul>
+</div>
+<div class="section" id="">
+<span id="id3"></span><h2>示例说明：<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li>value为nil
+相当于无参数打点</li>
+</ol>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">HolaAnalysis</span> <span class="nl">logWithKey</span><span class="p">:</span><span class="s">@&quot;your key&quot;</span> <span class="nl">value</span><span class="p">:</span><span class="nb">nil</span><span class="p">];</span>
+</pre></div>
+</div>
+<ol class="simple">
+<li>value为NSString
+相当于单参数打点</li>
+</ol>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">HolaAnalysis</span> <span class="nl">logWithKey</span><span class="p">:</span><span class="s">@&quot;your key&quot;</span> <span class="nl">value</span><span class="p">:</span><span class="s">@&quot;your str value&quot;</span><span class="p">];</span> 
+</pre></div>
+</div>
+<ol class="simple">
+<li>value为NSDictionary
+多参数打点，NSDictionary的 <p>&amp;lt;</p>
+key,value&gt;仅支持 <p>&amp;lt;</p>
+NSString<em>, NSString</em>&gt;类型。</li>
+</ol>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="bp">NSDictionary</span> <span class="o">*</span><span class="n">dic</span> <span class="o">=</span> <span class="p">[</span><span class="bp">NSDictionary</span> <span class="nl">dictionaryWithObjectsAndKeys</span><span class="p">:</span>
+                            <span class="s">@&quot;Tom&quot;</span><span class="p">,</span> <span class="s">@&quot;name&quot;</span><span class="p">,</span>
+                            <span class="s">@&quot;Man&quot;</span><span class="p">,</span> <span class="s">@&quot;sex&quot;</span><span class="p">,</span>
+                            <span class="s">@&quot;18&quot;</span><span class="p">,</span> <span class="s">@&quot;age&quot;</span><span class="p">,</span>
+                            <span class="nb">nil</span><span class="p">];</span>
+  <span class="p">[</span><span class="n">HolaAnalysis</span> <span class="nl">logWithKey</span><span class="p">:</span><span class="s">@&quot;your key&quot;</span> <span class="nl">value</span><span class="p">:</span> <span class="n">dic</span><span class="p">];</span>
+</pre></div>
+</div>
+<ol class="simple">
+<li>value为NSArray
+value为NSArray<p>&amp;lt;</p>
+NSString&gt;</li>
+</ol>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span>  <span class="bp">NSArray</span> <span class="o">*</span><span class="n">arrA</span> <span class="o">=</span> <span class="p">[</span><span class="bp">NSArray</span> <span class="nl">arrayWithObjects</span><span class="p">:</span><span class="s">@&quot;arrValue1&quot;</span><span class="p">,</span> <span class="s">@&quot;arrValue2&quot;</span><span class="p">,</span><span class="nb">nil</span><span class="p">];</span>
+  <span class="p">[</span><span class="n">HolaAnalysis</span> <span class="nl">logWithKey</span><span class="p">:</span><span class="s">@&quot;your key&quot;</span> <span class="nl">value</span><span class="p">:</span> <span class="n">arrA</span><span class="p">];</span>
+</pre></div>
+</div>
+<p>value为NSArray<p>&amp;lt;</p>
+NSDictionary&gt;</p>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span>  <span class="bp">NSDictionary</span> <span class="o">*</span><span class="n">dic1</span> <span class="o">=</span> <span class="p">[</span><span class="bp">NSDictionary</span> <span class="nl">dictionaryWithObjectsAndKeys</span><span class="p">:</span>
+                            <span class="s">@&quot;Tom&quot;</span><span class="p">,</span> <span class="s">@&quot;name&quot;</span><span class="p">,</span>
+                            <span class="s">@&quot;Man&quot;</span><span class="p">,</span> <span class="s">@&quot;sex&quot;</span><span class="p">,</span>
+                            <span class="s">@&quot;18&quot;</span><span class="p">,</span> <span class="s">@&quot;age&quot;</span><span class="p">,</span>
+                            <span class="nb">nil</span><span class="p">];</span>
+  <span class="bp">NSDictionary</span> <span class="o">*</span><span class="n">dic2</span> <span class="o">=</span> <span class="p">[</span><span class="bp">NSDictionary</span> <span class="nl">dictionaryWithObjectsAndKeys</span><span class="p">:</span>
+                            <span class="s">@&quot;Emily&quot;</span><span class="p">,</span> <span class="s">@&quot;name&quot;</span><span class="p">,</span>
+                            <span class="s">@&quot;Woman&quot;</span><span class="p">,</span> <span class="s">@&quot;sex&quot;</span><span class="p">,</span>
+                            <span class="s">@&quot;20&quot;</span><span class="p">,</span> <span class="s">@&quot;age&quot;</span><span class="p">,</span>
+                            <span class="nb">nil</span><span class="p">];</span>
+  <span class="bp">NSArray</span> <span class="o">*</span><span class="n">arrB</span> <span class="o">=</span> <span class="p">[</span><span class="bp">NSArray</span> <span class="nl">arrayWithObjects</span><span class="p">:</span><span class="n">dic1</span><span class="p">,</span> <span class="n">dic2</span><span class="p">,</span> <span class="nb">nil</span><span class="p">];</span>
+  <span class="p">[</span><span class="n">HolaAnalysis</span> <span class="nl">logWithKey</span><span class="p">:</span><span class="s">@&quot;your key&quot;</span> <span class="nl">value</span><span class="p">:</span><span class="n">arrB</span><span class="p">];</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="">
+<span id="id4"></span><h2>计数打点<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="p">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">countWithKey:</span><span class="p">(</span><span class="bp">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">key</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>示例代码：</p>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">HolaAnalysis</span> <span class="nl">countWithKey</span><span class="p">:</span><span class="s">@&quot;your key&quot;</span><span class="p">];</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">UPInteractive Document</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../copyright.html">Copyright</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">前言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/android.html">Android 帮助文档</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../chapters/ios.html">IOS SDK帮助文档</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="p01_import.html">工程引入</a></li>
+<li class="toctree-l2"><a class="reference internal" href="p02_init.html">初始化</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">事件打点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="p04_login.html">登录打点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="p05_payment.html">支付打点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="p05_payment.html#">添加引用</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/unity.html">Unity Plugin帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../aboutme.html">关于译者</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../roadmap.html">Roadmap</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="../chapters/ios.html">IOS SDK帮助文档</a><ul>
+      <li>Previous: <a href="p02_init.html" title="previous chapter">初始化</a></li>
+      <li>Next: <a href="p04_login.html" title="next chapter">登录打点</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, upltv.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      
+      |
+      <a href="../_sources/c02/p03_event.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

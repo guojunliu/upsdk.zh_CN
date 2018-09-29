@@ -1,0 +1,187 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>登录打点 &#8212; UPInteractive Document  documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="next" title="支付打点" href="p05_payment.html" />
+    <link rel="prev" title="事件打点" href="p03_event.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="">
+<span id="id1"></span><h1>登录打点<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="">
+<span id="id2"></span><h2>游客登录上报<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<p>使用游客方式登录后，需要调用此方法上报</p>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm"> @param playerId 游戏用户ID</span>
+<span class="cm"> */</span>
+<span class="p">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">guestLoginWithGameId:</span><span class="p">(</span><span class="bp">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">playerId</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>示例代码：</p>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">HolaAnalysis</span> <span class="nl">guestLoginWithGameId</span><span class="p">:</span><span class="s">@&quot;yourPlayerId&quot;</span><span class="p">];</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="facebook">
+<span id="facebook"></span><h2>facebook登录上报<a class="headerlink" href="#facebook" title="Permalink to this headline">¶</a></h2>
+<p>使用facebook方式登录后，需要调用此上报</p>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm"> @param playerId  游戏用户ID</span>
+<span class="cm"> @param openId    openId</span>
+<span class="cm"> @param openToken openToken</span>
+<span class="cm"> */</span>
+<span class="p">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">facebookLoginWithGameId:</span><span class="p">(</span><span class="bp">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">playerId</span>
+                         <span class="nf">OpenId:</span><span class="p">(</span><span class="bp">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">openId</span>
+                      <span class="nf">OpenToken:</span><span class="p">(</span><span class="bp">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">openToken</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>示例代码：</p>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">HolaAnalysis</span> <span class="nl">facebookLoginWithGameId</span><span class="p">:</span><span class="s">@&quot;yourPlayerId&quot;</span> <span class="nl">OpenId</span><span class="p">:</span><span class="s">@&quot;yourFacebookOpenId&quot;</span> <span class="nl">OpenToken</span><span class="p">:</span><span class="s">@&quot;yourFacebookOpenToken&quot;</span><span class="p">];</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="twitter">
+<span id="twitter"></span><h2>twitter登录上报<a class="headerlink" href="#twitter" title="Permalink to this headline">¶</a></h2>
+<p>使用twitter方式登录后，需要调用此方法上报</p>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm"> @param playerId 游戏用户ID</span>
+<span class="cm"> @param twitterId 推特用户id</span>
+<span class="cm"> @param twitterUserName 推特用户Name</span>
+<span class="cm"> @param twitterAuthToken 推特用户Token</span>
+<span class="cm"> */</span>
+<span class="p">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">twitterLoginWithPlayerId:</span><span class="p">(</span><span class="bp">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">playerId</span>
+                       <span class="nf">twitterId:</span><span class="p">(</span><span class="kt">int64_t</span><span class="p">)</span><span class="nv">twitterId</span>
+                 <span class="nf">twitterUserName:</span><span class="p">(</span><span class="bp">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">twitterUserName</span>
+                <span class="nf">twitterAuthToken:</span><span class="p">(</span><span class="bp">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">twitterAuthToken</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>示例代码：</p>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">HolaAnalysis</span> <span class="nl">twitterLoginWithPlayerId</span><span class="p">:</span><span class="s">@&quot;yourPlayerId&quot;</span> <span class="nl">twitterId</span><span class="p">:</span><span class="mi">12313123</span> <span class="nl">twitterUserName</span><span class="p">:</span><span class="s">@&quot;yourTwitterUserName&quot;</span> <span class="nl">twitterAuthToken</span><span class="p">:</span><span class="s">@&quot;yourTwitterAuthToken&quot;</span><span class="p">];</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="">
+<span id="id3"></span><h2>平台登录上报<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm"> @param playerId 游戏用户ID</span>
+<span class="cm"> @param portalId 平台Id</span>
+<span class="cm"> */</span>
+<span class="p">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">portalLoginWithPlayerId:</span><span class="p">(</span><span class="bp">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">playerId</span>
+                       <span class="nf">portalId:</span><span class="p">(</span><span class="bp">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">portalId</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>示例代码：</p>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">HolaAnalysis</span> <span class="nl">portalLoginWithPlayerId</span><span class="p">:</span><span class="s">@&quot;yourPlayerId&quot;</span> <span class="nl">portalId</span><span class="p">:</span><span class="s">@&quot;yourPortalId&quot;</span><span class="p">];</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">UPInteractive Document</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../copyright.html">Copyright</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">前言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/android.html">Android 帮助文档</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../chapters/ios.html">IOS SDK帮助文档</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="p01_import.html">工程引入</a></li>
+<li class="toctree-l2"><a class="reference internal" href="p02_init.html">初始化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="p03_event.html">事件打点</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">登录打点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="p05_payment.html">支付打点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="p05_payment.html#">添加引用</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/unity.html">Unity Plugin帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../aboutme.html">关于译者</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../roadmap.html">Roadmap</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="../chapters/ios.html">IOS SDK帮助文档</a><ul>
+      <li>Previous: <a href="p03_event.html" title="previous chapter">事件打点</a></li>
+      <li>Next: <a href="p05_payment.html" title="next chapter">支付打点</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, upltv.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      
+      |
+      <a href="../_sources/c02/p04_login.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
