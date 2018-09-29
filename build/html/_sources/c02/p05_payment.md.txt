@@ -37,7 +37,7 @@ Apple IAP 上报，需要在支付成功后调用，即**-(void)paymentQueue:(SK
 - playerId： 游戏用户 ID，请传入CP方自己的player ID，用于后续对应
 - gameAccountServer： 游戏区/服ID
 - thirdparty： 为第三方支付平台名称 如mycard、bluepay等
-# 添加引用
+## 添加引用
 ```objective-c
 #import  &lt;AvidlyAnalysisSDK/AvidlyAnalysisSDK.h>
 ```
