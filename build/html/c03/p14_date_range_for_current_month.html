@@ -1,0 +1,224 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>3.14 计算当前月份的日期范围 &#8212; UPInteractive Document  documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="next" title="3.15 字符串转换为日期" href="p15_convert_strings_into_datetimes.html" />
+    <link rel="prev" title="3.13 计算最后一个周五的日期" href="p13_determine_last_friday_date.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="id1">
+<h1>3.14 计算当前月份的日期范围<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>问题<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>你的代码需要在当前月份中循环每一天，想找到一个计算这个日期范围的高效方法。</p>
+</div>
+<div class="section" id="id3">
+<h2>解决方案<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>在这样的日期上循环并需要事先构造一个包含所有日期的列表。
+你可以先计算出开始日期和结束日期，
+然后在你步进的时候使用 <code class="docutils literal notranslate"><span class="pre">datetime.timedelta</span></code> 对象递增这个日期变量即可。</p>
+<p>下面是一个接受任意 <code class="docutils literal notranslate"><span class="pre">datetime</span></code> 对象并返回一个由当前月份开始日和下个月开始日组成的元组对象。</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">date</span><span class="p">,</span> <span class="n">timedelta</span>
+<span class="kn">import</span> <span class="nn">calendar</span>
+
+<span class="k">def</span> <span class="nf">get_month_range</span><span class="p">(</span><span class="n">start_date</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">start_date</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+        <span class="n">start_date</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">day</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">_</span><span class="p">,</span> <span class="n">days_in_month</span> <span class="o">=</span> <span class="n">calendar</span><span class="o">.</span><span class="n">monthrange</span><span class="p">(</span><span class="n">start_date</span><span class="o">.</span><span class="n">year</span><span class="p">,</span> <span class="n">start_date</span><span class="o">.</span><span class="n">month</span><span class="p">)</span>
+    <span class="n">end_date</span> <span class="o">=</span> <span class="n">start_date</span> <span class="o">+</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="n">days_in_month</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">start_date</span><span class="p">,</span> <span class="n">end_date</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>有了这个就可以很容易的在返回的日期范围上面做循环操作了：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a_day</span> <span class="o">=</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">first_day</span><span class="p">,</span> <span class="n">last_day</span> <span class="o">=</span> <span class="n">get_month_range</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">while</span> <span class="n">first_day</span> <span class="o">&lt;</span> <span class="n">last_day</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="k">print</span><span class="p">(</span><span class="n">first_day</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="n">first_day</span> <span class="o">+=</span> <span class="n">a_day</span>
+<span class="gp">...</span>
+<span class="go">2012-08-01</span>
+<span class="go">2012-08-02</span>
+<span class="go">2012-08-03</span>
+<span class="go">2012-08-04</span>
+<span class="go">2012-08-05</span>
+<span class="go">2012-08-06</span>
+<span class="go">2012-08-07</span>
+<span class="go">2012-08-08</span>
+<span class="go">2012-08-09</span>
+<span class="go">#... and so on...</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>讨论<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>上面的代码先计算出一个对应月份第一天的日期。
+一个快速的方法就是使用 <code class="docutils literal notranslate"><span class="pre">date</span></code> 或 <code class="docutils literal notranslate"><span class="pre">datetime</span></code> 对象的 <code class="docutils literal notranslate"><span class="pre">replace()</span></code> 方法简单的将 <code class="docutils literal notranslate"><span class="pre">days</span></code> 属性设置成1即可。
+<code class="docutils literal notranslate"><span class="pre">replace()</span></code> 方法一个好处就是它会创建和你开始传入对象类型相同的对象。
+所以，如果输入参数是一个 <code class="docutils literal notranslate"><span class="pre">date</span></code> 实例，那么结果也是一个 <code class="docutils literal notranslate"><span class="pre">date</span></code> 实例。
+同样的，如果输入是一个 <code class="docutils literal notranslate"><span class="pre">datetime</span></code> 实例，那么你得到的就是一个 <code class="docutils literal notranslate"><span class="pre">datetime</span></code> 实例。</p>
+<p>然后，使用 <code class="docutils literal notranslate"><span class="pre">calendar.monthrange()</span></code> 函数来找出该月的总天数。
+任何时候只要你想获得日历信息，那么 <code class="docutils literal notranslate"><span class="pre">calendar</span></code> 模块就非常有用了。
+<code class="docutils literal notranslate"><span class="pre">monthrange()</span></code> 函数会返回包含星期和该月天数的元组。</p>
+<p>一旦该月的天数已知了，那么结束日期就可以通过在开始日期上面加上这个天数获得。
+有个需要注意的是结束日期并不包含在这个日期范围内(事实上它是下个月的开始日期)。
+这个和Python的 <code class="docutils literal notranslate"><span class="pre">slice</span></code> 与 <code class="docutils literal notranslate"><span class="pre">range</span></code> 操作行为保持一致，同样也不包含结尾。</p>
+<p>为了在日期范围上循环，要使用到标准的数学和比较操作。
+比如，可以利用 <code class="docutils literal notranslate"><span class="pre">timedelta</span></code> 实例来递增日期，小于号&lt;用来检查一个日期是否在结束日期之前。</p>
+<p>理想情况下，如果能为日期迭代创建一个同内置的 <code class="docutils literal notranslate"><span class="pre">range()</span></code> 函数一样的函数就好了。
+幸运的是，可以使用一个生成器来很容易的实现这个目标：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">date_range</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">stop</span><span class="p">,</span> <span class="n">step</span><span class="p">):</span>
+    <span class="k">while</span> <span class="n">start</span> <span class="o">&lt;</span> <span class="n">stop</span><span class="p">:</span>
+        <span class="k">yield</span> <span class="n">start</span>
+        <span class="n">start</span> <span class="o">+=</span> <span class="n">step</span>
+</pre></div>
+</div>
+<p>下面是使用这个生成器的例子：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">date_range</span><span class="p">(</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2012</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2012</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span>
+<span class="go">                        timedelta(hours=6)):</span>
+<span class="gp">... </span>    <span class="k">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="go">2012-09-01 00:00:00</span>
+<span class="go">2012-09-01 06:00:00</span>
+<span class="go">2012-09-01 12:00:00</span>
+<span class="go">2012-09-01 18:00:00</span>
+<span class="go">2012-09-02 00:00:00</span>
+<span class="go">2012-09-02 06:00:00</span>
+<span class="gp">...</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+<p>这种实现之所以这么简单，还得归功于Python中的日期和时间能够使用标准的数学和比较操作符来进行运算。</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">UPInteractive Document</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../copyright.html">Copyright</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">前言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/p01_data_structures_algorithms.html">第一章：数据结构和算法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/p02_strings_and_text.html">第二章：字符串和文本</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../chapters/p03_numbers_dates_times.html">第三章：数字日期和时间</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="p01_round_number.html">3.1 数字的四舍五入</a></li>
+<li class="toctree-l2"><a class="reference internal" href="p02_accurate_decimal_calculations.html">3.2 执行精确的浮点数运算</a></li>
+<li class="toctree-l2"><a class="reference internal" href="p03_format_numbers_for_output.html">3.3 数字的格式化输出</a></li>
+<li class="toctree-l2"><a class="reference internal" href="p04_binary_octal_hexadecimal_int.html">3.4 二八十六进制整数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="p05_pack_unpack_large_int_from_bytes.html">3.5 字节到大整数的打包与解包</a></li>
+<li class="toctree-l2"><a class="reference internal" href="p06_complex_math.html">3.6 复数的数学运算</a></li>
+<li class="toctree-l2"><a class="reference internal" href="p07_infinity_and_nan.html">3.7 无穷大与NaN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="p08_calculating_with_fractions.html">3.8 分数运算</a></li>
+<li class="toctree-l2"><a class="reference internal" href="p09_calculating_with_large_num_arrays.html">3.9 大型数组运算</a></li>
+<li class="toctree-l2"><a class="reference internal" href="p10_matrix_and_linear_algebra_calculation.html">3.10 矩阵与线性代数运算</a></li>
+<li class="toctree-l2"><a class="reference internal" href="p11_pick_things_at_random.html">3.11 随机选择</a></li>
+<li class="toctree-l2"><a class="reference internal" href="p12_convert_days_to_seconds_and_others.html">3.12 基本的日期与时间转换</a></li>
+<li class="toctree-l2"><a class="reference internal" href="p13_determine_last_friday_date.html">3.13 计算最后一个周五的日期</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">3.14 计算当前月份的日期范围</a></li>
+<li class="toctree-l2"><a class="reference internal" href="p15_convert_strings_into_datetimes.html">3.15 字符串转换为日期</a></li>
+<li class="toctree-l2"><a class="reference internal" href="p16_manipulate_dates_involving_timezone.html">3.16 结合时区的日期操作</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/p04_iterators_and_generators.html">第四章：迭代器与生成器</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/p05_files_and_io.html">第五章：文件与IO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/p06_data_encoding_and_process.html">第六章：数据编码和处理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/p07_functions.html">第七章：函数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/p08_classes_and_objects.html">第八章：类与对象</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/p09_meta_programming.html">第九章：元编程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/p10_modules_and_packages.html">第十章：模块与包</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/p11_network_and_web_program.html">第十一章：网络与Web编程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/p12_concurrency.html">第十二章：并发编程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/p13_utility_script_and_system_manage.html">第十三章：脚本编程与系统管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/p14_test_debug_and_exceptions.html">第十四章：测试、调试和异常</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/p15_c_extensions.html">第十五章：C语言扩展</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/p16_appendix.html">附录A</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../aboutme.html">关于译者</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../roadmap.html">Roadmap</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="../chapters/p03_numbers_dates_times.html">第三章：数字日期和时间</a><ul>
+      <li>Previous: <a href="p13_determine_last_friday_date.html" title="previous chapter">3.13 计算最后一个周五的日期</a></li>
+      <li>Next: <a href="p15_convert_strings_into_datetimes.html" title="next chapter">3.15 字符串转换为日期</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, upltv.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      
+      |
+      <a href="../_sources/c03/p14_date_range_for_current_month.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
