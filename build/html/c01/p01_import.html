@@ -1,0 +1,204 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>工程引入 &#8212; UPInteractive Document  documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="next" title="事件打点" href="p02_event.html" />
+    <link rel="prev" title="Android 帮助文档" href="../chapters/android.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="">
+<span id="id1"></span><h1>工程引入<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="sdk">
+<span id="sdk"></span><h2>添加SDK包<a class="headerlink" href="#sdk" title="Permalink to this headline">¶</a></h2>
+<p>统计SDK提供有<em>.aar与</em>.jar两种格式的包，如果使用AndroidStudio或Unity工程（也可以选择插件包）请选择<em>.aar格式的包，Eclipse工程请选择</em>.jar包。</p>
+<div class="section" id="androidstudio">
+<span id="androidstudio"></span><h3>1. AndroidStudio工程<a class="headerlink" href="#androidstudio" title="Permalink to this headline">¶</a></h3>
+<p>请将*.aar包复制到工程的<code class="docutils literal notranslate"><span class="pre">libs</span></code>目录下，如下图所示的<code class="docutils literal notranslate"><span class="pre">analysissdk-gaid_R3.1.1.6.aar</span></code>。</p>
+<p><img alt="1001" src="http://docs.upltv.com/uploads/201807/5b3c6ae443849_5b3c6ae4.jpeg" /></p>
+<p>然后将<strong>analysissdk-gaid_R3.1.1.6.aar</strong>添加到<strong>build.gradle</strong>的<strong>dependencies</strong>标签中。</p>
+<div class="highlight-groovy notranslate"><div class="highlight"><pre><span></span><span class="n">repositories</span> <span class="o">{</span>
+    <span class="n">flatDir</span> <span class="o">{</span>
+        <span class="n">dirs</span> <span class="s1">&#39;libs&#39;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="n">dependencies</span> <span class="o">{</span>
+   <span class="c1">// 引用统计包</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;analysissdk-gaid_R3.1.1.6&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="eclipse">
+<span id="eclipse"></span><h3>2.  Eclipse工程<a class="headerlink" href="#eclipse" title="Permalink to this headline">¶</a></h3>
+<p>请将<em>.jar文件复制到工程的<code class="docutils literal notranslate"><span class="pre">libs</span></code>目录，如</em><em>analysissdk-gaid_R3.1.1.6.jar</em>*。</p>
+</div>
+<div class="section" id="unity">
+<span id="unity"></span><h3>3. Unity工程<a class="headerlink" href="#unity" title="Permalink to this headline">¶</a></h3>
+<p>请将<em>.aar文件复制到</em><em>Assets/Plugins/Android</em>*目录下，如下图所示。
+<img alt="1002" src="http://docs.upltv.com/uploads/201807/5b3c6d5ddc658_5b3c6d5d.jpeg" /></p>
+</div>
+</div>
+<div class="section" id="">
+<span id="id2"></span><h2>权限依赖<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<p>统计包依赖如下权限：</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span> <span class="ni">&amp;lt;</span>uses-permission android:name=&quot;android.permission.INTERNET&quot;/&gt;
+ <span class="ni">&amp;lt;</span>uses-permission android:name=&quot;android.permission.ACCESS_NETWORK_STATE&quot;/&gt;
+ <span class="ni">&amp;lt;</span>uses-permission android:name=&quot;android.permission.ACCESS_WIFI_STATE&quot;/&gt;
+</pre></div>
+</div>
+<p>**对于以<em>.jar方式引用的统计包，请将以上权限添加到项目的AndroidManifest.xml中。</em>*</p>
+</div>
+<div class="section" id="">
+<span id="id3"></span><h2>应用安装数配置<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<p>为了正确统计应用的安装数，统计包中依赖<strong>com.android.vending.INSTALL_REFERRE</strong>的静态广播组件。</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="ni">&amp;lt;</span>receiver
+     android:name=&quot;com.statistics.channel.InstallReferrerReceiver&quot;
+     android:exported=&quot;true&quot;&gt;
+     <span class="ni">&amp;lt;</span>intent-filter&gt;
+         <span class="nt">&lt;action</span> <span class="na">android:name=</span><span class="s">&quot;com.android.vending.INSTALL_REFERRER&quot;</span> <span class="nt">/&gt;</span>
+     <span class="ni">&amp;lt;</span>/intent-filter&gt;
+ <span class="ni">&amp;lt;</span>/receiver&gt;
+</pre></div>
+</div>
+<p>**对于以<em>.jar方式引用的统计包，请将以上receiver添加到项目的AndroidManifest.xml中。</em>*</p>
+</div>
+<div class="section" id="">
+<span id="id4"></span><h2>混淆配置<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<p>如果您的项目开启了混淆功能，请按照如下规则添加混淆配置。</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span>-keep class com.hola.sdk.* {*;}
+-keep class com.statistics.channel.* {*;}
+</pre></div>
+</div>
+</div>
+<div class="section" id="x">
+<span id="x"></span><h2>2.X版本兼容<a class="headerlink" href="#x" title="Permalink to this headline">¶</a></h2>
+<p>如果您之前接入的版本是2.X或更早的版本，请在请将以上receiver添加到项目的AndroidManifest.xml中删除如下的 provider 定义，否则会出现程序崩溃。</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="ni">&amp;lt;</span>provider
+    android:name=&quot;com.statistics.channel.ChannelProvider&quot;
+    android:authorities=&quot;${applicationId}_com.hola.a.provider&quot; /&gt;
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">UPInteractive Document</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../copyright.html">Copyright</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">前言</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../chapters/android.html">Android 帮助文档</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">工程引入</a></li>
+<li class="toctree-l2"><a class="reference internal" href="p02_event.html">事件打点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="p02_init.html">初始化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="p03_login.html">登陆打点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="p04_payment.html">支付打点</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/p02_strings_and_text.html">第二章：字符串和文本</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/p03_numbers_dates_times.html">第三章：数字日期和时间</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/p04_iterators_and_generators.html">第四章：迭代器与生成器</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/p05_files_and_io.html">第五章：文件与IO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/p06_data_encoding_and_process.html">第六章：数据编码和处理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/p07_functions.html">第七章：函数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/p08_classes_and_objects.html">第八章：类与对象</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/p09_meta_programming.html">第九章：元编程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/p10_modules_and_packages.html">第十章：模块与包</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/p11_network_and_web_program.html">第十一章：网络与Web编程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/p12_concurrency.html">第十二章：并发编程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/p13_utility_script_and_system_manage.html">第十三章：脚本编程与系统管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/p14_test_debug_and_exceptions.html">第十四章：测试、调试和异常</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/p15_c_extensions.html">第十五章：C语言扩展</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/p16_appendix.html">附录A</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../aboutme.html">关于译者</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../roadmap.html">Roadmap</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="../chapters/android.html">Android 帮助文档</a><ul>
+      <li>Previous: <a href="../chapters/android.html" title="previous chapter">Android 帮助文档</a></li>
+      <li>Next: <a href="p02_event.html" title="next chapter">事件打点</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, upltv.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      
+      |
+      <a href="../_sources/c01/p01_import.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
