@@ -13,6 +13,7 @@ UPSDK互动广告SDK接入文档
    interactive/android
    interactive/rewarded
    interactive/interstitial
+   interactive/test/aa
    interactive/demo
    interactive/eclipse
    interactive/ads
