@@ -1,0 +1,361 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>一、下载SDK包 &mdash; UPInteractive Document  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="copyright" title="Copyright" href="../copyright.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> UPInteractive Document
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../copyright.html">Copyright</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">前言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/android.html">Android 帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/cocos2dx_cpp.html">UPSDK Cocos2d-X Cpp帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/cocos2dx_js.html">UPSDK Cocos2d-X JavaScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/cocos2dx_lua.html">UPSDK Cocos2d-X Lua帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/download.html">Unity Plugin帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/egret_ts.html">Unity Plugin帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/faq.html">Unity Plugin帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/gdpr.html">Unity Plugin帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/ios.html">UPSDK IOS帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/layabox_js.html">Unity Plugin帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/unity.html">Unity Plugin帮助文档</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">UPInteractive Document</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>一、下载SDK包</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/Egret-Ts/Egret2TS_Start_ios.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p>本接入文档以Egret 5.2.8为蓝本，如果您使用Egret其它版本，不同之处请灵活处理。</p>
+<div class="section" id="sdk">
+<span id="sdk"></span><h1>一、下载SDK包<a class="headerlink" href="#sdk" title="Permalink to this headline">¶</a></h1>
+<p>首先从 <a class="reference external" href="http://docs.upltv.com/docs/show/13">UPSDK下载页</a>下载UPSDK Egret TypeScriptPlugin包，解压后的目录包含如下三个文件：</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">UPSDK.framework</span></code> 这是UPSDK的主包，请务必添加到当前工程中</li>
+<li><code class="docutils literal notranslate"><span class="pre">UPSDK.bundle</span></code> UPSDK主包需要访问的外部文件资源，请务必添加到当前工程中</li>
+<li><code class="docutils literal notranslate"><span class="pre">UpltvEgretTsBridge</span></code> 此目录包含一些*.ts源码文件，用于桥接当前Egret TypeScript工程与UPSDK广告接口调用
+</br></li>
+</ul>
+</div>
+<div class="section" id="egretide">
+<span id="egretide"></span><h1>二、EgretIDE工程配置<a class="headerlink" href="#egretide" title="Permalink to this headline">¶</a></h1>
+<p>1)、将<code class="docutils literal notranslate"><span class="pre">UpltvEgretTsBridge</span></code>拷贝到Egret工程的src文件夹下，只留.ts文件。
+如下图所示
+<img alt="" src="http://docs.upltv.com/uploads/201809/5ba096f858faf_5ba096f8.png" />
+</br></p>
+</div>
+<div class="section" id="xcode">
+<span id="xcode"></span><h1>三、XCode工程配置<a class="headerlink" href="#xcode" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="upsdk">
+<span id="upsdk"></span><h2>1、接入UPSDK主包与源文件<a class="headerlink" href="#upsdk" title="Permalink to this headline">¶</a></h2>
+<p>请将UPSDK.framework、UPSDK.bundle以及UpltvEgretTsBridge文件夹同时添加到你的Xcode工程目录下。</p>
+<p>移除UpltvEgretTsBridge文件夹包含的*.ts脚本文件，只留Object-C++源码，如下图如示：
+<img alt="" src="http://docs.upltv.com/uploads/201809/5ba095754ee34_5ba09575.png" /></p>
+</div>
+<div class="section" id="">
+<span id="id1"></span><h2>2、加入第三方依赖库<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<p>UPSDK运行时会依赖第三方广告联盟，所以需要手动将这些联盟的依赖库文件导入到你的项目中。为了保证你能正确添加第三方依赖包，请从这里<a class="reference external" href="http://ads-sdk-doc.haloapps.com/docs/show/13">下载UPSDK联盟包</a> 。</p>
+<p>UPSDK当前依赖第三方广告联盟如下：</p>
+<p><img alt="添加所有第三方SDK包" src="http://docs.upltv.com/uploads/201709/59afafb9143e9_59afafb9.png" /></p>
+<blockquote>
+<div>每个联盟对应一个文件夹，且命名都以广告联盟的名字为前缀，以版本号为后缀，因此很好识别。文件夹中除了包括广告联盟的依赖库或源码文件外，还有可能包括配套的资源文件，因此添加广告联盟时依赖库与对应的配套的资源要一同添加。</div></blockquote>
+<p>虽然并不要求将全部的第三方联盟广告添加到当前项目中，但为了扩大收益，我们仍然建议在你的项目中尽量多地添加以上的联盟广告的依赖库及其配套的资源包。在实际操作中，如有疑问请联系我们的技术支持人员。</p>
+<p>当你完成第三方联盟广告添加后，在XCode工程中检查下<code class="docutils literal notranslate"><span class="pre">Linked</span> <span class="pre">Frameworks</span> <span class="pre">Libraries</span></code>是否正确引入了相应的库文件，避免不必要的失误。</p>
+<p>假设在当前项目中接入Applovin、Unity、Vungle、Tapjoy四家广告，需要先将这四家广告的库文件(依次是AppLovinSDK.framework,UnityAds.framework,VungleSDK.framework,Tapjoy.framework四个静态库)添加到工程里，成功添加后的效果图如下：
+<img alt="" src="http://docs.upltv.com/uploads/201804/5acc6644c33a5_5acc6644.png" /></p>
+<p>在以上假设中，由于Tapjoy广告需要访问它一些外部资源文件，因此需要将它配套的资源文件也添加到项目中，可在TARGETS → Build Phases → Copy Bundle Resources查看，正确添加后的效果如下：
+<br>
+<img alt="" src="http://docs.upltv.com/uploads/201804/5acc70803fec8_5acc7080.png" /></p>
+</div>
+<div class="section" id="">
+<span id="id2"></span><h2>3、加入系统依赖库<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<p>在TARGETS → Build Phases → Linked Frameworks Libraries中添加依赖库</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">QuartzCore.framework</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">MediaPlayer.framework</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">libsqlite3.tbd</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">libz.tbd</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">CoreMedia.framework</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">CoreGraphics.framework</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">CFNetwork.framework</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">WebKit.framework</span></code> (Optional)</li>
+<li><code class="docutils literal notranslate"><span class="pre">WatchConnectivity.framework</span></code> (Optional)</li>
+<li><code class="docutils literal notranslate"><span class="pre">SystemConfiguration.framework</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">StoreKit.framework</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">Social.framework</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">MessageUI.framework</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">JavaScriptCore.framework</span></code>    (Optional)</li>
+<li><code class="docutils literal notranslate"><span class="pre">EventKit.framework</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">CoreTelephony.framework</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">AVFoundation.framework</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">AudioToolbox.framework</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">AdSupport.framework</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">GLKit.framework</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">CoreMotion.framework</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">libxml2.tbd</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">libc++.tbd</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">SafariServices.framework</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">CoreLocation.framework</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">EventKitUI.framework</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">MobileCoreServices.framework</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">GameController.framework</span></code>
+<br></li>
+</ul>
+</div>
+<div class="section" id="">
+<span id="id3"></span><h2>4、工程配置<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="">
+<span id="id4"></span><h3>1)、添加分类编译符<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>在<code class="docutils literal notranslate"><span class="pre">TARGETS</span></code> → <code class="docutils literal notranslate"><span class="pre">Build</span> <span class="pre">Setting</span></code> → <code class="docutils literal notranslate"><span class="pre">Linking</span></code> → <code class="docutils literal notranslate"><span class="pre">Other</span> <span class="pre">Linker</span> <span class="pre">Flags</span></code> 中给所有第三方联盟库和UPSDK.framework都加入 <code class="docutils literal notranslate"><span class="pre">-force_load（空格）库路径</span></code> ，如下图所示</li>
+</ul>
+<p><img alt="" src="http://docs.upltv.com/uploads/201809/5ba21766e18e1_5ba21766.png" /></p>
+</div>
+<div class="section" id="info-plist-http">
+<span id="info-plist-http"></span><h3>2)、在info.plist中加入以下节点，以兼容http模式<a class="headerlink" href="#info-plist-http" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">key</span><span class="o">&gt;</span><span class="n">NSAppTransportSecurity</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">/</span><span class="n">key</span><span class="o">&gt;</span>
+<span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">dict</span><span class="o">&gt;</span>
+    <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">key</span><span class="o">&gt;</span><span class="n">NSAllowsArbitraryLoads</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">/</span><span class="n">key</span><span class="o">&gt;</span>
+    <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="nb">true</span><span class="o">/&gt;</span>
+<span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">/</span><span class="n">dict</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="info-plist-adcolony-adcolony">
+<span id="info-plist-adcolony-adcolony"></span><h3>3)、在info.plist中加入以下节点，用来获取权限（如使用AdColony联盟必须加，未使用AdColony联盟可以不添加）<a class="headerlink" href="#info-plist-adcolony-adcolony" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">key</span><span class="o">&gt;</span><span class="n">NSCalendarsUsageDescription</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">/</span><span class="n">key</span><span class="o">&gt;</span>
+<span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">string</span><span class="o">&gt;</span><span class="n">Some</span> <span class="n">ad</span> <span class="n">content</span> <span class="n">may</span> <span class="n">create</span> <span class="n">a</span> <span class="n">calendar</span> <span class="n">event</span><span class="p">.</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">/</span><span class="n">string</span><span class="o">&gt;</span>
+<span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">key</span><span class="o">&gt;</span><span class="n">NSCameraUsageDescription</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">/</span><span class="n">key</span><span class="o">&gt;</span>
+<span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">string</span><span class="o">&gt;</span><span class="n">Some</span> <span class="n">ad</span> <span class="n">content</span> <span class="n">may</span> <span class="n">access</span> <span class="n">camera</span> <span class="n">to</span> <span class="n">take</span> <span class="n">picture</span><span class="p">.</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">/</span><span class="n">string</span><span class="o">&gt;</span>
+<span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">key</span><span class="o">&gt;</span><span class="n">NSPhotoLibraryUsageDescription</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">/</span><span class="n">key</span><span class="o">&gt;</span>
+<span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">string</span><span class="o">&gt;</span><span class="n">Some</span> <span class="n">ad</span> <span class="n">content</span> <span class="n">may</span> <span class="n">require</span> <span class="n">access</span> <span class="n">to</span> <span class="n">the</span> <span class="n">photo</span> <span class="n">library</span><span class="p">.</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">/</span><span class="n">string</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>注：根据不同语言和不同使用场景，使用者可以适当调整获取权限的描述文字。
+<br></p>
+</div>
+<div class="section" id="bitcode">
+<span id="bitcode"></span><h3>4)、Bitcode<a class="headerlink" href="#bitcode" title="Permalink to this headline">¶</a></h3>
+<p>支持Bitcode，请使用者根据需求选择是否使用Bitcode（Domob不支持Bitcode）
+<br></p>
+</div>
+</div>
+<div class="section" id="">
+<span id="id5"></span><h2>5 查看版本号<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<p>在<em>UPSDKVersion.h</em>文件中，可以直接查看当前SDK的版本号。</p>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="c1">//sdk版本号</span>
+<span class="cp">#define AvidlyAdsSDKVERSION  @&quot;3005&quot;</span>
+</pre></div>
+</div>
+<blockquote>
+<div>AvidlyAdsSDKVERSION，3005表示当前的版本号数字编号。
+<br></div></blockquote>
+</div>
+<div class="section" id="">
+<span id="id6"></span><h2>6、修改代码<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="appdelegatewindow">
+<span id="appdelegatewindow"></span><h3>1)、AppDelegate中添加window属性<a class="headerlink" href="#appdelegatewindow" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="k">@interface</span> <span class="nc">AppDelegate</span> : <span class="bp">UIResponder</span> <span class="o">&lt;</span><span class="bp">UIApplicationDelegate</span><span class="o">&gt;</span>
+<span class="k">@property</span> <span class="p">(</span><span class="k">strong</span><span class="p">,</span> <span class="k">nonatomic</span><span class="p">)</span> <span class="bp">UIWindow</span> <span class="o">*</span><span class="n">window</span><span class="p">;</span>
+<span class="k">@end</span>
+
+<span class="k">@implementation</span> <span class="nc">AppDelegate</span> <span class="p">{</span>
+    <span class="n">EgretNativeIOS</span><span class="o">*</span> <span class="n">_native</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">-</span> <span class="p">(</span><span class="kt">BOOL</span><span class="p">)</span><span class="nf">application:</span><span class="p">(</span><span class="bp">UIApplication</span> <span class="o">*</span><span class="p">)</span><span class="nv">application</span> <span class="nf">didFinishLaunchingWithOptions:</span><span class="p">(</span><span class="bp">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nv">launchOptions</span><span class="p">{</span>
+<span class="n">_native</span> <span class="o">=</span> <span class="p">[[</span><span class="n">EgretNativeIOS</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">init</span><span class="p">];</span>
+<span class="nb">self</span><span class="p">.</span><span class="n">window</span> <span class="o">=</span> <span class="n">_native</span><span class="p">.</span><span class="n">window</span><span class="p">;</span>
+<span class="p">...</span> <span class="p">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="">
+<span id="id7"></span><h3>2)、注册通知<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">UpAdsBridgeEgretTs</span> <span class="nl">registWithEgretNative</span><span class="p">:</span><span class="n">_native</span><span class="p">];</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; <a href="../copyright.html">Copyright</a> 2018, upltv
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

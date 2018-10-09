@@ -1,0 +1,353 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>SDK初始化 &mdash; UPInteractive Document  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="1. A/B Test初始化" href="Cocos2Cpp_Sample_abtest.html" />
+    <link rel="prev" title="CppPlugin 使用实例" href="../Sample_catalog.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> UPInteractive Document
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/android.html">Android 帮助文档</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../chapters/cocos2dx_cpp.html">UPSDK Cocos2d-X Cpp帮助文档</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../Cocos2Cpp_API.html">UPSDK cocos2d-X Cpp API说明</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Integrate_help_catalog .html">CppPlugin 接入帮助</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../Sample_catalog.html">CppPlugin 使用实例</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">SDK初始化</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#">在工程中添加如下引用</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#upsdk">初始化UPSDK</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Cocos2Cpp_Sample_abtest.html">1. A/B Test初始化</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Cocos2Cpp_Sample_abtest.html#a-b-test">2. 获取A/B Test的结果</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Cocos2Cpp_Sample_banner.html">横幅广告</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Cocos2Cpp_Sample_inter.html">插屏广告</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Cocos2Cpp_Sample_video.html">激励视频</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Cocos2Cpp_Sample_gdpr.html">GDPR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Cocos2Cpp_Sample_demo.html">Demo</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_js.html">UPSDK Cocos2d-X JavaScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_lua.html">UPSDK Cocos2d-X Lua帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/download.html">UPSDK 下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/egret_ts.html">UPSDK Egret TypeScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/faq.html">常见问题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/gdpr.html">GDPR支持</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/ios.html">UPSDK IOS帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/layabox_js.html">UPSDK Layabox JavaScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/unity.html">Unity Plugin帮助文档</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">UPInteractive Document</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../chapters/cocos2dx_cpp.html">UPSDK Cocos2d-X Cpp帮助文档</a> &raquo;</li>
+        
+          <li><a href="../Sample_catalog.html">CppPlugin 使用实例</a> &raquo;</li>
+        
+      <li>SDK初始化</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_init.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sdk">
+<span id="sdk"></span><h1>SDK初始化<a class="headerlink" href="#sdk" title="Permalink to this headline">¶</a></h1>
+<p>仅以Xcode工程作示例讲解，若你使用的是其它工程请参考Xcode工程操作，若有不便敬请谅解。</p>
+<p>UPLTV SDK的初始化非常简单。</p>
+<div class="section" id="">
+<span id="id1"></span><h2>在工程中添加如下引用<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;UpltvBridge.h&quot;</span><span class="cp"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="upsdk">
+<span id="upsdk"></span><h2>初始化UPSDK<a class="headerlink" href="#upsdk" title="Permalink to this headline">¶</a></h2>
+<p>初始化的方式有两种，我们推荐第一种初始化：</p>
+<div class="section" id="upsdk">
+<span id="id2"></span><h3>1. 根据区域参数初始化UPSDK<a class="headerlink" href="#upsdk" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* 初始化upltv广告sdk</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">initSdkByZone</span><span class="p">(</span><span class="kt">int</span> <span class="n">zone</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>以下为示例代码：</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* 请务必优先完成sdk初始化后，才能正常使用SDK的其它API接口</span>
+<span class="cm">* @param zone 产品发行的区域，0海外，1中国大陆，2自动根据ip定位</span>
+<span class="cm">*/</span>
+<span class="n">UpltvBridge</span><span class="o">::</span><span class="n">initSdkByZone</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="upsdk">
+<span id="id3"></span><h3>2. 根据区域参数及回调函数初始化UPSDK<a class="headerlink" href="#upsdk" title="Permalink to this headline">¶</a></h3>
+<p>如果想监听初始化结果是否成功，可以使用此方法。</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* @param callback SDK初始化完成后的回调接口, 回调接口包含一个布尔参数 callback(boolean)，true表示成功，否则失败</span>
+<span class="cm">*/</span>
+<span class="n">initSdkByZoneWithCall</span><span class="p">(</span><span class="kt">int</span> <span class="n">zone</span><span class="p">,</span> <span class="n">UpltvSdkBoolCallback</span> <span class="n">callback</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>以下为示例代码：</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">*SDK初始化回调接口，参数true代表初始化成功，否则初始化失败</span>
+<span class="cm">*/</span>
+<span class="kt">void</span> <span class="nf">sdkCallback</span><span class="p">(</span><span class="kt">bool</span> <span class="n">r</span><span class="p">)</span>
+<span class="p">{</span>
+   <span class="n">log</span><span class="p">(</span><span class="s">&quot;====&gt; cpp initSdkCallback(%s)&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">r</span> <span class="o">?</span> <span class="s">&quot;true&quot;</span> <span class="o">:</span> <span class="s">&quot;false&quot;</span><span class="p">));</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="n">HelloWorld</span><span class="o">::</span><span class="n">touchEvent</span><span class="p">(</span><span class="n">cocos2d</span><span class="o">::</span><span class="n">Ref</span> <span class="o">*</span><span class="n">pSender</span><span class="p">,</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span> <span class="n">type</span><span class="p">,</span> <span class="kt">int</span> <span class="n">tag</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">type</span> <span class="o">==</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span><span class="o">::</span><span class="n">ENDED</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">switch</span> <span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">case</span> <span class="mi">1001</span><span class="o">:</span>
+            <span class="p">{</span>
+                <span class="c1">//初始化SDK，并监听回调结果</span>
+                <span class="n">UpltvSdkBoolCallback</span> <span class="n">callback</span> <span class="o">=</span> <span class="n">sdkCallback</span><span class="p">;</span>
+                <span class="n">UpltvBridge</span><span class="o">::</span><span class="n">initSdkByZoneWithCall</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">callback</span><span class="p">);</span>
+            <span class="p">}</span>
+                <span class="k">break</span><span class="p">;</span>
+
+        <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="setcustomerid">
+<span id="setcustomerid"></span><h3>3. setCustomerId()<a class="headerlink" href="#setcustomerid" title="Permalink to this headline">¶</a></h3>
+<p>仅Android支持，对于非GP的包，可以传androidid，避免用户新增统计错误。</p>
+<div class="highlight-asp notranslate"><div class="highlight"><pre><span></span>/**
+* 请在初始化SDK之前调用
+* Version 3004(subversion 5) and above support this method
+* @param androidid
+*/
+UpltvBridge::setCustomerId(androidid);
+</pre></div>
+</div>
+</div>
+<div class="section" id="onapplicationfocus">
+<span id="onapplicationfocus"></span><h3>4. onApplicationFocus()添加<a class="headerlink" href="#onapplicationfocus" title="Permalink to this headline">¶</a></h3>
+<p>请参考以下代码在当前工程的AppDelegate类中正确添加onApplicationFocus()方法，以便通知UPSDK游戏前台切换变化。</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="n">AppDelegate</span><span class="o">::</span><span class="n">applicationDidEnterBackground</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// 进入后台时，调用UpltvBridge::onApplicationFocus(false)</span>
+    <span class="n">UpltvBridge</span><span class="o">::</span><span class="n">onApplicationFocus</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span>
+
+    <span class="n">Director</span><span class="o">::</span><span class="n">getInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">stopAnimation</span><span class="p">();</span>
+<span class="cp">#if USE_AUDIO_ENGINE</span>
+    <span class="n">AudioEngine</span><span class="o">::</span><span class="n">pauseAll</span><span class="p">();</span>
+<span class="cp">#elif USE_SIMPLE_AUDIO_ENGINE</span>
+    <span class="n">SimpleAudioEngine</span><span class="o">::</span><span class="n">getInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">pauseBackgroundMusic</span><span class="p">();</span>
+    <span class="n">SimpleAudioEngine</span><span class="o">::</span><span class="n">getInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">pauseAllEffects</span><span class="p">();</span>
+<span class="cp">#endif</span>
+<span class="p">}</span>
+
+<span class="c1">// this function will be called when the app is active again</span>
+<span class="kt">void</span> <span class="n">AppDelegate</span><span class="o">::</span><span class="n">applicationWillEnterForeground</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// 进入前台时，调用UpltvBridge::onApplicationFocus(true)</span>
+    <span class="n">UpltvBridge</span><span class="o">::</span><span class="n">onApplicationFocus</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span>
+
+    <span class="n">Director</span><span class="o">::</span><span class="n">getInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">startAnimation</span><span class="p">();</span>
+<span class="cp">#if USE_AUDIO_ENGINE</span>
+    <span class="n">AudioEngine</span><span class="o">::</span><span class="n">resumeAll</span><span class="p">();</span>
+<span class="cp">#elif USE_SIMPLE_AUDIO_ENGINE</span>
+    <span class="n">SimpleAudioEngine</span><span class="o">::</span><span class="n">getInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">resumeBackgroundMusic</span><span class="p">();</span>
+    <span class="n">SimpleAudioEngine</span><span class="o">::</span><span class="n">getInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">resumeAllEffects</span><span class="p">();</span>
+<span class="cp">#endif</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Cocos2Cpp_Sample_abtest.html" class="btn btn-neutral float-right" title="1. A/B Test初始化" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../Sample_catalog.html" class="btn btn-neutral" title="CppPlugin 使用实例" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, upltv
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

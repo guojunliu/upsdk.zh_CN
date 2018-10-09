@@ -1,0 +1,302 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Eclipse 接入帮助 &mdash; UPInteractive Document  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="接入问题解决" href="Android_FAQ.html" />
+    <link rel="prev" title="Android Studio 接入帮助" href="Android_AS.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> UPInteractive Document
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../chapters/android.html">Android 帮助文档</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../Android_65535.html">解决65535方法数过多</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Android_Demo.html">Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Android_Exit.html">广告对象初始化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Android_Exit.html#">显示退出广告</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Android_Exit.html#">回调接口</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Android_GDPR.html">GDPR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Android_Init.html">SDK初始化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Android_Inter.html">插屏广告</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Android_Video.html">激励视频</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Banner_catalog.html">横幅广告</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../Integrate_help_catalog .html">接入帮助</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Android_AS.html">Android Studio 接入帮助</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Eclipse 接入帮助</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#up-adsdk">一、UP ADSDK的目录结构</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#up-adsdk-eclipse">二、复制UP ADSDK Eclipse 主包体文件到项目</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#android-support">三、加入 Android Support 支持库</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#google-ads-sdk">四、加入Google Ads SDK</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#androidmanifest-xml">五、修改 AndroidManifest.xml 文件</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#proguard">六、修改 Proguard</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#demo">七、Demo工程</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Android_FAQ.html">接入问题解决</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_cpp.html">UPSDK Cocos2d-X Cpp帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_js.html">UPSDK Cocos2d-X JavaScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_lua.html">UPSDK Cocos2d-X Lua帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/download.html">UPSDK 下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/egret_ts.html">UPSDK Egret TypeScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/faq.html">常见问题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/gdpr.html">GDPR支持</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/ios.html">UPSDK IOS帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/layabox_js.html">UPSDK Layabox JavaScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/unity.html">Unity Plugin帮助文档</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">UPInteractive Document</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../chapters/android.html">Android 帮助文档</a> &raquo;</li>
+        
+          <li><a href="../Integrate_help_catalog .html">接入帮助</a> &raquo;</li>
+        
+      <li>Eclipse 接入帮助</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/Android/Integrate_help/Android_EC.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="eclipse">
+<span id="eclipse"></span><h1>Eclipse 接入帮助<a class="headerlink" href="#eclipse" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="up-adsdk">
+<span id="up-adsdk"></span><h2>一、UP ADSDK的目录结构<a class="headerlink" href="#up-adsdk" title="Permalink to this headline">¶</a></h2>
+<p>如果您使用 Eclipse 或 Ant 构建 Android 项目，相比较于Android Studio 构建的工程，接入工作稍有一些复杂。UP ADSDK Eclipse版本的下载包解压后的目录结构如下：</p>
+<p><img alt="" src="http://docs.upltv.com/uploads/201805/5af56a8672b4b_5af56a86.png" /></p>
+<p>UP ADSDK Eclipse的主包体处于<code class="docutils literal notranslate"><span class="pre">upsdk_ads</span></code>的文件夹下，<code class="docutils literal notranslate"><span class="pre">upsdk_ads</span></code>中的内容必须添加到你的主工程中。</p>
+</div>
+<div class="section" id="up-adsdk-eclipse">
+<span id="up-adsdk-eclipse"></span><h2>二、复制UP ADSDK Eclipse 主包体文件到项目<a class="headerlink" href="#up-adsdk-eclipse" title="Permalink to this headline">¶</a></h2>
+<p>在<code class="docutils literal notranslate"><span class="pre">upsdk_ads</span></code>目录下，有<code class="docutils literal notranslate"><span class="pre">libs</span></code>、<code class="docutils literal notranslate"><span class="pre">assets</span></code>以及<code class="docutils literal notranslate"><span class="pre">res</span></code>几个目录，请分别将这些目录下的内容复制到你Eclipse主工程的相应的目录下。</p>
+<p><code class="docutils literal notranslate"><span class="pre">UPADSDK</span> <span class="pre">3.0.03</span></code>版本在<code class="docutils literal notranslate"><span class="pre">Eclipse</span></code>接入时默认使用<code class="docutils literal notranslate"><span class="pre">dex动态加载</span></code>的方式加载广告联盟，广告联盟的文件存放在<code class="docutils literal notranslate"><span class="pre">upsdk_ads\assets\up_android</span></code>文件夹下，如果您不需要接入其中的某个联盟，将文件夹中对应的 <code class="docutils literal notranslate"><span class="pre">dex_xxx.jar</span></code> 文件删除掉即可。</p>
+<p><strong>【注意】 以上的文件请不要修改任意文件或者文件夹的命名</strong></p>
+<p><strong>【注意】<code class="docutils literal notranslate"><span class="pre">admob</span></code>、<code class="docutils literal notranslate"><span class="pre">batmobi</span></code>、<code class="docutils literal notranslate"><span class="pre">appnext</span></code>、<code class="docutils literal notranslate"><span class="pre">youappi</span></code>、<code class="docutils literal notranslate"><span class="pre">toutiao</span></code> 和 <code class="docutils literal notranslate"><span class="pre">inmobi</span></code> 广告平台暂时无法支持<code class="docutils literal notranslate"><span class="pre">dex动态加载</span></code>方式，如果需要接入，请单独将<code class="docutils literal notranslate"><span class="pre">optional_ads</span></code>中的内容添加到项目中</strong></p>
+<blockquote>
+<div>对于非<em>.so文件，复制时出现重名文件时，请慎重操作：</em><em>仅在重名的文件是UPAdsSdk原有的文件时可以复盖操作。</em>*非此情况下的文件重名冲突时，可以根据经验自行酌情解决(比如res/values/目录下的文件可以重命名)，当然也可以直接与我们的技术反馈问题寻求解决方案。</div></blockquote>
+</div>
+<div class="section" id="android-support">
+<span id="android-support"></span><h2>三、加入 Android Support 支持库<a class="headerlink" href="#android-support" title="Permalink to this headline">¶</a></h2>
+<p><strong>【注意】Android Support 支持库为强制依赖，请务必将其引入你的项目，否则可能会导致程序崩溃！</strong></p>
+<p>广告的正常展示需要 <code class="docutils literal notranslate"><span class="pre">support</span></code> 库的支持，所以请将其引入到您的项目中，我们为您在  <code class="docutils literal notranslate"><span class="pre">android_support_library/libs</span></code> 文件夹中准备了对应的 <code class="docutils literal notranslate"><span class="pre">xxx.jar</span></code> 文件，您只需要将文件添加到项目的 <code class="docutils literal notranslate"><span class="pre">libs</span></code> 目录下即可</p>
+<p><strong>【注意】Android Support 支持库为强制依赖，请务必将其引入你的项目，否则可能会导致程序崩溃！</strong></p>
+</div>
+<div class="section" id="google-ads-sdk">
+<span id="google-ads-sdk"></span><h2>四、加入Google Ads SDK<a class="headerlink" href="#google-ads-sdk" title="Permalink to this headline">¶</a></h2>
+<p>如果您的项目需要发布到海外市场，我们需要在您的项目中加入 Google Ads 支持，我们为您在  <code class="docutils literal notranslate"><span class="pre">admob_ads/libs</span></code> 目录中准备了对应的 <code class="docutils literal notranslate"><span class="pre">play-services-xxx.jar</span></code> 文件。</p>
+<p>同时，请检查你的AndroidManifest.xml是否存在以下定义：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;!-- admob --&gt;
+&lt;meta-data  
+    android:name=&quot;com.google.android.gms.version&quot;
+    android:value=&quot;@integer/google_play_services_version&quot;/&gt;
+
+&lt;activity
+    android:name=&quot;com.google.android.gms.ads.AdActivity&quot;
+    android:configChanges=&quot;keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize&quot;
+    android:multiprocess=&quot;true&quot;
+    android:theme=&quot;@android:style/Theme.Translucent&quot;/&gt;
+&lt;!-- admob --&gt;
+</pre></div>
+</div>
+</div>
+<div class="section" id="androidmanifest-xml">
+<span id="androidmanifest-xml"></span><h2>五、修改 AndroidManifest.xml 文件<a class="headerlink" href="#androidmanifest-xml" title="Permalink to this headline">¶</a></h2>
+<p>将 <code class="docutils literal notranslate"><span class="pre">AndroidManifest.xml</span></code> 文件中的内容复制加入到您项目的对应节点中。</p>
+</div>
+<div class="section" id="proguard">
+<span id="proguard"></span><h2>六、修改 Proguard<a class="headerlink" href="#proguard" title="Permalink to this headline">¶</a></h2>
+<p>如果你的项目使用了 <code class="docutils literal notranslate"><span class="pre">proguard</span></code>，你需要将 <code class="docutils literal notranslate"><span class="pre">proguard-project.txt</span></code> 文件中的内容复制粘贴到你项目使用的 <code class="docutils literal notranslate"><span class="pre">proguard</span></code> 配置文件中。</p>
+</div>
+<div class="section" id="demo">
+<span id="demo"></span><h2>七、Demo工程<a class="headerlink" href="#demo" title="Permalink to this headline">¶</a></h2>
+<p>为帮助您更好的了解广告SDK的接入以及使用，我们在这里提供了一个简单的<a class="reference external" href="https://github.com/AvidlyGit/AdSdkDemo-Eclipse">Demo工程</a>。</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Android_FAQ.html" class="btn btn-neutral float-right" title="接入问题解决" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Android_AS.html" class="btn btn-neutral" title="Android Studio 接入帮助" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, upltv
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

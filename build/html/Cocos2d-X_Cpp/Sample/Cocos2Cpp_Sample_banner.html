@@ -1,0 +1,439 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>横幅广告 &mdash; UPInteractive Document  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="插屏广告" href="Cocos2Cpp_Sample_inter.html" />
+    <link rel="prev" title="1. A/B Test初始化" href="Cocos2Cpp_Sample_abtest.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> UPInteractive Document
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/android.html">Android 帮助文档</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../chapters/cocos2dx_cpp.html">UPSDK Cocos2d-X Cpp帮助文档</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../Cocos2Cpp_API.html">UPSDK cocos2d-X Cpp API说明</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Integrate_help_catalog .html">CppPlugin 接入帮助</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../Sample_catalog.html">CppPlugin 使用实例</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Cocos2Cpp_Sample_init.html">SDK初始化</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Cocos2Cpp_Sample_abtest.html">1. A/B Test初始化</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Cocos2Cpp_Sample_abtest.html#a-b-test">2. 获取A/B Test的结果</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">横幅广告</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#banner">1. banner广告的回调</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#banner">2. 展示顶部banner广告</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#banner">3. 隐藏顶部banner广告</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#banner">4. 展示底部banner广告</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#banner">5. 隐藏底部banner广告</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#banner">6. 移除banner广告</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Cocos2Cpp_Sample_inter.html">插屏广告</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Cocos2Cpp_Sample_video.html">激励视频</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Cocos2Cpp_Sample_gdpr.html">GDPR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Cocos2Cpp_Sample_demo.html">Demo</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_js.html">UPSDK Cocos2d-X JavaScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_lua.html">UPSDK Cocos2d-X Lua帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/download.html">UPSDK 下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/egret_ts.html">UPSDK Egret TypeScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/faq.html">常见问题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/gdpr.html">GDPR支持</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/ios.html">UPSDK IOS帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/layabox_js.html">UPSDK Layabox JavaScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/unity.html">Unity Plugin帮助文档</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">UPInteractive Document</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../chapters/cocos2dx_cpp.html">UPSDK Cocos2d-X Cpp帮助文档</a> &raquo;</li>
+        
+          <li><a href="../Sample_catalog.html">CppPlugin 使用实例</a> &raquo;</li>
+        
+      <li>横幅广告</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_banner.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="">
+<span id="id1"></span><h1>横幅广告<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h1>
+<p>横幅广告分为顶部banner和底部banner，CppPlugin进一步简化了横幅banner广告的实现，提供有展示，隐藏，移除以及事件回调等接口。</p>
+<div class="section" id="banner">
+<span id="banner"></span><h2>1. banner广告的回调<a class="headerlink" href="#banner" title="Permalink to this headline">¶</a></h2>
+<p>banner广告需要根据广告位来设置banner广告的展示，点击以及移除等事件的回调接口。回调接口会被插件内部保存，因此不需要多次设置，只有调用upltv:removeBannerAdAt(cpPlaceId)才会被删除。</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* @param cpPlaceId banner广告位</span>
+<span class="cm">* @param callback</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">setBannerShowCallback</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">cpPlaceId</span><span class="p">,</span> <span class="n">UpltvSdkStringCallback_1</span> <span class="n">callback</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>示例代码：</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">bannerCallback</span><span class="p">(</span><span class="n">UpltvAdEventEnum</span><span class="o">::</span><span class="n">AdEventType</span> <span class="n">type</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">cpid</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">string</span> <span class="n">s</span> <span class="o">=</span> <span class="s">&quot;unkown&quot;</span><span class="p">;</span>
+    <span class="k">switch</span> <span class="p">(</span><span class="n">type</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="n">UpltvAdEventEnum</span><span class="o">::</span><span class="n">AdEventType</span><span class="o">::</span><span class="nl">BANNER_EVENT_DID_SHOW</span><span class="p">:{</span>
+            <span class="n">s</span> <span class="o">=</span> <span class="s">&quot;Did_Show&quot;</span><span class="p">;</span>
+        <span class="p">}</span>
+            <span class="k">break</span><span class="p">;</span>
+        <span class="k">case</span> <span class="n">UpltvAdEventEnum</span><span class="o">::</span><span class="n">AdEventType</span><span class="o">::</span><span class="nl">BANNER_EVENT_DID_CLICK</span><span class="p">:{</span>
+            <span class="n">s</span> <span class="o">=</span> <span class="s">&quot;Did_Click&quot;</span><span class="p">;</span>
+        <span class="p">}</span>
+            <span class="k">break</span><span class="p">;</span>
+        <span class="k">case</span> <span class="n">UpltvAdEventEnum</span><span class="o">::</span><span class="n">AdEventType</span><span class="o">::</span><span class="nl">BANNER_EVENT_DID_REMOVED</span><span class="p">:{</span>
+            <span class="n">s</span> <span class="o">=</span> <span class="s">&quot;Did_Removed&quot;</span><span class="p">;</span>
+        <span class="p">}</span>
+            <span class="k">break</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">log</span><span class="p">(</span><span class="s">&quot;====&gt; Banner ad call event: %s, at cpid: %s&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">s</span><span class="p">.</span><span class="n">c_str</span><span class="p">()</span> <span class="o">!=</span> <span class="k">nullptr</span> <span class="o">?</span> <span class="n">s</span><span class="p">.</span><span class="n">c_str</span><span class="p">()</span> <span class="o">:</span> <span class="s">&quot;&quot;</span><span class="p">),</span> <span class="n">cpid</span><span class="o">?</span><span class="nl">cpid</span><span class="p">:</span><span class="s">&quot;&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="n">HelloWorld</span><span class="o">::</span><span class="n">touchEvent</span><span class="p">(</span><span class="n">cocos2d</span><span class="o">::</span><span class="n">Ref</span> <span class="o">*</span><span class="n">pSender</span><span class="p">,</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span> <span class="n">type</span><span class="p">,</span> <span class="kt">int</span> <span class="n">tag</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">type</span> <span class="o">==</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span><span class="o">::</span><span class="n">ENDED</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">log</span><span class="p">(</span><span class="s">&quot;===&gt; cpp button touch tag :%d&quot;</span><span class="p">,</span><span class="n">tag</span><span class="p">);</span>
+        <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">bannertopkey</span> <span class="o">=</span> <span class="s">&quot;BannerAd&quot;</span><span class="p">;</span> <span class="c1">//定义banner的广告位</span>
+        <span class="k">switch</span> <span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">case</span> <span class="mi">1001</span><span class="o">:</span>
+            <span class="p">{</span>
+                <span class="n">UpltvBridge</span><span class="o">::</span><span class="n">setBannerShowCallback</span><span class="p">(</span><span class="n">bannertopkey</span><span class="p">,</span> <span class="n">bannerCallback</span><span class="p">);</span>
+            <span class="p">}</span>
+                <span class="k">break</span><span class="p">;</span>
+        <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="banner">
+<span id="id2"></span><h2>2. 展示顶部banner广告<a class="headerlink" href="#banner" title="Permalink to this headline">¶</a></h2>
+<p>根据广告位，将banner展示在屏幕的顶部。</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* @param cpPlaceId</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">showBannerAdAtTop</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span><span class="n">cpPlaceId</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>示例代码：</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="n">HelloWorld</span><span class="o">::</span><span class="n">touchEvent</span><span class="p">(</span><span class="n">cocos2d</span><span class="o">::</span><span class="n">Ref</span> <span class="o">*</span><span class="n">pSender</span><span class="p">,</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span> <span class="n">type</span><span class="p">,</span> <span class="kt">int</span> <span class="n">tag</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">type</span> <span class="o">==</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span><span class="o">::</span><span class="n">ENDED</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">log</span><span class="p">(</span><span class="s">&quot;===&gt; cpp button touch tag :%d&quot;</span><span class="p">,</span><span class="n">tag</span><span class="p">);</span>
+        <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">bannertopkey</span> <span class="o">=</span> <span class="s">&quot;BannerAd&quot;</span><span class="p">;</span> <span class="c1">//定义banner的广告位</span>
+        <span class="k">switch</span> <span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">case</span> <span class="mi">1001</span><span class="o">:</span>
+            <span class="p">{</span>
+               <span class="n">UpltvBridge</span><span class="o">::</span><span class="n">showBannerAdAtTop</span><span class="p">(</span><span class="n">bannertopkey</span><span class="p">);</span>
+            <span class="p">}</span>
+                <span class="k">break</span><span class="p">;</span>
+        <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>需要注意一点，对Iphonex手机顶部Banner被状态栏遮挡时，可以通过调节顶部Banner的偏移值，解决此问题。</strong></p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* @param padding: 顶部Banner的偏移值，如32，则状态样会向下偏移32像素</span>
+<span class="cm">* Android平台不支持此功能</span>
+<span class="cm">* supported from 3002</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">setTopBannerPadingForIphonex</span><span class="p">(</span><span class="kt">int</span> <span class="n">padding</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="banner">
+<span id="id3"></span><h2>3. 隐藏顶部banner广告<a class="headerlink" href="#banner" title="Permalink to this headline">¶</a></h2>
+<p>隐藏当前屏幕顶端的banner广告。</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">void</span> <span class="nf">hideBannerAdAtTop</span><span class="p">();</span>
+</pre></div>
+</div>
+<p>示例代码：</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="n">HelloWorld</span><span class="o">::</span><span class="n">touchEvent</span><span class="p">(</span><span class="n">cocos2d</span><span class="o">::</span><span class="n">Ref</span> <span class="o">*</span><span class="n">pSender</span><span class="p">,</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span> <span class="n">type</span><span class="p">,</span> <span class="kt">int</span> <span class="n">tag</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">type</span> <span class="o">==</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span><span class="o">::</span><span class="n">ENDED</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">log</span><span class="p">(</span><span class="s">&quot;===&gt; cpp button touch tag :%d&quot;</span><span class="p">,</span><span class="n">tag</span><span class="p">);</span>
+        <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">bannertopkey</span> <span class="o">=</span> <span class="s">&quot;BannerAd&quot;</span><span class="p">;</span> <span class="c1">//定义banner的广告位</span>
+        <span class="k">switch</span> <span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">case</span> <span class="mi">1001</span><span class="o">:</span>
+            <span class="p">{</span>
+              <span class="n">UpltvBridge</span><span class="o">::</span><span class="n">hideBannerAdAtTop</span><span class="p">();</span>
+            <span class="p">}</span>
+                <span class="k">break</span><span class="p">;</span>
+        <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="banner">
+<span id="id4"></span><h2>4. 展示底部banner广告<a class="headerlink" href="#banner" title="Permalink to this headline">¶</a></h2>
+<p>根据广告位，将banner展示在屏幕的顶部。</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* @param cpPlaceId</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">showBannerAdAtBottom</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span><span class="n">cpPlaceId</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>示例代码：</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="n">HelloWorld</span><span class="o">::</span><span class="n">touchEvent</span><span class="p">(</span><span class="n">cocos2d</span><span class="o">::</span><span class="n">Ref</span> <span class="o">*</span><span class="n">pSender</span><span class="p">,</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span> <span class="n">type</span><span class="p">,</span> <span class="kt">int</span> <span class="n">tag</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">type</span> <span class="o">==</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span><span class="o">::</span><span class="n">ENDED</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">log</span><span class="p">(</span><span class="s">&quot;===&gt; cpp button touch tag :%d&quot;</span><span class="p">,</span><span class="n">tag</span><span class="p">);</span>
+        <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">bannerbottomkey</span> <span class="o">=</span> <span class="s">&quot;BannerAd&quot;</span><span class="p">;</span> <span class="c1">//定义banner的广告位</span>
+        <span class="k">switch</span> <span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">case</span> <span class="mi">1001</span><span class="o">:</span>
+            <span class="p">{</span>
+              <span class="n">UpltvBridge</span><span class="o">::</span><span class="n">showBannerAdAtBottom</span><span class="p">(</span><span class="n">bannerbottomkey</span><span class="p">);</span>
+            <span class="p">}</span>
+                <span class="k">break</span><span class="p">;</span>
+        <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="banner">
+<span id="id5"></span><h2>5. 隐藏底部banner广告<a class="headerlink" href="#banner" title="Permalink to this headline">¶</a></h2>
+<p>隐藏当前屏幕底部的banner广告。</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">void</span> <span class="nf">hideBannerAdAtBottom</span><span class="p">();</span>
+</pre></div>
+</div>
+<p>示例代码：</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="n">HelloWorld</span><span class="o">::</span><span class="n">touchEvent</span><span class="p">(</span><span class="n">cocos2d</span><span class="o">::</span><span class="n">Ref</span> <span class="o">*</span><span class="n">pSender</span><span class="p">,</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span> <span class="n">type</span><span class="p">,</span> <span class="kt">int</span> <span class="n">tag</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">type</span> <span class="o">==</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span><span class="o">::</span><span class="n">ENDED</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">log</span><span class="p">(</span><span class="s">&quot;===&gt; cpp button touch tag :%d&quot;</span><span class="p">,</span><span class="n">tag</span><span class="p">);</span>
+        <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">bannerbottomkey</span> <span class="o">=</span> <span class="s">&quot;BannerAd&quot;</span><span class="p">;</span> <span class="c1">//定义banner的广告位</span>
+        <span class="k">switch</span> <span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">case</span> <span class="mi">1001</span><span class="o">:</span>
+            <span class="p">{</span>
+              <span class="n">UpltvBridge</span><span class="o">::</span><span class="n">hideBannerAdAtBottom</span><span class="p">();</span>
+            <span class="p">}</span>
+                <span class="k">break</span><span class="p">;</span>
+        <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="banner">
+<span id="id6"></span><h2>6. 移除banner广告<a class="headerlink" href="#banner" title="Permalink to this headline">¶</a></h2>
+<p>UPSDK支持移除某个广告位上的banner广告。</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* @param cpPlaceId banner广告位</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">removeBannerAdAt</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span><span class="n">cpPlaceId</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>示例代码：</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="n">HelloWorld</span><span class="o">::</span><span class="n">touchEvent</span><span class="p">(</span><span class="n">cocos2d</span><span class="o">::</span><span class="n">Ref</span> <span class="o">*</span><span class="n">pSender</span><span class="p">,</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span> <span class="n">type</span><span class="p">,</span> <span class="kt">int</span> <span class="n">tag</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">type</span> <span class="o">==</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span><span class="o">::</span><span class="n">ENDED</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">log</span><span class="p">(</span><span class="s">&quot;===&gt; cpp button touch tag :%d&quot;</span><span class="p">,</span><span class="n">tag</span><span class="p">);</span>
+        <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">bannerbottomkey</span> <span class="o">=</span> <span class="s">&quot;BannerAd&quot;</span><span class="p">;</span> <span class="c1">//定义banner的广告位</span>
+        <span class="k">switch</span> <span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">case</span> <span class="mi">1001</span><span class="o">:</span>
+            <span class="p">{</span>
+              <span class="n">UpltvBridge</span><span class="o">::</span><span class="n">removeBannerAdAt</span><span class="p">(</span><span class="n">bannerbottomkey</span><span class="p">);</span>
+            <span class="p">}</span>
+                <span class="k">break</span><span class="p">;</span>
+        <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Cocos2Cpp_Sample_inter.html" class="btn btn-neutral float-right" title="插屏广告" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Cocos2Cpp_Sample_abtest.html" class="btn btn-neutral" title="1. A/B Test初始化" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, upltv
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

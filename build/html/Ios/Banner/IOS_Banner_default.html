@@ -1,0 +1,289 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>横幅广告-快速集成 &mdash; UPInteractive Document  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="横幅广告-自定义" href="IOS_Banner_custom.html" />
+    <link rel="prev" title="横幅广告" href="../Banner_catalog.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> UPInteractive Document
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/android.html">Android 帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_cpp.html">UPSDK Cocos2d-X Cpp帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_js.html">UPSDK Cocos2d-X JavaScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_lua.html">UPSDK Cocos2d-X Lua帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/download.html">UPSDK 下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/egret_ts.html">UPSDK Egret TypeScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/faq.html">常见问题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/gdpr.html">GDPR支持</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../chapters/ios.html">UPSDK IOS帮助文档</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../Banner_catalog.html">横幅广告</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">横幅广告-快速集成</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#">使用实例</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#">内存回收：</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="IOS_Banner_custom.html">横幅广告-自定义</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../IOS_CocoaPods.html">CocoaPods 接入帮助</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../IOS_Demo.html">Demo 下载</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../IOS_GDPR.html">GDPR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../IOS_Init.html">SDK初始化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../IOS_Inter.html">插屏广告</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../IOS_Reward.html">激励视频</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../IOS_Xcode.html">XCode</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/layabox_js.html">UPSDK Layabox JavaScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/unity.html">Unity Plugin帮助文档</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">UPInteractive Document</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../chapters/ios.html">UPSDK IOS帮助文档</a> &raquo;</li>
+        
+          <li><a href="../Banner_catalog.html">横幅广告</a> &raquo;</li>
+        
+      <li>横幅广告-快速集成</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/IOS/Banner/IOS_Banner_default.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="">
+<span id="id1"></span><h1>横幅广告-快速集成<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div>特别说明：以下【广告位】可由接入方向<strong>我方技术支持同事询问</strong>。不同广告使用场景请尽量保持【广告位】的独立性，方便未来区分不同广告展示的收益来源。例如：在暂停界面中初始化广告时，【广告位】可传入”Pause” or “Menu”</div></blockquote>
+<div class="section" id="">
+<span id="id2"></span><h2>使用实例<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<p>如果仅仅需要在视图顶部或底部构建长条横幅banner广告时，我们推荐使用此构造方法，能更快更简洁地实现目标。</p>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<span class="cm">* 参数说明</span>
+<span class="cm">* 1. avidPlacement：不能为空，广告位，NSString类型，用于来标识广告的类型</span>
+<span class="cm">* 2. vc：不能为空，UIViewController对象，用于控制Banner跳转</span>
+<span class="cm">* 3. showLocation：为展示banner的位置（Top or Bottom），枚举如下</span>
+<span class="cm">*/</span>
+<span class="p">-</span> <span class="p">(</span><span class="kt">instancetype</span><span class="p">)</span><span class="nf">initWithPlacement:</span><span class="p">(</span><span class="bp">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">avidPlacement</span> <span class="nf">controller:</span><span class="p">(</span><span class="bp">UIViewController</span><span class="o">*</span><span class="p">)</span><span class="nv">vc</span> <span class="nf">showLocation:</span><span class="p">(</span><span class="n">UPStripShowLocationType</span><span class="p">)</span><span class="nv">type</span><span class="p">;</span>
+</pre></div>
+</div>
+<blockquote>
+<div>此api仅被ios sdk2037及以上的版本支持</div></blockquote>
+<p>对于视图顶部或底部构的位置类型，构造时请使用以下枚举明确声明。</p>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="k">typedef</span> <span class="nf">NS_ENUM</span><span class="p">(</span><span class="n">NSUInteger</span><span class="p">,</span> <span class="n">UPStripShowLocationType</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">UPStripShowLocationTypeTop</span>       <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>        <span class="c1">//顶部</span>
+    <span class="n">UPStripShowLocationTypeBottom</span>    <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>        <span class="c1">//底部</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>使用UPStripShowLocationTypeTop，则banner会自动展示在viewController的顶部</li>
+<li>使用UPStripShowLocationTypeBottom，则banner会自动展示在viewController的底部</li>
+</ul>
+<p>使用示例：
+在某个ViewController.m中，初始化一个长条的Banner对象（展示在top）并设置回调代理。</p>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">viewDidLoad</span> <span class="p">{</span>
+    <span class="c1">// …</span>
+    <span class="c1">// 初始化wrapper对象</span>
+    <span class="n">_topStripBanner</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UPBannerStripWrapper</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithPlacement</span><span class="p">:</span><span class="s">@&quot;banner_strip” controller:self showLocation:UPStripShowLocationTypeTop];</span>
+    <span class="c1">// 设置代理回调对象</span>
+    <span class="n">_topStripBanner</span><span class="p">.</span><span class="n">delegate</span> <span class="o">=</span> <span class="nb">self</span><span class="p">;</span>
+    <span class="c1">// …</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>此时showLocation设置为UPStripShowLocationTypeTop，长条banner会自动展示在ViewController的顶部，无需再调用其他代码</p>
+<p><br></p>
+</div>
+<div class="section" id="">
+<span id="id3"></span><h2>内存回收：<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">当banner视图所在的ViewController被销毁时(例如在界面中被移除，从nav中被pop，内存被回收)，请同时将banner对象置为nil，以回收内存</span></code></p>
+<p><br></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="IOS_Banner_custom.html" class="btn btn-neutral float-right" title="横幅广告-自定义" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../Banner_catalog.html" class="btn btn-neutral" title="横幅广告" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, upltv
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

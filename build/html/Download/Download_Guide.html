@@ -1,0 +1,332 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Android SDK &mdash; UPInteractive Document  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="UPSDK Egret TypeScript帮助文档" href="../chapters/egret_ts.html" />
+    <link rel="prev" title="UPSDK 下载" href="../chapters/download.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> UPInteractive Document
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../chapters/android.html">Android 帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/cocos2dx_cpp.html">UPSDK Cocos2d-X Cpp帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/cocos2dx_js.html">UPSDK Cocos2d-X JavaScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/cocos2dx_lua.html">UPSDK Cocos2d-X Lua帮助文档</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../chapters/download.html">UPSDK 下载</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Android SDK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ios-sdk">iOS SDK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#unity-sdk">Unity SDK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cocos2d-x">Cocos2D-X</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#android">Android</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ios">iOS</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#layabox">Layabox</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#android">Android</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ios">iOS</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#egret">Egret</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ios">iOS</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#google-play-services-download">Google-Play-Services Download</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#">更新日志</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/egret_ts.html">UPSDK Egret TypeScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/faq.html">常见问题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/gdpr.html">GDPR支持</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/ios.html">UPSDK IOS帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/layabox_js.html">UPSDK Layabox JavaScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/unity.html">Unity Plugin帮助文档</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">UPInteractive Document</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../chapters/download.html">UPSDK 下载</a> &raquo;</li>
+        
+      <li>Android SDK</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/Download/Download_Guide.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="android-sdk">
+<span id="android-sdk"></span><h1>Android SDK<a class="headerlink" href="#android-sdk" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="http://cnimg.dataverse.cn/upsdk/UPSDK_Android_3.0.05_eclipse.zip">Eclipe SDK v3.0.05 </a></p>
+<p><a class="reference external" href="http://cnimg.dataverse.cn/upsdk/UPSDK_Android_3.0.05_AndroidStudio.zip">Android Studio SDK v3.0.05 </a></p>
+</div>
+<div class="section" id="ios-sdk">
+<span id="ios-sdk"></span><h1>iOS SDK<a class="headerlink" href="#ios-sdk" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="http://cnimg.dataverse.cn/upsdk/UPSDK_iOS_3.0.05.zip">SDK v3.0.05</a></p>
+<p><a class="reference external" href="http://cnimg.dataverse.cn/upsdk/Framework_v4.4.zip">Other required SDK v4.4</a></p>
+</div>
+<div class="section" id="unity-sdk">
+<span id="unity-sdk"></span><h1>Unity SDK<a class="headerlink" href="#unity-sdk" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="http://cnimg.dataverse.cn/upsdk/export_3005_android.unitypackage">Android 3.0.05</a></p>
+<p><a class="reference external" href="http://cnimg.dataverse.cn/upsdk/export_3005_both.unitypackage">Android &amp; iOS 3.0.05</a></p>
+</div>
+<div class="section" id="cocos2d-x">
+<span id="cocos2d-x"></span><h1>Cocos2D-X<a class="headerlink" href="#cocos2d-x" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="android">
+<span id="android"></span><h2>Android<a class="headerlink" href="#android" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://cnimg.dataverse.cn/upsdk/UPSDK_Android_3.0.05_CocosJS.zip">Cocos-JS SDK v3.0.05 </a></p>
+<p><a class="reference external" href="http://cnimg.dataverse.cn/upsdk/UPSDK_Android_3.0.05_CocosC++.zip">Cocos-C++ SDK v3.0.05 </a></p>
+<p><a class="reference external" href="http://cnimg.dataverse.cn/upsdk/UPSDK_Android_3.0.05_CocosLua.zip">Cocos-Lua SDK v3.0.05 </a></p>
+</div>
+<div class="section" id="ios">
+<span id="ios"></span><h2>iOS<a class="headerlink" href="#ios" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://cnimg.dataverse.cn/upsdk/UPSDK_iOS_3.0.05_CocosJS.zip">Cocos-JS SDK v3.0.05 </a></p>
+<p><a class="reference external" href="http://cnimg.dataverse.cn/upsdk/UPSDK_iOS_3.0.05_CocosC++.zip">Cocos-C++ SDK v3.0.05 </a></p>
+<p><a class="reference external" href="http://cnimg.dataverse.cn/upsdk/UPSDK_iOS_3.0.05_CocosLua.zip">Cocos-Lua SDK v3.0.05 </a></p>
+</div>
+</div>
+<div class="section" id="layabox">
+<span id="layabox"></span><h1>Layabox<a class="headerlink" href="#layabox" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="android">
+<span id="id1"></span><h2>Android<a class="headerlink" href="#android" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://cnimg.dataverse.cn/upsdk/UPSDK_Layabox_Android_JS_3005.zip">Layabox JavaScript v3.0.05</a></p>
+</div>
+<div class="section" id="ios">
+<span id="id2"></span><h2>iOS<a class="headerlink" href="#ios" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://cnimg.dataverse.cn/upsdk/UPSDK_Layabox_JS_3005.zip">Layabox JavaScript v3.0.05</a></p>
+</div>
+</div>
+<div class="section" id="egret">
+<span id="egret"></span><h1>Egret<a class="headerlink" href="#egret" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="ios">
+<span id="id3"></span><h2>iOS<a class="headerlink" href="#ios" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://cnimg.dataverse.cn/upsdk/UPSDK_iOS_EGret_TS_3006.zip">Egret TypeScript v3.0.06</a></p>
+</div>
+</div>
+<div class="section" id="google-play-services-download">
+<span id="google-play-services-download"></span><h1>Google-Play-Services Download<a class="headerlink" href="#google-play-services-download" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="http://cnimg.dataverse.cn/avidlysdk/gms9.0.0.zip">gms v9.0.0</a></p>
+<p><a class="reference external" href="http://cnimg.dataverse.cn/avidlysdk/gms10.0.1.zip">gms v10.0.1</a></p>
+<p><a class="reference external" href="http://cnimg.dataverse.cn/avidlysdk/gms10.2.6.zip">gms v10.2.6</a></p>
+<p><a class="reference external" href="http://cnimg.dataverse.cn/avidlysdk/gms11.0.1.zip">gms v11.0.1</a></p>
+<p><a class="reference external" href="http://cnimg.dataverse.cn/upsdk/gms11.8.0.zip">gms v11.8.0</a></p>
+<p><a class="reference external" href="http://cnimg.dataverse.cn/upsdk/gms15.0.1.zip">gms v15.0.1</a></p>
+</div>
+<div class="section" id="">
+<span id="id4"></span><h1>更新日志<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h1>
+<p><strong>当前版本号：3.0.05</strong></p>
+<p>| 版本号  | 更新内容  | 日期 |
+| ———— | ———— | ———— |
+| 3.0.05  | 升级 Facebook SDK 4.99.3 | 2018-09-05 |
+| 3.0.04  | 升级 Facebook SDK 4.99.0 | 2018-06-22 |
+| 3.0.03  | 符合GDPR条约 | 2018-05-11 |
+| 3.0.02  | 优化GAID获取方式，提升成功率 | 2018-04-27 |
+| 3.0.01  | 升级 Tapjoy SDK 11.11.1 | 2018-04-03 |
+| 2.1.02  | 升级 Facebook SDK 4.27.2 | 2018-03-09 |
+| 2.1.01  | 新增 Tapjoy 广告联盟 | 2018-02-02 |
+| 2.0.37  | 升级 Vungle SDK 5.3.2 | 2018-01-15 |
+| 2.0.36  | 升级 Facebook SDK 4.26.0 | 2017-12-22 |
+| 2.0.35  | 升级IrSource SDK  6.7.3 | 2017-11-30 |
+| 2.0.34  | 新增Nend、Miao广告联盟 | 2017-11-16 |
+| 2.0.33  | 针对iPhone X优化体验 | 2017-10-27 |
+| 2.0.32  | 新增BatMobi广告联盟 | 2017-10-17 |
+| 2.0.31  | 升级Playable SDK 1.0.5 | 2017-09-19 |
+| 2.0.30  | 新增VK广告联盟 | 2017-09-12 |
+| 2.0.29  | 升级 Vungle SDK 5.1.1 | 2017-09-07 |
+| 2.0.28  | 升级Playable SDK 1.0.3 | 2017-08-30 |
+| 2.0.27  | 回退Facebook SDK 4.23.0 | 2017-08-16 |
+| 2.0.26  | 新增Chartboost广告联盟 | 2017-08-08 |
+| 2.0.25  | 升级Facebook SDK 4.24.0 | 2017-07-18 |
+| 2.0.24  | 新增Inmobi广告联盟 | 2017-07-11 |
+| 2.0.23  | 新增Baidu广告联盟 | 2017-07-09 |
+| 2.0.22  | 新增AppLovin广告联盟 | 2017-07-06 |
+| 2.0.21  | 新增AppNext广告联盟 | 2017-06-29 |
+| 2.0.20  | 修复已知问题 | 2017-06-15 |
+| 2.0.19  | 可自定义选择所需嵌入的广告联盟SDK | 2017-06-14 |
+| 2.0.16  | 修复Admob子线程调用问题和支持WebDNS | 2017-05-23 |
+| 2.0.12 | 新增激励视频广告联盟 | 2017-05-17 |
+| 2.0.11 | 修复部分广告兼容性问题  | 2017-05-16 |</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../chapters/egret_ts.html" class="btn btn-neutral float-right" title="UPSDK Egret TypeScript帮助文档" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../chapters/download.html" class="btn btn-neutral" title="UPSDK 下载" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, upltv
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

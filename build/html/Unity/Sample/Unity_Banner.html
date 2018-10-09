@@ -1,0 +1,332 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Unity Plugin 横幅广告 &mdash; UPInteractive Document  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="GDPR" href="Unity_GDPR.html" />
+    <link rel="prev" title="Unity Plugin 广告展示" href="Unity_AdsShow.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> UPInteractive Document
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/android.html">Android 帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_cpp.html">UPSDK Cocos2d-X Cpp帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_js.html">UPSDK Cocos2d-X JavaScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_lua.html">UPSDK Cocos2d-X Lua帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/download.html">UPSDK 下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/egret_ts.html">UPSDK Egret TypeScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/faq.html">常见问题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/gdpr.html">GDPR支持</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/ios.html">UPSDK IOS帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/layabox_js.html">UPSDK Layabox JavaScript帮助文档</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../chapters/unity.html">Unity Plugin帮助文档</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../API_catalog.html">UnityPlugin API介绍</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Integrate_catalog.html">UnityPlugin 工程接入</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MultiDex_catalog.html">UnityPlugin Androi MultiDex介绍</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../Sample_catalog.html">UnityPlugin API介绍</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Unity_Init.html">Unity Plugin 初始化方法</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Unity_ABTest.html">Unity Plugin A/B Test接口调用</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Unity_AdsLoad.html">Unity Plugin 广告加载</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Unity_AdsShow.html">Unity Plugin 广告展示</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Unity Plugin 横幅广告</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#bannerapi">1.Banner广告展示API</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#">示例代码：</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bannerapi">2.Banner广告隐藏API</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bannerapi">3.Banner广告移除API</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#">示例代码：</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#banner">4.顶部Banner位置调整</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Unity_GDPR.html">GDPR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Unity_Demo.html">Unity Plugin Demo下载</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Unity_Guide.html">UnityPlugin 简介</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Unity_UnityPlugin.html">UnityPlugin 接入帮助</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">UPInteractive Document</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../chapters/unity.html">Unity Plugin帮助文档</a> &raquo;</li>
+        
+          <li><a href="../Sample_catalog.html">UnityPlugin API介绍</a> &raquo;</li>
+        
+      <li>Unity Plugin 横幅广告</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/Unity/Sample/Unity_Banner.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="unity-plugin">
+<span id="unity-plugin"></span><h1>Unity Plugin 横幅广告<a class="headerlink" href="#unity-plugin" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="bannerapi">
+<span id="bannerapi"></span><h2>1.Banner广告展示API<a class="headerlink" href="#bannerapi" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="c1">// 在屏幕顶部显示某个广告位的banner广告</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">showBannerAdAtTop</span><span class="p">(</span><span class="kt">string</span> <span class="n">cpPlaceId</span><span class="p">);</span>
+
+<span class="c1">// 在屏幕底部显示某个广告位的banner广告</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">showBannerAdAtBottom</span><span class="p">(</span><span class="kt">string</span> <span class="n">cpPlaceId</span><span class="p">);</span>
+</pre></div>
+</div>
+<blockquote>
+<div>参数：cpPlaceId，实际广告位，必须正确指定，否则广告无法显示。</div></blockquote>
+</div>
+<div class="section" id="">
+<span id="id1"></span><h2>示例代码：<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<p>通过不同的测试按钮，测试不同的banner广告显示。</p>
+<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="c1">// 在当前窗口顶部，展现一个命名为banner_aaa的banner广告</span>
+<span class="c1">// 如果banner_aaa对应的业务未正确配置，将无法展现广告</span>
+<span class="k">public</span> <span class="k">void</span> <span class="nf">onBtnBanner_Top_Click</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="c1">// 添加对iphonex刘海的适配（根据游戏实际情况决定是否下移）</span>
+    <span class="n">UPSDK</span><span class="p">.</span><span class="n">setTopBannerForIphonex</span><span class="p">(</span><span class="m">32</span><span class="p">);</span>
+    <span class="c1">// 添加对华为P20的适配（根据游戏实际情况决定是否下移）</span>
+    <span class="n">UPSDK</span><span class="p">.</span><span class="n">setTopBannerForHuaWeiP20</span><span class="p">(</span><span class="m">75</span><span class="p">);</span>
+    <span class="c1">// 显示顶部banner</span>
+    <span class="n">UPSDK</span><span class="p">.</span><span class="n">showBannerAdAtTop</span><span class="p">(</span><span class="s">&quot;banner_aaa&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// 在当前窗口底部，展现一个命名为banner_bbb的banner广告</span>
+<span class="c1">// 如果banner_bbb对应的业务未正确配置，将无法展现广告</span>
+<span class="k">public</span> <span class="k">void</span> <span class="nf">onBtnBanner_Bottom_Click</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">UPSDK</span><span class="p">.</span><span class="n">showBannerAdAtBottom</span><span class="p">(</span><span class="s">&quot;banner_bbb&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<blockquote>
+<div>Banner广告不需要判断状态，在合适的时候调用它，SDK会自动加载，关在加载成功后自动填充广告并显示。
+虽然Banner广告是自动填充与显示，但尽可能早地调用它的方法，以便留出足够的时间让SDK完成广告的加载与填充。</div></blockquote>
+</div>
+<div class="section" id="bannerapi">
+<span id="id2"></span><h2>2.Banner广告隐藏API<a class="headerlink" href="#bannerapi" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="c1">// 隐藏屏幕顶部位置的banner广告</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">hideBannerAdAtTop</span><span class="p">();</span>
+
+<span class="c1">// 隐藏屏幕底部位置的banner广告</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">hideBannerAdAtBottom</span><span class="p">();</span>
+</pre></div>
+</div>
+<blockquote>
+<div>Banner广告被隐藏后，可以通过showBannerAdAtTop()或showBannerAdAtBottom()再次显示，不需要重新加载。</div></blockquote>
+</div>
+<div class="section" id="bannerapi">
+<span id="id3"></span><h2>3.Banner广告移除API<a class="headerlink" href="#bannerapi" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="c1">// 根据广告位移除某个Banner广告的资源，重新展示时会再次加载广告资源</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">removeBannerAdAt</span><span class="p">(</span><span class="kt">string</span> <span class="n">cpPlaceId</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="">
+<span id="id4"></span><h2>示例代码：<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="c1">// 将广告位为‘banner_aaa’的顶部Banner移除</span>
+<span class="c1">// 如果banner_aaa对应的广告不存在，则提示移除失败，否则提示成功</span>
+<span class="k">public</span> <span class="k">void</span> <span class="nf">onBtnBanner_TopRemove_Click</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">UPSDK</span><span class="p">.</span><span class="n">removeBannerAdAt</span><span class="p">(</span><span class="s">&quot;banner_aaa&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="banner">
+<span id="banner"></span><h2>4.顶部Banner位置调整<a class="headerlink" href="#banner" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="c1">// 仅对ios iphonex</span>
+<span class="k">void</span> <span class="nf">setTopBannerForIphonex</span><span class="p">(</span><span class="kt">int</span> <span class="n">padding</span><span class="p">);</span>
+<span class="c1">// 仅对华为p20</span>
+<span class="k">void</span> <span class="nf">setTopBannerForHuaWeiP20</span><span class="p">(</span><span class="kt">int</span> <span class="n">padding</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>示例代码：</p>
+<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="c1">// 让IphoneX手机，顶部Banne下移32像素</span>
+<span class="n">UPSDK</span><span class="p">.</span><span class="n">setTopBannerForIphonex</span> <span class="p">(</span><span class="m">32</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Unity_GDPR.html" class="btn btn-neutral float-right" title="GDPR" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Unity_AdsShow.html" class="btn btn-neutral" title="Unity Plugin 广告展示" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, upltv
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

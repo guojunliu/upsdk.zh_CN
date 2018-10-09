@@ -1,0 +1,292 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>一、UPSDK JavaScriptPlugin的目录结构 &mdash; UPInteractive Document  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="copyright" title="Copyright" href="../copyright.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> UPInteractive Document
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../copyright.html">Copyright</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">前言</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/android.html">Android 帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/cocos2dx_cpp.html">UPSDK Cocos2d-X Cpp帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/cocos2dx_js.html">UPSDK Cocos2d-X JavaScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/cocos2dx_lua.html">UPSDK Cocos2d-X Lua帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/download.html">Unity Plugin帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/egret_ts.html">Unity Plugin帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/faq.html">Unity Plugin帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/gdpr.html">Unity Plugin帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/ios.html">UPSDK IOS帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/layabox_js.html">Unity Plugin帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/unity.html">Unity Plugin帮助文档</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">UPInteractive Document</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>一、UPSDK JavaScriptPlugin的目录结构</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/Layabox-Js/LayaBox2Js_Start_ec.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="upsdk-javascriptplugin">
+<span id="upsdk-javascriptplugin"></span><h1>一、UPSDK JavaScriptPlugin的目录结构<a class="headerlink" href="#upsdk-javascriptplugin" title="Permalink to this headline">¶</a></h1>
+<p>针对Eclipse构建的工程，UPSDK以<code class="docutils literal notranslate"><span class="pre">*.jar</span></code>的方式导入到工程中。UPSDK JavaScriptPlugin版本的下载包( <a class="reference external" href="http://ads-sdk-doc.haloapps.com/docs/show/13">Android-LayaboxJsSDK下载</a>)解压后的目录结构如下：</p>
+<p><img alt="" src="http://docs.upltv.com/uploads/201809/5b98f4a1c89a1_5b98f4a1.png" /></p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">Eclipse</span></code>
+此目录主要包含Eclipse工程接入所需的广告依赖库文件。</li>
+<li><code class="docutils literal notranslate"><span class="pre">js</span></code>文件夹
+此目录主要包含一些*.js源码文件，用于桥接当前<code class="docutils literal notranslate"><span class="pre">Layabox</span> <span class="pre">Js</span></code>工程与<code class="docutils literal notranslate"><span class="pre">UPSDK</span></code>广告接口调用。</li>
+<li><code class="docutils literal notranslate"><span class="pre">AndroidStudio</span></code>文件夹
+Eclipse工程请忽略此目录。</li>
+<li><code class="docutils literal notranslate"><span class="pre">proguard-project.txt</span></code>文件
+混淆配置文件，如果当前工程开启混淆功能，请将此文件中的混淆配置添加到工程混淆所依赖的文件中。</li>
+</ul>
+</div>
+<div class="section" id="upsdk">
+<span id="upsdk"></span><h1>二、导入UPSDK主包<a class="headerlink" href="#upsdk" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="upsdk">
+<span id="id1"></span><h2>1.添加UPSDK文件<a class="headerlink" href="#upsdk" title="Permalink to this headline">¶</a></h2>
+<p>以3.0.05版本为例，在<code class="docutils literal notranslate"><span class="pre">upsdk_ads</span></code>目录下，有<code class="docutils literal notranslate"><span class="pre">libs</span></code>，<code class="docutils literal notranslate"><span class="pre">res</span></code>以及<code class="docutils literal notranslate"><span class="pre">assets</span></code>三个目录，请分别将目录下的内容复制到您Eclipse主工程的相应的目录下(如果没有libs目录，则在app文件夹下和src同级的目录中创建libs)。</p>
+<blockquote>
+<div>对于非<em>.so文件，复制时出现重名文件时，请慎重操作：</em><em>仅在重名的文件是AvidlyAdsSdk原有的文件时可以复盖操作。</em>*非此情况下的文件重名冲突时，可以根据经验自行酌情解决(比如res/values/目录下的文件可以重命名)，当然也可以直接与我们的技术反馈问题寻求解决方案。</div></blockquote>
+<p>效果图如下：</p>
+<p><img alt="" src="http://docs.upltv.com/uploads/201809/5b98f614c67d9_5b98f614.png" /></p>
+<blockquote>
+<div><code class="docutils literal notranslate"><span class="pre">UPAdsSdk_LayaJs_3.0.05.jar</span></code>仅作为示例参考说明</div></blockquote>
+</div>
+<div class="section" id="manifestminsdkversiontargetsdkversion">
+<span id="manifestminsdkversiontargetsdkversion"></span><h2>2.检查Manifest中minSdkVersion与targetSdkVersion<a class="headerlink" href="#manifestminsdkversiontargetsdkversion" title="Permalink to this headline">¶</a></h2>
+<p>由于UPSDK中部分方法和广告联盟仅支持sdk 15到sdk 25的设备，所以需要修改项目对应编译版本和最小支持版本。打开项目的manifest文件，设置minSdkVersion和targetSdkVersion，如下：</p>
+<div class="highlight-groovy notranslate"><div class="highlight"><pre><span></span> <span class="o">&lt;</span> <span class="n">uses</span><span class="o">-</span><span class="n">sdk</span> <span class="nl">android:</span><span class="n">minSdkVersion</span><span class="o">=</span><span class="s2">&quot;16&quot;</span> <span class="nl">android:</span><span class="n">targetSdkVersion</span><span class="o">=</span><span class="s2">&quot;25&quot;</span> <span class="o">/&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="so">
+<span id="so"></span><h2>3.确保*.so文件对齐<a class="headerlink" href="#so" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">upsdk_ads</span></code>文件夹下的<code class="docutils literal notranslate"><span class="pre">libs</span></code>目录中提供了如下三种cpu类型的so文件：</p>
+<ul class="simple">
+<li>armeabi</li>
+<li>armeabi-v7a</li>
+<li>x86</li>
+</ul>
+<p>根据您的需要，只要在libs目录下删除当前不需要支持的CPU架构即可。</p>
+</div>
+</div>
+<div class="section" id="">
+<span id="id2"></span><h1>三、添加广告联盟<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="google-ads-sdk">
+<span id="google-ads-sdk"></span><h2>1.添加Google Ads SDK<a class="headerlink" href="#google-ads-sdk" title="Permalink to this headline">¶</a></h2>
+<p>google广告联盟是主要的盈利来源，必须接入到项目中，请参考<strong>添加UPSDK文件</strong>的方式将其添加到您的工程中，效果图如下：</p>
+<p><img alt="" src="http://docs.upltv.com/uploads/201809/5b98f679af237_5b98f679.png" /></p>
+<blockquote>
+<div>特别地，如果您的工程中已经存在与UPSDK所依赖的gms play不同版时，请用更高的版本替换低版本</div></blockquote>
+</div>
+<div class="section" id="">
+<span id="id3"></span><h2>2.添加可选广告联盟<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<p>为了能为您获得最大收益，建议将这些广告联盟需要的组件包都添加到您的项目中。文件夹 <code class="docutils literal notranslate"><span class="pre">optional_ads</span></code> 中是以<code class="docutils literal notranslate"><span class="pre">*.jar</span></code>形式存在的广告联盟依赖文件。请参考<strong>添加UPSDK文件</strong>的方式将其添加到您的工程中，同时AndroidManifest文件中的内容复制到您项目的Manifest文件中。</p>
+</div>
+</div>
+<div class="section" id="android-support">
+<span id="android-support"></span><h1>四、加入 Android Support 支持库<a class="headerlink" href="#android-support" title="Permalink to this headline">¶</a></h1>
+<p>广告的正常展示需要 <code class="docutils literal notranslate"><span class="pre">support</span></code> 库的支持，所以请将其引入到您的项目中。命名为<code class="docutils literal notranslate"><span class="pre">android_support_library</span></code>的文件夹中是需要依赖的文件。请将其中*.jar文件依次加入到项目的libs目录中，目录格式应该如下：</p>
+<p><img alt="" src="http://docs.upltv.com/uploads/201809/5b98f6edd1b61_5b98f6ed.png" /></p>
+</div>
+<div class="section" id="androidmanifest-xml">
+<span id="androidmanifest-xml"></span><h1>五、修改 AndroidManifest.xml 文件<a class="headerlink" href="#androidmanifest-xml" title="Permalink to this headline">¶</a></h1>
+<p>将下载文件夹中的 <code class="docutils literal notranslate"><span class="pre">AndroidManifest.xml</span></code>文件中的内容复制加入到您项目的对应节点中。</p>
+</div>
+<div class="section" id="js">
+<span id="js"></span><h1>六、添加*.Js文件<a class="headerlink" href="#js" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="js">
+<span id="id4"></span><h2>添加*.Js文件到当前项目<a class="headerlink" href="#js" title="Permalink to this headline">¶</a></h2>
+<p>当前Layabox工程是通过<em>.js源文件实现与UPSDK的接口跨平台调用，因此必须将<code class="docutils literal notranslate"><span class="pre">js/src/upltv</span></code>中所有的</em>.js文件复制到当前工程中。</p>
+<p>1)、将<code class="docutils literal notranslate"><span class="pre">upltv</span></code>拷贝到Layabox工程的src文件夹下，只留.js文件。</p>
+<p>2)、在Layabox工程的bin文件夹下的index.html中加入<code class="docutils literal notranslate"><span class="pre">UPLTV.js</span></code>,<code class="docutils literal notranslate"><span class="pre">UPLTVIos.js</span></code>的script引用。</p>
+<p>如下图所示</p>
+<p><img alt="" src="http://docs.upltv.com/uploads/201809/5b98f2c8af661_5b98f2c8.png" /></p>
+</div>
+</div>
+<div class="section" id="proguard">
+<span id="proguard"></span><h1>七、修改 Proguard<a class="headerlink" href="#proguard" title="Permalink to this headline">¶</a></h1>
+<p>如果您的项目开启了混淆功能，请将 <code class="docutils literal notranslate"><span class="pre">proguard-project.txt</span></code> 文件中的内容复制粘贴到当前项目使用的 混淆配置文件中，否则会因为混淆的原因导致程序无法找到类文件出现崩溃异常。</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; <a href="../copyright.html">Copyright</a> 2018, upltv
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,469 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>API说明 &mdash; UPInteractive Document  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="回调接口" href="Unity_CallBack.html" />
+    <link rel="prev" title="UnityPlugin API介绍" href="../API_catalog.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> UPInteractive Document
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/android.html">Android 帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_cpp.html">UPSDK Cocos2d-X Cpp帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_js.html">UPSDK Cocos2d-X JavaScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_lua.html">UPSDK Cocos2d-X Lua帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/download.html">UPSDK 下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/egret_ts.html">UPSDK Egret TypeScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/faq.html">常见问题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/gdpr.html">GDPR支持</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/ios.html">UPSDK IOS帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/layabox_js.html">UPSDK Layabox JavaScript帮助文档</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../chapters/unity.html">Unity Plugin帮助文档</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../API_catalog.html">UnityPlugin API介绍</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">API说明</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#upsdk-unity-plugin">UPSDK Unity Plugin类引用</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#upsdk-api">UPSDK API</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#">需要特殊说明的方法</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Unity_CallBack.html">回调接口</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Integrate_catalog.html">UnityPlugin 工程接入</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MultiDex_catalog.html">UnityPlugin Androi MultiDex介绍</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Sample_catalog.html">UnityPlugin API介绍</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Unity_Guide.html">UnityPlugin 简介</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Unity_UnityPlugin.html">UnityPlugin 接入帮助</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">UPInteractive Document</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../chapters/unity.html">Unity Plugin帮助文档</a> &raquo;</li>
+        
+          <li><a href="../API_catalog.html">UnityPlugin API介绍</a> &raquo;</li>
+        
+      <li>API说明</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/Unity/API/Unity_API.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="api">
+<span id="api"></span><h1>API说明<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="upsdk-unity-plugin">
+<span id="upsdk-unity-plugin"></span><h2>UPSDK Unity Plugin类引用<a class="headerlink" href="#upsdk-unity-plugin" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">using</span> <span class="nn">Polymer.PolyADSDK</span> <span class="p">;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="upsdk-api">
+<span id="upsdk-api"></span><h2>UPSDK API<a class="headerlink" href="#upsdk-api" title="Permalink to this headline">¶</a></h2>
+<p>版本3003，我们修改了Unity Plugin的访问类为<code class="docutils literal notranslate"><span class="pre">UPSDK.cs</span></code>，但依然兼容了<code class="docutils literal notranslate"><span class="pre">PolyADSDK.cs</span></code>所有的方法与回调接口。
+因此对于3003及更高的版本，建议使用UPSDK类调用Unity Plugin的所有API与回调接口。</p>
+<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<span class="cm">* 获取当前插件的版本号</span>
+<span class="cm">*/</span>
+<span class="k">public</span> <span class="k">static</span> <span class="kt">string</span> <span class="nf">getVersionOfPlugin</span><span class="p">();</span>
+
+<span class="cm">/*</span>
+<span class="cm">* 获取当前插件所支持平台的版本号</span>
+<span class="cm">* 仅支持ios与android平台，运行时根据编译环境自动匹</span>
+<span class="cm">*/</span>
+<span class="k">public</span> <span class="k">static</span> <span class="kt">string</span> <span class="nf">getVersionOfPlatform</span><span class="p">();</span>
+
+<span class="cm">/*</span>
+<span class="cm">* 初始化 UPSDK</span>
+<span class="cm">* 2030以前的版本，请用此方法初始化</span>
+<span class="cm">*/</span>
+<span class="k">public</span> <span class="k">static</span> <span class="kt">string</span> <span class="nf">initPolyAdSDK</span><span class="p">();</span>
+
+<span class="cm">/*</span>
+<span class="cm">* 初始化 UPSDK</span>
+<span class="cm">* @param zone:0，海外；1，中国大陆；2，自动根据ip判断用户类型</span>
+<span class="cm">* 如果使用常量类型，自3003开始请通过UPConstant类调用常量：SDKZONE_FOREIGN,SDKZONE_CHINA,SDKZONE_AUTO；</span>
+<span class="cm">* 3003以前的版本仍然通过PolyADSDK类调用以上常量。</span>
+<span class="cm">* 2030及以后的版本，请用此方法初始化</span>
+<span class="cm">*/</span>
+<span class="k">public</span> <span class="k">static</span> <span class="kt">string</span> <span class="nf">initPolyAdSDK</span><span class="p">(</span><span class="kt">int</span> <span class="n">zone</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm">* 初始化avidly的聚合广告abtest配置</span>
+<span class="cm">*</span>
+<span class="cm">* @param gameAccountId        用户在游戏中的帐号id（必填）</span>
+<span class="cm">* @param completeTask         是否完成了游戏中的新手任务</span>
+<span class="cm">* @param isPaid               是否付费用户，0则未付费</span>
+<span class="cm">* @param promotionChannelName 推广渠道，没有可以传 &quot;&quot;</span>
+<span class="cm">* @param gender               &quot;M&quot;, &quot;F&quot;，未知可以传&quot;&quot;</span>
+<span class="cm">* @param age                  未知可以传-1</span>
+<span class="cm">* @param tags                 标签，没有可以传 null</span>
+<span class="cm">*/</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">initAbtConfigJson</span><span class="p">(</span><span class="kt">string</span> <span class="n">gameAccountId</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">completeTask</span><span class="p">,</span> <span class="kt">int</span> <span class="n">isPaid</span><span class="p">,</span> <span class="kt">string</span> <span class="n">promotionChannelName</span><span class="p">,</span>  <span class="kt">string</span> <span class="n">gender</span><span class="p">,</span> <span class="kt">int</span> <span class="n">age</span><span class="p">,</span> <span class="kt">string</span><span class="p">[]</span> <span class="n">tags</span><span class="p">)</span> <span class="p">;</span>
+
+<span class="cm">/*</span>
+<span class="cm">* 获取abtest配置</span>
+<span class="cm">* 返回结果为Json字符串，可能为null</span>
+<span class="cm">* 调用此API前，请调用initAbtConfigJson()完成abtest配置的初始化</span>
+<span class="cm">*/</span>
+<span class="k">public</span> <span class="k">static</span> <span class="kt">string</span> <span class="nf">getAbtConfig</span><span class="p">(</span><span class="kt">string</span> <span class="n">placementId</span><span class="p">);</span>
+ 
+ <span class="cm">/*</span>
+<span class="cm"> * 判断插屏广告是否可以显示</span>
+<span class="cm"> */</span>
+<span class="k">public</span> <span class="k">static</span> <span class="kt">bool</span> <span class="nf">isInterstitialReady</span><span class="p">(</span><span class="kt">string</span> <span class="n">cpPlaceId</span><span class="p">);</span>
+
+<span class="cm">/*</span>
+<span class="cm">* 判断激励视屏是否可以加载播放</span>
+<span class="cm">* 请不要在代码中持续不断地调用此方法来实现某个特定目标，如更新UI按钮的状态。对于这种情况，请用setRewardVideoLoadCallback()设置回调监听。</span>
+<span class="cm">*/</span>
+<span class="k">public</span> <span class="k">static</span> <span class="kt">bool</span> <span class="nf">isRewardReady</span><span class="p">();</span>
+
+<span class="cm">/*</span>
+<span class="cm">* 显示激励视屏，参数cpCustomId为CP自定义标识，不能为空(广告无法显示)</span>
+<span class="cm">*/</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">showRewardAd</span><span class="p">(</span><span class="kt">string</span> <span class="n">cpCustomId</span><span class="p">);</span>
+
+<span class="cm">/*</span>
+<span class="cm">* 显示插屏广告</span>
+<span class="cm">* 参数cpPlaceId为广告位标识，设置错误会无法显示广告</span>
+<span class="cm">* 2037开始，替换拼写错误方法：showIntersitialAd()</span>
+<span class="cm">*/</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">showInterstitialAd</span><span class="p">(</span><span class="kt">string</span> <span class="n">cpPlaceId</span><span class="p">);</span>
+
+<span class="cm">/*</span>
+<span class="cm">* 在屏幕顶部显示长条型横幅（Banner）广告</span>
+<span class="cm">* 参数 cpPlaceId为广告位标识，设置错误会无法显示广告</span>
+<span class="cm">*/</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">showBannerAdAtTop</span><span class="p">(</span><span class="kt">string</span> <span class="n">cpPlaceId</span><span class="p">);</span>
+
+<span class="cm">/*</span>
+<span class="cm">* 在屏幕底部显示长条型横幅（Banner）广告</span>
+<span class="cm">*/</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">showBannerAdAtBottom</span><span class="p">(</span><span class="kt">string</span> <span class="n">cpPlaceId</span><span class="p">);</span>
+
+<span class="cm">/*</span>
+<span class="cm"> * 隐藏当前顶部的Banner广告</span>
+<span class="cm"> * 无须区分广告位</span>
+<span class="cm"> * 再次展示时，需要调用showBannerAdAtTop()</span>
+<span class="cm"> * from 2037开始支持</span>
+<span class="cm"> */</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">hideBannerAdAtTop</span><span class="p">();</span>
+
+<span class="cm">/*</span>
+<span class="cm"> * 隐藏当前底部的Banner广告</span>
+<span class="cm"> * 无须区分广告位</span>
+<span class="cm"> * 再次展示时，需要调用showBannerAdAtBottom()</span>
+<span class="cm"> * from 2037开始支持</span>
+<span class="cm"> */</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">hideBannerAdAtBottom</span><span class="p">();</span>
+
+<span class="cm">/*</span>
+<span class="cm">* 删除某条横幅（Banner）广告</span>
+<span class="cm">*/</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">removeBannerAdAt</span><span class="p">(</span><span class="kt">string</span> <span class="n">cpPlaceId</span><span class="p">);</span>
+
+<span class="cm">/*</span>
+<span class="cm">* 设置Android平台 manifest.xml中所定义的packagename</span>
+<span class="cm">* 2031以后，此方法被废弃，UPSDK初始化后不需要再调用</span>
+<span class="cm">*/</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">setManifestPackageName</span><span class="p">(</span><span class="kt">string</span> <span class="n">packagename</span><span class="p">);</span>
+
+<span class="cm">/*</span>
+<span class="cm">* 显示退出广告（对于Android平台有效）</span>
+<span class="cm">*/</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">onBackPressed</span><span class="p">();</span>
+
+<span class="cm">/*</span>
+<span class="cm"> * upltv激励视屏广告加载回调接口</span>
+<span class="cm"> * @param success 第一个参数，加载成功后的回调</span>
+<span class="cm"> * @param fail 第二个参数，加载失败后的回调</span>
+<span class="cm"> * </span>
+<span class="cm"> * 回调参数类型：Action&amp;lt;string,string&gt;</span>
+<span class="cm"> * 第一个为cpPlaceId，广告位，可能为空或null；第二个参数为描述信息，可能为空或null</span>
+<span class="cm"> * supported from 2028</span>
+<span class="cm"> */</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">setRewardVideoLoadCallback</span><span class="p">(</span><span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">string</span><span class="p">,</span><span class="kt">string</span><span class="p">&gt;</span> <span class="n">success</span><span class="p">,</span> <span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">fail</span><span class="p">);</span>
+
+<span class="cm">/*</span>
+<span class="cm"> * upltv插屏广告加载回调接口</span>
+<span class="cm"> * @param cpPlaceId: 第一个参数，插屏广告位标识符，不能为空或null</span>
+<span class="cm"> * @param success 第二个参数，加载成功后的回调</span>
+<span class="cm"> * @param fail 第三个参数，加载失败后的回调</span>
+<span class="cm"> * </span>
+<span class="cm"> * 回调参数类型：Action&amp;lt;string,string&gt;</span>
+<span class="cm"> * 第一个为cpPlaceId，广告位，可能为空或null；第二个参数为描述信息，可能为空或null</span>
+<span class="cm"> * supported from 2028</span>
+<span class="cm"> */</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">setIntersitialLoadCallback</span><span class="p">(</span><span class="kt">string</span> <span class="n">cpPlaceId</span><span class="p">,</span> <span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">string</span><span class="p">,</span><span class="kt">string</span><span class="p">&gt;</span> <span class="n">success</span><span class="p">,</span> <span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">fail</span><span class="p">)</span>
+
+<span class="cm">/*</span>
+<span class="cm"> * 用于展示upltv的激励视屏广告调试界面</span>
+<span class="cm"> * supported from 2028</span>
+<span class="cm"> */</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">showRewardDebugView</span><span class="p">();</span>
+
+<span class="cm">/*</span>
+<span class="cm"> * 用于展示avidly的插屏广告调试界面</span>
+<span class="cm"> * supported from 2028</span>
+<span class="cm"> */</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">showInterstitialDebugView</span><span class="p">();</span>
+
+<span class="cm">/**</span>
+<span class="cm">* 满足需求：不希望在初始化自动加载广告，且要求根据游戏自主选择合适的时机进行广告加载</span>
+<span class="cm">* 运行条件：当sdk默认禁用广告自动加载的功能，且upltv后台云配也关闭此功能时</span>
+<span class="cm">* 如果以上条件不成立，即使调用以下方法，SDK也会自动忽略</span>
+<span class="cm">* supported from 3002</span>
+<span class="cm">*/</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">loadAvidlyAdsByManual</span><span class="p">()</span> <span class="p">;</span>
+
+<span class="cm">/**</span>
+<span class="cm">* 对Iphonex手机，顶部Banner被状态栏遮挡时，可以通过调节顶部Banner的偏移值，解决此问题</span>
+<span class="cm">* @param padding: 顶部Banner的偏移值，如32，则状态样会向下偏移32像素</span>
+<span class="cm">* Android平台不支持此功能</span>
+<span class="cm">* supported from 3002</span>
+<span class="cm">*/</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">setTopBannerForIphonex</span><span class="p">(</span><span class="kt">int</span> <span class="n">padding</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * 对Android 华为P20手机，顶部Banner被状态栏遮挡时，可以通过调节顶部Banner的偏移值，解决此问题</span>
+<span class="cm"> * @param padding: 顶部Banner的偏移值，如75，则状态样会向下偏移75像素</span>
+<span class="cm"> * supported from 3004</span>
+<span class="cm"> */</span>
+ <span class="k">public</span> <span class="k">void</span> <span class="nf">setTopBannerForHuaWeiP20</span><span class="p">(</span><span class="kt">int</span> <span class="n">padding</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm">* 弹出授权窗口，向用户说明重要数据收集的情况并询问用户是否同意授权</span>
+<span class="cm">* 如果用户拒绝授权将放弃相关数据的收集</span>
+<span class="cm">* 可以在初始UPSDK之前调用</span>
+<span class="cm">* @param callback</span>
+<span class="cm">* Version 3003 and above support this method</span>
+<span class="cm">*/</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">notifyAccessPrivacyInfoStatus</span><span class="p">(</span><span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">UPConstant</span><span class="p">.</span><span class="n">UPAccessPrivacyInfoStatusEnum</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">callback</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm">* 外部进行GDPR授权时，将用户授权结果同步到UPSDK时，调用此方法</span>
+<span class="cm">* 可以在初始UPSDK之前调用</span>
+<span class="cm">* @param enumValue</span>
+<span class="cm">* Version 3003 and above support this method</span>
+<span class="cm">*/</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">updateAccessPrivacyInfoStatus</span><span class="p">(</span><span class="n">UPConstant</span><span class="p">.</span><span class="n">UPAccessPrivacyInfoStatusEnum</span> <span class="n">enumValue</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm">* 获取用户授权结果，可以在初始UPSDK之前调用</span>
+<span class="cm">* return UPConstant.UPAccessPrivacyInfoStatusEnum</span>
+<span class="cm">* Version 3003 and above support this method</span>
+<span class="cm">*/</span>
+<span class="k">public</span> <span class="k">static</span> <span class="n">UPConstant</span><span class="p">.</span><span class="n">UPAccessPrivacyInfoStatusEnum</span> <span class="n">getAccessPrivacyInfoStatus</span><span class="p">();</span>
+
+<span class="cm">/**</span>
+<span class="cm">* 判断用户是否属于欧盟地区</span>
+<span class="cm">* 异步回调，可以在初始UPSDK之前调用</span>
+<span class="cm">* Version 3003 and above support this method</span>
+<span class="cm">*/</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">isEuropeanUnionUser</span><span class="p">(</span><span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">bool</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">callback</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="">
+<span id="id1"></span><h2>需要特殊说明的方法<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="">
+<span id="id2"></span><h3>1. 仅支持条型横幅广告<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h3>
+<p>在插件模式下，<strong>仅支持条型横幅广告</strong>，而且显示位置固定在当前窗口的<strong>顶部或底部</strong>！</p>
+</div>
+<div class="section" id="setmanifestpackagename-string-packagename">
+<span id="setmanifestpackagename-string-packagename"></span><h3>2. <strong>setManifestPackageName</strong>(string packagename)<a class="headerlink" href="#setmanifestpackagename-string-packagename" title="Permalink to this headline">¶</a></h3>
+<p>此API仅适用于Android，对于2031以下的版本非常重要。当AndroidManifest中,Application所设置的package name与实际打包的名字不一样时，请务必通过此API向SDK设置<strong>AndroidManifest</strong>所对应的<strong>package name</strong>!!!</p>
+</div>
+<div class="section" id="">
+<span id="id3"></span><h3>3. 退出广告<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h3>
+<p>当用户即将退出当前游戏时，调用<strong>onBackPressed()</strong>，可以显示一个广告页面。</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Unity_CallBack.html" class="btn btn-neutral float-right" title="回调接口" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../API_catalog.html" class="btn btn-neutral" title="UnityPlugin API介绍" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, upltv
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

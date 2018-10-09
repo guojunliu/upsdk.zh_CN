@@ -1,0 +1,304 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>激励视频 &mdash; UPInteractive Document  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="GDPR" href="Egret2TS_Sample_gdpr.html" />
+    <link rel="prev" title="插屏广告" href="Egret2TS_Sample_inter.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> UPInteractive Document
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/android.html">Android 帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_cpp.html">UPSDK Cocos2d-X Cpp帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_js.html">UPSDK Cocos2d-X JavaScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_lua.html">UPSDK Cocos2d-X Lua帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/download.html">UPSDK 下载</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../chapters/egret_ts.html">UPSDK Egret TypeScript帮助文档</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../Integrate_help_catalog .html">TypeScriptPlugin 接入帮助</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../Sample_catalog.html">TypeScript 使用文档</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Egret2TS_Sample_init.html">SDK初始化</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Egret2TS_Sample_abtest.html">A/B Test接口调用</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Egret2TS_Sample_banner.html">横幅广告</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Egret2TS_Sample_inter.html">插屏广告</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">激励视频</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#">1. 激励视频加载回调</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#">2. 激励视频展示回调</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#">3. 判断激励视频加载状态</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#">4. 展示激励视频</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#">5. 激励视频调试模式</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Egret2TS_Sample_gdpr.html">GDPR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Egret2TS_Sample_demo.html">Demo下载</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/faq.html">常见问题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/gdpr.html">GDPR支持</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/ios.html">UPSDK IOS帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/layabox_js.html">UPSDK Layabox JavaScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/unity.html">Unity Plugin帮助文档</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">UPInteractive Document</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../chapters/egret_ts.html">UPSDK Egret TypeScript帮助文档</a> &raquo;</li>
+        
+          <li><a href="../Sample_catalog.html">TypeScript 使用文档</a> &raquo;</li>
+        
+      <li>激励视频</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/Egret-Ts/Sample/Egret2TS_Sample_video.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="">
+<span id="id1"></span><h1>激励视频<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="">
+<span id="id2"></span><h2>1. 激励视频加载回调<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<p>该API用于监听当前激励视频的加载结果，此接口一旦回调，内部会自动释放，再次监听时需要重新设定回调接口。</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// 获取激励视屏加载结果</span>
+<span class="c1">// 回调参数：加载结果（成功或失败，只有一个有值）</span>
+    <span class="kr">static</span> <span class="nx">getRewardAdLoadResult</span><span class="p">(</span><span class="nx">success</span><span class="o">:</span><span class="p">(</span><span class="nx">cpPlaceId</span><span class="o">:</span><span class="nx">string</span><span class="p">,</span><span class="nx">message</span><span class="o">:</span><span class="nx">string</span><span class="p">)=&gt;</span><span class="k">void</span><span class="p">,</span><span class="nx">failure</span><span class="o">:</span><span class="p">(</span><span class="nx">cpPlaceId</span><span class="o">:</span><span class="nx">string</span><span class="p">,</span><span class="nx">message</span><span class="o">:</span><span class="nx">string</span><span class="p">)=&gt;</span><span class="k">void</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>示例代码：</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">upltv</span><span class="p">.</span><span class="nx">getRewardAdLoadResult</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">cpid</span><span class="o">:</span><span class="nx">string</span><span class="p">,</span><span class="nx">msg</span><span class="o">:</span><span class="nx">string</span><span class="p">){</span>
+<span class="c1">//success</span>
+<span class="p">},</span><span class="kd">function</span><span class="p">(</span><span class="nx">cpid</span><span class="o">:</span><span class="nx">string</span><span class="p">,</span> <span class="nx">msg</span><span class="o">:</span><span class="nx">string</span><span class="p">){</span>
+<span class="c1">//failure</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="">
+<span id="id3"></span><h2>2. 激励视频展示回调<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<p>设置激励视屏展示回调接口，用于监听激励视屏广告的在某次展示时(如点击，关闭，奖励发放等)事件回调。激励视频展示回调接口的引用会被内部保存，不会释放，因此只须设置一次。</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// 展示回调</span>
+<span class="c1">// 回调参数：广告位</span>
+    <span class="kr">static</span> <span class="nx">rewardAdDidOpen</span><span class="p">(</span><span class="nx">callback</span><span class="o">:</span><span class="p">(</span><span class="nx">cpPlaceId</span><span class="o">:</span><span class="nx">string</span><span class="p">)=&gt;</span><span class="k">void</span><span class="p">)</span>
+<span class="c1">//点击回调</span>
+    <span class="kr">static</span> <span class="nx">rewardAdDidClick</span><span class="p">(</span><span class="nx">callback</span><span class="o">:</span><span class="p">(</span><span class="nx">cpPlaceId</span><span class="o">:</span><span class="nx">string</span><span class="p">)=&gt;</span><span class="k">void</span><span class="p">)</span>
+<span class="c1">//关闭回调</span>
+    <span class="kr">static</span> <span class="nx">rewardAdDidClose</span><span class="p">(</span><span class="nx">callback</span><span class="o">:</span><span class="p">(</span><span class="nx">cpPlaceId</span><span class="o">:</span><span class="nx">string</span><span class="p">)=&gt;</span><span class="k">void</span><span class="p">)</span>
+<span class="c1">//激励发放成功回调</span>
+    <span class="kr">static</span> <span class="nx">rewardAdDidGiven</span><span class="p">(</span><span class="nx">callback</span><span class="o">:</span><span class="p">(</span><span class="nx">cpPlaceId</span><span class="o">:</span><span class="nx">string</span><span class="p">)=&gt;</span><span class="k">void</span><span class="p">)</span>
+<span class="c1">//激励发放失败回调</span>
+    <span class="kr">static</span> <span class="nx">rewardAdDidAbandon</span><span class="p">(</span><span class="nx">callback</span><span class="o">:</span><span class="p">(</span><span class="nx">cpPlaceId</span><span class="o">:</span><span class="nx">string</span><span class="p">)=&gt;</span><span class="k">void</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="">
+<span id="id4"></span><h2>3. 判断激励视频加载状态<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<p>判断激励视屏是否加载成功，并同步返回boolean结果，true表示广告准备就绪可以展示，false表示广告还在请求中无法展示。</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// 回调参数：true 表示广告准备就绪可以展示，false表示广告还在请求中无法展示</span>
+<span class="c1">// 通常在showRewardVideo(cpPlaceId)前，调用此方法</span>
+    <span class="kr">static</span> <span class="nx">isRewardAdReady</span><span class="p">(</span><span class="nx">callback</span><span class="o">:</span><span class="p">(</span><span class="nx">ready</span><span class="o">:</span><span class="kr">boolean</span><span class="p">)=&gt;</span><span class="k">void</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="">
+<span id="id5"></span><h2>4. 展示激励视频<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<p>在激励视频展示的时候，需要上传一个cpPlaceId，这是激励视频的广告位，用于业务打点，以便于区分收益来源。</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// 展示激励视屏</span>
+<span class="c1">// 参数cpPlaceId：激励视屏展示时的广告位，用于业务打点，便于区分收益来源</span>
+    <span class="kr">static</span> <span class="nx">showRewardAd</span><span class="p">(</span><span class="nx">cpPlaceId</span><span class="o">:</span><span class="nx">string</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="">
+<span id="id6"></span><h2>5. 激励视频调试模式<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<p>为了方便开发者查看广告的使用和加载状态，我们提供了激励视频的调试页面，可以通过以下方法打开此界面观察激励视频的配置参数与加载状态。</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// 打开激励视屏的debug界面</span>
+    <span class="kr">static</span> <span class="nx">showRewardAdDebugUI</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Egret2TS_Sample_gdpr.html" class="btn btn-neutral float-right" title="GDPR" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Egret2TS_Sample_inter.html" class="btn btn-neutral" title="插屏广告" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, upltv
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,343 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>横幅广告-自定义 &mdash; UPInteractive Document  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="CocoaPods 接入帮助" href="../IOS_CocoaPods.html" />
+    <link rel="prev" title="横幅广告-快速集成" href="IOS_Banner_default.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> UPInteractive Document
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/android.html">Android 帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_cpp.html">UPSDK Cocos2d-X Cpp帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_js.html">UPSDK Cocos2d-X JavaScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_lua.html">UPSDK Cocos2d-X Lua帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/download.html">UPSDK 下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/egret_ts.html">UPSDK Egret TypeScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/faq.html">常见问题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/gdpr.html">GDPR支持</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../chapters/ios.html">UPSDK IOS帮助文档</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../Banner_catalog.html">横幅广告</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="IOS_Banner_default.html">横幅广告-快速集成</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">横幅广告-自定义</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#banner">引入Banner的头文件</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#wrapper">实例化Wrapper对象</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#">构造方法：</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#banner">Banner回调协议</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#">内存回收：</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../IOS_CocoaPods.html">CocoaPods 接入帮助</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../IOS_Demo.html">Demo 下载</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../IOS_GDPR.html">GDPR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../IOS_Init.html">SDK初始化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../IOS_Inter.html">插屏广告</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../IOS_Reward.html">激励视频</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../IOS_Xcode.html">XCode</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/layabox_js.html">UPSDK Layabox JavaScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/unity.html">Unity Plugin帮助文档</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">UPInteractive Document</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../chapters/ios.html">UPSDK IOS帮助文档</a> &raquo;</li>
+        
+          <li><a href="../Banner_catalog.html">横幅广告</a> &raquo;</li>
+        
+      <li>横幅广告-自定义</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/IOS/Banner/IOS_Banner_custom.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="">
+<span id="id1"></span><h1>横幅广告-自定义<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h1>
+<p>UPSDK提供两种横幅(Banner)广告的封装实现，一种是基于<em>UPBannerStripWrapper</em>类的长条形广告，另一种是基于<em>UPBannerRectangleWrapper</em>的矩形广告。使用时请根据实际情况，实例化广告相应的Wrapper类。接入过程，请参考如下步骤：</p>
+<div class="section" id="banner">
+<span id="banner"></span><h2>引入Banner的头文件<a class="headerlink" href="#banner" title="Permalink to this headline">¶</a></h2>
+<p>Banner两个类型的头文件，分别是：UPBannerStripWrapper.h与UPBannerRectangleWrapper.h。头文件的引入方式如下：</p>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#import   &amp;lt;UPSDK/UPSDK.h&gt;</span>
+</pre></div>
+</div>
+<p><br></p>
+</div>
+<div class="section" id="wrapper">
+<span id="wrapper"></span><h2>实例化Wrapper对象<a class="headerlink" href="#wrapper" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div>特别说明：以下【广告位】可由接入方向<strong>我方技术支持同事询问</strong>。不同广告使用场景请尽量保持【广告位】的独立性，方便未来区分不同广告展示的收益来源。例如：在暂停界面中初始化广告时，【广告位】可传入”Pause” or “Menu”</div></blockquote>
+</div>
+<div class="section" id="">
+<span id="id2"></span><h2>构造方法：<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<p>此方法构造的banner对象，可以自由控制banner view的显示位置，因此实现过程比构造方法多一此view的布局与控制操作。</p>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* 参数说明</span>
+<span class="cm">* 1. avidPlacement：不能为空，广告位，NSString类型，用于来标识广告的类型</span>
+<span class="cm">* 2. vc：不能为空，UIViewController对象，用于控制Banner跳转</span>
+<span class="cm">*/</span>
+<span class="p">-</span> <span class="p">(</span><span class="kt">instancetype</span><span class="p">)</span><span class="nf">initWithPlacement:</span><span class="p">(</span><span class="bp">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">avidPlacement</span> <span class="nf">controller:</span><span class="p">(</span><span class="bp">UIViewController</span><span class="o">*</span><span class="p">)</span><span class="nv">vc</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>使用示例：
+在某个ViewController.m中，初始化一个矩形的Banner对象并设置回调代理。</p>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">viewDidLoad</span> <span class="p">{</span>
+    <span class="c1">// …</span>
+    <span class="c1">// 初始化wrapper对象</span>
+    <span class="n">_bottomRectBanner</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UPBannerRectangleWrapper</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithPlacement</span><span class="p">:</span><span class="s">@&quot;banner_rect_bottom” controller:self];</span>
+    <span class="c1">// 设置代理回调对象</span>
+    <span class="n">_bottomRectBanner</span><span class="p">.</span><span class="n">delegate</span> <span class="o">=</span> <span class="nb">self</span><span class="p">;</span>
+    <span class="c1">// 初始化一个用于显示banner广告的UIView，size未知</span>
+    <span class="n">_bannerRectView</span> <span class="o">=</span> <span class="p">[[</span><span class="bp">UIView</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithFrame</span><span class="p">:</span><span class="n">CGRectMake</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)];</span>
+    <span class="p">[</span><span class="nb">self</span><span class="p">.</span><span class="n">view</span> <span class="nl">addSubview</span><span class="p">:</span><span class="n">_bannerRectView</span><span class="p">];</span>
+    <span class="c1">// 获取广告的UIView对象，并装载</span>
+    <span class="bp">UIView</span> <span class="o">*</span><span class="n">view</span> <span class="o">=</span> <span class="p">[</span><span class="n">_bottomRectBanner</span> <span class="n">getView</span><span class="p">];</span>
+    <span class="p">[</span><span class="n">_bannerRectView</span> <span class="nl">addSubview</span><span class="p">:</span><span class="n">view</span><span class="p">];</span>
+    <span class="c1">// …</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><br></p>
+</div>
+<div class="section" id="banner">
+<span id="id3"></span><h2>Banner回调协议<a class="headerlink" href="#banner" title="Permalink to this headline">¶</a></h2>
+<p>UPBannerWrapperProtocol是Banner回调监听协议，主要有以下两个接口回调。</p>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">bannerAdClick:</span><span class="p">(</span><span class="kt">id</span><span class="p">)</span><span class="nv">wrapper</span><span class="p">;</span>
+
+<span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">bannerAdDidShow:</span><span class="p">(</span><span class="kt">id</span><span class="p">)</span><span class="nv">wrapper</span> <span class="nf">size:</span><span class="p">(</span><span class="bp">CGSize</span><span class="p">)</span><span class="nv">size</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>接口说明如下：</p>
+<ol class="simple">
+<li>-(void)bannerAdClick:(id)wrapper
+用于监听banner是否被点击，当banner被用户点击跳转时，wrapper会给此接口发消息</li>
+<li>-(void)bannerAdDidShow:(id)wrapper size:(CGSize)size;
+当banner可被显示时，wrapper会给此接口发消息，参数size是当前被显示的banner的实际大小。通常通过此接口，完成banner的布局调整。</li>
+</ol>
+<p>接口实现示例：</p>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm"> *  广告展示完成</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @param wrapper 广告对象</span>
+<span class="cm"> */</span>
+<span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">bannerAdDidShow:</span><span class="p">(</span><span class="kt">id</span><span class="p">)</span><span class="nv">wrapper</span> <span class="nf">size:</span><span class="p">(</span><span class="bp">CGSize</span><span class="p">)</span><span class="nv">size</span><span class="p">{</span>
+    <span class="c1">// 判断wrapper对象是否是期望的对象</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">_bottomRectBanner</span> <span class="o">==</span> <span class="n">wrapper</span><span class="p">){</span>
+        <span class="bp">CGRect</span> <span class="n">frame</span> <span class="o">=</span> <span class="n">_bannerRectView</span><span class="p">.</span><span class="n">frame</span><span class="p">;</span>
+        <span class="n">frame</span><span class="p">.</span><span class="n">size</span> <span class="o">=</span> <span class="n">size</span><span class="p">;</span>
+        <span class="c1">// 让_bannerRectView水平居中，垂直靠底显示在父类中</span>
+        <span class="n">frame</span><span class="p">.</span><span class="n">origin</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="nb">self</span><span class="p">.</span><span class="n">view</span><span class="p">.</span><span class="n">frame</span><span class="p">.</span><span class="n">size</span><span class="p">.</span><span class="n">width</span> <span class="o">-</span> <span class="n">frame</span><span class="p">.</span><span class="n">size</span><span class="p">.</span><span class="n">width</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span>
+        <span class="n">frame</span><span class="p">.</span><span class="n">origin</span><span class="p">.</span><span class="n">y</span> <span class="o">=</span> <span class="nb">self</span><span class="p">.</span><span class="n">view</span><span class="p">.</span><span class="n">frame</span><span class="p">.</span><span class="n">size</span><span class="p">.</span><span class="n">height</span> <span class="o">-</span> <span class="n">frame</span><span class="p">.</span><span class="n">size</span><span class="p">.</span><span class="n">height</span><span class="p">;</span>
+        <span class="n">_bannerRectView</span><span class="p">.</span><span class="n">frame</span> <span class="o">=</span> <span class="n">frame</span><span class="p">;</span>
+        <span class="c1">// _bannerRectView设置为显示</span>
+        <span class="n">_bannerRectView</span><span class="p">.</span><span class="n">hidden</span> <span class="o">=</span> <span class="nb">NO</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+
+<span class="cm">/**</span>
+<span class="cm"> *  广告被点击</span>
+<span class="cm"> *</span>
+<span class="cm"> *  @param wrapper wrapper的实例对象对象</span>
+<span class="cm"> */</span>
+<span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">bannerAdClick:</span><span class="p">(</span><span class="kt">id</span><span class="p">)</span><span class="nv">wrapper</span><span class="p">{</span>
+    <span class="c1">// 示例中此处不重要</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><br></p>
+</div>
+<div class="section" id="">
+<span id="id4"></span><h2>内存回收：<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">当banner视图所在的ViewController被销毁时(例如在界面中被移除，从nav中被pop，内存被回收)，请同时将banner对象置为nil，以回收内存</span></code></p>
+<p><br></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../IOS_CocoaPods.html" class="btn btn-neutral float-right" title="CocoaPods 接入帮助" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="IOS_Banner_default.html" class="btn btn-neutral" title="横幅广告-快速集成" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, upltv
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

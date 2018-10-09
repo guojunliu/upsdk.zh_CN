@@ -1,0 +1,303 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>1. A/B Test初始化 &mdash; UPInteractive Document  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="横幅广告" href="Cocos2Cpp_Sample_banner.html" />
+    <link rel="prev" title="SDK初始化" href="Cocos2Cpp_Sample_init.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> UPInteractive Document
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/android.html">Android 帮助文档</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../chapters/cocos2dx_cpp.html">UPSDK Cocos2d-X Cpp帮助文档</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../Cocos2Cpp_API.html">UPSDK cocos2d-X Cpp API说明</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Integrate_help_catalog .html">CppPlugin 接入帮助</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../Sample_catalog.html">CppPlugin 使用实例</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Cocos2Cpp_Sample_init.html">SDK初始化</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">1. A/B Test初始化</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#a-b-test">2. 获取A/B Test的结果</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Cocos2Cpp_Sample_banner.html">横幅广告</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Cocos2Cpp_Sample_inter.html">插屏广告</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Cocos2Cpp_Sample_video.html">激励视频</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Cocos2Cpp_Sample_gdpr.html">GDPR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Cocos2Cpp_Sample_demo.html">Demo</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_js.html">UPSDK Cocos2d-X JavaScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_lua.html">UPSDK Cocos2d-X Lua帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/download.html">UPSDK 下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/egret_ts.html">UPSDK Egret TypeScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/faq.html">常见问题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/gdpr.html">GDPR支持</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/ios.html">UPSDK IOS帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/layabox_js.html">UPSDK Layabox JavaScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/unity.html">Unity Plugin帮助文档</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">UPInteractive Document</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../chapters/cocos2dx_cpp.html">UPSDK Cocos2d-X Cpp帮助文档</a> &raquo;</li>
+        
+          <li><a href="../Sample_catalog.html">CppPlugin 使用实例</a> &raquo;</li>
+        
+      <li>1. A/B Test初始化</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_abtest.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p>##A/B Test接口调用</p>
+<div class="section" id="a-b-test">
+<span id="a-b-test"></span><h1>1. A/B Test初始化<a class="headerlink" href="#a-b-test" title="Permalink to this headline">¶</a></h1>
+<p>进行A/B测试时，请在初始化SDK之后，调用此方法完成A/B Test初始化。</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* @param gameAccountId          const char*类型， 用户在游戏中的帐号id（必填）</span>
+<span class="cm">* @param completeTask           bool类型，是否完成了游戏中的新手任务</span>
+<span class="cm">* @param isPaid                 int类型，是否付费用户，0则未付费</span>
+<span class="cm">* @param promotionChannelName   const char*类型，推广渠道，没有可以传 &quot;&quot;</span>
+<span class="cm">* @param gender                 const char*，&quot;M&quot;, &quot;F&quot;，未知可以传&quot;&quot;</span>
+<span class="cm">* @param age                    int类型，未知可以传-1</span>
+<span class="cm">* @param tags                   vector类型，标签，没有可以传 nullptr</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">initAbtConfigJson</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">gameAccountId</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">completeTask</span><span class="p">,</span> <span class="kt">int</span> <span class="n">isPaid</span><span class="p">,</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">promotionChannelName</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">gender</span><span class="p">,</span> <span class="kt">int</span> <span class="n">age</span><span class="p">,</span> <span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span> <span class="o">*</span><span class="n">tags</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>示例代码：</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="n">HelloWorld</span><span class="o">::</span><span class="n">touchEvent</span><span class="p">(</span><span class="n">cocos2d</span><span class="o">::</span><span class="n">Ref</span> <span class="o">*</span><span class="n">pSender</span><span class="p">,</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span> <span class="n">type</span><span class="p">,</span> <span class="kt">int</span> <span class="n">tag</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">type</span> <span class="o">==</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span><span class="o">::</span><span class="n">ENDED</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">log</span><span class="p">(</span><span class="s">&quot;===&gt; cpp button touch tag :%d&quot;</span><span class="p">,</span><span class="n">tag</span><span class="p">);</span>
+        <span class="k">switch</span> <span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">case</span> <span class="mi">1001</span><span class="o">:</span>
+            <span class="p">{</span>
+                <span class="c1">// 以下参数没有任何实际意义，仅作为演示如何调用API</span>
+                <span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">tags</span> <span class="o">=</span> <span class="p">{</span><span class="s">&quot;This is the first element.&quot;</span><span class="p">,</span><span class="s">&quot;The second one.&quot;</span><span class="p">,</span><span class="s">&quot;The last one.&quot;</span><span class="p">};</span>
+                <span class="n">UpltvBridge</span><span class="o">::</span><span class="n">initAbtConfigJson</span><span class="p">(</span><span class="s">&quot;u89731&quot;</span><span class="p">,</span> <span class="nb">true</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s">&quot;Facebook&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">tags</span><span class="p">);</span>
+            <span class="p">}</span>
+                <span class="k">break</span><span class="p">;</span>
+        <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="a-b-test">
+<span id="id1"></span><h1>2. 获取A/B Test的结果<a class="headerlink" href="#a-b-test" title="Permalink to this headline">¶</a></h1>
+<p>完成A/B Test初始化后，通过此方法获取结果。</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* 为了保证正确获取结果，调用时间建议延后initAbtConfigJson() 2秒以上</span>
+<span class="cm">* @param cpPlaceId  string类型， 广告位</span>
+<span class="cm">* @return const char*</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="nf">getAbtConfig</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">cpPlaceId</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>示例代码：</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="n">HelloWorld</span><span class="o">::</span><span class="n">touchEvent</span><span class="p">(</span><span class="n">cocos2d</span><span class="o">::</span><span class="n">Ref</span> <span class="o">*</span><span class="n">pSender</span><span class="p">,</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span> <span class="n">type</span><span class="p">,</span> <span class="kt">int</span> <span class="n">tag</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">type</span> <span class="o">==</span> <span class="n">cocos2d</span><span class="o">::</span><span class="n">ui</span><span class="o">::</span><span class="n">Widget</span><span class="o">::</span><span class="n">TouchEventType</span><span class="o">::</span><span class="n">ENDED</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">log</span><span class="p">(</span><span class="s">&quot;===&gt; cpp button touch tag :%d&quot;</span><span class="p">,</span><span class="n">tag</span><span class="p">);</span>
+        <span class="k">switch</span> <span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">case</span> <span class="mi">1001</span><span class="o">:</span>
+            <span class="p">{</span>
+                <span class="c1">// 获取config配置</span>
+                <span class="n">string</span> <span class="n">r</span> <span class="o">=</span> <span class="n">UpltvBridge</span><span class="o">::</span><span class="n">getAbtConfig</span><span class="p">(</span><span class="s">&quot;pass&quot;</span><span class="p">);</span>
+                <span class="n">log</span><span class="p">(</span><span class="s">&quot;===&gt; cpp getABtConfig r :%s&quot;</span><span class="p">,</span><span class="n">r</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
+            <span class="p">}</span>
+                <span class="k">break</span><span class="p">;</span>
+        <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Cocos2Cpp_Sample_banner.html" class="btn btn-neutral float-right" title="横幅广告" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Cocos2Cpp_Sample_init.html" class="btn btn-neutral" title="SDK初始化" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, upltv
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

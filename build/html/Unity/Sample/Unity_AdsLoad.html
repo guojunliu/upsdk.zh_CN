@@ -1,0 +1,319 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Unity Plugin 广告加载 &mdash; UPInteractive Document  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Unity Plugin 广告展示" href="Unity_AdsShow.html" />
+    <link rel="prev" title="Unity Plugin A/B Test接口调用" href="Unity_ABTest.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> UPInteractive Document
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/android.html">Android 帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_cpp.html">UPSDK Cocos2d-X Cpp帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_js.html">UPSDK Cocos2d-X JavaScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_lua.html">UPSDK Cocos2d-X Lua帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/download.html">UPSDK 下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/egret_ts.html">UPSDK Egret TypeScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/faq.html">常见问题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/gdpr.html">GDPR支持</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/ios.html">UPSDK IOS帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/layabox_js.html">UPSDK Layabox JavaScript帮助文档</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../chapters/unity.html">Unity Plugin帮助文档</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../API_catalog.html">UnityPlugin API介绍</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Integrate_catalog.html">UnityPlugin 工程接入</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../MultiDex_catalog.html">UnityPlugin Androi MultiDex介绍</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../Sample_catalog.html">UnityPlugin API介绍</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Unity_Init.html">Unity Plugin 初始化方法</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Unity_ABTest.html">Unity Plugin A/B Test接口调用</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Unity Plugin 广告加载</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#api">1.插屏广告加载回调API</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#api">2.激励广告加载回调API</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Unity_AdsShow.html">Unity Plugin 广告展示</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Unity_Banner.html">Unity Plugin 横幅广告</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Unity_GDPR.html">GDPR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Unity_Demo.html">Unity Plugin Demo下载</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Unity_Guide.html">UnityPlugin 简介</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Unity_UnityPlugin.html">UnityPlugin 接入帮助</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">UPInteractive Document</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../chapters/unity.html">Unity Plugin帮助文档</a> &raquo;</li>
+        
+          <li><a href="../Sample_catalog.html">UnityPlugin API介绍</a> &raquo;</li>
+        
+      <li>Unity Plugin 广告加载</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/Unity/Sample/Unity_AdsLoad.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="unity-plugin">
+<span id="unity-plugin"></span><h1>Unity Plugin 广告加载<a class="headerlink" href="#unity-plugin" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="api">
+<span id="api"></span><h2>1.插屏广告加载回调API<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<span class="cm">* UPSDK插屏广告加载回调接口</span>
+<span class="cm">* @param cpPlaceId: 第一个参数，插屏广告位标识符，不能为空或null</span>
+<span class="cm">* @param success 第二个参数，加载成功后的回调</span>
+<span class="cm">* @param fail 第三个参数，加载失败后的回调</span>
+<span class="cm">* </span>
+<span class="cm">* 回调参数类型：Action&amp;lt;string,string&gt;，第一个为cpPlaceId，广告位，可能为空或null；第二个参数为描述信息，可能为空或null</span>
+<span class="cm">* 此方法自 2028开始支持</span>
+<span class="cm">*/</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">setIntersitialLoadCallback</span><span class="p">(</span><span class="kt">string</span> <span class="n">cpPlaceId</span><span class="p">,</span> <span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">string</span><span class="p">,</span><span class="kt">string</span><span class="p">&gt;</span> <span class="n">success</span><span class="p">,</span> <span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">fail</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>使用示例代码：</p>
+<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="c1">// 调用此方法，为&quot;inter_aaa&quot;广告位设置加载成功与失败的广告回调代理方法</span>
+<span class="k">public</span> <span class="k">void</span> <span class="nf">onBtn_ClickForIntsLoadCallback</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// &quot;inter_aaa&quot;为插屏广告位</span>
+    <span class="n">UPSDK</span><span class="p">.</span><span class="n">setIntersitialLoadCallback</span> <span class="p">(</span><span class="s">&quot;inter_aaa&quot;</span><span class="p">,</span> 
+        <span class="k">new</span> <span class="n">System</span><span class="p">.</span><span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;(</span><span class="n">actionForIntsLoadSuccess</span><span class="p">),</span>
+        <span class="k">new</span> <span class="n">System</span><span class="p">.</span><span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;(</span><span class="n">actionForIntsLoadFail</span><span class="p">)</span> 
+    <span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">private</span> <span class="k">void</span> <span class="nf">actionForIntsLoadFail</span><span class="p">(</span><span class="kt">string</span> <span class="n">placeId</span><span class="p">,</span> <span class="kt">string</span> <span class="n">msg</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span> <span class="p">(</span><span class="s">&quot;===&gt; actionForIntsLoadFail Callback at: &quot;</span> <span class="p">+</span> <span class="n">placeId</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">private</span> <span class="k">void</span> <span class="nf">actionForIntsLoadSuccess</span><span class="p">(</span><span class="kt">string</span> <span class="n">placeId</span><span class="p">,</span> <span class="kt">string</span> <span class="n">msg</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span> <span class="p">(</span><span class="s">&quot;===&gt; actionForIntsLoadSuccess Callback at: &quot;</span> <span class="p">+</span> <span class="n">placeId</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="api">
+<span id="id1"></span><h2>2.激励广告加载回调API<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<span class="cm">* UPSDK激励视屏广告加载回调接口</span>
+<span class="cm">* @param success 第一个参数，加载成功后的回调</span>
+<span class="cm">* @param fail 第二个参数，加载失败后的回调</span>
+<span class="cm">* </span>
+<span class="cm">* 回调参数类型：Action&amp;lt;string,string&gt;，第一个为cpPlaceId，广告位，可能为空或null；第二个参数为描述信息，可能为空或null</span>
+<span class="cm">* 此方法自 2028开始支持</span>
+<span class="cm">*/</span>
+<span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">setRewardVideoLoadCallback</span><span class="p">(</span><span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">string</span><span class="p">,</span><span class="kt">string</span><span class="p">&gt;</span> <span class="n">success</span><span class="p">,</span> <span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">fail</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>使用示例代码：</p>
+<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="c1">//激励视屏的回调代理，不用区分广告位，因此相比于插屏加载接口少一个广告位的参数</span>
+<span class="k">public</span> <span class="k">void</span> <span class="nf">onBtn_ClickForRewardLoadCallback</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">Polymer</span><span class="p">.</span><span class="n">PolyADSDK</span><span class="p">.</span><span class="n">setRewardVideoLoadCallback</span> <span class="p">(</span> 
+        <span class="k">new</span> <span class="n">System</span><span class="p">.</span><span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;(</span><span class="n">actionForRewardLoadSuccess</span><span class="p">),</span>
+        <span class="k">new</span> <span class="n">System</span><span class="p">.</span><span class="n">Action</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;(</span><span class="n">actionForRewardLoadFail</span><span class="p">)</span> 
+    <span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">//激励视屏加载失败后回调此方法</span>
+<span class="c1">//参数说明：placeId一般为空或为某个特定值，msg参数通常用来描述失败的原因</span>
+<span class="k">private</span> <span class="k">void</span> <span class="nf">actionForRewardLoadFail</span><span class="p">(</span><span class="kt">string</span> <span class="n">placeId</span><span class="p">,</span> <span class="kt">string</span> <span class="n">msg</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span> <span class="p">(</span><span class="s">&quot;===&gt; actionForRewardLoadFail Callback at: &quot;</span> <span class="p">+</span> <span class="n">placeId</span> <span class="p">+</span> <span class="s">&quot;, fail reason: &quot;</span> <span class="p">+</span> <span class="n">msg</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">//激励视屏加载成功后回调此方法</span>
+<span class="c1">//参数说明：placeId一般为空或为某个特定值，msg参数通为空</span>
+<span class="k">private</span> <span class="k">void</span> <span class="nf">actionForRewardLoadSuccess</span><span class="p">(</span><span class="kt">string</span> <span class="n">placeId</span><span class="p">,</span> <span class="kt">string</span> <span class="n">msg</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span> <span class="p">(</span><span class="s">&quot;===&gt; actionForRewardLoadSuccess Callback at: &quot;</span> <span class="p">+</span> <span class="n">placeId</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Unity_AdsShow.html" class="btn btn-neutral float-right" title="Unity Plugin 广告展示" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Unity_ABTest.html" class="btn btn-neutral" title="Unity Plugin A/B Test接口调用" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, upltv
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

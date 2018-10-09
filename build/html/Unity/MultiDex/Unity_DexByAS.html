@@ -1,0 +1,319 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>使用Android Studio 解决65535问题 &mdash; UPInteractive Document  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="使用Unity 解决65535问题" href="Unity_DexByUnity.html" />
+    <link rel="prev" title="65535方法数超量问题" href="Unity_Dex.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> UPInteractive Document
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/android.html">Android 帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_cpp.html">UPSDK Cocos2d-X Cpp帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_js.html">UPSDK Cocos2d-X JavaScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_lua.html">UPSDK Cocos2d-X Lua帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/download.html">UPSDK 下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/egret_ts.html">UPSDK Egret TypeScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/faq.html">常见问题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/gdpr.html">GDPR支持</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/ios.html">UPSDK IOS帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/layabox_js.html">UPSDK Layabox JavaScript帮助文档</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../chapters/unity.html">Unity Plugin帮助文档</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../API_catalog.html">UnityPlugin API介绍</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Integrate_catalog.html">UnityPlugin 工程接入</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../MultiDex_catalog.html">UnityPlugin Androi MultiDex介绍</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Unity_Dex.html">65535方法数超量问题</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">使用Android Studio 解决65535问题</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#androidstudio">1.导出到AndroidStudio工程</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#androidstudio">2.打开AndroidStudio工程</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#build-gradle">3.配置build.gradle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#outofmemory">4.OutOfMemory问题</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#">5. 混淆修改</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Unity_DexByUnity.html">使用Unity 解决65535问题</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Sample_catalog.html">UnityPlugin API介绍</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Unity_Guide.html">UnityPlugin 简介</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Unity_UnityPlugin.html">UnityPlugin 接入帮助</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">UPInteractive Document</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../chapters/unity.html">Unity Plugin帮助文档</a> &raquo;</li>
+        
+          <li><a href="../MultiDex_catalog.html">UnityPlugin Androi MultiDex介绍</a> &raquo;</li>
+        
+      <li>使用Android Studio 解决65535问题</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/Unity/MultiDex/Unity_DexByAS.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="android-studio-65535">
+<span id="android-studio-65535"></span><h1>使用Android Studio 解决65535问题<a class="headerlink" href="#android-studio-65535" title="Permalink to this headline">¶</a></h1>
+<p>Unity 5.5开始支持Gradle build system，对于65535超量的错误可以考虑将工程导出到AndroidStudio通过分包来解决。</p>
+<div class="section" id="androidstudio">
+<span id="androidstudio"></span><h2>1.导出到AndroidStudio工程<a class="headerlink" href="#androidstudio" title="Permalink to this headline">¶</a></h2>
+<p><img alt="3333" src="http://docs.upltv.com/uploads/201807/5b39cc6bd83bb_5b39cc6b.png" /></p>
+</div>
+<div class="section" id="androidstudio">
+<span id="id1"></span><h2>2.打开AndroidStudio工程<a class="headerlink" href="#androidstudio" title="Permalink to this headline">¶</a></h2>
+<p>必须安装AndroidStudio2.2.3及上版本。</p>
+<p><img alt="4444" src="http://docs.upltv.com/uploads/201807/5b39ccc80a994_5b39ccc8.png" /></p>
+</div>
+<div class="section" id="build-gradle">
+<span id="build-gradle"></span><h2>3.配置build.gradle<a class="headerlink" href="#build-gradle" title="Permalink to this headline">¶</a></h2>
+<p>如果你的gradle版本过低，请设置到2.2.3或以上。
+<img alt="555" src="http://docs.upltv.com/uploads/201807/5b39cd2136c17_5b39cd21.png" /></p>
+<p>在build.gradle文件中添加分包设置：</p>
+<div class="highlight-groovy notranslate"><div class="highlight"><pre><span></span><span class="n">android</span> <span class="o">{</span>
+    <span class="n">defaultConfig</span> <span class="o">{</span>
+        <span class="o">...</span>
+        <span class="n">minSdkVersion</span> <span class="mi">16</span> 
+        <span class="n">targetSdkVersion</span> <span class="mi">26</span>
+        <span class="n">multiDexEnabled</span> <span class="kc">true</span>
+    <span class="o">}</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+<span class="n">dependencies</span> <span class="o">{</span>
+  <span class="n">compile</span> <span class="s1">&#39;com.android.support:multidex:1.0.1&#39;</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>在**AndroidManifest.xml **中添加：</p>
+<div class="highlight-groovy notranslate"><div class="highlight"><pre><span></span><span class="o">&amp;</span><span class="n">lt</span><span class="o">;</span><span class="n">application</span>
+            <span class="nl">android:</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;android.support.multidex.MultiDexApplication&quot;</span> <span class="o">&gt;</span>
+        <span class="o">...</span>
+<span class="o">&amp;</span><span class="n">lt</span><span class="o">;/</span><span class="n">application</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="outofmemory">
+<span id="outofmemory"></span><h2>4.OutOfMemory问题<a class="headerlink" href="#outofmemory" title="Permalink to this headline">¶</a></h2>
+<p>运行工程，出现OutOfMemory的问题时，在gradle.build中添加以下配置偿试解决。</p>
+<div class="highlight-groovy notranslate"><div class="highlight"><pre><span></span><span class="n">android</span> <span class="o">{</span>
+    <span class="n">defaultConfig</span> <span class="o">{</span>
+        <span class="o">....</span>
+    <span class="o">}</span>
+    <span class="n">dexOptions</span> <span class="o">{</span>
+        <span class="n">javaMaxHeapSize</span> <span class="s2">&quot;4g&quot;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="">
+<span id="id2"></span><h2>5. 混淆修改<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<p>AndroidStudio中出现<code class="docutils literal notranslate"><span class="pre">Build-in</span> <span class="pre">class</span> <span class="pre">shrinker</span> <span class="pre">and</span> <span class="pre">multidex</span> <span class="pre">are</span> <span class="pre">not</span> <span class="pre">supported</span> <span class="pre">yet</span></code>错误提示时，大多数情况是因为useProguard字段导致的。请将useProguard 改成minifyEnabled试试。</p>
+<div class="highlight-groovy notranslate"><div class="highlight"><pre><span></span><span class="n">android</span> <span class="o">{</span>
+    <span class="n">buildTypes</span> <span class="o">{</span>
+        <span class="n">release</span> <span class="o">{</span>
+            <span class="n">minifyEnabled</span> <span class="kc">true</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<blockquote>
+<div>如果未开启混淆，可以去掉minifyEnabled配置或设为false。</div></blockquote>
+<p>如果开启混淆功能，请将UPSDK的混淆配置（<code class="docutils literal notranslate"><span class="pre">PolyADSDK/Plugins/Android/lib_res/proguard-project.txt</span></code>）复制到AndroidStudio的<code class="docutils literal notranslate"><span class="pre">proguard-unity.txt</span></code>中。</p>
+<div class="highlight-groovy notranslate"><div class="highlight"><pre><span></span><span class="n">release</span> <span class="o">{</span>
+    <span class="n">minifyEnabled</span> <span class="kc">true</span>
+    <span class="c1">//useProguard false</span>
+    <span class="n">proguardFiles</span> <span class="nf">getDefaultProguardFile</span><span class="o">(</span><span class="s1">&#39;proguard-android.txt&#39;</span><span class="o">),</span> <span class="s1">&#39;proguard-unity.txt&#39;</span>
+    <span class="n">signingConfig</span> <span class="n">signingConfigs</span><span class="o">.</span><span class="na">release</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Unity_DexByUnity.html" class="btn btn-neutral float-right" title="使用Unity 解决65535问题" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Unity_Dex.html" class="btn btn-neutral" title="65535方法数超量问题" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, upltv
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

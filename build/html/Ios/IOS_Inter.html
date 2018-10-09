@@ -1,0 +1,393 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>插屏广告 &mdash; UPInteractive Document  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="激励视频" href="IOS_Reward.html" />
+    <link rel="prev" title="SDK初始化" href="IOS_Init.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> UPInteractive Document
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../chapters/android.html">Android 帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/cocos2dx_cpp.html">UPSDK Cocos2d-X Cpp帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/cocos2dx_js.html">UPSDK Cocos2d-X JavaScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/cocos2dx_lua.html">UPSDK Cocos2d-X Lua帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/download.html">UPSDK 下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/egret_ts.html">UPSDK Egret TypeScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/faq.html">常见问题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/gdpr.html">GDPR支持</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../chapters/ios.html">UPSDK IOS帮助文档</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Banner_catalog.html">横幅广告</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IOS_CocoaPods.html">CocoaPods 接入帮助</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IOS_Demo.html">Demo 下载</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IOS_GDPR.html">GDPR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IOS_Init.html">SDK初始化</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">插屏广告</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#">插屏广告接入</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#">引用方式：</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#">方法声明：</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#upintersitialdelegate">UPIntersitialDelegate 回调协议</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#">示例代码</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="IOS_Reward.html">激励视频</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IOS_Xcode.html">XCode</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/layabox_js.html">UPSDK Layabox JavaScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/unity.html">Unity Plugin帮助文档</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">UPInteractive Document</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../chapters/ios.html">UPSDK IOS帮助文档</a> &raquo;</li>
+        
+      <li>插屏广告</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/IOS/IOS_Inter.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="">
+<span id="id1"></span><h1>插屏广告<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="">
+<span id="id2"></span><h2>插屏广告接入<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<p>有关插屏广告的方法与代理接口定义在UPIntersitialWrapper.h文件中。</p>
+<div class="section" id="">
+<span id="id3"></span><h3>引用方式：<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#import   &amp;lt;UPSDK/UPSDK.h&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="">
+<span id="id4"></span><h3>方法声明：<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>以下【广告位】可由接入方向<strong>我方技术支持同事询问</strong>。不同广告使用场景请尽量保持【广告位】的独立性，方便未来区分不同广告展示的收益来源。例如：在暂停界面中初始化广告时，【广告位】可传入”Pause” or “Menu”</div></blockquote>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="k">@interface</span> <span class="nc">UPIntersitialWrapper</span> : <span class="bp">NSObject</span>
+
+<span class="cm">/**</span>
+<span class="cm">* 初始化方法</span>
+<span class="cm">* @ param avidPlacement：广告位</span>
+<span class="cm">**/</span>
+<span class="p">-</span> <span class="p">(</span><span class="kt">instancetype</span><span class="p">)</span><span class="nf">initAvidPlacement:</span><span class="p">(</span><span class="bp">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">avidPlacement</span><span class="p">;</span>
+
+<span class="cm">/**</span>
+<span class="cm">* 设置回调代理对象</span>
+<span class="cm">* @ param delegate：UPIntersitialDelegate 代理对象</span>
+<span class="cm">**/</span>
+<span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setDelegate:</span><span class="p">(</span><span class="kt">id</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">UPIntersitialDelegate</span><span class="o">&gt;</span><span class="p">)</span><span class="nv">delegate</span><span class="p">;</span>
+
+<span class="cm">/**</span>
+<span class="cm">* 判断视屏广告是否可用</span>
+<span class="cm">**/</span>
+<span class="p">-</span> <span class="p">(</span><span class="kt">BOOL</span><span class="p">)</span><span class="nf">isReady</span><span class="p">;</span>
+
+<span class="cm">/**</span>
+<span class="cm">* 设置回调代理对象</span>
+<span class="cm">* @ param viewController：UIViewController 对象，用于点击时跳转控制</span>
+<span class="cm">**/</span>
+<span class="p">-</span> <span class="p">(</span><span class="kt">BOOL</span><span class="p">)</span><span class="nf">show:</span><span class="p">(</span><span class="bp">UIViewController</span> <span class="o">*</span><span class="p">)</span><span class="nv">viewController</span><span class="p">;</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * 设置广告加载回调接口</span>
+<span class="cm"> * @param delegate，回调代理</span>
+<span class="cm"> **/</span>
+ <span class="o">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nl">load</span><span class="p">:(</span><span class="kt">id</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">UPIntersitialLoadDelegate</span><span class="o">&gt;</span><span class="p">)</span><span class="n">delegate</span><span class="p">;</span>
+<span class="k">@end</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="upintersitialdelegate">
+<span id="upintersitialdelegate"></span><h3>UPIntersitialDelegate 回调协议<a class="headerlink" href="#upintersitialdelegate" title="Permalink to this headline">¶</a></h3>
+<p>插屏广告的回调协议并不是必须要实现的，根据需要自行设置。</p>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="k">@protocol</span> <span class="nc">UPIntersitialDelegate</span> <span class="o">&lt;</span><span class="bp">NSObject</span><span class="o">&gt;</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * 插屏广告展示时，调用此方法</span>
+<span class="cm"> * @ param wrapper ：消息发送者，UPIntersitialWrapper实例对象</span>
+<span class="cm"> */</span>
+<span class="o">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nl">interstitialAdDidShow</span><span class="p">:(</span><span class="n">UPIntersitialWrapper</span> <span class="o">*</span><span class="p">)</span><span class="n">wrapper</span><span class="p">;</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * 插屏广告关闭，调用此方法</span>
+<span class="cm"> * @ param wrapper 消息发送者，UPIntersitialWrapper实例对象</span>
+<span class="cm"> */</span>
+<span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">interstitialAdDidClose:</span><span class="p">(</span><span class="n">UPIntersitialWrapper</span> <span class="o">*</span><span class="p">)</span><span class="nv">wrapper</span><span class="p">;</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * 插屏广告点击，调用此方法</span>
+<span class="cm"> * @ param wrapper 消息发送者，UPIntersitialWrapper实例对象</span>
+<span class="cm"> */</span>
+<span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">interstitialAdDidClick:</span><span class="p">(</span><span class="n">UPIntersitialWrapper</span> <span class="o">*</span><span class="p">)</span><span class="nv">wrapper</span><span class="p">;</span>
+
+<span class="k">@end</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="">
+<span id="id5"></span><h2>示例代码<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<p>我们仅以XCode工程作为示例，其它IDE工程，请参考修改！</p>
+<p>在XCode示例工程中，声明STInterstitialViewController类，用于展现插屏广告。 首先定义STInterstitialViewController.h类，由于仅用于插屏广告展示，所以代码非常简洁。</p>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="k">@interface</span> <span class="nc">STInterstitialViewController</span> : <span class="bp">UIViewController</span>
+
+<span class="k">@end</span>
+</pre></div>
+</div>
+<p>在STInterstitialViewController.m，只需要定义几行代码，就能完成插屏广告的加载与实现。</p>
+<p>首先，定义一个UPIntersitialWrapper 对象：_intersitialWrapper，通过它实现插屏广告的加载与展现。原则上，一个插屏广告位对应一个UPIntersitialWrapper 对象。</p>
+<p>代码如下：</p>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="k">@interface</span> <span class="nc">STInterstitialViewController</span> <span class="p">()</span> <span class="o">&lt;</span><span class="n">UPIntersitialDelegate</span><span class="o">&gt;</span>
+<span class="p">{</span>
+    <span class="c1">//声明一个插屏wrapper对象，根据广告位数量，也可以声明多个</span>
+    <span class="n">UPIntersitialWrapper</span> <span class="o">*</span><span class="n">_intersitialWrapper</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">@end</span>
+</pre></div>
+</div>
+<p>然后添加如下代码：</p>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">viewDidLoad</span>  <span class="p">{</span>
+    <span class="p">[</span><span class="nb">super</span> <span class="n">viewDidLoad</span><span class="p">];</span>
+    <span class="nb">self</span><span class="p">.</span><span class="n">view</span><span class="p">.</span><span class="n">backgroundColor</span> <span class="o">=</span> <span class="p">[</span><span class="bp">UIColor</span> <span class="n">whiteColor</span><span class="p">];</span>
+    
+    <span class="c1">// 在viewDidLoad添加一个按钮测试插屏广告的加载与展现</span>
+    <span class="bp">UIButton</span> <span class="o">*</span><span class="n">button</span> <span class="o">=</span> <span class="p">[</span><span class="bp">UIButton</span> <span class="nl">buttonWithType</span><span class="p">:</span><span class="n">UIButtonTypeRoundedRect</span><span class="p">];</span>
+    <span class="n">button</span><span class="p">.</span><span class="n">backgroundColor</span> <span class="o">=</span> <span class="p">[</span><span class="bp">UIColor</span> <span class="n">orangeColor</span><span class="p">];</span>
+    <span class="n">button</span><span class="p">.</span><span class="n">frame</span> <span class="o">=</span> <span class="n">CGRectMake</span><span class="p">(</span><span class="nb">self</span><span class="p">.</span><span class="n">view</span><span class="p">.</span><span class="n">frame</span><span class="p">.</span><span class="n">size</span><span class="p">.</span><span class="n">width</span><span class="o">/</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">250</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">250</span><span class="p">,</span> <span class="mi">40</span><span class="p">);</span>
+    <span class="p">[</span><span class="n">button</span> <span class="nl">setTitle</span><span class="p">:</span><span class="s">@&quot;测试插屏广告&quot;</span> <span class="nl">forState</span><span class="p">:</span><span class="n">UIControlStateNormal</span><span class="p">];</span>
+    <span class="c1">// 点击按钮时，会触发intersitialClick方法</span>
+    <span class="p">[</span><span class="n">button</span> <span class="nl">addTarget</span><span class="p">:</span><span class="nb">self</span> <span class="nl">action</span><span class="p">:</span><span class="k">@selector</span><span class="p">(</span><span class="n">intersitialClick</span><span class="p">)</span> <span class="nl">forControlEvents</span><span class="p">:</span><span class="n">UIControlEventTouchUpInside</span><span class="p">];</span>
+    <span class="p">[</span><span class="nb">self</span><span class="p">.</span><span class="n">view</span> <span class="nl">addSubview</span><span class="p">:</span><span class="n">button</span><span class="p">];</span>
+    
+<span class="p">}</span>
+
+<span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">intersitialClick</span> <span class="p">{</span>
+    <span class="c1">// 假设&quot;inter_bbb&quot;为_intersitialWrapper对应的广告位</span>
+    <span class="n">_intersitialWrapper</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UPIntersitialWrapper</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initAvidPlacement</span><span class="p">:</span><span class="s">@&quot;inter_bbb&quot;</span><span class="p">];</span>
+    <span class="c1">// 设置回调代理</span>
+    <span class="p">[</span><span class="n">_intersitialWrapper</span> <span class="nl">setDelegate</span><span class="p">:</span><span class="nb">self</span><span class="p">];</span>
+    
+    <span class="c1">//判断插屏广告是否可以展示</span>
+    <span class="k">if</span> <span class="p">([</span><span class="n">_intersitialWrapper</span> <span class="n">isReady</span><span class="p">])</span> <span class="p">{</span>
+        <span class="p">[</span><span class="n">_intersitialWrapper</span> <span class="nl">show</span><span class="p">:</span><span class="nb">self</span><span class="p">];</span>
+    <span class="p">}</span>
+    <span class="k">else</span>
+    <span class="p">{</span>
+        <span class="n">NSLog</span><span class="p">(</span><span class="s">@&quot;Intersitial no ready&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>从代码上看，一个插屏广告的展现与控制非常简单，只需要三步：</p>
+<ol class="simple">
+<li>声明全局对象，例如：</li>
+</ol>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span> <span class="n">UPIntersitialWrapper</span> <span class="o">*</span><span class="n">_intersitialWrapper</span><span class="p">;</span>
+</pre></div>
+</div>
+<ol class="simple">
+<li>初始化对象
+根据某个广告位，通常会在不同的展位位置设置不同标识值，因此这个值是预先声明可知的。如下示例，”inter_bbb”是某个真实存在的广告位。错误的广告位，会导致插屏广告加载失败。</li>
+</ol>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="n">_intersitialWrapper</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UPIntersitialWrapper</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initAvidPlacement</span><span class="p">:</span><span class="s">@&quot;inter_bbb&quot;</span><span class="p">];</span>
+</pre></div>
+</div>
+<ol class="simple">
+<li>控制广告展现
+在需要展现的时候，如下添加代码。</li>
+</ol>
+<div class="highlight-objective-c notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">([</span><span class="n">_intersitialWrapper</span> <span class="n">isReady</span><span class="p">])</span> <span class="p">{</span>
+        <span class="p">[</span><span class="n">_intersitialWrapper</span> <span class="nl">show</span><span class="p">:</span><span class="nb">self</span><span class="p">];</span>
+    <span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="IOS_Reward.html" class="btn btn-neutral float-right" title="激励视频" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="IOS_Init.html" class="btn btn-neutral" title="SDK初始化" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, upltv
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,322 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>IOS 接入帮助 &mdash; UPInteractive Document  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="UnityPlugin Androi MultiDex介绍" href="../MultiDex_catalog.html" />
+    <link rel="prev" title="Android 接入帮助" href="Unity_Android.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> UPInteractive Document
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/android.html">Android 帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_cpp.html">UPSDK Cocos2d-X Cpp帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_js.html">UPSDK Cocos2d-X JavaScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/cocos2dx_lua.html">UPSDK Cocos2d-X Lua帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/download.html">UPSDK 下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/egret_ts.html">UPSDK Egret TypeScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/faq.html">常见问题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/gdpr.html">GDPR支持</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/ios.html">UPSDK IOS帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../chapters/layabox_js.html">UPSDK Layabox JavaScript帮助文档</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../chapters/unity.html">Unity Plugin帮助文档</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../API_catalog.html">UnityPlugin API介绍</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../Integrate_catalog.html">UnityPlugin 工程接入</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Unity_Android.html">Android 接入帮助</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">IOS 接入帮助</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#">一、声明</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#unityassetsios-frameworks">二、检查Unity工程Assets目录IOS Frameworks</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#xcode">Xcode 配置检查</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../MultiDex_catalog.html">UnityPlugin Androi MultiDex介绍</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Sample_catalog.html">UnityPlugin API介绍</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Unity_Guide.html">UnityPlugin 简介</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Unity_UnityPlugin.html">UnityPlugin 接入帮助</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">UPInteractive Document</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../../chapters/unity.html">Unity Plugin帮助文档</a> &raquo;</li>
+        
+          <li><a href="../Integrate_catalog.html">UnityPlugin 工程接入</a> &raquo;</li>
+        
+      <li>IOS 接入帮助</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/Unity/Integrate/Unity_Ios.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ios">
+<span id="ios"></span><h1>IOS 接入帮助<a class="headerlink" href="#ios" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="">
+<span id="id1"></span><h2>一、声明<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<p>我们在对Unity 5.x不同版本测试时发现，只有5.1.0以上的版本在Mac平台才能正常运行，因此5.1.0以下版本未能完成适配测试。若你的版本低于5.1.0，建议你升级到更高的版本；如果因故不能升级，可以偿试导入，若有问题可及时向我们的技术人员寻求帮助。</p>
+</div>
+<div class="section" id="unityassetsios-frameworks">
+<span id="unityassetsios-frameworks"></span><h2>二、检查Unity工程Assets目录IOS Frameworks<a class="headerlink" href="#unityassetsios-frameworks" title="Permalink to this headline">¶</a></h2>
+<p>Unity插件IOS版本被成功导入后，在Assets目录下，检查<code class="docutils literal notranslate"><span class="pre">PolyADSDK/Plugins/IOS/frameworks</span></code>以及<code class="docutils literal notranslate"><span class="pre">PolyADSDK/Plugins/IOS/resources</span></code>两个目录是否存在。如果不存在，说明插件没有正确导入。</p>
+<p>成功导入IOS插件后，3003以下的版本，Assets中目录结构如下：</p>
+<p><img alt="bbb" src="http://docs.upltv.com/uploads/201805/5af5744506897_5af57445.png" /></p>
+<p>3003及以后的版本，Assets中目录结构如下：</p>
+<p><img alt="aaa" src="http://docs.upltv.com/uploads/201805/5af573a34f61b_5af573a3.png" /></p>
+<p>为了保证UPSDK的目录资源的健全，请检查以下几方面的文件是否存在。</p>
+<div class="section" id="upsdk">
+<span id="upsdk"></span><h3>1. UPSDK 主包<a class="headerlink" href="#upsdk" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">PolyADSDK/Plugins/IOS/frameworks/UPSDK.framework</span></code>文件是Avidly ADSDK 主包的主包文件，如果缺少此文件，或许下载的插件包不对，请尽快与我们的技术支持人员联系，寻求帮助。</p>
+<blockquote>
+<div>版本3003开始，原AvidlyAdsSDK.framework改名为UPSDK.framework，相应的bundle文件也改成UPSDK.bundle</div></blockquote>
+</div>
+<div class="section" id="upsdk">
+<span id="id2"></span><h3>2. UPSDK 联盟商依赖库<a class="headerlink" href="#upsdk" title="Permalink to this headline">¶</a></h3>
+<p>在<code class="docutils literal notranslate"><span class="pre">PolyADSDK/Plugins/IOS/frameworks</span></code>目录下，除了UPSDK 主包文件外，还会有一系列其它的广告联盟商的依赖库，他们有些以<em>.framework的形式存在 ，如AdCoony.framework,UnityAds.framework；有些是</em>.a或*.h等文件形式存在，如OneWaySDK, Domob-SDK。</p>
+</div>
+<div class="section" id="upsdk">
+<span id="id3"></span><h3>3. UPSDK 资源包<a class="headerlink" href="#upsdk" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">PolyADSDK/Plugins/IOS/resources</span></code>是UPSDK广告需要依赖的资源文件，如激励广告UI交互的一些图标资源。如果这些资源缺少，会导致运行不正常，影响广告收益。</p>
+</div>
+<div class="section" id="xuporter">
+<span id="xuporter"></span><h3>4. XUPorter<a class="headerlink" href="#xuporter" title="Permalink to this headline">¶</a></h3>
+<p>XUPorter是一个开源库，用于Xcode导出时动态修改工程的配置参数，包括添加依赖包与资源文件。如果缺少这个目录的文件，会导致Xcode导出时，无法自动完成工程的适配工作。当然，这时也可以手动导入资源，详细过程在后继内容中会讲解。</p>
+</div>
+</div>
+<div class="section" id="xcode">
+<span id="xcode"></span><h2>Xcode 配置检查<a class="headerlink" href="#xcode" title="Permalink to this headline">¶</a></h2>
+<p>如果导出的Xcode工程编译出错时，怎么办？请按下面步骤检查所有的配置参数是否正确。</p>
+<div class="section" id="deployent-target">
+<span id="deployent-target"></span><h3>1. Deployent Target设置<a class="headerlink" href="#deployent-target" title="Permalink to this headline">¶</a></h3>
+<p>在Target-&gt;General面板中，设置Deployent Target在7.0或以上，部分第三方依赖的framework对target有要求在7.0或以上。</p>
+<p>示例如下：
+<img alt="ios-target" src="http://ads-sdk-doc.haloapps.com/uploads/201706/59535d81cf339_59535d81.png" /></p>
+</div>
+<div class="section" id="link-binary-with-libraries">
+<span id="link-binary-with-libraries"></span><h3>2. Link Binary with Libraries检查<a class="headerlink" href="#link-binary-with-libraries" title="Permalink to this headline">¶</a></h3>
+<p>在Build Phases -&gt; Link Binary with Libraries中检查是否添加了插件中包含的framework库以及.a文件。</p>
+<p>正常添加后会增加以下红框中的library文件。
+<img alt="ios-lib" src="http://ads-sdk-doc.haloapps.com/uploads/201706/595361be1b87e_595361be.png" /></p>
+<p>如果没有发现<code class="docutils literal notranslate"><span class="pre">PolyADSDK/Plugins/IOS/frameworks</span></code>中所包括的库文件，可以通过Xcode工程手动将<code class="docutils literal notranslate"><span class="pre">PolyADSDK/Plugins/IOS/frameworks</span></code>所包括的文件添加到工程中。</p>
+<p><strong>其中：
+<code class="docutils literal notranslate"><span class="pre">libsqlite3.tbd</span></code>，<code class="docutils literal notranslate"><span class="pre">libxml2.tbd</span></code>，<code class="docutils literal notranslate"><span class="pre">libz.tbd</span></code>，<code class="docutils literal notranslate"><span class="pre">libstdc++.tbd</span></code>，<code class="docutils literal notranslate"><span class="pre">WebKit.framework</span></code>与<code class="docutils literal notranslate"><span class="pre">JavaScriptCore.framework</span></code>是系统库，必须添加，因为部分第三方广告的表态库对此有依赖。如果发现缺失请手工添加这些系统库。</strong></p>
+</div>
+<div class="section" id="bundle-resources">
+<span id="bundle-resources"></span><h3>3. bundle resources检查<a class="headerlink" href="#bundle-resources" title="Permalink to this headline">¶</a></h3>
+<p>在Build Phases -&gt; Copy Bundle Resources 中检查是否添加了插件中包含的resources的资源。</p>
+<p>正常添加后会增加以下红框中的资源文件文件。
+<img alt="ios-resources" src="http://ads-sdk-doc.haloapps.com/uploads/201706/59536339b4e91_59536339.png" /></p>
+<p>如果没有发现<code class="docutils literal notranslate"><span class="pre">PolyADSDK/Plugins/IOS/resources</span></code>中所包括的资源，可以通过Xcode工程手动将<code class="docutils literal notranslate"><span class="pre">PolyADSDK/Plugins/IOS/resources</span></code>资源添加到工程中。</p>
+</div>
+<div class="section" id="other-linker-flag">
+<span id="other-linker-flag"></span><h3>4. Other Linker Flag检查<a class="headerlink" href="#other-linker-flag" title="Permalink to this headline">¶</a></h3>
+<p>在Build Settings -&gt; Linking -&gt; Other Linker Flags 中检查是否添加了<code class="docutils literal notranslate"><span class="pre">-ObjC</span></code>以及<code class="docutils literal notranslate"><span class="pre">-fobjc-arc</span></code>的配置。</p>
+<p>正常添加后会增加以下红框中的配置参数，如果没有出现可以手动添加。
+<img alt="ios-link-set" src="http://ads-sdk-doc.haloapps.com/uploads/201706/59536443253fc_59536443.png" /></p>
+</div>
+<div class="section" id="unity">
+<span id="unity"></span><h3>5. Unity个别版本不兼容的处理<a class="headerlink" href="#unity" title="Permalink to this headline">¶</a></h3>
+<p>1、对于5.4.2~5.4.0的版本，如果引入的Framework不正常（标红），请手工将引入以下目录的代码库与资源添加到工程中：
+<code class="docutils literal notranslate"><span class="pre">PolyADSDK/Plugins/IOS/frameworks</span></code>
+<code class="docutils literal notranslate"><span class="pre">PolyADSDK/Plugins/IOS/resources</span></code></p>
+<p>2、对于5.3.1等部分版本il2cpp-config.h出现noreturn定义错误时，请参考如下修改：</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span> #define NORETURN __declspec(noreturn)
+替换为
+#define NORETURN __attribute__((noreturn))
+</pre></div>
+</div>
+<p>3、对于5.1.4等版本出现 <strong>does not contain bitcode</strong> 错误时，请将 Enable Bitcode 设置为NO</p>
+</div>
+<div class="section" id="clean">
+<span id="clean"></span><h3>6. Clean工程，重新编译<a class="headerlink" href="#clean" title="Permalink to this headline">¶</a></h3>
+<p>做完上述检查后 ，请在Product-&gt;Clean之后，再编译！！！</p>
+<p>如果错误仍然存在，请与我们的技术支持联系，告诉他们错误信息（戴图+日志），寻求帮助。</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../MultiDex_catalog.html" class="btn btn-neutral float-right" title="UnityPlugin Androi MultiDex介绍" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Unity_Android.html" class="btn btn-neutral" title="Android 接入帮助" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, upltv
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

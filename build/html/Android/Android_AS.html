@@ -1,0 +1,402 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Android Studio 接入帮助 &mdash; UPInteractive Document  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="next" title="横幅广告-自定义" href="Android_Banner_custom.html" />
+    <link rel="prev" title="解决65535方法数过多" href="Android_65535.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> UPInteractive Document
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../copyright.html">Copyright</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">前言</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../chapters/android.html">Android 帮助文档</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Android_65535.html">解决65535方法数过多</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Android Studio 接入帮助</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#android-studio">Android Studio</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#up-adsdk">一、UP ADSDK的目录结构</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#android-studio-gradle-up-adsdk">二、使用 Android Studio 的 Gradle 导入UP ADSDK主包</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#">三、添加广告联盟的依赖库</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#proguard">四、修改 Proguard</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#demo">五、Demo工程</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Android_Banner_custom.html">横幅广告-自定义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Android_Banner_default.html">横幅广告-快速集成</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Android_Demo.html">Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Android_EC.html">Eclipse 接入帮助</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Android_Exit.html">广告对象初始化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Android_Exit.html#">显示退出广告</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Android_Exit.html#">回调接口</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Android_FAQ.html">接入问题解决</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Android_GDPR.html">GDPR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Android_Init.html">SDK初始化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Android_Inter.html">插屏广告</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Android_Reward.html">激励视频</a></li>
+<li class="toctree-l2"><a class="reference internal" href="copyright.html">Unity Plugin帮助文档</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/ios.html">IOS SDK帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/unity.html">Unity Plugin帮助文档</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">UPInteractive Document</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../chapters/android.html">Android 帮助文档</a> &raquo;</li>
+        
+      <li>Android Studio 接入帮助</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/Android/Android_AS.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="android-studio">
+<span id="android-studio"></span><h1>Android Studio 接入帮助<a class="headerlink" href="#android-studio" title="Permalink to this headline">¶</a></h1>
+<p>有关Studio的帮助，本文将以四个要点讲解如下。</p>
+<div class="section" id="android-studio">
+<span id="id1"></span><h2>Android Studio<a class="headerlink" href="#android-studio" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="up-adsdk">
+<span id="up-adsdk"></span><h3>一、UP ADSDK的目录结构<a class="headerlink" href="#up-adsdk" title="Permalink to this headline">¶</a></h3>
+<p>针对Android Studio 或 Gradle 构建的工程，UP ADSDK提倡以<code class="docutils literal notranslate"><span class="pre">*.aar</span></code>的方式被其它主工程导入。UP ADSDK Studio版本的下载包解压后的目录结构如下：</p>
+<p><img alt="" src="http://docs.upltv.com/uploads/201805/5af5689a90a1a_5af5689a.png" /></p>
+<div class="section" id="up-adsdk">
+<span id="id2"></span><h4>1. UP ADSDK 主包<a class="headerlink" href="#up-adsdk" title="Permalink to this headline">¶</a></h4>
+<p>如上图所示，命名为<code class="docutils literal notranslate"><span class="pre">UPAdsSdk_x.x.xx.aar</span></code>的文件即为UP ADSDK 主包，必须添加到你的主工程中。</p>
+</div>
+<div class="section" id="up-adsdk">
+<span id="id3"></span><h4>2. UP ADSDK 联盟依赖库<a class="headerlink" href="#up-adsdk" title="Permalink to this headline">¶</a></h4>
+<p>UP ADSDK与其它联盟广告商是一种松散耦合在的关系，可以根据实际需要在主工程中剔除某些不支持广告依赖库，从而减少应用程序的包体大小。</p>
+<p>这些联盟商的依赖库除了Admob与Facebook广告依赖库，其它的目前都是xxxx_ads.aar的文件形式存在。</p>
+</div>
+<div class="section" id="admobfacebook">
+<span id="admobfacebook"></span><h4>3. Admob与Facebook的广告依赖库<a class="headerlink" href="#admobfacebook" title="Permalink to this headline">¶</a></h4>
+<p>UP ADSDK的本地文件中，提供了Admob与Facebook 两种广告平台的aar依赖库，以备在网络不佳或其它原因时直接从本地libs中加载提供便利。即使如此，我们仍然提倡尽量在gradle中在线从两者的远程仓库更新下载合适的依赖库。</p>
+<blockquote>
+<div>有关Admob与Facebook 两种广告平台的接入说明，在本节的后续内容中有详解解说。</div></blockquote>
+</div>
+</div>
+<div class="section" id="android-studio-gradle-up-adsdk">
+<span id="android-studio-gradle-up-adsdk"></span><h3>二、使用 Android Studio 的 Gradle 导入UP ADSDK主包<a class="headerlink" href="#android-studio-gradle-up-adsdk" title="Permalink to this headline">¶</a></h3>
+<p>根据上文的介绍，在你下载好的文件目录中找到名为 <code class="docutils literal notranslate"><span class="pre">UPAdsSdk_x.x.xx.aar</span></code>的文件，并添加到项目的<code class="docutils literal notranslate"><span class="pre">libs</span></code>目录下。
+添加后，Studio工程的效果图如下所示：</p>
+<p><img alt="" src="http://docs.upltv.com/uploads/201805/5af56922f4043_5af56922.png" /></p>
+<blockquote>
+<div><code class="docutils literal notranslate"><span class="pre">UPAdsSdk_3.0.03.aar</span></code>仅作为示例参考说明</div></blockquote>
+<p>为了确保libs目录的aar包能正确被工程引用，请检查<code class="docutils literal notranslate"><span class="pre">app</span></code>目录下的<code class="docutils literal notranslate"><span class="pre">build.gradle</span></code>文件中，是否添加以下配置参数：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">repositories</span> <span class="p">{</span>
+    <span class="n">flatDir</span> <span class="p">{</span>
+        <span class="n">dirs</span> <span class="s1">&#39;libs&#39;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>最后将aar添加到compile方法中</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dependencies</span> <span class="p">{</span>
+    <span class="o">//</span> <span class="n">your</span> <span class="n">other</span> <span class="n">setting</span>
+    <span class="o">//</span> <span class="n">请将UPAdsSdk_3</span><span class="o">.</span><span class="mf">0.33</span><span class="n">替换成实际的文件名</span>
+    <span class="nb">compile</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="s1">&#39;UPAdsSdk_3.0.03&#39;</span><span class="p">,</span> <span class="n">ext</span><span class="p">:</span> <span class="s1">&#39;aar&#39;</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>至此，UP ADSDK的aar包已经成功配置到你的工程中，静等gradle编译生效。但UP ADSDK的工程导入工作还未完成，还差重要的最后一步工作要做：<strong>添加其它依赖库</strong>。</p>
+<blockquote>
+<div>作为优秀而强大的聚合平台，UP ADSDK必须灵活兼容第三方广告联盟商的运行库，才能取百家之长发挥最大的广告效益。因此，正确添加第三方依赖库，才能发挥UP ADSDK的最大潜能。</div></blockquote>
+<p>如果您使用 Android Studio 或 Gradle 构建 Android 项目，那么首先需要将目录中的 <code class="docutils literal notranslate"><span class="pre">UPAdsSdk_x.x.xx.aar</span></code> 文件导入到您的项目中，目录中的 <code class="docutils literal notranslate"><span class="pre">xxx_ads.aar</span></code> 文件为使用各个广告联盟需要依赖的文件，您可以将其全部导入到项目中，如果有特殊原因导致您不希望导入某个平台的文件，您也可以只选择需要的广告联盟的文件进行导入。</p>
+</div>
+<div class="section" id="">
+<span id="id4"></span><h3>三、添加广告联盟的依赖库<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h3>
+<p>部分广告商的 SDK 运行依赖一些公共的第三方库，使用 Android Studio 构建的项目可以通过下述方式来将所依赖的第三方库导入你的项目。</p>
+<p><strong>原则上，我们建议将依赖的第三方库全部导入你的项目，但在某些确定条件下可以有选则性地添加某些广告联盟库以减少工程大小。但无论如何确保你所添加的联盟库完全满足当前广告业务运行时所依赖的外部条件，否则会因为缺少某些必要的支持而导致崩溃.</strong></p>
+<p>如果你想去除某联盟商的支持，但又不清楚如何操作，请优先与我们的技术支持人员沟通，在他们的协助下你将会正确而顺利达成目的。</p>
+<div class="section" id="aar">
+<span id="aar"></span><h4>1.添加联盟商的*.aar<a class="headerlink" href="#aar" title="Permalink to this headline">¶</a></h4>
+<p>在你下载的目标文件中，命名为 <code class="docutils literal notranslate"><span class="pre">xxx_ads.aar</span></code> 的文件为使用各个广告联盟需要依赖的文件。请参考<strong>导入UP ADSDK aar文件</strong>的方式将其添加到你的工程中。</p>
+</div>
+<div class="section" id="">
+<span id="id5"></span><h4>2. 添加其它外部依赖<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h4>
+<p>由于一些联盟商运行时，需要其它额外的Android Api支持，因此还必须添加如下外部依赖库。</p>
+</div>
+<div class="section" id="gradlejcenter">
+<span id="gradlejcenter"></span><h4>1. 在Gradle中配置jcenter节点<a class="headerlink" href="#gradlejcenter" title="Permalink to this headline">¶</a></h4>
+<p>首先在你项目的主工程 <code class="docutils literal notranslate"><span class="pre">build.gradle</span></code> 文件中 <code class="docutils literal notranslate"><span class="pre">repositories</span></code> 节点加入 <code class="docutils literal notranslate"><span class="pre">jcenter</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">buildscript</span> <span class="p">{</span>
+    <span class="n">repositories</span> <span class="p">{</span>
+        <span class="n">mavenCentral</span><span class="p">();</span>
+        <span class="o">//</span> <span class="o">********</span> <span class="n">加入</span> <span class="n">jcenter</span> <span class="o">********</span>
+        <span class="n">jcenter</span><span class="p">()</span>
+        <span class="n">maven</span> <span class="p">{</span>
+            <span class="n">url</span> <span class="s1">&#39;https://maven.google.com/&#39;</span>
+            <span class="n">name</span> <span class="s1">&#39;Google&#39;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="n">dependencies</span> <span class="p">{</span>
+        <span class="n">classpath</span> <span class="s1">&#39;com.android.tools.build:gradle:2.1.3&#39;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">allprojects</span> <span class="p">{</span>
+    <span class="n">repositories</span> <span class="p">{</span>
+        <span class="o">//</span> <span class="o">********</span> <span class="n">加入</span> <span class="n">jcenter</span> <span class="o">********</span>
+        <span class="n">jcenter</span><span class="p">()</span>
+        <span class="n">maven</span> <span class="p">{</span>
+            <span class="n">url</span> <span class="s1">&#39;https://maven.google.com/&#39;</span>
+            <span class="n">name</span> <span class="s1">&#39;Google&#39;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="android-support">
+<span id="android-support"></span><h4>2. 加入 Android Support 支持库<a class="headerlink" href="#android-support" title="Permalink to this headline">¶</a></h4>
+<p><strong>【注意】由于Facebook等广告依赖了recyclerview的库，Google Admob等广告依赖Android Support V4库，因此请务必将这些依赖库引入你的项目，否则会导致程序崩溃！</strong></p>
+<p>广告的正常展示需要 <code class="docutils literal notranslate"><span class="pre">support</span></code> 库的支持，请参考以下方式将其引入到您的项目中。</p>
+<p>可以通过以下的方式添加依赖</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dependencies</span> <span class="p">{</span>
+    <span class="nb">compile</span> <span class="s1">&#39;com.android.support:recyclerview-v7:26.1.0&#39;</span>
+    <span class="nb">compile</span> <span class="s1">&#39;com.android.support:support-v4:26.1.0&#39;</span>
+    <span class="nb">compile</span> <span class="s1">&#39;com.android.support:appcompat-v7:26.1.0&#39;</span>
+    <span class="nb">compile</span> <span class="s1">&#39;com.android.support:support-annotations:26.1.0&#39;</span>
+    <span class="nb">compile</span>  <span class="s1">&#39;com.android.support:customtabs:26.1.0&#39;</span>
+    <span class="nb">compile</span> <span class="s1">&#39;com.android.support:cardview-v7:26.1.0&#39;</span>
+    <span class="o">//</span><span class="n">gson</span><span class="o">-</span><span class="mf">2.7</span><span class="o">.</span><span class="n">jar在android_support_library目录中</span>
+    <span class="nb">compile</span><span class="p">(</span><span class="n">name</span><span class="p">:</span> <span class="s1">&#39;gson-2.7&#39;</span><span class="p">,</span> <span class="n">ext</span><span class="p">:</span> <span class="s1">&#39;jar&#39;</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>如果您不想通过上面的方式引入<code class="docutils literal notranslate"><span class="pre">support</span></code>库，我们还为您在  <code class="docutils literal notranslate"><span class="pre">android_support_library</span></code> 文件夹中准备了对应的 <code class="docutils literal notranslate"><span class="pre">xxx.aar</span></code> 文件，您只需要将文件添加到项目中并且加入<code class="docutils literal notranslate"><span class="pre">compile</span></code>命令即可。</p>
+<div class="highlight-groovy notranslate"><div class="highlight"><pre><span></span><span class="n">dependencies</span> <span class="o">{</span>
+   <span class="c1">//core lib</span>
+   <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;UPAdsSdk_Cpp_3.0.04_dex&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+   <span class="c1">//support libs</span>
+   <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;animated-vector-drawable-26.1.0&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;appcompat-v7-26.1.0&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;customtabs-26.1.0&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;runtime-1.0.0&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;support-compat-26.1.0&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;support-core-ui-26.1.0&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;support-core-utils-26.1.0&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;support-fragment-26.1.0&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;support-media-compat-26.1.0&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;support-v4-26.1.0&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;support-vector-drawable-26.1.0&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;common-1.0.0&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;jar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;supprot-common-1.0.0&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;jar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;support-annotations-26.1.0&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;jar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;recyclerview-v7-26.1.0&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="google-ads-sdk">
+<span id="google-ads-sdk"></span><h4>3. 加入Google Ads SDK<a class="headerlink" href="#google-ads-sdk" title="Permalink to this headline">¶</a></h4>
+<p>如果您的项目中希望接入Admob的广告，我们需要您在的项目中加入 Google Ads 支持，可以按以下的方式添加依赖</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dependencies</span> <span class="p">{</span>
+    <span class="nb">compile</span> <span class="s1">&#39;com.google.android.gms:play-services-ads:15.0.1&#39;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<blockquote>
+<div>如果你只想通过本地添加gms play所依赖的aar文件，也可以在gradle文件中忽略此配置。
+特别地，如果你的工程中已经存在与UP ADSDK所依赖的gms play不同版时，请用更高的版本替换低版本。</div></blockquote>
+</div>
+</div>
+<div class="section" id="proguard">
+<span id="proguard"></span><h3>四、修改 Proguard<a class="headerlink" href="#proguard" title="Permalink to this headline">¶</a></h3>
+<p>如果你的项目使用了 <code class="docutils literal notranslate"><span class="pre">proguard</span></code>，你需要将 <code class="docutils literal notranslate"><span class="pre">proguard-project.txt</span></code> 文件中的内容复制粘贴到你项目使用的 <code class="docutils literal notranslate"><span class="pre">proguard</span></code> 配置文件中。</p>
+</div>
+<div class="section" id="demo">
+<span id="demo"></span><h3>五、Demo工程<a class="headerlink" href="#demo" title="Permalink to this headline">¶</a></h3>
+<p>为帮助您更好的了解广告SDK的接入以及使用，我们在这里提供了一个简单的<a class="reference external" href="https://github.com/AvidlyGit/AdSdkDemo-Studio">Demo工程</a>。</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Android_Banner_custom.html" class="btn btn-neutral float-right" title="横幅广告-自定义" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Android_65535.html" class="btn btn-neutral" title="解决65535方法数过多" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; <a href="../copyright.html">Copyright</a> 2018, upltv
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

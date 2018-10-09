@@ -1,0 +1,591 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>UPSDK cocos2d-X Cpp API说明 &mdash; UPInteractive Document  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="CppPlugin 接入帮助" href="Integrate_help_catalog .html" />
+    <link rel="prev" title="UPSDK Cocos2d-X Cpp帮助文档" href="../chapters/cocos2dx_cpp.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> UPInteractive Document
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../chapters/android.html">Android 帮助文档</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../chapters/cocos2dx_cpp.html">UPSDK Cocos2d-X Cpp帮助文档</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">UPSDK cocos2d-X Cpp API说明</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#">1. 回调函数定义：</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#">2. 枚举类型</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#">2.1 广告回调事件</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gdpr">2.2 GDPR受权状态</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#api">3. 主要API介绍</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#sdk">3.1 SDK初始化：</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#a-b-test">3.2 A/B Test初始化及获取</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#">3.3 激励视频接口：</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#">3.4 插屏接口：</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#banner">3.5 banner接口：</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#">3.6 需要特殊说明的方法：</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gdpr">4. GDPR接口：</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#android">5. Android平台的特殊接口：</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Integrate_help_catalog .html">CppPlugin 接入帮助</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Sample_catalog.html">CppPlugin 使用实例</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/cocos2dx_js.html">UPSDK Cocos2d-X JavaScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/cocos2dx_lua.html">UPSDK Cocos2d-X Lua帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/download.html">UPSDK 下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/egret_ts.html">UPSDK Egret TypeScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/faq.html">常见问题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/gdpr.html">GDPR支持</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/ios.html">UPSDK IOS帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/layabox_js.html">UPSDK Layabox JavaScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapters/unity.html">Unity Plugin帮助文档</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">UPInteractive Document</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../chapters/cocos2dx_cpp.html">UPSDK Cocos2d-X Cpp帮助文档</a> &raquo;</li>
+        
+      <li>UPSDK cocos2d-X Cpp API说明</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/Cocos2d-X_Cpp/Cocos2Cpp_API.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="upsdk-cocos2d-x-cpp-api">
+<span id="upsdk-cocos2d-x-cpp-api"></span><h1>UPSDK cocos2d-X Cpp API说明<a class="headerlink" href="#upsdk-cocos2d-x-cpp-api" title="Permalink to this headline">¶</a></h1>
+<p>在整个<strong>UpltvCppBridge</strong>目录下，有一个<em>UpltvBridge.h</em>文件，主要定义一些外部访问的API及回调函数。</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;UpltvBridge.h&quot;</span><span class="cp"></span>
+</pre></div>
+</div>
+<div class="section" id="">
+<span id="id1"></span><h2>1. 回调函数定义：<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">*</span><span class="n">UpltvSdkBoolCallback</span><span class="p">)(</span><span class="kt">bool</span> <span class="n">r</span><span class="p">);</span>
+<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">*</span><span class="n">UpltvSdkStringBoolCallback</span><span class="p">)(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">cpadid</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">r</span><span class="p">);</span>
+<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">*</span><span class="n">UpltvSdkStringCallback_1</span><span class="p">)(</span><span class="n">UpltvAdEventEnum</span><span class="o">::</span><span class="n">AdEventType</span> <span class="n">type</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">cpadid</span><span class="p">);</span>
+<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">*</span><span class="n">UpltvSdkStringCallback_2</span><span class="p">)(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">cpadid</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">msg</span><span class="p">);</span>
+<span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">*</span><span class="n">UpltvSdkGDPRNotifyCallback</span><span class="p">)(</span><span class="n">UpltvGDPRPermissionEnum</span><span class="o">::</span><span class="n">UPAccessPrivacyInfoStatus</span> <span class="n">status</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">msg</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="">
+<span id="id2"></span><h2>2. 枚举类型<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="">
+<span id="id3"></span><h3>2.1 广告回调事件<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">UpltvAdEventEnum</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="k">enum</span> <span class="k">class</span> <span class="nc">AdEventType</span>
+    <span class="p">{</span>
+        <span class="c1">// 激励视屏回调事件类型</span>
+        <span class="n">VIDEO_EVENT_DID_SHOW</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>  <span class="c1">//激励视频广告展示</span>
+        <span class="n">VIDEO_EVENT_DID_CLICK</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>  <span class="c1">//激励视频广告点击</span>
+        <span class="n">VIDEO_EVENT_DID_CLOSE</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>  <span class="c1">//激励视频广告关闭</span>
+        <span class="n">VIDEO_EVENT_DID_GIVEN_REWARD</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>  <span class="c1">//激励视频广告发放奖励</span>
+        <span class="n">VIDEO_EVENT_DID_ABANDON_REWARD</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span>  <span class="c1">//激励视频广告不符合条件，放弃发放奖励</span>
+
+        <span class="c1">// 插屏回调事件类型</span>
+        <span class="n">INTERSTITIAL_EVENT_DID_SHOW</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span>  <span class="c1">//插屏广告展示</span>
+        <span class="n">INTERSTITIAL_EVENT_DID_CLICK</span> <span class="o">=</span> <span class="mi">6</span><span class="p">,</span>  <span class="c1">//插屏广告点击</span>
+        <span class="n">INTERSTITIAL_EVENT_DID_CLOSE</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span>  <span class="c1">//插屏广告关闭</span>
+
+        <span class="c1">// Banner广告事件类型</span>
+        <span class="n">BANNER_EVENT_DID_SHOW</span> <span class="o">=</span> <span class="mi">8</span><span class="p">,</span>  <span class="c1">//banner广告展示</span>
+        <span class="n">BANNER_EVENT_DID_CLICK</span> <span class="o">=</span> <span class="mi">9</span><span class="p">,</span>  <span class="c1">//banner广告点击</span>
+        <span class="n">BANNER_EVENT_DID_REMOVED</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>  <span class="c1">//移除banner广告</span>
+
+        <span class="c1">// exit 广告事件类型</span>
+        <span class="n">EXITAD_EVENT_DID_SHOW</span> <span class="o">=</span> <span class="mi">11</span><span class="p">,</span>
+        <span class="n">EXITAD_EVENT_DID_CLICK</span> <span class="o">=</span> <span class="mi">12</span><span class="p">,</span>
+        <span class="n">EXITAD_EVENT_DID_CLICKMORE</span> <span class="o">=</span> <span class="mi">13</span><span class="p">,</span>
+        <span class="n">EXITAD_EVENT_DID_EXIT</span> <span class="o">=</span> <span class="mi">14</span><span class="p">,</span>
+        <span class="n">EXITAD_EVENT_DID_CANCEL</span> <span class="o">=</span> <span class="mi">15</span><span class="p">,</span>
+    <span class="p">};</span>
+
+<span class="p">};</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="gdpr">
+<span id="gdpr"></span><h3>2.2 GDPR受权状态<a class="headerlink" href="#gdpr" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">UpltvGDPRPermissionEnum</span> <span class="p">{</span>
+
+<span class="k">public</span><span class="o">:</span>
+    <span class="k">enum</span> <span class="k">class</span> <span class="nc">UPAccessPrivacyInfoStatus</span>
+    <span class="p">{</span>
+        <span class="n">UPAccessPrivacyInfoStatusUnkown</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="n">UPAccessPrivacyInfoStatusAccepted</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="n">UPAccessPrivacyInfoStatusDefined</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="p">};</span>
+
+<span class="p">};</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="api">
+<span id="api"></span><h2>3. 主要API介绍<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="sdk">
+<span id="sdk"></span><h3>3.1 SDK初始化：<a class="headerlink" href="#sdk" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* 初始化upltv广告sdk</span>
+<span class="cm">* 请务必优先完成sdk初始化，然后才能正常使用SDK的其它API接口</span>
+<span class="cm">* @param zone 产品发行的区域，0海外，1国内，2自动根据ip定位</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">initSdkByZone</span><span class="p">(</span><span class="kt">int</span> <span class="n">zone</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm">* 初始化upltv广告sdk</span>
+<span class="cm">* 请务必优先完成sdk初始化，然后才能正常使用SDK的其它API接口</span>
+<span class="cm">* @param zone 产品发行的区域，0海外，1国内，2自动根据ip定位</span>
+<span class="cm">* @param callback SDK初始化完成后的回调接口, 回调接口包含一个布尔参数 callback(boolean)，true表示成功，否则失败</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">initSdkByZoneWithCall</span><span class="p">(</span><span class="kt">int</span> <span class="n">zone</span><span class="p">,</span> <span class="n">UpltvSdkBoolCallback</span> <span class="n">callback</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm">* 当前游戏或应用进行后台或前台时，请调用此接口通知upsdk状态的改变</span>
+<span class="cm">* 进入后台时，参数hasfocus设置为fasle，进入前台活跃时，设置为true</span>
+<span class="cm">* 请在cocos2d-x 当前工程AppDelegate.cpp中添加此方法，详情可参考使用示例-&gt;UPSDK初始化-&gt;onApplicationFocus()添加</span>
+<span class="cm">* @param hasfocus</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">onApplicationFocus</span><span class="p">(</span><span class="kt">bool</span> <span class="n">hasfocus</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="a-b-test">
+<span id="a-b-test"></span><h3>3.2 A/B Test初始化及获取<a class="headerlink" href="#a-b-test" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* 进行A/B测试时，请在初始化SDK之后，调用此方法完成A/B Test 初始化</span>
+<span class="cm">* @param gameAccountId          const char*类型， 用户在游戏中的帐号id（必填）</span>
+<span class="cm">* @param completeTask           bool类型，是否完成了游戏中的新手任务</span>
+<span class="cm">* @param isPaid                 int类型，是否付费用户，0则未付费</span>
+<span class="cm">* @param promotionChannelName   const char*类型，推广渠道，没有可以传 &quot;&quot;</span>
+<span class="cm">* @param gender                 const char*，&quot;M&quot;, &quot;F&quot;，未知可以传&quot;&quot;</span>
+<span class="cm">* @param age                    int类型，未知可以传-1</span>
+<span class="cm">* @param tags                   vector类型，标签，没有可以传 nullptr</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">initAbtConfigJson</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">gameAccountId</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">completeTask</span><span class="p">,</span> <span class="kt">int</span> <span class="n">isPaid</span><span class="p">,</span>
+                                  <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">promotionChannelName</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">gender</span><span class="p">,</span> <span class="kt">int</span> <span class="n">age</span><span class="p">,</span> <span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span> <span class="o">*</span><span class="n">tags</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm">* 完成A/B Testing初始化后，通过此方法获取结果</span>
+<span class="cm">* 为了保证正确获取结果，调用时间建议延后initAbtConfigJson() 2秒以上</span>
+<span class="cm">* @param cpPlaceId  string类型， 广告位</span>
+<span class="cm">* @return const char*</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="nf">getAbtConfig</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">cpPlaceId</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="">
+<span id="id4"></span><h3>3.3 激励视频接口：<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* 打开激励视屏的debug界面</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">showRewardVideoDebugUI</span><span class="p">();</span>
+
+<span class="cm">/**</span>
+<span class="cm">* 设置激励视屏加载回调接口</span>
+<span class="cm">* 用于监听当前激励视屏的加载结果（成功或失败）</span>
+<span class="cm">* 此接口一旦回调，内部会自动释放，再次监听时需要重新设定回调接口</span>
+<span class="cm">* @param successCall 激励视屏加载成功时回调，successCall(cpadid, msg)</span>
+<span class="cm">* @param failCall    激励视屏加载失败时回调，failCall(cpadid, msg)</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">setRewardVideoLoadCallback</span><span class="p">(</span><span class="n">UpltvSdkStringCallback_2</span> <span class="n">successCall</span><span class="p">,</span> <span class="n">UpltvSdkStringCallback_2</span> <span class="n">failCall</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm">* 设置激励视屏展示回调接口，用于监听激励视屏广告的在某次展示时诸如点击，关闭，奖励发放等事件回调</span>
+<span class="cm">* 展示接口的引用会被内部保存，不会释放</span>
+<span class="cm">* 回调接口调用方式，callback(type, cpid)，type表示事件类型，有：展示回调，点击回调，关闭回调，激励发放成功回调，激励发放失败回调五种类型</span>
+<span class="cm">* @param callback(type, cpid)</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">setRewardVideoShowCallback</span><span class="p">(</span><span class="n">UpltvSdkStringCallback_1</span> <span class="n">callback</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm">* 判断激励视屏是否准备好</span>
+<span class="cm">* 同步返回boolean结果，true 表示广告准备就绪可以展示，false表示广告还在请求中无法展示</span>
+<span class="cm">* 通常在showRewardVideo(cpPlaceId)前，调用此方法</span>
+<span class="cm">* @return bool</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">bool</span> <span class="nf">isRewardReady</span><span class="p">();</span>
+
+<span class="cm">/**</span>
+<span class="cm">* 展示激励视屏</span>
+<span class="cm">* @param cpPlaceId 激励视屏展示时的广告位，用于业务打点，便于区分收益来源</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">showRewardVideo</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">cpPlaceId</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="">
+<span id="id5"></span><h3>3.4 插屏接口：<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* 打开插屏的debug界面</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">showInterstitialDebugUI</span><span class="p">();</span>
+
+<span class="cm">/**</span>
+<span class="cm">* 设置插屏广告展示时的回调接口，用于监听插屏广告的在某次展示时诸如点击，关闭等事件回调</span>
+<span class="cm">* 插件展示回调接口的引用会被内部保存，不会释放</span>
+<span class="cm">* 回调接口调用方式，callback(type, cpid)，type表示事件类型，有：展示回调，点击回调，关闭回调三种类型</span>
+<span class="cm">* @param cpPlaceId</span>
+<span class="cm">* @param callback</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">setInterstitialShowCallback</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">cpPlaceId</span><span class="p">,</span> <span class="n">UpltvSdkStringCallback_1</span> <span class="n">callback</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm">* 根据广告位，设置某个插屏广告加载回调接口</span>
+<span class="cm">* 用于监听插屏广告的加载结果（成功或失败）</span>
+<span class="cm">* 此接口一旦完成回调，内部会自动释放，再次监听时需要重新设定回调接口</span>
+<span class="cm">* @param cpPlaceId   广告位</span>
+<span class="cm">* @param loadSuccess 加载成功的回调接口, loadSuccess(cpid, message)</span>
+<span class="cm">* @param loadFail    加载失败的回调接口, loadFail(cpid, message)</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">setInterstitialLoadCallback</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">cpPlaceId</span><span class="p">,</span> <span class="n">UpltvSdkStringCallback_2</span> <span class="n">loadSuccess</span><span class="p">,</span> <span class="n">UpltvSdkStringCallback_2</span> <span class="n">loadFail</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm">* 根据广告位，判断某个插屏广告是否准备就绪r</span>
+<span class="cm">* 异步调用callback(cpid, r)，参数cpid为广告位，r为广告加载结果，true表示广告准备就绪可以展示，false表示广告还在请求中无法展示</span>
+<span class="cm">* @param cpPlaceId 广告位，必须正确指定，不能为空</span>
+<span class="cm">* @param callback 回调接口</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">isInterstitialReadyAsyn</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">cpPlaceId</span><span class="p">,</span> <span class="n">UpltvSdkBoolStringCallback</span> <span class="n">callback</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm">* 根据广告位，判断某个插屏广告是否准备就绪</span>
+<span class="cm">* 同步返回bool结果，true 表示广告准备就绪可以展示，false表示广告还在请求中无法展示</span>
+<span class="cm">* @param cpPlaceId 广告位</span>
+<span class="cm">* @return bool</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">bool</span> <span class="nf">isInterstitialReady</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">cpPlaceId</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * 根据广告位，展示某个插屏广告</span>
+<span class="cm"> * @param cpPlaceId 广告位</span>
+<span class="cm"> */</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">showInterstitialAd</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">cpPlaceId</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="banner">
+<span id="banner"></span><h3>3.5 banner接口：<a class="headerlink" href="#banner" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* 设置某个banner广告位的展示的回调接口，回调接口会被保存只有调用upltv:removeBannerAdAt(cpPlaceId)才会被删除</span>
+<span class="cm">* @param cpPlaceId banner广告位</span>
+<span class="cm">* @param callback</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">setBannerShowCallback</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">cpPlaceId</span><span class="p">,</span> <span class="n">UpltvSdkStringCallback_1</span> <span class="n">callback</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm">* 将某个广告位的banner广告展示在屏幕顶部</span>
+<span class="cm">* @param cpPlaceId</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">showBannerAdAtTop</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span><span class="n">cpPlaceId</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm">* 将某个广告位的banner广告展示在屏幕底部</span>
+<span class="cm">* @param cpPlaceId</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">showBannerAdAtBottom</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span><span class="n">cpPlaceId</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm">* 隐藏当前屏幕的顶部banner广告</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">hideBannerAdAtTop</span><span class="p">();</span>
+
+<span class="cm">/**</span>
+<span class="cm">* 隐藏当前屏幕的底部广告</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">hideBannerAdAtBottom</span><span class="p">();</span>
+
+<span class="cm">/**</span>
+<span class="cm">* 移除某个广告位的banner广告</span>
+<span class="cm">* @param cpPlaceId banner广告位</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">removeBannerAdAt</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span><span class="n">cpPlaceId</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm">* 对Iphonex手机，顶部Banner被状态栏遮挡时，可以通过调节顶部Banner的偏移值，解决此问题</span>
+<span class="cm">* @param padding: 顶部Banner的偏移值，如32，则状态样会向下偏移32像素</span>
+<span class="cm">* Android平台不支持此功能</span>
+<span class="cm">* supported from 3002</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">setTopBannerPadingForIphonex</span><span class="p">(</span><span class="kt">int</span> <span class="n">padding</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="">
+<span id="id6"></span><h3>3.6 需要特殊说明的方法：<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* 满足需求：不希望在初始化自动加载广告，且要求根据游戏自主选择合适的时机进行广告加载</span>
+<span class="cm">* 运行条件：当sdk默认禁用广告自动加载的功能，且upltv后台云配也关闭此功能时</span>
+<span class="cm">* 如果以上条件不成立，即使调用以下方法，SDK也会自动忽略</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">loadAdsByManual</span><span class="p">();</span>
+
+<span class="cm">/**</span>
+<span class="cm">* 退出应用</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">exitApp</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="gdpr">
+<span id="id7"></span><h3>4. GDPR接口：<a class="headerlink" href="#gdpr" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">GDPR《一般数据保护法案》</span></code>是欧盟出台的数据保护方案，如果您的产品会面向欧盟用户，请了解以下API，有利于熟悉UPSDK提供的<code class="docutils literal notranslate"><span class="pre">GDPR</span></code><a class="reference external" href="http://docs.upltv.com/docs/show/199">解决方案</a>。</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">  * 外部进行GDPR授权时，将用户授权结果同步到UPSDK时，调用此方法</span>
+<span class="cm">  * 请在初始UPSDK之前调用</span>
+<span class="cm">  * @param status</span>
+<span class="cm">  * Version 3003 and above support this method</span>
+<span class="cm">  */</span>
+ <span class="k">static</span> <span class="kt">void</span> <span class="nf">updateAccessPrivacyInfoStatus</span><span class="p">(</span><span class="n">UpltvGDPRPermissionEnum</span><span class="o">::</span><span class="n">UPAccessPrivacyInfoStatus</span> <span class="n">status</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm"> * 获取当前GDPR授权状态，返回UpltvGDPRPermissionEnum枚举值</span>
+<span class="cm"> * 可在初始UPSDK之前调用</span>
+<span class="cm"> * Version 3003 and above support this method</span>
+<span class="cm">*/</span>
+ <span class="k">static</span> <span class="n">UpltvGDPRPermissionEnum</span><span class="o">::</span><span class="n">UPAccessPrivacyInfoStatus</span> <span class="n">getAccessPrivacyInfoStatus</span><span class="p">();</span>
+
+<span class="cm">/**</span>
+<span class="cm">  * 弹出授权窗口，向用户说明重要数据收集的情况并询问用户是否同意授权</span>
+<span class="cm">  * 如果用户拒绝授权将放弃相关数据的收集</span>
+<span class="cm">  * 请在初始化UPSDK之前调用</span>
+<span class="cm">  * @param callback</span>
+<span class="cm">  * Version 3003 and above support this method</span>
+<span class="cm">  */</span>
+ <span class="k">static</span> <span class="kt">void</span> <span class="nf">notifyAccessPrivacyInfoStatus</span><span class="p">(</span><span class="n">UpltvSdkGDPRNotifyCallback</span> <span class="n">callback</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm">  * 判断用户是否属于欧盟地区</span>
+<span class="cm">  * 异步回调，可以在初始化UPSDK之前调用</span>
+<span class="cm">  * Version 3003 and above support this method</span>
+<span class="cm">  */</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">isEuropeanUnionUser</span><span class="p">(</span><span class="n">UpltvSdkBoolCallback</span> <span class="n">callback</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="android">
+<span id="android"></span><h3>5. Android平台的特殊接口：<a class="headerlink" href="#android" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">* 仅用于android平台</span>
+<span class="cm">* 当mainifest的packagename与实际的名字不一致时，需要通过此方法设置当前Manifest中定义的PackageName</span>
+<span class="cm">* @param pkg Manifest中定义的PackageName</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">setManifestPackageName</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">pkg</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm">* 仅用于android平台</span>
+<span class="cm">* 用于展示upltv在安卓平台的退出广告</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">onBackPressed</span><span class="p">();</span>
+
+<span class="cm">/**</span>
+<span class="cm">* 设置激退出广告回调接口，用于监听退出广告的在某次展示时如打开，点击，关闭等事件回调</span>
+<span class="cm">* 展示接口的引用会被内部保存，不会释放</span>
+<span class="cm">* @param callback</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">setBackPressedCallback</span><span class="p">(</span><span class="n">UpltvSdkStringCallback_1</span> <span class="n">callback</span><span class="p">);</span>
+
+<span class="cm">/**</span>
+<span class="cm">* 仅Android支持，对于非GP的包，可以传androidid</span>
+<span class="cm">* 请在初始化SDK之前调用</span>
+<span class="cm">* Version 3004(subversion 5) and above support this method</span>
+<span class="cm">* @param androidid</span>
+<span class="cm">*/</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="n">setCustomerId</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">androidid</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Integrate_help_catalog .html" class="btn btn-neutral float-right" title="CppPlugin 接入帮助" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../chapters/cocos2dx_cpp.html" class="btn btn-neutral" title="UPSDK Cocos2d-X Cpp帮助文档" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, upltv
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -28,9 +28,8 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="copyright" title="Copyright" href="../copyright.html" />
-    <link rel="next" title="工程引入" href="../c01/p01_import.html" />
-    <link rel="prev" title="前言" href="../preface.html" /> 
+    <link rel="next" title="解决65535方法数过多" href="../Android/Android_65535.html" />
+    <link rel="prev" title="Python Cookbook 3rd Edition Documentation" href="../index.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -80,17 +79,29 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../copyright.html">Copyright</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../preface.html">前言</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Android 帮助文档</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../c01/p01_import.html">工程引入</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../c01/p02_event.html">事件打点</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../c01/p02_init.html">初始化</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../c01/p03_login.html">登陆打点</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../c01/p04_payment.html">支付打点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Android/Android_65535.html">解决65535方法数过多</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Android/Android_Demo.html">Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Android/Android_Exit.html">广告对象初始化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Android/Android_Exit.html#">显示退出广告</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Android/Android_Exit.html#">回调接口</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Android/Android_GDPR.html">GDPR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Android/Android_Init.html">SDK初始化</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Android/Android_Inter.html">插屏广告</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Android/Android_Video.html">激励视频</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Android/Banner_catalog.html">横幅广告</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Android/Integrate_help_catalog .html">接入帮助</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="ios.html">IOS SDK帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cocos2dx_cpp.html">UPSDK Cocos2d-X Cpp帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cocos2dx_js.html">UPSDK Cocos2d-X JavaScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cocos2dx_lua.html">UPSDK Cocos2d-X Lua帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="download.html">UPSDK 下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="egret_ts.html">UPSDK Egret TypeScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">常见问题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gdpr.html">GDPR支持</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ios.html">UPSDK IOS帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="layabox_js.html">UPSDK Layabox JavaScript帮助文档</a></li>
 <li class="toctree-l1"><a class="reference internal" href="unity.html">Unity Plugin帮助文档</a></li>
 </ul>
 
@@ -158,17 +169,21 @@
             
   <div class="section" id="android">
 <h1>Android 帮助文档<a class="headerlink" href="#android" title="Permalink to this headline">¶</a></h1>
-<p>Python 提供了大量的内置数据结构，包括列表，集合以及字典。大多数情况下使用这些数据结构是很简单的。
-但是，我们也会经常碰到到诸如查询，排序和过滤等等这些普遍存在的问题。
-因此，这一章的目的就是讨论这些比较常见的问题和算法。
-另外，我们也会给出在集合模块 <code class="docutils literal notranslate"><span class="pre">collections</span></code> 当中操作这些数据结构的方法。</p>
+<p>UP ADSDK尽管做了很好地集成与封装，但仍然有不少用户在首次接入过程中遇到一些引用或编译等工程问题。为此，我们进一步完善了接入流程，并针对一些常见问题提供经验指导。</p>
+<p>为了你能更顺利地完成UP ADSDK的接入工作，请仔细参阅此标签下的内容，希望我们竭诚的帮助能为你以下的工作带来便利。</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../c01/p01_import.html">工程引入</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../c01/p02_event.html">事件打点</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../c01/p02_init.html">初始化</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../c01/p03_login.html">登陆打点</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../c01/p04_payment.html">支付打点</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Android/Android_65535.html">解决65535方法数过多</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Android/Android_Demo.html">Demo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Android/Android_Exit.html">广告对象初始化</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Android/Android_Exit.html#">显示退出广告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Android/Android_Exit.html#">回调接口</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Android/Android_GDPR.html">GDPR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Android/Android_Init.html">SDK初始化</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Android/Android_Inter.html">插屏广告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Android/Android_Video.html">激励视频</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Android/Banner_catalog.html">横幅广告</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Android/Integrate_help_catalog .html">接入帮助</a></li>
 </ul>
 </div>
 </div>
@@ -181,10 +196,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../c01/p01_import.html" class="btn btn-neutral float-right" title="工程引入" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../Android/Android_65535.html" class="btn btn-neutral float-right" title="解决65535方法数过多" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../preface.html" class="btn btn-neutral" title="前言" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../index.html" class="btn btn-neutral" title="Python Cookbook 3rd Edition Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -193,7 +208,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; <a href="../copyright.html">Copyright</a> 2018, upltv.
+        &copy; Copyright 2018, upltv
 
     </p>
   </div>
@@ -212,21 +227,14 @@
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../',
-            VERSION:'',
-            LANGUAGE:'zh-CN',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../_static/jquery.js"></script>
-      <script type="text/javascript" src="../_static/underscore.js"></script>
-      <script type="text/javascript" src="../_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
 
   
 
