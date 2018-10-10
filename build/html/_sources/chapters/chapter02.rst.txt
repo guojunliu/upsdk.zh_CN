@@ -8,7 +8,15 @@ UP ADSDK尽管做了很好地集成与封装，但仍然有不少用户在首次
 
 .. toctree::
    :maxdepth: 1
+   :titlesonly:
    :glob:
 
-   ../IOS/*
+   ../IOS/ios01
+   ../IOS/ios02
+   ../IOS/ios03
+   ../IOS/ios04
+   ../IOS/ios05
+   ../IOS/ios06
+   ../IOS/ios07
+   ../IOS/ios08
 
