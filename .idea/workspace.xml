@@ -2,51 +2,998 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84e338eb-619c-4008-a535-8d405c94f7a2" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/source/Android/android01.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Android/Android_65535.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Android/Android_65535.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Android/Android_Demo.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Android/Android_Demo.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Android/Android_Exit.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Android/Android_Exit.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Android/Android_GDPR.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Android/Android_GDPR.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Android/Android_Init.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Android/Android_Init.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Android/Android_Inter.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Android/Android_Inter.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Android/Android_Video.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Android/Android_Video.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Android/Banner/Android_Banner_custom.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Android/Banner/Android_Banner_custom.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Android/Banner/Android_Banner_default.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Android/Banner/Android_Banner_default.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Android/Banner_catalog.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Android/Banner_catalog.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Android/Integrate_help/Android_AS.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Android/Integrate_help/Android_AS.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Android/Integrate_help/Android_EC.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Android/Integrate_help/Android_EC.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Android/Integrate_help/Android_FAQ.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Android/Integrate_help/Android_FAQ.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Android/Integrate_help_catalog .doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Android/Integrate_help_catalog .doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/Cocos2Cpp_API.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/Cocos2Cpp_API.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/Integrate_help_catalog .doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/Integrate_help_catalog .doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_abtest.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_abtest.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_banner.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_banner.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_demo.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_demo.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_gdpr.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_gdpr.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_init.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_init.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_inter.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_inter.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_video.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_video.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/Sample_catalog.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/Sample_catalog.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/integrate_help/Cocos2Cpp_Start_as.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/integrate_help/Cocos2Cpp_Start_as.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/integrate_help/Cocos2Cpp_Start_ec.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/integrate_help/Cocos2Cpp_Start_ec.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/integrate_help/Cocos2Cpp_Start_ios.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/integrate_help/Cocos2Cpp_Start_ios.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/Integrate/Cocos2JS_Start_as.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/Integrate/Cocos2JS_Start_as.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/Integrate/Cocos2JS_Start_creator.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/Integrate/Cocos2JS_Start_creator.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/Integrate/Cocos2JS_Start_ec.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/Integrate/Cocos2JS_Start_ec.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/Integrate/Cocos2JS_Start_ios.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/Integrate/Cocos2JS_Start_ios.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/Integrate_help_catalog .doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/Integrate_help_catalog .doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/Sample/Cocos2JS_Sample_abtest.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/Sample/Cocos2JS_Sample_abtest.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/Sample/Cocos2JS_Sample_banner.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/Sample/Cocos2JS_Sample_banner.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/Sample/Cocos2JS_Sample_demo.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/Sample/Cocos2JS_Sample_demo.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/Sample/Cocos2JS_Sample_gdpr.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/Sample/Cocos2JS_Sample_gdpr.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/Sample/Cocos2JS_Sample_init.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/Sample/Cocos2JS_Sample_init.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/Sample/Cocos2JS_Sample_inter.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/Sample/Cocos2JS_Sample_inter.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/Sample/Cocos2JS_Sample_video.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/Sample/Cocos2JS_Sample_video.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/Sample_catalog.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Js/Sample_catalog.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/Integrate/Cocos2Lua_Start_as.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/Integrate/Cocos2Lua_Start_as.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/Integrate/Cocos2Lua_Start_ec.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/Integrate/Cocos2Lua_Start_ec.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/Integrate/Cocos2Lua_Start_ios.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/Integrate/Cocos2Lua_Start_ios.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/Integrate_help_catalog .doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/Integrate_help_catalog .doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/Sample/Cocos2Lua_Sample_abtest.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/Sample/Cocos2Lua_Sample_abtest.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/Sample/Cocos2Lua_Sample_banner.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/Sample/Cocos2Lua_Sample_banner.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/Sample/Cocos2Lua_Sample_demo.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/Sample/Cocos2Lua_Sample_demo.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/Sample/Cocos2Lua_Sample_gdpr.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/Sample/Cocos2Lua_Sample_gdpr.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/Sample/Cocos2Lua_Sample_init.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/Sample/Cocos2Lua_Sample_init.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/Sample/Cocos2Lua_Sample_inter.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/Sample/Cocos2Lua_Sample_inter.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/Sample/Cocos2Lua_Sample_video.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/Sample/Cocos2Lua_Sample_video.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/Sample_catalog.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Lua/Sample_catalog.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Download/Download_Guide.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Download/Download_Guide.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Egret-Ts/Integrate/Egret2TS_Start_ios.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Egret-Ts/Integrate/Egret2TS_Start_ios.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Egret-Ts/Integrate_help_catalog .doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Egret-Ts/Integrate_help_catalog .doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Egret-Ts/Sample/Egret2TS_Sample_abtest.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Egret-Ts/Sample/Egret2TS_Sample_abtest.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Egret-Ts/Sample/Egret2TS_Sample_banner.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Egret-Ts/Sample/Egret2TS_Sample_banner.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Egret-Ts/Sample/Egret2TS_Sample_demo.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Egret-Ts/Sample/Egret2TS_Sample_demo.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Egret-Ts/Sample/Egret2TS_Sample_gdpr.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Egret-Ts/Sample/Egret2TS_Sample_gdpr.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Egret-Ts/Sample/Egret2TS_Sample_init.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Egret-Ts/Sample/Egret2TS_Sample_init.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Egret-Ts/Sample/Egret2TS_Sample_inter.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Egret-Ts/Sample/Egret2TS_Sample_inter.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Egret-Ts/Sample/Egret2TS_Sample_video.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Egret-Ts/Sample/Egret2TS_Sample_video.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Egret-Ts/Sample_catalog.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Egret-Ts/Sample_catalog.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/FAQ/FAQ_Guide.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/FAQ/FAQ_Guide.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/GDPR/GDPR_Guide.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/GDPR/GDPR_Guide.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Layabox-Js/Integrate/LayaBox2Js_Start_as.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Layabox-Js/Integrate/LayaBox2Js_Start_as.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Layabox-Js/Integrate/LayaBox2Js_Start_ec.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Layabox-Js/Integrate/LayaBox2Js_Start_ec.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Layabox-Js/Integrate/LayaBox2Js_Start_ios.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Layabox-Js/Integrate/LayaBox2Js_Start_ios.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Layabox-Js/Integrate_help_catalog .doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Layabox-Js/Integrate_help_catalog .doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Layabox-Js/Sample/LayaBox2Js_Sample.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Layabox-Js/Sample/LayaBox2Js_Sample.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Layabox-Js/Sample/LayaBox2Js_Sample_abtest.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Layabox-Js/Sample/LayaBox2Js_Sample_abtest.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Layabox-Js/Sample/LayaBox2Js_Sample_banner.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Layabox-Js/Sample/LayaBox2Js_Sample_banner.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Layabox-Js/Sample/LayaBox2Js_Sample_demo.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Layabox-Js/Sample/LayaBox2Js_Sample_demo.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Layabox-Js/Sample/LayaBox2Js_Sample_gdpr.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Layabox-Js/Sample/LayaBox2Js_Sample_gdpr.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Layabox-Js/Sample/LayaBox2Js_Sample_init.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Layabox-Js/Sample/LayaBox2Js_Sample_init.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Layabox-Js/Sample/LayaBox2Js_Sample_inter.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Layabox-Js/Sample/LayaBox2Js_Sample_inter.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Layabox-Js/Sample/LayaBox2Js_Sample_video.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Layabox-Js/Sample/LayaBox2Js_Sample_video.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Layabox-Js/Sample_catalog.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Layabox-Js/Sample_catalog.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/API/Unity_API.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/API/Unity_API.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/API/Unity_CallBack.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/API/Unity_CallBack.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/API_catalog.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/API_catalog.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/Integrate/Unity_Android.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/Integrate/Unity_Android.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/Integrate/Unity_Ios.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/Integrate/Unity_Ios.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/Integrate_catalog.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/Integrate_catalog.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/MultiDex/Unity_Dex.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/MultiDex/Unity_Dex.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/MultiDex/Unity_DexByAS.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/MultiDex/Unity_DexByAS.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/MultiDex/Unity_DexByUnity.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/MultiDex/Unity_DexByUnity.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/MultiDex_catalog.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/MultiDex_catalog.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/Sample/Unity_ABTest.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/Sample/Unity_ABTest.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/Sample/Unity_AdsLoad.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/Sample/Unity_AdsLoad.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/Sample/Unity_AdsShow.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/Sample/Unity_AdsShow.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/Sample/Unity_Banner.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/Sample/Unity_Banner.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/Sample/Unity_Demo.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/Sample/Unity_Demo.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/Sample/Unity_GDPR.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/Sample/Unity_GDPR.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/Sample/Unity_Init.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/Sample/Unity_Init.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/Sample_catalog.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/Sample_catalog.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/Unity_UnityPlugin.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/Unity_UnityPlugin.doctree" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/environment.pickle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/doctrees/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/index.doctree" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/doctrees/ios/demo.doctree" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/doctrees/ios/interstitial.doctree" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/doctrees/ios/rewarded.doctree" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/doctrees/ios/sdk.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/.buildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/.buildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Android/Android_65535.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Android/Android_AS.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Android/Android_Banner_custom.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Android/Android_Banner_default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Android/Android_Demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Android/Android_EC.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Android/Android_Exit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Android/Android_FAQ.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Android/Android_GDPR.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Android/Android_Init.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Android/Android_Inter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Android/Android_Reward.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Android/Android_Video.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Android/Banner/Android_Banner_custom.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Android/Banner/Android_Banner_default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Android/Banner_catalog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Android/Integrate_help/Android_AS.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Android/Integrate_help/Android_EC.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Android/Integrate_help/Android_FAQ.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Android/Integrate_help_catalog .html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Android/copyright.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Android/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/Cocos2Cpp-Start.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/Cocos2Cpp-guide.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/Cocos2Cpp_API.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/Cocos2Cpp_API.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/Integrate_help_catalog .html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/Integrate_help_catalog .html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_abtest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_abtest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_banner.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_banner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_gdpr.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_gdpr.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_init.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_init.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_inter.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_inter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_video.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_video.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/Sample_catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/Sample_catalog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/integrate_help/Cocos2Cpp_Start_as.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/integrate_help/Cocos2Cpp_Start_as.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/integrate_help/Cocos2Cpp_Start_ec.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/integrate_help/Cocos2Cpp_Start_ec.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/integrate_help/Cocos2Cpp_Start_ios.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Cpp/integrate_help/Cocos2Cpp_Start_ios.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/Integrate/Cocos2JS_Start_as.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/Integrate/Cocos2JS_Start_as.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/Integrate/Cocos2JS_Start_creator.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/Integrate/Cocos2JS_Start_creator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/Integrate/Cocos2JS_Start_ec.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/Integrate/Cocos2JS_Start_ec.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/Integrate/Cocos2JS_Start_ios.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/Integrate/Cocos2JS_Start_ios.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/Integrate_help_catalog .html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/Integrate_help_catalog .html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/Sample/Cocos2JS_Sample_abtest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/Sample/Cocos2JS_Sample_abtest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/Sample/Cocos2JS_Sample_banner.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/Sample/Cocos2JS_Sample_banner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/Sample/Cocos2JS_Sample_demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/Sample/Cocos2JS_Sample_demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/Sample/Cocos2JS_Sample_gdpr.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/Sample/Cocos2JS_Sample_gdpr.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/Sample/Cocos2JS_Sample_init.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/Sample/Cocos2JS_Sample_init.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/Sample/Cocos2JS_Sample_inter.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/Sample/Cocos2JS_Sample_inter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/Sample/Cocos2JS_Sample_video.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/Sample/Cocos2JS_Sample_video.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/Sample_catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Js/Sample_catalog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/Integrate/Cocos2Lua_Start_as.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/Integrate/Cocos2Lua_Start_as.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/Integrate/Cocos2Lua_Start_ec.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/Integrate/Cocos2Lua_Start_ec.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/Integrate/Cocos2Lua_Start_ios.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/Integrate/Cocos2Lua_Start_ios.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/Integrate_help_catalog .html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/Integrate_help_catalog .html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/Sample/Cocos2Lua_Sample_abtest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/Sample/Cocos2Lua_Sample_abtest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/Sample/Cocos2Lua_Sample_banner.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/Sample/Cocos2Lua_Sample_banner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/Sample/Cocos2Lua_Sample_demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/Sample/Cocos2Lua_Sample_demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/Sample/Cocos2Lua_Sample_gdpr.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/Sample/Cocos2Lua_Sample_gdpr.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/Sample/Cocos2Lua_Sample_init.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/Sample/Cocos2Lua_Sample_init.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/Sample/Cocos2Lua_Sample_inter.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/Sample/Cocos2Lua_Sample_inter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/Sample/Cocos2Lua_Sample_video.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/Sample/Cocos2Lua_Sample_video.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/Sample_catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Cocos2d-X_Lua/Sample_catalog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Download/Download_Guide.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Download/Download_Guide.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Egret-Ts/Egret2TS_Sample_abtest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Egret-Ts/Egret2TS_Sample_banner.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Egret-Ts/Egret2TS_Sample_demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Egret-Ts/Egret2TS_Sample_gdpr.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Egret-Ts/Egret2TS_Sample_init.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Egret-Ts/Egret2TS_Sample_inter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Egret-Ts/Egret2TS_Sample_reward.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Egret-Ts/Egret2TS_Start_ios.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Egret-Ts/Integrate/Egret2TS_Start_ios.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Egret-Ts/Integrate/Egret2TS_Start_ios.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Egret-Ts/Integrate_help_catalog .html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Egret-Ts/Integrate_help_catalog .html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Egret-Ts/Sample/Egret2TS_Sample_abtest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Egret-Ts/Sample/Egret2TS_Sample_abtest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Egret-Ts/Sample/Egret2TS_Sample_banner.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Egret-Ts/Sample/Egret2TS_Sample_banner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Egret-Ts/Sample/Egret2TS_Sample_demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Egret-Ts/Sample/Egret2TS_Sample_demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Egret-Ts/Sample/Egret2TS_Sample_gdpr.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Egret-Ts/Sample/Egret2TS_Sample_gdpr.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Egret-Ts/Sample/Egret2TS_Sample_init.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Egret-Ts/Sample/Egret2TS_Sample_init.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Egret-Ts/Sample/Egret2TS_Sample_inter.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Egret-Ts/Sample/Egret2TS_Sample_inter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Egret-Ts/Sample/Egret2TS_Sample_video.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Egret-Ts/Sample/Egret2TS_Sample_video.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Egret-Ts/Sample_catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Egret-Ts/Sample_catalog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/FAQ/FAQ_Guide.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/FAQ/FAQ_Guide.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/GDPR/GDPR_Guide.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/GDPR/GDPR_Guide.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Ios/Banner/IOS_Banner_custom.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Ios/Banner/IOS_Banner_custom.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Ios/Banner/IOS_Banner_default.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Ios/Banner/IOS_Banner_default.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Ios/Banner_catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Ios/Banner_catalog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Ios/IOS_CocoaPods.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Ios/IOS_CocoaPods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Ios/IOS_Demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Ios/IOS_Demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Ios/IOS_GDPR.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Ios/IOS_GDPR.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Ios/IOS_Init.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Ios/IOS_Init.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Ios/IOS_Inter.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Ios/IOS_Inter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Ios/IOS_Reward.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Ios/IOS_Reward.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Ios/IOS_Xcode.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Ios/IOS_Xcode.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Ios/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/Integrate/LayaBox2Js_Start_as.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Layabox-Js/Integrate/LayaBox2Js_Start_as.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/Integrate/LayaBox2Js_Start_ec.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Layabox-Js/Integrate/LayaBox2Js_Start_ec.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/Integrate/LayaBox2Js_Start_ios.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Layabox-Js/Integrate/LayaBox2Js_Start_ios.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/Integrate_help_catalog .html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Layabox-Js/Integrate_help_catalog .html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/LayaBox2Js_Guide.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/LayaBox2Js_Sample.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/LayaBox2Js_Sample_abtest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/LayaBox2Js_Sample_banner.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/LayaBox2Js_Sample_demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/LayaBox2Js_Sample_gdpr.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/LayaBox2Js_Sample_init.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/LayaBox2Js_Sample_inter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/LayaBox2Js_Sample_reward.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/LayaBox2Js_Start.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/LayaBox2Js_Start_as.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/LayaBox2Js_Start_ec.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/LayaBox2Js_Start_ios.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/Sample/LayaBox2Js_Sample.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Layabox-Js/Sample/LayaBox2Js_Sample.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/Sample/LayaBox2Js_Sample_abtest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Layabox-Js/Sample/LayaBox2Js_Sample_abtest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/Sample/LayaBox2Js_Sample_banner.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Layabox-Js/Sample/LayaBox2Js_Sample_banner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/Sample/LayaBox2Js_Sample_demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Layabox-Js/Sample/LayaBox2Js_Sample_demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/Sample/LayaBox2Js_Sample_gdpr.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Layabox-Js/Sample/LayaBox2Js_Sample_gdpr.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/Sample/LayaBox2Js_Sample_init.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Layabox-Js/Sample/LayaBox2Js_Sample_init.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/Sample/LayaBox2Js_Sample_inter.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Layabox-Js/Sample/LayaBox2Js_Sample_inter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/Sample/LayaBox2Js_Sample_video.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Layabox-Js/Sample/LayaBox2Js_Sample_video.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Layabox-Js/Sample_catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Layabox-Js/Sample_catalog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Unity/API/Unity_API.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/API/Unity_API.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Unity/API/Unity_CallBack.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/API/Unity_CallBack.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Unity/API_catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/API_catalog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Unity/Integrate/Unity_Android.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/Integrate/Unity_Android.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Unity/Integrate/Unity_Ios.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/Integrate/Unity_Ios.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Unity/Integrate_catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/Integrate_catalog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Unity/MultiDex/Unity_Dex.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/MultiDex/Unity_Dex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Unity/MultiDex/Unity_DexByAS.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/MultiDex/Unity_DexByAS.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Unity/MultiDex/Unity_DexByUnity.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/MultiDex/Unity_DexByUnity.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Unity/MultiDex_catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/MultiDex_catalog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Unity/Sample/Unity_ABTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/Sample/Unity_ABTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Unity/Sample/Unity_AdsLoad.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/Sample/Unity_AdsLoad.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Unity/Sample/Unity_AdsShow.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/Sample/Unity_AdsShow.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Unity/Sample/Unity_Banner.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/Sample/Unity_Banner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Unity/Sample/Unity_Demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/Sample/Unity_Demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Unity/Sample/Unity_GDPR.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/Sample/Unity_GDPR.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Unity/Sample/Unity_Init.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/Sample/Unity_Init.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Unity/Sample_catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/Sample_catalog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Unity/Unity_UnityPlugin.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/Unity_UnityPlugin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Unity/Unity_guide.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Unity/Unity_guide.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Unity/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Android/Android_65535.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Android/Android_AS.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Android/Android_Banner_custom.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Android/Android_Banner_default.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Android/Android_Demo.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Android/Android_EC.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Android/Android_Exit.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Android/Android_FAQ.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Android/Android_GDPR.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Android/Android_Init.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Android/Android_Inter.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Android/Android_Reward.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Android/Android_Video.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Android/Banner/Android_Banner_custom.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Android/Banner/Android_Banner_default.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Android/Banner_catalog.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Android/Integrate_help/Android_AS.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Android/Integrate_help/Android_EC.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Android/Integrate_help/Android_FAQ.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Android/Integrate_help_catalog .rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Android/copyright.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Android/index.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Cocos2d-X_Cpp/Cocos2Cpp-Start.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Cocos2d-X_Cpp/Cocos2Cpp-guide.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Egret-Ts/Egret2TS_Sample_abtest.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Egret-Ts/Egret2TS_Sample_banner.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Egret-Ts/Egret2TS_Sample_demo.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Egret-Ts/Egret2TS_Sample_gdpr.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Egret-Ts/Egret2TS_Sample_init.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Egret-Ts/Egret2TS_Sample_inter.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Egret-Ts/Egret2TS_Sample_reward.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Egret-Ts/Egret2TS_Start_ios.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Ios/index.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Layabox-Js/LayaBox2Js_Guide.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Layabox-Js/LayaBox2Js_Sample.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Layabox-Js/LayaBox2Js_Sample_abtest.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Layabox-Js/LayaBox2Js_Sample_banner.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Layabox-Js/LayaBox2Js_Sample_demo.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Layabox-Js/LayaBox2Js_Sample_gdpr.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Layabox-Js/LayaBox2Js_Sample_init.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Layabox-Js/LayaBox2Js_Sample_inter.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Layabox-Js/LayaBox2Js_Sample_reward.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Layabox-Js/LayaBox2Js_Start.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Layabox-Js/LayaBox2Js_Start_as.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Layabox-Js/LayaBox2Js_Start_ec.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Layabox-Js/LayaBox2Js_Start_ios.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/Unity/index.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/aboutme.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/andlib/init.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/andlib/init.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/andlib/init02.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c01/p01_import.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c01/p01_unpack_sequence_into_separate_variables.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c01/p01_unpack_sequence_into_separate_variables.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c01/p02_event.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c01/p02_init.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c01/p02_unpack_elements_from_iterables.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c01/p03_keep_last_n_items.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c01/p03_login.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c01/p04_find_largest_or_smallest_n_items.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c01/p04_payment.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c01/p05_implement_a_priority_queue.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c01/p06_map_keys_to_multiple_values_in_dict.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c01/p07_keep_dict_in_order.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c01/p08_calculating_with_dict.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c01/p09_find_commonalities_in_dicts.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c01/p10_remove_duplicates_from_seq_order.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c01/p11_naming_slice.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c01/p12_determine_most_freqently_items_in_seq.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c01/p13_sort_list_of_dicts_by_key.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c01/p14_sort_objects_without_compare_support.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c01/p15_group_records_based_on_field.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c01/p16_filter_sequence_elements.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c01/p17_extract_subset_of_dict.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c01/p18_map_names_to_sequence_elements.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c01/p19_transform_and_reduce_data_same_time.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c01/p20_combine_multiple_map_to_single_map.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c02/p01_import.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c02/p01_split_string_on_multiple_delimiters.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c02/p02_init.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c02/p02_match_text_at_start_end.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c02/p03_event.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c02/p03_match_strings_with_shell_wildcard.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c02/p04_login.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c02/p04_match_and_search_text.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c02/p05_payment.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c02/p05_search_and_replace_text.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c02/p06_search_replace_case_insensitive.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c02/p07_specify_regexp_for_shortest_match.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c02/p08_regexp_for_multiline_partterns.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c02/p09_normalize_unicode_text_to_regexp.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c02/p10_work_with_unicode_in_regexp.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c02/p11_strip_unwanted_characters.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c02/p12_sanitizing_clean_up_text.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c02/p13_aligning_text_strings.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c02/p14_combine_and_concatenate_strings.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c02/p15_interpolating_variables_in_strings.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c02/p16_reformat_text_to_fixed_number_columns.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c02/p17_handle_html_xml_in_text.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c02/p18_tokenizing_text.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c02/p19_writing_recursive_descent_parser.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c02/p20_perform_text_operations_on_byte_string.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c03/p01_import.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c03/p01_round_number.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c03/p02_accurate_decimal_calculations.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c03/p02_event.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c03/p02_init.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c03/p03_format_numbers_for_output.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c03/p03_login.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c03/p04_binary_octal_hexadecimal_int.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c03/p04_payment.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c03/p05_pack_unpack_large_int_from_bytes.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c03/p06_complex_math.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c03/p07_infinity_and_nan.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c03/p08_calculating_with_fractions.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c03/p09_calculating_with_large_num_arrays.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c03/p10_matrix_and_linear_algebra_calculation.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c03/p11_pick_things_at_random.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c03/p12_convert_days_to_seconds_and_others.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c03/p13_determine_last_friday_date.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c03/p14_date_range_for_current_month.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c03/p15_convert_strings_into_datetimes.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c03/p16_manipulate_dates_involving_timezone.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c04/p01_manually_consuming_iterator.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c04/p02_delegating_iteration.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c04/p03_create_new_iteration_with_generators.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c04/p04_implement_iterator_protocol.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c04/p05_iterating_in_reverse.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c04/p06_define_generator_func_with_extra_state.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c04/p07_taking_slice_of_iterator.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c04/p08_skip_first_part_of_iterable.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c04/p09_iterate_over_combination_or_permutation.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c04/p10_iterate_over_index_value_pairs_of_sequence.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c04/p11_iterate_over_multiple_sequences_simultaneously.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c04/p12_iterate_on_items_in_separate_containers.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c04/p13_create_data_processing_pipelines.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c04/p14_flattening_nested_sequence.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c04/p15_iterate_in_sorted_order_over_merged_sorted_iterables.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c04/p16_replace_infinite_while_loops_with_iterator.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c05/p01_read_write_text_data.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c05/p02_printing_to_file.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c05/p03_print_with_different_separator_or_line_ending.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c05/p04_read_write_binary_data.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c05/p05_write_to_file_not_exist.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c05/p06_io_operations_on_string.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c05/p07_read_write_compressed_datafiles.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c05/p08_iterate_over_fixed_sized_records.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c05/p09_read_binary_data_into_mutable_buffer.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c05/p10_memory_mapping_binary_files.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c05/p11_manipulating_pathnames.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c05/p12_test_for_the_existence_of_file.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c05/p13_get_directory_listing.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c05/p14_bypassing_filename_encoding.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c05/p15_printing_bad_filenames.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c05/p16_add_change_encoding_of_already_open_file.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c05/p17_write_bytes_to_text_file.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c05/p18_wrap_existing_file_descriptor_as_file_object.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c05/p19_make_temporary_files_and_directories.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c05/p20_communicating_with_serial_ports.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c05/p21_serializing_python_objects.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c06/p01_read_write_csv_data.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c06/p02_read-write_json_data.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c06/p03_parse_simple_xml_data.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c06/p04_parse_huge_xml_files_incrementally.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c06/p05_turning_dictionary_into_xml.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c06/p06_parse_modify_rewrite_xml.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c06/p07_parse_xml_documents_with_namespaces.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c06/p08_interact_with_relational_database.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c06/p09_decode_encode_hexadecimal_digits.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c06/p10_decode_encode_base64.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c06/p11_read_write_binary_arrays_of_structures.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c06/p12_read_nested_and_variable_sized_binary_structures.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c06/p13_summarizing_and_perform_statistics.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c07/p01_functions_that_accept_any_number_arguments.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c07/p02_functions_that_only_accept_keyword_arguments.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c07/p03_attach_informatinal_matadata_to_function_arguments.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c07/p04_return_multiple_values_from_function.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c07/p05_define_functions_with_default_arguments.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c07/p06_define_anonymous_or_inline_functions.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c07/p07_capturing_variables_in_anonymous_functions.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c07/p08_make_callable_with_fewer_arguments.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c07/p09_replace_single_method_classes_with_functions.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c07/p10_carry_extra_state_with_callback_functions.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c07/p11_inline_callback_functions.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c07/p12_access_variables_defined_inside_closure.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c08/p01_change_string_representation_of_instances.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c08/p02_customizing_string_formatting.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c08/p03_make_objects_support_context_management_protocol.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c08/p04_save_memory_when_create_large_number_instances.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c08/p05_encapsulating_names_in_class.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c08/p06_create_managed_attributes.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c08/p07_calling_method_on_parent_class.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c08/p08_extending_property_in_subclass.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c08/p09_create_new_kind_of_class_or_instance_attribute.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c08/p10_using_lazily_computed_properties.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c08/p11_simplify_initialization_of_data_structure.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c08/p12_define_interface_or_abstract_base_class.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c08/p13_implementing_data_model_or_type_system.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c08/p14_implementing_custom_containers.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c08/p15_delegating_attribute_access.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c08/p16_define_more_than_one_constructor_in_class.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c08/p17_create_instance_without_invoking_init_method.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c08/p18_extending_classes_with_mixins.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c08/p19_implements_stateful_objects_or_state_machines.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c08/p20_call_method_on_object_by_string_name.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c08/p21_implementing_visitor_pattern.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c08/p22_implementing_visitor_pattern_without_recursion.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c08/p23_managing_memory_in_cyclic_data_structures.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c08/p24_making_classes_support_comparison_operations.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c08/p25_creating_cached_instances.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c09/p01_put_wrapper_around_function.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c09/p02_preserve_function_metadata_when_write_decorators.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c09/p03_unwrapping_decorator.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c09/p04_define_decorator_that_takes_arguments.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c09/p05_define_decorator_with_user_adjustable_attributes.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c09/p06_define_decorator_that_takes_optional_argument.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c09/p07_enforcing_type_check_on_function_using_decorator.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c09/p08_define_decorators_as_part_of_class.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c09/p09_define_decorators_as_classes.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c09/p10_apply_decorators_to_class_and_static_methods.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c09/p11_write_decorators_that_add_arguments_to_functions.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c09/p12_using_decorators_to_patch_class_definitions.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c09/p13_using_mataclass_to_control_instance_creation.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c09/p14_capture_class_attribute_definition_order.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c09/p15_define_metaclass_that_takes_optional_arguments.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c09/p16_enforce_argument_signature_on_args_kwargs.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c09/p17_enforce_coding_conventions_in_classes.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c09/p18_define_classes_programmatically.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c09/p19_initializing_class_members_at_definition_time.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c09/p20_implement_multiple_dispatch_with_function_annotations.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c09/p21_avoid_repetitive_property_methods.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c09/p22_define_context_managers_the_easy_way.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c09/p23_executing_code_with_local_side_effects.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c09/p24_parse_and_analyzing_python_source.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c09/p25_disassembling_python_byte_code.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c10/p01_make_hierarchical_package_of_modules.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c10/p02_control_the_import_of_everything.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c10/p03_import_submodules_by_relative_names.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c10/p04_split_module_into_multiple_files.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c10/p05_separate_directories_import_by_namespace.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c10/p06_reloading_modules.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c10/p07_make_directory_or_zip_runnable_as_main_script.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c10/p08_read_datafile_within_package.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c10/p09_add_directories_to_sys_path.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c10/p10_import_modules_using_name_given_in_string.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c10/p11_load_modules_from_remote_machine_by_hooks.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c10/p12_patching_modules_on_import.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c10/p13_installing_packages_just_for_yourself.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c10/p14_creating_new_python_environment.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c10/p15_distributing_packages.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c11/p01_interact_with_http_services_as_client.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c11/p02_creating_tcp_server.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c11/p03_creating_udp_server.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c11/p04_generate_range_of_ip_addresses_from_cidr_address.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c11/p05_creating_simple_rest_based_interface.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c11/p06_implement_simple_remote_procedure_call_with_xml_rpc.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c11/p07_communicate_simply_between_interpreters.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c11/p08_implementing_remote_procedure_calls.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c11/p09_authenticating_clients_simply.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c11/p10_add_ssl_to_network_services.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c11/p11_pass_socket_file_descriptor_between_processes.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c11/p12_understanding_event_driven_io.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c11/p13_sending_receiving_large_arrays.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c12/p01_start_stop_thread.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c12/p02_determining_if_thread_has_started.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c12/p03_communicating_between_threads.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c12/p04_locking_critical_sections.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c12/p05_locking_with_deadlock_avoidance.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c12/p06_storing_thread_specific_state.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c12/p07_creating_thread_pool.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c12/p08_perform_simple_parallel_programming.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c12/p09_dealing_with_gil_stop_worring_about_it.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c12/p10_defining_an_actor_task.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c12/p11_implement_publish_subscribe_messaging.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c12/p12_using_generators_as_alternative_to_threads.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c12/p13_polling_multiple_thread_queues.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c12/p14_launching_daemon_process_on_unix.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c13/p01_accept_input_via_redirect_pips_or_input_files.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c13/p02_terminate_program_with_an_error_message.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c13/p03_parsing_command_line_options.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c13/p04_prompt_for_password_at_runtime.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c13/p05_getting_terminal_size.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c13/p06_executing_external_command_and_get_its_output.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c13/p07_copy_move_files_and_directories.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c13/p08_creating_and_unpacking_archives.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c13/p09_find_files_by_name.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c13/p10_read_configuration_files.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c13/p11_add_logging_to_simple_scripts.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c13/p12_add_logging_to_libraries.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c13/p13_making_stopwatch_timer.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c13/p14_putting_limits_on_memory_and_cpu_usage.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c13/p15_luanch_a_web_browser.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c14/p01_testing_output_sent_to_stdout.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c14/p02_patching_objects_in_unit_tests.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c14/p03_testing_for_exceptional_conditions_in_unit_tests.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c14/p04_logging_test_output_to_file.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c14/p05_skip_or_anticipate_test_failures.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c14/p06_handle_multiple_exceptions.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c14/p07_catching_all_exceptions.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c14/p08_creating_custom_exceptions.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c14/p09_raise_exception_in_response_to_another_exception.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c14/p10_reraising_the_last_exception.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c14/p11_issuing_warning_messages.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c14/p12_debugging_basic_program_crashes.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c14/p13_profiling_and_timing_your_program.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c14/p14_make_your_program_run_faster.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c15/p01_access_ccode_using_ctypes.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c15/p02_write_simple_c_extension_module.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c15/p03_write_extension_function_operate_on_arrays.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c15/p04_manage_opaque_pointers_in_c_extension_modules.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c15/p05_define_and_export_c_api_from_extension_modules.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c15/p06_calling_python_from_c.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c15/p07_release_the_gil_in_c_extensions.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c15/p08_mix_threads_from_c_and_python.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c15/p09_wrap_c_code_with_swig.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c15/p10_wrap_existing_c_code_with_cython.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c15/p11_use_cython_to_write_high_performance_array_operation.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c15/p12_turning_function_pointer_into_callable.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c15/p13_pass_null_terminated_string_to_c_libraries.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c15/p14_pass_unicode_strings_to_c_libraries.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c15/p15_converting_c_string_to_python.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c15/p16_work_with_c_strings_of_dubious_encoding.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c15/p17_pass_filenames_to_c_extensions.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c15/p18_pass_open_files_to_c_extensions.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c15/p19_read_file_like_objects_from_c.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c15/p20_consuming_an_iterable_from_c.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/c15/p21_diagnosing_segmentation_faults.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/chapters/android.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/chapters/cocos2dx_cpp.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/chapters/cocos2dx_js.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/chapters/cocos2dx_lua.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/chapters/download.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/chapters/egret_ts.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/chapters/faq.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/chapters/gdpr.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/chapters/ios.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/chapters/layabox_js.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/chapters/p01_data_structures_algorithms.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/chapters/p02_strings_and_text.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/chapters/p03_numbers_dates_times.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/chapters/p04_iterators_and_generators.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/chapters/p05_files_and_io.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/chapters/p06_data_encoding_and_process.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/chapters/p07_functions.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/chapters/p08_classes_and_objects.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/chapters/p09_meta_programming.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/chapters/p10_modules_and_packages.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/chapters/p11_network_and_web_program.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/chapters/p12_concurrency.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/chapters/p13_utility_script_and_system_manage.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/chapters/p14_test_debug_and_exceptions.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/chapters/p15_c_extensions.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/chapters/p16_appendix.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/chapters/unity.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/copyright.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/download.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/h01/h01_document.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/h01/h02_ducument.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/help/help_01.rst.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/_sources/index.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_sources/index.rst.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/interactive/ads.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/interactive/android.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/interactive/demo.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/interactive/eclipse.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/interactive/index.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/interactive/interstitial.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/interactive/rewarded.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/interactive/sdk.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/interactive/test/aa.md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/interactive/test/index.rst.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/_sources/ios/demo.md.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/_sources/ios/interstitial.md.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/_sources/ios/rewarded.md.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/_sources/ios/sdk.md.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/documentation_options.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_static/documentation_options.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/html/_static/pygments.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_static/pygments.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/preface.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_sources/roadmap.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_static/alabaster.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_static/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_static/css/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_static/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_static/fonts/Inconsolata-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_static/fonts/Inconsolata-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_static/fonts/Inconsolata.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_static/fonts/Lato-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_static/fonts/Lato-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_static/fonts/RobotoSlab-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_static/fonts/RobotoSlab-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/_static/js/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/_static/js/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/aboutme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/andlib/init.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/andlib/init02.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c01/p01_import.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c01/p01_unpack_sequence_into_separate_variables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c01/p02_event.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c01/p02_init.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c01/p02_unpack_elements_from_iterables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c01/p03_keep_last_n_items.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c01/p03_login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c01/p04_find_largest_or_smallest_n_items.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c01/p04_payment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c01/p05_implement_a_priority_queue.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c01/p06_map_keys_to_multiple_values_in_dict.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c01/p07_keep_dict_in_order.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c01/p08_calculating_with_dict.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c01/p09_find_commonalities_in_dicts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c01/p10_remove_duplicates_from_seq_order.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c01/p11_naming_slice.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c01/p12_determine_most_freqently_items_in_seq.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c01/p13_sort_list_of_dicts_by_key.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c01/p14_sort_objects_without_compare_support.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c01/p15_group_records_based_on_field.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c01/p16_filter_sequence_elements.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c01/p17_extract_subset_of_dict.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c01/p18_map_names_to_sequence_elements.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c01/p19_transform_and_reduce_data_same_time.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c01/p20_combine_multiple_map_to_single_map.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c02/p01_import.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c02/p01_split_string_on_multiple_delimiters.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c02/p02_init.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c02/p02_match_text_at_start_end.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c02/p03_event.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c02/p03_match_strings_with_shell_wildcard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c02/p04_login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c02/p04_match_and_search_text.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c02/p05_payment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c02/p05_search_and_replace_text.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c02/p06_search_replace_case_insensitive.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c02/p07_specify_regexp_for_shortest_match.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c02/p08_regexp_for_multiline_partterns.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c02/p09_normalize_unicode_text_to_regexp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c02/p10_work_with_unicode_in_regexp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c02/p11_strip_unwanted_characters.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c02/p12_sanitizing_clean_up_text.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c02/p13_aligning_text_strings.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c02/p14_combine_and_concatenate_strings.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c02/p15_interpolating_variables_in_strings.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c02/p16_reformat_text_to_fixed_number_columns.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c02/p17_handle_html_xml_in_text.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c02/p18_tokenizing_text.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c02/p19_writing_recursive_descent_parser.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c02/p20_perform_text_operations_on_byte_string.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c03/p01_import.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c03/p01_round_number.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c03/p02_accurate_decimal_calculations.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c03/p02_event.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c03/p02_init.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c03/p03_format_numbers_for_output.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c03/p03_login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c03/p04_binary_octal_hexadecimal_int.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c03/p04_payment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c03/p05_pack_unpack_large_int_from_bytes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c03/p06_complex_math.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c03/p07_infinity_and_nan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c03/p08_calculating_with_fractions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c03/p09_calculating_with_large_num_arrays.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c03/p10_matrix_and_linear_algebra_calculation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c03/p11_pick_things_at_random.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c03/p12_convert_days_to_seconds_and_others.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c03/p13_determine_last_friday_date.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c03/p14_date_range_for_current_month.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c03/p15_convert_strings_into_datetimes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c03/p16_manipulate_dates_involving_timezone.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c04/p01_manually_consuming_iterator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c04/p02_delegating_iteration.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c04/p03_create_new_iteration_with_generators.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c04/p04_implement_iterator_protocol.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c04/p05_iterating_in_reverse.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c04/p06_define_generator_func_with_extra_state.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c04/p07_taking_slice_of_iterator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c04/p08_skip_first_part_of_iterable.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c04/p09_iterate_over_combination_or_permutation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c04/p10_iterate_over_index_value_pairs_of_sequence.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c04/p11_iterate_over_multiple_sequences_simultaneously.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c04/p12_iterate_on_items_in_separate_containers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c04/p13_create_data_processing_pipelines.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c04/p14_flattening_nested_sequence.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c04/p15_iterate_in_sorted_order_over_merged_sorted_iterables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c04/p16_replace_infinite_while_loops_with_iterator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c05/p01_read_write_text_data.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c05/p02_printing_to_file.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c05/p03_print_with_different_separator_or_line_ending.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c05/p04_read_write_binary_data.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c05/p05_write_to_file_not_exist.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c05/p06_io_operations_on_string.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c05/p07_read_write_compressed_datafiles.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c05/p08_iterate_over_fixed_sized_records.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c05/p09_read_binary_data_into_mutable_buffer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c05/p10_memory_mapping_binary_files.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c05/p11_manipulating_pathnames.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c05/p12_test_for_the_existence_of_file.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c05/p13_get_directory_listing.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c05/p14_bypassing_filename_encoding.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c05/p15_printing_bad_filenames.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c05/p16_add_change_encoding_of_already_open_file.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c05/p17_write_bytes_to_text_file.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c05/p18_wrap_existing_file_descriptor_as_file_object.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c05/p19_make_temporary_files_and_directories.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c05/p20_communicating_with_serial_ports.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c05/p21_serializing_python_objects.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c06/p01_read_write_csv_data.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c06/p02_read-write_json_data.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c06/p03_parse_simple_xml_data.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c06/p04_parse_huge_xml_files_incrementally.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c06/p05_turning_dictionary_into_xml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c06/p06_parse_modify_rewrite_xml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c06/p07_parse_xml_documents_with_namespaces.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c06/p08_interact_with_relational_database.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c06/p09_decode_encode_hexadecimal_digits.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c06/p10_decode_encode_base64.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c06/p11_read_write_binary_arrays_of_structures.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c06/p12_read_nested_and_variable_sized_binary_structures.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c06/p13_summarizing_and_perform_statistics.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c07/p01_functions_that_accept_any_number_arguments.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c07/p02_functions_that_only_accept_keyword_arguments.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c07/p03_attach_informatinal_matadata_to_function_arguments.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c07/p04_return_multiple_values_from_function.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c07/p05_define_functions_with_default_arguments.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c07/p06_define_anonymous_or_inline_functions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c07/p07_capturing_variables_in_anonymous_functions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c07/p08_make_callable_with_fewer_arguments.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c07/p09_replace_single_method_classes_with_functions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c07/p10_carry_extra_state_with_callback_functions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c07/p11_inline_callback_functions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c07/p12_access_variables_defined_inside_closure.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c08/p01_change_string_representation_of_instances.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c08/p02_customizing_string_formatting.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c08/p03_make_objects_support_context_management_protocol.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c08/p04_save_memory_when_create_large_number_instances.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c08/p05_encapsulating_names_in_class.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c08/p06_create_managed_attributes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c08/p07_calling_method_on_parent_class.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c08/p08_extending_property_in_subclass.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c08/p09_create_new_kind_of_class_or_instance_attribute.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c08/p10_using_lazily_computed_properties.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c08/p11_simplify_initialization_of_data_structure.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c08/p12_define_interface_or_abstract_base_class.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c08/p13_implementing_data_model_or_type_system.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c08/p14_implementing_custom_containers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c08/p15_delegating_attribute_access.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c08/p16_define_more_than_one_constructor_in_class.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c08/p17_create_instance_without_invoking_init_method.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c08/p18_extending_classes_with_mixins.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c08/p19_implements_stateful_objects_or_state_machines.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c08/p20_call_method_on_object_by_string_name.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c08/p21_implementing_visitor_pattern.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c08/p22_implementing_visitor_pattern_without_recursion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c08/p23_managing_memory_in_cyclic_data_structures.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c08/p24_making_classes_support_comparison_operations.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c08/p25_creating_cached_instances.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c09/p01_put_wrapper_around_function.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c09/p02_preserve_function_metadata_when_write_decorators.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c09/p03_unwrapping_decorator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c09/p04_define_decorator_that_takes_arguments.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c09/p05_define_decorator_with_user_adjustable_attributes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c09/p06_define_decorator_that_takes_optional_argument.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c09/p07_enforcing_type_check_on_function_using_decorator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c09/p08_define_decorators_as_part_of_class.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c09/p09_define_decorators_as_classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c09/p10_apply_decorators_to_class_and_static_methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c09/p11_write_decorators_that_add_arguments_to_functions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c09/p12_using_decorators_to_patch_class_definitions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c09/p13_using_mataclass_to_control_instance_creation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c09/p14_capture_class_attribute_definition_order.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c09/p15_define_metaclass_that_takes_optional_arguments.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c09/p16_enforce_argument_signature_on_args_kwargs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c09/p17_enforce_coding_conventions_in_classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c09/p18_define_classes_programmatically.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c09/p19_initializing_class_members_at_definition_time.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c09/p20_implement_multiple_dispatch_with_function_annotations.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c09/p21_avoid_repetitive_property_methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c09/p22_define_context_managers_the_easy_way.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c09/p23_executing_code_with_local_side_effects.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c09/p24_parse_and_analyzing_python_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c09/p25_disassembling_python_byte_code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c10/p01_make_hierarchical_package_of_modules.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c10/p02_control_the_import_of_everything.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c10/p03_import_submodules_by_relative_names.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c10/p04_split_module_into_multiple_files.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c10/p05_separate_directories_import_by_namespace.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c10/p06_reloading_modules.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c10/p07_make_directory_or_zip_runnable_as_main_script.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c10/p08_read_datafile_within_package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c10/p09_add_directories_to_sys_path.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c10/p10_import_modules_using_name_given_in_string.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c10/p11_load_modules_from_remote_machine_by_hooks.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c10/p12_patching_modules_on_import.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c10/p13_installing_packages_just_for_yourself.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c10/p14_creating_new_python_environment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c10/p15_distributing_packages.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c11/p01_interact_with_http_services_as_client.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c11/p02_creating_tcp_server.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c11/p03_creating_udp_server.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c11/p04_generate_range_of_ip_addresses_from_cidr_address.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c11/p05_creating_simple_rest_based_interface.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c11/p06_implement_simple_remote_procedure_call_with_xml_rpc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c11/p07_communicate_simply_between_interpreters.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c11/p08_implementing_remote_procedure_calls.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c11/p09_authenticating_clients_simply.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c11/p10_add_ssl_to_network_services.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c11/p11_pass_socket_file_descriptor_between_processes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c11/p12_understanding_event_driven_io.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c11/p13_sending_receiving_large_arrays.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c12/p01_start_stop_thread.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c12/p02_determining_if_thread_has_started.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c12/p03_communicating_between_threads.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c12/p04_locking_critical_sections.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c12/p05_locking_with_deadlock_avoidance.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c12/p06_storing_thread_specific_state.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c12/p07_creating_thread_pool.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c12/p08_perform_simple_parallel_programming.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c12/p09_dealing_with_gil_stop_worring_about_it.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c12/p10_defining_an_actor_task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c12/p11_implement_publish_subscribe_messaging.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c12/p12_using_generators_as_alternative_to_threads.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c12/p13_polling_multiple_thread_queues.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c12/p14_launching_daemon_process_on_unix.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c13/p01_accept_input_via_redirect_pips_or_input_files.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c13/p02_terminate_program_with_an_error_message.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c13/p03_parsing_command_line_options.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c13/p04_prompt_for_password_at_runtime.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c13/p05_getting_terminal_size.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c13/p06_executing_external_command_and_get_its_output.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c13/p07_copy_move_files_and_directories.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c13/p08_creating_and_unpacking_archives.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c13/p09_find_files_by_name.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c13/p10_read_configuration_files.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c13/p11_add_logging_to_simple_scripts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c13/p12_add_logging_to_libraries.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c13/p13_making_stopwatch_timer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c13/p14_putting_limits_on_memory_and_cpu_usage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c13/p15_luanch_a_web_browser.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c14/p01_testing_output_sent_to_stdout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c14/p02_patching_objects_in_unit_tests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c14/p03_testing_for_exceptional_conditions_in_unit_tests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c14/p04_logging_test_output_to_file.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c14/p05_skip_or_anticipate_test_failures.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c14/p06_handle_multiple_exceptions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c14/p07_catching_all_exceptions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c14/p08_creating_custom_exceptions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c14/p09_raise_exception_in_response_to_another_exception.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c14/p10_reraising_the_last_exception.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c14/p11_issuing_warning_messages.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c14/p12_debugging_basic_program_crashes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c14/p13_profiling_and_timing_your_program.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c14/p14_make_your_program_run_faster.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c15/p01_access_ccode_using_ctypes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c15/p02_write_simple_c_extension_module.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c15/p03_write_extension_function_operate_on_arrays.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c15/p04_manage_opaque_pointers_in_c_extension_modules.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c15/p05_define_and_export_c_api_from_extension_modules.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c15/p06_calling_python_from_c.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c15/p07_release_the_gil_in_c_extensions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c15/p08_mix_threads_from_c_and_python.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c15/p09_wrap_c_code_with_swig.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c15/p10_wrap_existing_c_code_with_cython.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c15/p11_use_cython_to_write_high_performance_array_operation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c15/p12_turning_function_pointer_into_callable.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c15/p13_pass_null_terminated_string_to_c_libraries.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c15/p14_pass_unicode_strings_to_c_libraries.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c15/p15_converting_c_string_to_python.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c15/p16_work_with_c_strings_of_dubious_encoding.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c15/p17_pass_filenames_to_c_extensions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c15/p18_pass_open_files_to_c_extensions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c15/p19_read_file_like_objects_from_c.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c15/p20_consuming_an_iterable_from_c.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/c15/p21_diagnosing_segmentation_faults.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/chapters/android.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/chapters/cocos2dx_cpp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/chapters/cocos2dx_js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/chapters/cocos2dx_lua.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/chapters/download.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/chapters/egret_ts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/chapters/faq.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/chapters/gdpr.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/chapters/ios.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/chapters/layabox_js.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/chapters/p01_data_structures_algorithms.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/chapters/p02_strings_and_text.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/chapters/p03_numbers_dates_times.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/chapters/p04_iterators_and_generators.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/chapters/p05_files_and_io.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/chapters/p06_data_encoding_and_process.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/chapters/p07_functions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/chapters/p08_classes_and_objects.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/chapters/p09_meta_programming.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/chapters/p10_modules_and_packages.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/chapters/p11_network_and_web_program.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/chapters/p12_concurrency.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/chapters/p13_utility_script_and_system_manage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/chapters/p14_test_debug_and_exceptions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/chapters/p15_c_extensions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/chapters/p16_appendix.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/chapters/unity.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/copyright.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/download.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/genindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/genindex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/h01/h01_document.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/h01/h02_ducument.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/help/help_01.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/interactive/ads.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/interactive/android.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/interactive/demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/interactive/eclipse.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/interactive/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/interactive/interstitial.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/interactive/rewarded.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/interactive/sdk.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/interactive/test/aa.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/interactive/test/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/ios/demo.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/ios/interstitial.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/ios/rewarded.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/ios/sdk.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/objects.inv" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/objects.inv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/preface.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/roadmap.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/html/searchindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/searchindex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Android/index.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Ios/index.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/Unity/index.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/andlib/init.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/andlib/init.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/andlib/init02.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/download.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Android/Android_65535.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/Android/android02.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Android/Android_Demo.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/Android/android09.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Android/Android_Exit.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/Android/android07.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Android/Android_GDPR.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/Android/android08.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Android/Android_Init.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/Android/android03.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Android/Android_Inter.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/Android/android05.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Android/Android_Video.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/Android/android06.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Android/Banner/Android_Banner_custom.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/Android/android06/android04_1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Android/Banner/Android_Banner_default.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/Android/android06/android04_2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Android/Banner_catalog.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/Android/android04.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Android/Integrate_help/Android_AS.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/Android/android02/android02.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Android/Integrate_help/Android_EC.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/Android/android02/android03.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Android/Integrate_help_catalog .rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/Android/android02/android04.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/chapters/android.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/chapters/chapter01.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/chapters/cocos2dx_cpp.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/chapters/chapter04.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/chapters/cocos2dx_js.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/chapters/chapter06.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/chapters/cocos2dx_lua.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/chapters/chapter05.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/chapters/download.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/chapters/chapter09.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/chapters/egret_ts.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/chapters/chapter08.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/chapters/faq.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/chapters/chapter11.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/chapters/gdpr.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/chapters/chapter10.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/chapters/ios.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/chapters/chapter02.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/chapters/layabox_js.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/chapters/chapter07.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/chapters/unity.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/chapters/chapter03.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/source/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/interactive/ads.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/interactive/android.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/interactive/demo.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/interactive/eclipse.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/interactive/index.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/interactive/interstitial.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/interactive/rewarded.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/interactive/test/aa.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/interactive/test/index.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/ios/demo.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/ios/interstitial.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/ios/rewarded.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/ios/sdk.md" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -56,17 +1003,78 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="conf.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/conf.py">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="chapter01.rst" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/chapters/chapter01.rst">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="47" column="54" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
+            <state relative-caret-position="143">
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="android01.rst" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/Android/android01.rst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="268">
+              <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="android02.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/Android/android02.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="50">
+                <caret line="2" selection-start-line="2" selection-end-line="2" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="android07.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/Android/android07.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor>
+                <caret column="7" selection-start-column="7" selection-end-column="7" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="android08.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/Android/android08.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="android09.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/Android/android09.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>##</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>###</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -75,6 +1083,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/source/conf.py" />
+        <option value="$PROJECT_DIR$/source/index.rst" />
+        <option value="$PROJECT_DIR$/source/Android/Integrate_help_catalog .rst" />
+        <option value="$PROJECT_DIR$/source/Android/android05.rst" />
+        <option value="$PROJECT_DIR$/source/Android/android01.rst" />
+        <option value="$PROJECT_DIR$/source/Android/android04.rst" />
+        <option value="$PROJECT_DIR$/source/chapters/chapter01.rst" />
+        <option value="$PROJECT_DIR$/source/Android/android05.md" />
+        <option value="$PROJECT_DIR$/source/Android/android07.md" />
       </list>
     </option>
   </component>
@@ -86,6 +1102,9 @@
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="700" />
@@ -109,6 +1128,18 @@
               <item name="upsdk.zh_CN" type="b2602c69:ProjectViewProjectNode" />
               <item name="upsdk.zh_CN" type="462c0819:PsiDirectoryNode" />
               <item name="source" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="upsdk.zh_CN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="upsdk.zh_CN" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="Android" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="upsdk.zh_CN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="upsdk.zh_CN" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="chapters" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -150,31 +1181,43 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="589000" />
+    <option name="totallyTimeSpent" value="5732000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2533512" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23659517" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32952926" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.36233953" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2533512" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,8 +1229,264 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/source/conf.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1175">
+          <caret line="47" column="54" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/conf.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="47" column="54" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_banner.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="175">
+            <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_gdpr.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-771">
+            <caret line="59" column="4" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_demo.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="200">
+            <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_video.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="275">
+            <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_inter.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="166">
+            <caret line="75" column="22" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/chapters/article04.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_init.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="50">
+            <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Cocos2d-X_Cpp/Integrate_help/Cocos2Cpp_Start_ios.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="29">
+            <caret line="110" column="3" selection-start-line="110" selection-start-column="3" selection-end-line="110" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Cocos2d-X_Cpp/Integrate_help/Cocos2Cpp_Start_ec.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="-1921">
+            <caret line="2" selection-start-line="2" selection-end-line="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Cocos2d-X_Cpp/Integrate_help/Cocos2Cpp_Start_as.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="475">
+            <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Cocos2d-X_Cpp/Sample/Cocos2Cpp_Sample_abtest.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="25">
+            <caret line="1" selection-start-line="1" selection-end-line="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Cocos2d-X_Cpp/Integrate_help_catalog .rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Cocos2d-X_Cpp/Sample_catalog.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="36" column="3" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/conf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="47" column="54" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/chapters/article02.rst">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/chapters/article01.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/conf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="47" column="54" selection-start-line="47" selection-start-column="54" selection-end-line="47" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/index.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Android/android04.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Android/android01_1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="25">
+            <caret line="1" selection-start-line="1" selection-end-line="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Android/android06.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret selection-end-column="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Android/android03.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="50">
+            <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Android/android05.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="25">
+            <caret line="1" selection-start-line="1" selection-end-line="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/chapters/chapter01.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Android/android01.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Android/android02.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="50">
+            <caret line="2" selection-start-line="2" selection-end-line="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Android/android08.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Android/android09.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Android/android07.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor>
+            <caret column="7" selection-start-column="7" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
