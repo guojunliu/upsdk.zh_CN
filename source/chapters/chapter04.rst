@@ -11,10 +11,12 @@ UPSDK CocosCpp插件包括了对Android与IOS平台不同联盟的广告库的�
 ## CocosCpp 插件使用示例
 如果您需要详细了解UPSDK CocosCpp插件在C++中的使用示例，请阅读[UPSDK CocosCpp插件使用示例](http://docs.upltv.com/docs/show/128 "参考这里")。
 
-Contents:
 
 .. toctree::
    :maxdepth: 1
+   :titlesonly:
    :glob:
 
-   ../Cocos2d-X_Cpp/*
+   ../Cocos2d-X_Cpp/cpp01
+   ../Cocos2d-X_Cpp/cpp02
+   ../Cocos2d-X_Cpp/cpp03

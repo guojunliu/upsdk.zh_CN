@@ -3,10 +3,10 @@ UPSDK 下载
 =============================
 
 
-Contents:
 
 .. toctree::
    :maxdepth: 1
+   :titlesonly:
    :glob:
 
    ../Download/*

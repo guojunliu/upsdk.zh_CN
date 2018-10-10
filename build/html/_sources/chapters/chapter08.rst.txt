@@ -1,11 +1,12 @@
-=============================
+=================================
 UPSDK Egret TypeScript帮助文档
-=============================
+=================================
 
-Contents:
 
 .. toctree::
    :maxdepth: 1
+   :titlesonly:
    :glob:
 
-   ../Egret-Ts/*
+   ../Egret-Ts/egret01
+   ../Egret-Ts/egret02

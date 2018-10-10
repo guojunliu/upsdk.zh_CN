@@ -12,10 +12,12 @@ CocosLua插件包括了对Android与iOS平台的支持，满足于在Lua中实�
 
 ## CocosLua 插件使用示例
 如果您需要详细了解UPSDK CocosLua插件的API定义及使用示例，请阅读[UPSDK CocosLua插件使用示例](http://docs.upltv.com/docs/show/154 "参考这里")。
-Contents:
+
 
 .. toctree::
    :maxdepth: 1
+   :titlesonly:
    :glob:
 
-   ../Cocos2d-X_Lua/*
+   ../Cocos2d-X_Lua/lua01
+   ../Cocos2d-X_Lua/lua02
