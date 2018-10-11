@@ -39,17 +39,14 @@ GDPR支持
 ----------
 
 
-1.UPSDK Android 原生 [GDPR接口调用](http://docs.upltv.com/docs/show/195)
-1.UPSDK Android 原生 `GDPR接口调用 <../Android/android>`
+1. `UPSDK Android 原生 GDPR接口调用 <../Android/android08.html>`_
 
-2.UPSDK IOS 原生 [GDPR接口调用](http://docs.upltv.com/docs/show/194)
+2. `UPSDK IOS 原生 GDPR接口调用 <../IOS/ios07.html>`_
 
-3.UPSDK UnityPlugin版 [GDPR接口调用](http://docs.upltv.com/docs/show/193)
+3. `UPSDK UnityPlugin版 [GDPR接口调用] <../Unity/unity05_6.html>`_
 
-4.UPSDK Cocos2d-x Cpp版 [GDPR接口调用](http://docs.upltv.com/docs/show/199)
+4. `UPSDK Cocos2d-x Cpp版 [GDPR接口调用] <../Cocos2d-X_Cpp/cpp03_6.html>`_
 
-5.UPSDK Cocos2d-x Lua版 [GDPR接口调用](http://docs.upltv.com/docs/show/210)
+5. `UPSDK Cocos2d-x Lua版 [GDPR接口调用] <../Cocos2d-X_Lua/lua02_6.html>`_
 
-6.UPSDK Cocos2d-x JavaScript版 [GDPR接口调用](http://docs.upltv.com/docs/show/220)
-
-
+6. `UPSDK Cocos2d-x JavaScript版 [GDPR接口调用] <../Cocos2d-X_Js/js02_6.html>`_
