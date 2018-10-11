@@ -40,6 +40,7 @@ GDPR支持
 
 
 1.UPSDK Android 原生 [GDPR接口调用](http://docs.upltv.com/docs/show/195)
+1.UPSDK Android 原生 `GDPR接口调用 <../Android/android>`
 
 2.UPSDK IOS 原生 [GDPR接口调用](http://docs.upltv.com/docs/show/194)
 
