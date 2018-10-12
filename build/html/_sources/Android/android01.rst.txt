@@ -11,6 +11,6 @@ UP ADSDK尽管做了很好地集成与封装，但仍然有不少用户在首次
    :titlesonly:
    :glob:
 
-   ../Android/android01_1
-   ../Android/android01_2
-   ../Android/android01_3
+   ../Android/android01_1_help_as
+   ../Android/android01_2_help_es
+   ../Android/android01_3_help_faq
