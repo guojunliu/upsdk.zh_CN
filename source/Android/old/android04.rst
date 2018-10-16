@@ -13,5 +13,5 @@ Contents:
    :maxdepth: 1
    :glob:
 
-   ../IOS/ios04_1_banner_custom
-   ../IOS/ios04_2_banner_quick
+   ../Android/android04_1
+   ../Android/android04_2
