@@ -19,5 +19,5 @@ CocosLua插件包括了对Android与iOS平台的支持，满足于在Lua中实�
    :titlesonly:
    :glob:
 
-   ../Cocos2d-X_Lua/lua01
-   ../Cocos2d-X_Lua/lua02
+   ../Cocos2d-X_Lua/lua01_help_catalog
+   ../Cocos2d-X_Lua/lua02_sample_catalog

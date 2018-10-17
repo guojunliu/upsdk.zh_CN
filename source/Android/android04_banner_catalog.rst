@@ -7,10 +7,11 @@ UP ADSDK尽管做了很好地集成与封装，但仍然有不少用户在首次
 
 为了你能更顺利地完成UP ADSDK的接入工作，请仔细参阅此标签下的内容，希望我们竭诚的帮助能为你以下的工作带来便利。
 
+Contents:
 
 .. toctree::
    :maxdepth: 1
    :glob:
 
-   ../Android/android04_1
-   ../Android/android04_2
+   ../Android/android04_1_banner_quick
+   ../Android/android04_2_banner_custom

@@ -10,4 +10,4 @@ Contents:
    :maxdepth: 1
    :glob:
 
-   ../Egret-Ts/egret01_1
+   ../Egret-Ts/egret01_1_help_ios

@@ -27,6 +27,6 @@ Contents:
    :maxdepth: 1
    :glob:
 
-   ../Layabox-Js/laya01_1
-   ../Layabox-Js/laya01_2
-   ../Layabox-Js/laya01_3
+   ../Layabox-Js/laya01_1_help_as
+   ../Layabox-Js/laya01_2_help_ec
+   ../Layabox-Js/laya01_3_help_ios

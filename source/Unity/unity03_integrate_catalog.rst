@@ -13,5 +13,5 @@ Contents:
    :maxdepth: 1
    :glob:
 
-   ../Unity/unity03_1
-   ../Unity/unity03_2
+  ../Unity/unity03_1_android
+  ../Unity/unity03_2_ios

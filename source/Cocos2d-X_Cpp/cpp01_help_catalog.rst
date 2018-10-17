@@ -15,6 +15,6 @@ Contents:
    :maxdepth: 1
    :glob:
 
-   ../Cocos2d-X_Cpp/cpp01_1
-   ../Cocos2d-X_Cpp/cpp01_2
-   ../Cocos2d-X_Cpp/cpp01_3
+   ../Cocos2d-X_Cpp/cpp01_1_help_as
+   ../Cocos2d-X_Cpp/cpp01_2_help_ec
+   ../Cocos2d-X_Cpp/cpp01_3_help_ios

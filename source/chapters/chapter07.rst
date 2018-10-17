@@ -14,5 +14,5 @@ UPSDK LayaboxJavaScript插件包括了对Android与iOS平台不同联盟的广�
    :titlesonly:
    :glob:
 
-   ../Layabox-Js/laya01
-   ../Layabox-Js/laya02
+   ../Layabox-Js/laya01_help_catalog
+   ../Layabox-Js/laya02_sample_catalog
