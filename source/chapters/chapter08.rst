@@ -8,5 +8,5 @@ UPSDK Egret TypeScript帮助文档
    :titlesonly:
    :glob:
 
-   ../Egret-Ts/egret01
-   ../Egret-Ts/egret02
+   ../Egret-Ts/egret01_help_catalog
+   ../Egret-Ts/egret02_sample_catalog

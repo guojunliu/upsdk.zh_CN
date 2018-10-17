@@ -16,5 +16,5 @@ UPSDK CocosJavascript插件包括了对Android与iOS平台不同联盟的广告�
    :titlesonly:
    :glob:
 
-   ../Cocos2d-X_Js/js01
-   ../Cocos2d-X_Js/js02
+   ../Cocos2d-X_Js/js01_help_catalog
+   ../Cocos2d-X_Js/js02_sample_catalog
