@@ -2,26 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84e338eb-619c-4008-a535-8d405c94f7a2" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/source/_static/js/custom.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/integrate_help/Cocos2Cpp_Start_as.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/integrate_help/Cocos2Cpp_Start_as.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/integrate_help/Cocos2Cpp_Start_ec.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/integrate_help/Cocos2Cpp_Start_ec.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/integrate_help/Cocos2Cpp_Start_ios.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Cocos2d-X_Cpp/integrate_help/Cocos2Cpp_Start_ios.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Ios/Banner/IOS_Banner_custom.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Ios/Banner/IOS_Banner_custom.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Ios/Banner/IOS_Banner_default.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Ios/Banner/IOS_Banner_default.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Ios/Banner_catalog.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Ios/Banner_catalog.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Ios/IOS_CocoaPods.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Ios/IOS_CocoaPods.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Ios/IOS_Demo.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Ios/IOS_Demo.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Ios/IOS_GDPR.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Ios/IOS_GDPR.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Ios/IOS_Init.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Ios/IOS_Init.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Ios/IOS_Inter.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Ios/IOS_Inter.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Ios/IOS_Reward.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Ios/IOS_Reward.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Ios/IOS_Xcode.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Ios/IOS_Xcode.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Ios/index.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/Unity/Unity_Guide.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/Unity/Unity_Guide.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/ios/demo.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/ios/interstitial.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/ios/rewarded.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/doctrees/ios/sdk.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/environment.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/source/_static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/conf.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,17 +20,26 @@
       <file leaf-file-name="conf.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/conf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+            <state relative-caret-position="240">
+              <caret line="87" selection-start-line="87" selection-end-line="88" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="custom.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/_static/js/custom.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/_static/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" selection-end-line="9" />
+            <state relative-caret-position="42">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -78,6 +72,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>##</find>
+      <find>css</find>
+      <find>link</find>
     </findStrings>
     <replaceStrings>
       <replace>###</replace>
@@ -129,12 +125,13 @@
         <option value="$PROJECT_DIR$/source/Unity/unity06.rst" />
         <option value="$PROJECT_DIR$/source/Cocos2d-X_Cpp/cpp03.rst" />
         <option value="$PROJECT_DIR$/source/Cocos2d-X_Lua/lua02.rst" />
-        <option value="$PROJECT_DIR$/source/conf.py" />
         <option value="$PROJECT_DIR$/source/chapters/chapter10.rst" />
         <option value="$PROJECT_DIR$/source/chapters/chapter04.rst" />
         <option value="$PROJECT_DIR$/source/chapters/chapter01.rst" />
         <option value="$PROJECT_DIR$/source/Android/android01.rst" />
+        <option value="$PROJECT_DIR$/source/conf.py" />
         <option value="$PROJECT_DIR$/source/_static/css/main.css" />
+        <option value="$PROJECT_DIR$/source/_static/js/custom.js" />
       </list>
     </option>
   </component>
@@ -150,9 +147,8 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="636" />
-    <option name="y" value="2" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="700" />
     <option name="width" value="1225" />
     <option name="height" value="1040" />
   </component>
@@ -174,6 +170,26 @@
               <item name="upsdk.zh_CN" type="462c0819:PsiDirectoryNode" />
               <item name="source" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="upsdk.zh_CN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="upsdk.zh_CN" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="_static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="upsdk.zh_CN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="upsdk.zh_CN" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="_static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="upsdk.zh_CN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="upsdk.zh_CN" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="_static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -183,7 +199,7 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="main.cs&#9;FILE&#9;file://D:/www/upsdk.zh_CN/source/_static/css/main.css&#10;conf.&#9;FILE&#9;file://D:/www/upsdk.zh_CN/source/conf.py&#10;lua02&#9;FILE&#9;file://D:/www/upsdk.zh_CN/source/Cocos2d-X_Lua/lua02.rst&#10;cpp03&#9;FILE&#9;file://D:/www/upsdk.zh_CN/source/Cocos2d-X_Cpp/cpp03.rst" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/tmp/sdk_zh" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -213,16 +229,18 @@
       <workItem from="1538203839515" duration="573000" />
       <workItem from="1539221626727" duration="804000" />
       <workItem from="1539759085380" duration="215000" />
+      <workItem from="1539826146457" duration="4249000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20426000" />
+    <option name="totallyTimeSpent" value="24675000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="509" y="2" width="980" height="832" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2483731" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15683647" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -231,7 +249,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32952926" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -246,19 +264,19 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24295011" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -308,7 +326,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/Unity/MultiDex/unity06_1.md" />
     <entry file="file://$PROJECT_DIR$/source/Unity/MultiDex/unity06_2.md" />
     <entry file="file://$PROJECT_DIR$/source/Unity/MultiDex/unity06_3.md" />
     <entry file="file://$PROJECT_DIR$/source/chapters/chapter03.rst">
@@ -609,13 +626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_static/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/Download/Download_Guide.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -623,13 +633,6 @@
             <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/conf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -673,6 +676,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/conf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="87" selection-start-line="87" selection-end-line="88" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_static/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
         </state>
       </provider>
     </entry>
