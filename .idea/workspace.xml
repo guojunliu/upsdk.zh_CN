@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84e338eb-619c-4008-a535-8d405c94f7a2" name="Default" comment="" />
+    <list default="true" id="84e338eb-619c-4008-a535-8d405c94f7a2" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/build/doctrees/environment.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Android/android01_1_help_as.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Android/android01_1_help_as.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Android/android01_2_help_es.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Android/android01_2_help_es.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/html/Android/android01_3_help_faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/html/Android/android01_3_help_faq.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/conf.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,8 +21,8 @@
       <file leaf-file-name="conf.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/conf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="87" column="35" selection-start-line="87" selection-start-column="35" selection-end-line="87" selection-end-column="35" />
+            <state relative-caret-position="215">
+              <caret line="88" column="38" lean-forward="true" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -24,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/source/_static/js/custom.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="125">
-              <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="34" />
+              <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -32,8 +39,8 @@
       <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/_static/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            <state relative-caret-position="175">
+              <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -170,13 +177,6 @@
               <item name="source" type="462c0819:PsiDirectoryNode" />
               <item name="_static" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="upsdk.zh_CN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="upsdk.zh_CN" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="_static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -216,16 +216,15 @@
       <workItem from="1538203839515" duration="573000" />
       <workItem from="1539221626727" duration="804000" />
       <workItem from="1539759085380" duration="215000" />
-      <workItem from="1539826146457" duration="9805000" />
+      <workItem from="1539826146457" duration="11501000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30231000" />
+    <option name="totallyTimeSpent" value="31927000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15683647" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -236,7 +235,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.56776035" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32952926" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.28673324" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -313,7 +312,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/Unity/MultiDex/unity06_2.md" />
     <entry file="file://$PROJECT_DIR$/source/Unity/MultiDex/unity06_3.md" />
     <entry file="file://$PROJECT_DIR$/source/chapters/chapter03.rst">
       <provider selected="true" editor-type-id="text-editor">
@@ -666,24 +664,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_static/js/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/build/html/_static/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_static/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_static/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/conf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="87" column="35" selection-start-line="87" selection-start-column="35" selection-end-line="87" selection-end-column="35" />
+        <state relative-caret-position="215">
+          <caret line="88" column="38" lean-forward="true" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
         </state>
       </provider>
     </entry>

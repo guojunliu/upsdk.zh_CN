@@ -85,9 +85,8 @@ pygments_style = None
 html_theme = 'sphinx_rtd_theme'
 
 def setup(app):
- app.add_stylesheet('css/custom.css')
-def setup(app):
- app.add_javascript('js/custom.js')
+    app.add_stylesheet('css/custom.css')
+    app.add_javascript('js/custom.js')
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
