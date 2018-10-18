@@ -85,7 +85,7 @@ pygments_style = None
 html_theme = 'sphinx_rtd_theme'
 
 def setup(app):
- app.add_stylesheet("css/main.css")
+ app.add_stylesheet("css/hatnotes.css")
 #def setup(app):
 # app.add_javascript('js/custom.js')
 
