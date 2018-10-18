@@ -97,7 +97,7 @@ html_theme_options = {
     'canonical_url': '',
     'analytics_id': '',
     'logo_only': True,
-    'display_version': True,
+    'display_version': False,
     'prev_next_buttons_location': 'bottom',
     'style_external_links': False,
     # Toc options
