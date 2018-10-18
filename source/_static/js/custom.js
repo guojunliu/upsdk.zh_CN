@@ -1,6 +1,6 @@
 $("footer").html($("footer").html().replace(/Built with(.)*/, ' '))
-$(".ethical-sidebar").html(' ')
+$(".ethical-sidebar").hide()
 
 
-$('.rst-current-version').addClass('shift-up').removeAttr('data-toggle')
+$('.rst-current-version').addClass('shift-up').removeAttr('data-toggle').hide()
 $('.rst-other-versions').css("display", "block")
