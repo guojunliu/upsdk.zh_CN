@@ -4,3 +4,5 @@ $(".ethical-sidebar").hide()
 
 $('.rst-current-version').addClass('shift-up').removeAttr('data-toggle').hide()
 $('.rst-other-versions').css("display", "block")
+
+$('.injected dl:gt(1)').hide()
