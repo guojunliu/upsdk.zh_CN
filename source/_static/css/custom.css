@@ -7,3 +7,23 @@
  max-width: 1050px !important;
  padding: 1.618em 6.236em !important;
 }
+
+div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(2) {
+ display: none;
+}
+
+div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(3) {
+ display: none;
+}
+/* Hide "On READ THE DOCS" section from versions menu */
+div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(4) {
+ display: none;
+}
+/* Hide "On GitHub" section from versions menu */
+div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(5) {
+ display: none;
+}
+
+div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(6) {
+ display: none;
+}
