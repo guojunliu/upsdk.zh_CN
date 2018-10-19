@@ -14,6 +14,11 @@
 }
 
 
+.ethical-rtd {
+ visibility: hidden;
+}
+
+
 div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(1) > dt {
  visibility: hidden;
 }
@@ -43,7 +48,7 @@ div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(1) > dd 
 }
 
 div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(1) > dd > a:after {
- content: '英文';
+ content: 'Englist';
  visibility: visible;
  display: block;
 }
