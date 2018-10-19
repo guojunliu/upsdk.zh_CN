@@ -19,14 +19,14 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u'UPLTV'
-copyright = u'2018, upltv'
-author = u'upltv'
+project = 'UPInteractive Document'
+copyright = '2018, upltv'
+author = 'upltv'
 
 # The short X.Y version
-version = u''
+version = ''
 # The full version, including alpha/beta/rc tags
-release = u''
+release = ''
 
 
 # -- General configuration ---------------------------------------------------
@@ -42,7 +42,7 @@ extensions = [
 ]
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['upltv_templates']
+templates_path = ['_templates']
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -70,11 +70,11 @@ language = 'zh-CN'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-# This pattern also affects html_static_path and html_extra_path .
+# This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'sphinx'
+pygments_style = None
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -82,18 +82,37 @@ pygments_style = 'sphinx'
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+html_theme = 'sphinx_rtd_theme'
+
+def setup(app):
+    app.add_stylesheet('css/custom.css')
+    app.add_javascript('js/custom.js')
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
 # html_theme_options = {}
+html_theme_options = {
+    'canonical_url': '',
+    'analytics_id': '',
+    'logo_only': True,
+    'display_version': False,
+    'prev_next_buttons_location': 'bottom',
+    'style_external_links': False,
+    # Toc options
+    'collapse_navigation': True,
+    'sticky_navigation': True,
+    'navigation_depth': 4,
+    'includehidden': True,
+    'titles_only': False
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['upltv_static']
+html_static_path = ['_static']
+html_logo = 'img/logo.png'
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
@@ -109,7 +128,7 @@ html_static_path = ['upltv_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'UPLTVSDKdoc'
+htmlhelp_basename = 'UPInteractiveDocumentdoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -126,6 +145,22 @@ latex_elements = {
     # Additional stuff for the LaTeX preamble.
     #
     # 'preamble': '',
+    'preamble': r'''
+    \hypersetup{unicode=true}
+    \usepackage{CJKutf8}
+    \DeclareUnicodeCharacter{00A0}{\nobreakspace}
+    \DeclareUnicodeCharacter{2203}{\ensuremath{\exists}}
+    \DeclareUnicodeCharacter{2200}{\ensuremath{\forall}}
+    \DeclareUnicodeCharacter{2286}{\ensuremath{\subseteq}}
+    \DeclareUnicodeCharacter{2713}{x}
+    \DeclareUnicodeCharacter{27FA}{\ensuremath{\Longleftrightarrow}}
+    \DeclareUnicodeCharacter{221A}{\ensuremath{\sqrt{}}}
+    \DeclareUnicodeCharacter{221B}{\ensuremath{\sqrt[3]{}}}
+    \DeclareUnicodeCharacter{2295}{\ensuremath{\oplus}}
+    \DeclareUnicodeCharacter{2297}{\ensuremath{\otimes}}
+    \begin{CJK}{UTF8}{gbsn}
+    \AtEndDocument{\end{CJK}}
+    ''',
 
     # Latex figure (float) alignment
     #
@@ -136,8 +171,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'UPLTVSDK.tex', u'UPLTV互动广告SDK接入文档 Documentation',
-     u'upltv', 'manual'),
+    (master_doc, 'UPInteractiveDocument.tex', 'UPInteractive Document Documentation',
+     'upltv', 'manual'),
 ]
 
 
@@ -146,7 +181,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'upltvsdk', u'UPLTV互动广告SDK接入文档 Documentation',
+    (master_doc, 'upinteractivedocument', 'UPInteractive Document Documentation',
      [author], 1)
 ]
 
@@ -157,7 +192,25 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'UPLTVSDK', u'UPLTV互动广告SDK接入文档 Documentation',
-     author, 'UPLTVSDK', 'One line description of project.',
+    (master_doc, 'UPInteractiveDocument', 'UPInteractive Document Documentation',
+     author, 'UPInteractiveDocument', 'One line description of project.',
      'Miscellaneous'),
 ]
+
+
+# -- Options for Epub output -------------------------------------------------
+
+# Bibliographic Dublin Core info.
+epub_title = project
+
+# The unique identifier of the text. This can be a ISBN number
+# or the project homepage.
+#
+# epub_identifier = ''
+
+# A unique identification for the text.
+#
+# epub_uid = ''
+
+# A list of files that should not be packed into the epub file.
+epub_exclude_files = ['search.html']
