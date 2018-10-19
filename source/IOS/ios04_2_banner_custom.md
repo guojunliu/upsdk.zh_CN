@@ -6,7 +6,7 @@ UPSDK提供两种横幅(Banner)广告的封装实现，一种是基于*UPBannerS
 Banner两个类型的头文件，分别是：UPBannerStripWrapper.h与UPBannerRectangleWrapper.h。头文件的引入方式如下：
 
 ```objective-c
-#import   &lt;UPSDK/UPSDK.h>
+#import   <UPSDK/UPSDK.h>
 ```
 
 <br>

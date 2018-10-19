@@ -11,10 +11,10 @@
 * @param success 第二个参数，加载成功后的回调
 * @param fail 第三个参数，加载失败后的回调
 * 
-* 回调参数类型：Action&lt;string,string>，第一个为cpPlaceId，广告位，可能为空或null；第二个参数为描述信息，可能为空或null
+* 回调参数类型：Action<string,string>，第一个为cpPlaceId，广告位，可能为空或null；第二个参数为描述信息，可能为空或null
 * 此方法自 2028开始支持
 */
-public static void setIntersitialLoadCallback(string cpPlaceId, Action&lt;string,string> success, Action&lt;string, string> fail)
+public static void setIntersitialLoadCallback(string cpPlaceId, Action<string,string> success, Action<string, string> fail)
 ```
 
 使用示例代码：
@@ -25,8 +25,8 @@ public static void setIntersitialLoadCallback(string cpPlaceId, Action&lt;string
 public void onBtn_ClickForIntsLoadCallback() {
     // "inter_aaa"为插屏广告位
     UPSDK.setIntersitialLoadCallback ("inter_aaa", 
-        new System.Action&lt;string, string>(actionForIntsLoadSuccess),
-        new System.Action&lt;string, string>(actionForIntsLoadFail) 
+        new System.Action<string, string>(actionForIntsLoadSuccess),
+        new System.Action<string, string>(actionForIntsLoadFail) 
     );
 }
 
@@ -51,10 +51,10 @@ private void actionForIntsLoadSuccess(string placeId, string msg)
 * @param success 第一个参数，加载成功后的回调
 * @param fail 第二个参数，加载失败后的回调
 * 
-* 回调参数类型：Action&lt;string,string>，第一个为cpPlaceId，广告位，可能为空或null；第二个参数为描述信息，可能为空或null
+* 回调参数类型：Action<string,string>，第一个为cpPlaceId，广告位，可能为空或null；第二个参数为描述信息，可能为空或null
 * 此方法自 2028开始支持
 */
-public static void setRewardVideoLoadCallback(Action&lt;string,string> success, Action&lt;string, string> fail)
+public static void setRewardVideoLoadCallback(Action<string,string> success, Action<string, string> fail)
 
 
 ```
@@ -64,8 +64,8 @@ public static void setRewardVideoLoadCallback(Action&lt;string,string> success, 
 //激励视屏的回调代理，不用区分广告位，因此相比于插屏加载接口少一个广告位的参数
 public void onBtn_ClickForRewardLoadCallback() {
     Polymer.PolyADSDK.setRewardVideoLoadCallback ( 
-        new System.Action&lt;string, string>(actionForRewardLoadSuccess),
-        new System.Action&lt;string, string>(actionForRewardLoadFail) 
+        new System.Action<string, string>(actionForRewardLoadSuccess),
+        new System.Action<string, string>(actionForRewardLoadFail) 
     );
 }
 

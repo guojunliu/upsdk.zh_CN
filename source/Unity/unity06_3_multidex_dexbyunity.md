@@ -64,14 +64,14 @@ buildTypes {
 如果 `Assets/Plugins/Android/ `不存在AndroidManifest.xml，请从Unity的安装目录复制默认的AndroidManifest.xml到此目录。如果AndroidManifest.xml的**application**标签中没有为`android:name`设置MultiDexApplication或MultiDexApplication的子类，请添加`android.support.multidex.MultiDexApplication`。
 
 ```xml
-&lt;?xml version="1.0" encoding="utf-8"?>
-&lt;manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapp">
-    &lt;application
+    <application
             android:name="android.support.multidex.MultiDexApplication" >
         ...
-    &lt;/application>
-&lt;/manifest>
+    </application>
+</manifest>
 ```
 
 ### 4.开启混淆
