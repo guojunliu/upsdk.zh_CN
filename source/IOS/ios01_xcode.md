@@ -76,21 +76,21 @@ UPSDK需要依赖第三广告联盟才能使用，所以需要手动将第三方
 #### 2 在info.plist中加入以下节点，以兼容http模式
 
 ```objective-c
-&lt;key>NSAppTransportSecurity&lt;/key>
-&lt;dict>
-	&lt;key>NSAllowsArbitraryLoads&lt;/key>
-	&lt;true/>
-&lt;/dict>
+<key>NSAppTransportSecurity</key>
+<dict>
+	<key>NSAllowsArbitraryLoads</key>
+	<true/>
+</dict>
 ```
 
 #### 3 在info.plist中加入以下节点，用来获取权限（如使用AdColony联盟必须加，未使用AdColony联盟可以不添加）
 ```objective-c
-&lt;key>NSCalendarsUsageDescription&lt;/key>
-&lt;string>Some ad content may create a calendar event.&lt;/string>
-&lt;key>NSCameraUsageDescription&lt;/key>
-&lt;string>Some ad content may access camera to take picture.&lt;/string>
-&lt;key>NSPhotoLibraryUsageDescription&lt;/key>
-&lt;string>Some ad content may require access to the photo library.&lt;/string>
+<key>NSCalendarsUsageDescription</key>
+<string>Some ad content may create a calendar event.</string>
+<key>NSCameraUsageDescription</key>
+<string>Some ad content may access camera to take picture.</string>
+<key>NSPhotoLibraryUsageDescription</key>
+<string>Some ad content may require access to the photo library.</string>
 ```
 
 注：根据不同语言和不同使用场景，使用者可以适当调整获取权限的描述文字。

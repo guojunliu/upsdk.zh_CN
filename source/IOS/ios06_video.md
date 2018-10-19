@@ -5,7 +5,7 @@
 
 在XCode工程中引用UPRewardWrapper.h头文件方式：
 ```objective-c
-#import   &lt;UPSDK/UPSDK.h>
+#import   <UPSDK/UPSDK.h>
 ```
 
 激励视频唯一区别于插屏广告的地方是**它采用了单例设计模式**，但在方法定义上，与插屏广告非常相似。
@@ -95,7 +95,7 @@
 
 ```objective-c
 
-#import   &lt;UPSDK/UPSDK.h>
+#import   <UPSDK/UPSDK.h>
 
 @interface STRewardViewController () <UPRewardDelegate>
 
