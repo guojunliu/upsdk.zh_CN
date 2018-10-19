@@ -1,7 +1,7 @@
 ## Android Studio接入帮助
 
 ### 一、UPSDK JavaScriptPlugin的目录结构
-针对Android Studio 或 Gradle 构建的工程，UPSDK提倡以`*.aar`的方式导入到项目中。UPSDK JavaScriptPlugin版本的下载包( [Android-LayaboxJsSDK](http://ads-sdk-doc.haloapps.com/docs/show/13 "SDK下载页面") 下载UPSDK JavaScriptPlugin包)解压后的目录结构如下：
+针对Android Studio 或 Gradle 构建的工程，UPSDK提倡以`*.aar`的方式导入到项目中。UPSDK JavaScriptPlugin版本的下载包( [Android-LayaboxJsSDK](http://docc.upltv.com/docs/show/13 "SDK下载页面") 下载UPSDK JavaScriptPlugin包)解压后的目录结构如下：
 
 ![](http://docc.upltv.com/uploads/201809/5b98ed83ade86_5b98ed83.png)
 

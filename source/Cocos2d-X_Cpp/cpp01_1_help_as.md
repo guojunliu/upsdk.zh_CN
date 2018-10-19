@@ -1,7 +1,7 @@
 ## Android Studio 接入帮助
 
 ### 一、UPSDK CppPlugin的目录结构
-针对Android Studio 或 Gradle 构建的工程，UPSDK提倡以`*.aar`的方式导入到项目中。UPSDK CppPlugin版本的下载包( [Android-CPPSDK](http://ads-sdk-doc.haloapps.com/docs/show/13 "SDK下载页面") 下载UPSDK CppPlugin包)解压后的目录结构如下：
+针对Android Studio 或 Gradle 构建的工程，UPSDK提倡以`*.aar`的方式导入到项目中。UPSDK CppPlugin版本的下载包( [Android-CPPSDK](http://docc.upltv.com/docs/show/13 "SDK下载页面") 下载UPSDK CppPlugin包)解压后的目录结构如下：
 
 ![as-1-1](http://docc.upltv.com/uploads/201805/5afd2c552eab2_5afd2c55.png "as-1-1")
 > 如上图所示，UPSDK CppPlugin主包命名为`UPAdsSdk_Cpp_x.x.xx_dex.aar`。

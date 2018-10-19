@@ -22,7 +22,7 @@
 
 在你的工程中，选择Assets，右键之后选择：Import Package -> Custom Package
 
-![import](http://ads-sdk-doc.haloapps.com/uploads/201705/592e66a727d89_592e66a7.png "import")
+![import](http://docc.upltv.com/uploads/201705/592e66a727d89_592e66a7.png "import")
 
 #### 3.选择插件
 

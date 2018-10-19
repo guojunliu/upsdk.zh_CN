@@ -2,7 +2,7 @@
 
 
 ### 一、UPSDK LuaPlugin的目录结构
-针对Eclipse构建的工程，UPSDK以`*.jar`的方式导入到工程中。UPSDK LuaPlugin版本的下载包( [Android-LuaSDK下载](http://ads-sdk-doc.haloapps.com/docs/show/13 "SDK下载页面"))解压后的目录结构如下：
+针对Eclipse构建的工程，UPSDK以`*.jar`的方式导入到工程中。UPSDK LuaPlugin版本的下载包( [Android-LuaSDK下载](http://docc.upltv.com/docs/show/13 "SDK下载页面"))解压后的目录结构如下：
 
 
 ![ec-1-1](http://docc.upltv.com/uploads/201805/5afe9bd143673_5afe9bd1.png "ec-1-1")

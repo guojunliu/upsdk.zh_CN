@@ -23,4 +23,4 @@ UPSDK Unity Plugin是对UPSDK聚合集成的模块，因此包体是UPSDK的Andr
 
 	顾名思义，此类包内含UPSDK的IOS与Android版本以及相应依赖的第三方库（约550M，因此下载时请保持网络连接良好），如果你的工程要同时面向Android与IOS市场，此类插件将是你的最佳选择。
 
-#### UPSDK Unity插件包，请跳转至 [UPSDK Unity Plugin 下载页](http://ads-sdk-doc.haloapps.com/docs/show/13 "SDK下载页面") 下载。
+#### UPSDK Unity插件包，请跳转至 [UPSDK Unity Plugin 下载页](http://docc.upltv.com/docs/show/13 "SDK下载页面") 下载。

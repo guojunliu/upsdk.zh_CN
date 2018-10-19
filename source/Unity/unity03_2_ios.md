@@ -36,13 +36,13 @@ XUPorter是一个开源库，用于Xcode导出时动态修改工程的配置参�
 在Target->General面板中，设置Deployent Target在7.0或以上，部分第三方依赖的framework对target有要求在7.0或以上。
 
 示例如下：
-![ios-target](http://ads-sdk-doc.haloapps.com/uploads/201706/59535d81cf339_59535d81.png "ios-target")
+![ios-target](http://docc.upltv.com/uploads/201706/59535d81cf339_59535d81.png "ios-target")
 
 #### 2. Link Binary with Libraries检查
 在Build Phases -> Link Binary with Libraries中检查是否添加了插件中包含的framework库以及.a文件。
 
 正常添加后会增加以下红框中的library文件。
-![ios-lib](http://ads-sdk-doc.haloapps.com/uploads/201706/595361be1b87e_595361be.png "ios-lib")
+![ios-lib](http://docc.upltv.com/uploads/201706/595361be1b87e_595361be.png "ios-lib")
 
 如果没有发现`PolyADSDK/Plugins/IOS/frameworks`中所包括的库文件，可以通过Xcode工程手动将`PolyADSDK/Plugins/IOS/frameworks`所包括的文件添加到工程中。
 
@@ -53,7 +53,7 @@ XUPorter是一个开源库，用于Xcode导出时动态修改工程的配置参�
 在Build Phases -> Copy Bundle Resources 中检查是否添加了插件中包含的resources的资源。
 
 正常添加后会增加以下红框中的资源文件文件。
-![ios-resources](http://ads-sdk-doc.haloapps.com/uploads/201706/59536339b4e91_59536339.png "ios-resources")
+![ios-resources](http://docc.upltv.com/uploads/201706/59536339b4e91_59536339.png "ios-resources")
 
 如果没有发现`PolyADSDK/Plugins/IOS/resources`中所包括的资源，可以通过Xcode工程手动将`PolyADSDK/Plugins/IOS/resources`资源添加到工程中。
 
@@ -61,7 +61,7 @@ XUPorter是一个开源库，用于Xcode导出时动态修改工程的配置参�
 在Build Settings -> Linking -> Other Linker Flags 中检查是否添加了`-ObjC`以及`-fobjc-arc`的配置。
 
 正常添加后会增加以下红框中的配置参数，如果没有出现可以手动添加。
-![ios-link-set](http://ads-sdk-doc.haloapps.com/uploads/201706/59536443253fc_59536443.png "ios-link-set")
+![ios-link-set](http://docc.upltv.com/uploads/201706/59536443253fc_59536443.png "ios-link-set")
 
 #### 5. Unity个别版本不兼容的处理
 

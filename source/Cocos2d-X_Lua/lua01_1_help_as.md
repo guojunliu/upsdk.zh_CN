@@ -1,7 +1,7 @@
 ## Android Studio接入帮助
 
 ### 一、UPSDK LuaPlugin的目录结构
-针对Android Studio 或 Gradle 构建的工程，UPSDK提倡以`*.aar`的方式导入到项目中。UPSDK LuaPlugin版本的下载包( [Android-LuaSDK](http://ads-sdk-doc.haloapps.com/docs/show/13 "SDK下载页面") 下载UPSDK LuaPlugin包)解压后的目录结构如下：
+针对Android Studio 或 Gradle 构建的工程，UPSDK提倡以`*.aar`的方式导入到项目中。UPSDK LuaPlugin版本的下载包( [Android-LuaSDK](http://docc.upltv.com/docs/show/13 "SDK下载页面") 下载UPSDK LuaPlugin包)解压后的目录结构如下：
 
 ![as-1-1](http://docc.upltv.com/uploads/201805/5afe99d977ef8_5afe99d9.png "as-1-1")
 > 如上图所示，UPSDK LuaPlugin主包命名为`UPAdsSdk_Lua_x.x.xx_dex.aar`。

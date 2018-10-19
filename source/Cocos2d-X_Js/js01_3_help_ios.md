@@ -3,7 +3,7 @@
 本接入文档以cocos2d-X 3.16为蓝本，如果您使用Cocos2d-X其它版本，不同之处请灵活处理。
 
 ### 1 下载SDK包
-首先从 [UPSDK下载页](http://ads-sdk-doc.haloapps.com/docs/show/13 "SDK下载页面") 下载UPSDK JavaScriptPlugin包，解压后的目录包含如下三个文件：
+首先从 [UPSDK下载页](http://docc.upltv.com/docs/show/13 "SDK下载页面") 下载UPSDK JavaScriptPlugin包，解压后的目录包含如下三个文件：
 - `UPSDK.framework` 这是UPSDK的主包，请务必添加到当前工程中
 - `UPSDK.bundle` UPSDK主包需要访问的外部文件资源，请务必添加到当前工程中
 - `UpltvJsBridge` 此目录包含一些*.js源码文件，用于桥接当前Cocos2d-X JavaScript工程与UPSDK广告接口调用
@@ -25,7 +25,7 @@ UpltvJsBridge文件夹包含有Object-C++源码及*.js脚本文件，如下图�
 ![](http://docc.upltv.com/uploads/201805/5b02736e0f931_5b02736e.png)
 
 ### 3 加入第三方依赖库
-UPSDK运行时会依赖第三方广告联盟，所以需要手动将这些联盟的依赖库文件导入到你的项目中。为了保证你能正确添加第三方依赖包，请从这里[下载UPSDK联盟包](http://ads-sdk-doc.haloapps.com/docs/show/13 "SDK第三方包下载") 。
+UPSDK运行时会依赖第三方广告联盟，所以需要手动将这些联盟的依赖库文件导入到你的项目中。为了保证你能正确添加第三方依赖包，请从这里[下载UPSDK联盟包](http://docc.upltv.com/docs/show/13 "SDK第三方包下载") 。
 
 UPSDK当前依赖第三方广告联盟如下：
 

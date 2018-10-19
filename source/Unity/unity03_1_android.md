@@ -32,11 +32,11 @@ Unity插件Android版本被成功导入后，在Assets目录下检查是否存�
 ### 三、Unity 特定版本的适配
 1、 5.1.1版本，打包编译过程中，unity找不到armeabi架构报错-----需去除.arr中的armeabi架构(用压缩软件打开直接删除armeabi文件夹)；
 2、5.0.0版本，打包apk过程中，合并AndroidManifest.xml丢失权限-----需要在\Assets\Plugins\Android\下添加一份AndroidManifest.xml文件
-下载地址： [5.0.0 AndroidManifest下载](http://ads-sdk-doc.haloapps.com/docs/show/13 "SDK下载页面")
+下载地址： [5.0.0 AndroidManifest下载](http://docc.upltv.com/docs/show/13 "SDK下载页面")
 > 如果未找到需要的文件，请向我们的技术支持人员直接获取。
 
 ### 四、Unity 编译报错
-对于Unity 编译报错的修复，请参考Android[接入常见问题](http://ads-sdk-doc.haloapps.com/docs/show/61 "常见问题")修复！！
+对于Unity 编译报错的修复，请参考Android[接入常见问题](http://docc.upltv.com/docs/show/61 "常见问题")修复！！
 
 ### 五、Unity Android混淆配置
 对于有混淆配置的工程，请将`proguard-project.txt`文件的内容复制到你的混淆配置文件，避免因为混淆导致包名引用错误的程序崩溃。

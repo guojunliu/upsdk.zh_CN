@@ -1,7 +1,7 @@
 ## XCode
 
 ### 下载UPSDK包
-首先从 [IOS-SDK下载页](http://ads-sdk-doc.haloapps.com/docs/show/13 "SDK下载页面") 下载最新的 SDK 包，解压后的目录包含如下两个文件：
+首先从 [IOS-SDK下载页](http://docc.upltv.com/docs/show/13 "SDK下载页面") 下载最新的 SDK 包，解压后的目录包含如下两个文件：
 
 - UPSDK.framework
 - UPSDK.bundle
@@ -18,7 +18,7 @@ UPSDK.framework是SDK的静态库，UPSDK.bundle主要包含一些静态库需�
 ### 加入第三方联盟广告依赖库
 UPSDK需要依赖第三广告联盟才能使用，所以需要手动将第三方联盟的依赖的库文件及其配套资源导入到你的项目中。为保证收益最大化，建议尽可能多地添加第三方联盟，为保证收益至少添加我们给出的联盟列表。
 
-为了保证你能正确添加第三方依赖包，请从这里下载最新的联盟包[UPSDK第三方包下载](http://ads-sdk-doc.haloapps.com/docs/show/13 "SDK第三方包下载") 。
+为了保证你能正确添加第三方依赖包，请从这里下载最新的联盟包[UPSDK第三方包下载](http://docc.upltv.com/docs/show/13 "SDK第三方包下载") 。
 
 当前UPSDK依赖的部分重要广告联盟列表如下：
 

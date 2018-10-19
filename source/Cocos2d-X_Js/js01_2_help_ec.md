@@ -2,7 +2,7 @@
 
 
 ### 一、UPSDK JavaScriptPlugin的目录结构
-针对Eclipse构建的工程，UPSDK以`*.jar`的方式导入到工程中。UPSDK JavaScriptPlugin版本的下载包( [Android-JsSDK下载](http://ads-sdk-doc.haloapps.com/docs/show/13 "SDK下载页面"))解压后的目录结构如下：
+针对Eclipse构建的工程，UPSDK以`*.jar`的方式导入到工程中。UPSDK JavaScriptPlugin版本的下载包( [Android-JsSDK下载](http://docc.upltv.com/docs/show/13 "SDK下载页面"))解压后的目录结构如下：
 
 ![ec-1-1](http://docc.upltv.com/uploads/201805/5af3e73af0172_5af3e73a.png "ec-1-1")
 - `Eclipse`
