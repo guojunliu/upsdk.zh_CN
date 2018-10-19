@@ -8,6 +8,42 @@
  padding: 1.618em 6.236em !important;
 }
 
+div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(1) > dt {
+ visibility: hidden;
+}
+
+div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(1) > dt {
+ content: '语言切换:';
+ color: #ffffff;
+ font-weight: bold;
+}
+
+
+div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(1) > strong > dd > a {
+ visibility: hidden;
+}
+
+div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(1) > strong > dd > a:after {
+ content: '中文';
+ visibility: visible;
+ display: block;
+}
+
+
+div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(2) > dd > a {
+ visibility: hidden;
+}
+
+div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(2) > dd > a:after {
+ content: '英文';
+ visibility: visible;
+ display: block;
+}
+
+
+
+
+
 div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(2) {
  display: none;
 }
