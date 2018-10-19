@@ -83,8 +83,10 @@ pygments_style = None
 # a list of builtin themes.
 #
 html_theme = 'sphinx_rtd_theme'
+
 def setup(app):
- app.add_stylesheet("css/main.css" )
+    app.add_stylesheet('css/custom.css')
+    app.add_javascript('js/custom.js')
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -95,7 +97,7 @@ html_theme_options = {
     'canonical_url': '',
     'analytics_id': '',
     'logo_only': True,
-    'display_version': True,
+    'display_version': False,
     'prev_next_buttons_location': 'bottom',
     'style_external_links': False,
     # Toc options
