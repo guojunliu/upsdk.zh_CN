@@ -6,4 +6,4 @@ Demo以Cocos2d-x 3.16版本创建，下载地址：[Download](http://cnimg.datav
 
 ![lua-down](http://docs.upltv.com/uploads/201805/5ae999f00fdc6_5ae999f0.jpeg "lua-down")
 
-Android平台仅支持AndroidStudio工程，请导入`proj.android-studio`，IOS平台仅支持XCode工程，请导入`proj.ios_mac`。
+Android平台仅支持Android Studio工程，请导入`proj.android-studio`，IOS平台仅支持XCode工程，请导入`proj.ios_mac`。

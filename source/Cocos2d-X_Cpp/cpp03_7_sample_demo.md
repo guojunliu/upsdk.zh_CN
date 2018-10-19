@@ -6,4 +6,4 @@ Demo以Cocos2d-x 3.16版本创建，下载地址：[Download](http://cnimg.datav
 
 ![cocos2d](http://docs.upltv.com/uploads/201804/5ad55580d4619_5ad55580.jpeg "cocos2d")
 
-Android平台仅支持AndroidStudio工程，请导入`proj.android-studio`，IOS平台仅支持XCode工程，请导入`proj.ios_mac`。
+Android平台仅支持Android Studio工程，请导入`proj.android-studio`，IOS平台仅支持XCode工程，请导入`proj.ios_mac`。

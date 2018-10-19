@@ -1,7 +1,7 @@
 ## Android SDK
 [Eclipe SDK v3.0.05 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_3.0.05_eclipse.zip "Eclipe SDK v3.0.05 ")
 
-[Android Studio SDK v3.0.05 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_3.0.05_AndroidStudio.zip "Android Studio SDK v3.0.05 ")
+[Android Studio SDK v3.0.05 ](http://cnimg.dataverse.cn/upsdk/UPSDK_Android_3.0.05_Android Studio.zip "Android Studio SDK v3.0.05 ")
 
 ## iOS SDK
 

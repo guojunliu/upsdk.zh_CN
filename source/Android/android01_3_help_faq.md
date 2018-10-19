@@ -3,7 +3,7 @@
 ### 一、Android Studio AndroidManfiest.xml 声明冲突
 
 #### 1. com.google.android.gms.version 冲突或缺失报错
-在**Android Studio**版本中，UP ADSDK为了避免此类冲突，从2.0.21的Studio版本开始，在AndroidManfiest.xml 中已经去掉了如下声明:
+在**Android Studio**版本中，UPSDK为了避免此类冲突，从2.0.21的Studio版本开始，在AndroidManfiest.xml 中已经去掉了如下声明:
 
 	<!-- admob -->
 	<meta-data
@@ -19,7 +19,7 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version"/>
 
-特别地，在*res/values*目录的xml文件中检查是否存在*google_play_services_version*的定义。一般地，UP ADSDK将此属性定义在*version_ad.xml*文件中。如果没有定义可直接复制*version_ad.xml*到*res/values*目录下。
+特别地，在*res/values*目录的xml文件中检查是否存在*google_play_services_version*的定义。一般地，UPSDK将此属性定义在*version_ad.xml*文件中。如果没有定义可直接复制*version_ad.xml*到*res/values*目录下。
 
 *version_ad.xml*内容：
 
@@ -31,7 +31,7 @@
 	</resources>
 
 #### 2. activity 冲突或缺失报错
-在Android Studio的版本中，UP ADSDK从2.0.21的Studio版本开始，在AndroidManfiest.xml中去掉了对Admob以及Facebook广告所需要依赖的Activity组件声明。
+在Android Studio的版本中，UPSDK从2.0.21的Studio版本开始，在AndroidManfiest.xml中去掉了对Admob以及Facebook广告所需要依赖的Activity组件声明。
 
 	<!-- admob -->
 
@@ -71,14 +71,14 @@ Facebook Ads通过compile方式在线更新audience-network-sdk时，除了下�
 
 由于Admob广告，需要gms play service的支持，对于期望支持Admob广告的工程来说，必须正确添加gms相关的依赖库以及配置。
 
-UP ADSDK对于Admob的支持，需要依赖gms player service如下几个方面的库：
+UPSDK对于Admob的支持，需要依赖gms player service如下几个方面的库：
 - play-services-ads-x.x.x
 - play-services-ads-lite-x.x.x
 - play-services-base-x.x.x
 - play-services-basement-x.x.x
 - play-services-tasks-x.x.x
 
-> UP ADSDK目前内置gms的版本是play-services-ads:11.0.4，如果与主工程中现存的gms版本不一致时，请优先保留高版本的gms。为了避免不必要的错误，无论保留那个版本，请务必保证上述五个依赖库齐备且处于同一版本条件下，否则可能会引起class引入重名或重复引用的冲突。
+> UPSDK目前内置gms的版本是play-services-ads:11.0.4，如果与主工程中现存的gms版本不一致时，请优先保留高版本的gms。为了避免不必要的错误，无论保留那个版本，请务必保证上述五个依赖库齐备且处于同一版本条件下，否则可能会引起class引入重名或重复引用的冲突。
 
 
 ### 三、xxx.so缺失的问题

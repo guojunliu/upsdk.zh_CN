@@ -9,7 +9,7 @@
 	此目录主要包含Eclipse工程接入所需的广告依赖库文件。
 - `js`文件夹
 	此目录主要包含一些*.js源码文件，用于桥接当前`Layabox Js`工程与`UPSDK`广告接口调用。
-- `AndroidStudio`文件夹
+- `Android Studio`文件夹
 	Eclipse工程请忽略此目录。
 - `proguard-project.txt`文件
 	混淆配置文件，如果当前工程开启混淆功能，请将此文件中的混淆配置添加到工程混淆所依赖的文件中。

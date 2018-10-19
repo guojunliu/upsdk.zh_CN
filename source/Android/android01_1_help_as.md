@@ -1,24 +1,24 @@
 # Android Studio 接入帮助
 
-### 一、UP ADSDK的目录结构
-针对Android Studio 或 Gradle 构建的工程，UP ADSDK提倡以`*.aar`的方式被其它主工程导入。UP ADSDK Studio版本的下载包解压后的目录结构如下：
+### 一、UPSDK的目录结构
+针对Android Studio 或 Gradle 构建的工程，UPSDK提倡以`*.aar`的方式被其它主工程导入。UPSDK Studio版本的下载包解压后的目录结构如下：
 
 ![](http://docs.upltv.com/uploads/201805/5af5689a90a1a_5af5689a.png)
 
-#### 1. UP ADSDK 主包
-如上图所示，命名为`UPAdsSdk_x.x.xx.aar`的文件即为UP ADSDK 主包，必须添加到你的主工程中。
+#### 1. UPSDK 主包
+如上图所示，命名为`UPAdsSdk_x.x.xx.aar`的文件即为UPSDK 主包，必须添加到你的主工程中。
 
-#### 2. UP ADSDK 联盟依赖库
-UP ADSDK与其它联盟广告商是一种松散耦合在的关系，可以根据实际需要在主工程中剔除某些不支持广告依赖库，从而减少应用程序的包体大小。
+#### 2. UPSDK 联盟依赖库
+UPSDK与其它联盟广告商是一种松散耦合在的关系，可以根据实际需要在主工程中剔除某些不支持广告依赖库，从而减少应用程序的包体大小。
 
 这些联盟商的依赖库除了Admob与Facebook广告依赖库，其它的目前都是xxxx_ads.aar的文件形式存在。
 
 #### 3. Admob与Facebook的广告依赖库
-UP ADSDK的本地文件中，提供了Admob与Facebook 两种广告平台的aar依赖库，以备在网络不佳或其它原因时直接从本地libs中加载提供便利。即使如此，我们仍然提倡尽量在gradle中在线从两者的远程仓库更新下载合适的依赖库。
+UPSDK的本地文件中，提供了Admob与Facebook 两种广告平台的aar依赖库，以备在网络不佳或其它原因时直接从本地libs中加载提供便利。即使如此，我们仍然提倡尽量在gradle中在线从两者的远程仓库更新下载合适的依赖库。
 > 有关Admob与Facebook 两种广告平台的接入说明，在本节的后续内容中有详解解说。
 
 
-### 二、使用 Android Studio 的 Gradle 导入UP ADSDK主包
+### 二、使用 Android Studio 的 Gradle 导入UPSDK主包
 
 根据上文的介绍，在你下载好的文件目录中找到名为 `UPAdsSdk_x.x.xx.aar`的文件，并添加到项目的`libs`目录下。
 添加后，Studio工程的效果图如下所示：
@@ -43,9 +43,9 @@ UP ADSDK的本地文件中，提供了Admob与Facebook 两种广告平台的aar�
         compile(name: 'UPAdsSdk_3.0.03', ext: 'aar')
     }
 
-至此，UP ADSDK的aar包已经成功配置到你的工程中，静等gradle编译生效。但UP ADSDK的工程导入工作还未完成，还差重要的最后一步工作要做：**添加其它依赖库**。
+至此，UPSDK的aar包已经成功配置到你的工程中，静等gradle编译生效。但UPSDK的工程导入工作还未完成，还差重要的最后一步工作要做：**添加其它依赖库**。
 
-> 作为优秀而强大的聚合平台，UP ADSDK必须灵活兼容第三方广告联盟商的运行库，才能取百家之长发挥最大的广告效益。因此，正确添加第三方依赖库，才能发挥UP ADSDK的最大潜能。
+> 作为优秀而强大的聚合平台，UPSDK必须灵活兼容第三方广告联盟商的运行库，才能取百家之长发挥最大的广告效益。因此，正确添加第三方依赖库，才能发挥UPSDK的最大潜能。
 
 如果您使用 Android Studio 或 Gradle 构建 Android 项目，那么首先需要将目录中的 `UPAdsSdk_x.x.xx.aar` 文件导入到您的项目中，目录中的 `xxx_ads.aar` 文件为使用各个广告联盟需要依赖的文件，您可以将其全部导入到项目中，如果有特殊原因导致您不希望导入某个平台的文件，您也可以只选择需要的广告联盟的文件进行导入。
 
@@ -58,7 +58,7 @@ UP ADSDK的本地文件中，提供了Admob与Facebook 两种广告平台的aar�
 如果你想去除某联盟商的支持，但又不清楚如何操作，请优先与我们的技术支持人员沟通，在他们的协助下你将会正确而顺利达成目的。
 
 ####  1.添加联盟商的*.aar
-在你下载的目标文件中，命名为 `xxx_ads.aar` 的文件为使用各个广告联盟需要依赖的文件。请参考**导入UP ADSDK aar文件**的方式将其添加到你的工程中。
+在你下载的目标文件中，命名为 `xxx_ads.aar` 的文件为使用各个广告联盟需要依赖的文件。请参考**导入UPSDK aar文件**的方式将其添加到你的工程中。
 
 ####  2. 添加其它外部依赖
 
@@ -147,7 +147,7 @@ dependencies {
     }
 
 > 如果你只想通过本地添加gms play所依赖的aar文件，也可以在gradle文件中忽略此配置。
-> 特别地，如果你的工程中已经存在与UP ADSDK所依赖的gms play不同版时，请用更高的版本替换低版本。
+> 特别地，如果你的工程中已经存在与UPSDK所依赖的gms play不同版时，请用更高的版本替换低版本。
 
 ### 四、修改 Proguard
 如果你的项目使用了 `proguard`，你需要将 `proguard-project.txt` 文件中的内容复制粘贴到你项目使用的 `proguard` 配置文件中。

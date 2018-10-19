@@ -7,12 +7,12 @@
 
 > 如上图所示，UPSDK JavaScriptPlugin主包命名为`UPAdsSdk_LayaJs_x.x.xx_dex.aar`。
 
-- `AndroidStudio`
-	此目录主要包含AndroidStudio工程接入所需的广告依赖库文件。
+- `Android Studio`
+	此目录主要包含Android Studio工程接入所需的广告依赖库文件。
 - `js`
 	此目录主要包含一些*.js源码文件，用于桥接当前`Layabox Js`工程与`UPSDK`广告接口调用。
 - `Eclipse`
-	此目录包含一些jar及资源文件，AndroidStudio工程请忽略此目录。
+	此目录包含一些jar及资源文件，Android Studio工程请忽略此目录。
 - `proguard-project.txt`
 	混淆配置文件，如果当前工程开启混淆功能，请将此文件中的混淆配置添加到工程混淆所依赖的文件中
 	
@@ -95,7 +95,7 @@ Admob广告联盟的接入，我们提供两种方式，在网络允许的条件
 ###### 2.**【方案二】**
 如果您的网络不佳，无法从Google的远程仓库下载play-service包，我们也提供了另一种方案作为替代。
 
-首先请将`AndroidStudio/aar/admob-gms-play-services`目录下aar文件全部复制到工程的`libs`目录下。
+首先请将`Android Studio/aar/admob-gms-play-services`目录下aar文件全部复制到工程的`libs`目录下。
 
 
 参考如下方式修改`build.gradle`文件，将Admob依赖的aar包添加到工程。
@@ -114,7 +114,7 @@ dependencies {
 
 #### 2.添加其他广告联盟
 为了保证您能获得更大收益，请将广告联盟包尽可能多地将其它联盟广告的aar文件添加到您的项目中。
-请参考以下方式将`AndroidStudio/aar`中命名为 `xxx_ads.aar` 的文件添加到当前工程中。
+请参考以下方式将`Android Studio/aar`中命名为 `xxx_ads.aar` 的文件添加到当前工程中。
 ###### 海外区域
 我们建议但局限于添加以下联盟的aar文件。
 对应的build.gradle如下：
@@ -170,7 +170,7 @@ UPSDK3004开始，因为Admob等联盟升级的原因，我们推荐使用suppor
 为了方便您将Android Support 库引入到项目中，我们依旧提供两种引入方式，在网络请允许的情况下，建议参考 **【方案一】**。
 
 #### 1.**【方案一】**
-从Google仓库远程更新下载support:xxxx:26.1.0，不需要将 `AndroidStudio/aar/android_support_library`中的aar文件拷贝到libs目录下。
+从Google仓库远程更新下载support:xxxx:26.1.0，不需要将 `Android Studio/aar/android_support_library`中的aar文件拷贝到libs目录下。
 对应的build.gradle如下：
 
 ```groovy
@@ -190,7 +190,7 @@ dependencies {
 
 #### 2.**【方案二】**
 如果您的网络不佳，请求不到远程仓库，可以从libs中加载aar文件。
-首先将`AndroidStudio/aar/android_support_library` 中的文件全部拷贝到当前工程的libs目录下，然后参考如下方法修改`build.gradle`文件。
+首先将`Android Studio/aar/android_support_library` 中的文件全部拷贝到当前工程的libs目录下，然后参考如下方法修改`build.gradle`文件。
 
 ```groovy
 dependencies {

@@ -1,5 +1,5 @@
 ## 使用Unity 解决65535问题
-Unity 5.5及以上版本支持，不用导出到AndroidStudio工程，直接在Unity IDE中完成分包设置。
+Unity 5.5及以上版本支持，不用导出到Android Studio工程，直接在Unity IDE中完成分包设置。
 
 ### 1.开启`Gradle build system`
 

@@ -1,5 +1,5 @@
 ==================================
-UnityPlugin Androi MultiDex介绍
+UnityPlugin Android MultiDex介绍
 ==================================
 
 

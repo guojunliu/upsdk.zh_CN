@@ -1,13 +1,13 @@
 # Eclipse 接入帮助
 
-### 一、UP ADSDK的目录结构
-如果您使用 Eclipse 或 Ant 构建 Android 项目，相比较于Android Studio 构建的工程，接入工作稍有一些复杂。UP ADSDK Eclipse版本的下载包解压后的目录结构如下：
+### 一、UPSDK的目录结构
+如果您使用 Eclipse 或 Ant 构建 Android 项目，相比较于Android Studio 构建的工程，接入工作稍有一些复杂。UPSDK Eclipse版本的下载包解压后的目录结构如下：
 
 ![](http://docs.upltv.com/uploads/201805/5af56a8672b4b_5af56a86.png)
 
-UP ADSDK Eclipse的主包体处于`upsdk_ads`的文件夹下，`upsdk_ads`中的内容必须添加到你的主工程中。
+UPSDK Eclipse的主包体处于`upsdk_ads`的文件夹下，`upsdk_ads`中的内容必须添加到你的主工程中。
 
-### 二、复制UP ADSDK Eclipse 主包体文件到项目
+### 二、复制UPSDK Eclipse 主包体文件到项目
 在`upsdk_ads`目录下，有`libs`、`assets`以及`res`几个目录，请分别将这些目录下的内容复制到你Eclipse主工程的相应的目录下。
 
 `UPADSDK 3.0.03`版本在`Eclipse`接入时默认使用`dex动态加载`的方式加载广告联盟，广告联盟的文件存放在`upsdk_ads\assets\up_android`文件夹下，如果您不需要接入其中的某个联盟，将文件夹中对应的 `dex_xxx.jar` 文件删除掉即可。
