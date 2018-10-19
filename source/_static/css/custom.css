@@ -48,7 +48,7 @@ div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(1) > dd 
 }
 
 div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(1) > dd > a:after {
- content: 'Englist';
+ content: 'English';
  visibility: visible;
  display: block;
 }
