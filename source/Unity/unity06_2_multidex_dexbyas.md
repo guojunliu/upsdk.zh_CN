@@ -35,10 +35,10 @@ dependencies {
 
 在**AndroidManifest.xml **中添加：
 ```groovy
-&lt;application
+<application
             android:name="android.support.multidex.MultiDexApplication" >
         ...
-&lt;/application>
+</application>
 ```
 
 #### 4.OutOfMemory问题

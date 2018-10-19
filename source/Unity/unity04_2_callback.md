@@ -6,33 +6,33 @@
 #### 回调接口调定义
 
 ```csharp
-public static Action&lt;bool, string> UPSDKInitFinishedCallback = null;
+public static Action<bool, string> UPSDKInitFinishedCallback = null;
 	 
 /*
 * 激励视屏回调
 * 激励视屏打开时（显示出来）回调此代理
 */
-public static Action&lt;string, string> UPRewardDidOpenCallback = null;
+public static Action<string, string> UPRewardDidOpenCallback = null;
 		
 /*
 * 激励视屏被点击时回调此代理
 */
-public static Action&lt;string, string> UPRewardDidClickCallback = null;
+public static Action<string, string> UPRewardDidClickCallback = null;
 		
 /*
 * 激励视屏奖励发放时回调此代理
 */
-public static Action&lt;string, string> UPRewardDidGivenCallback = null;
+public static Action<string, string> UPRewardDidGivenCallback = null;
 		
 /*
 * 激励视屏奖励发放失败时或发放条件不成立时回调此代理
 */
-public static Action&lt;string, string> UPRewardDidAbandonCallback = null;
+public static Action<string, string> UPRewardDidAbandonCallback = null;
 		
 /*
 * 激励视屏被关闭回调此代理
 */
-public static Action&lt;string, string> UPRewardDidCloseCallback = null; 
+public static Action<string, string> UPRewardDidCloseCallback = null; 
 
 ```
 #### 回调接口调用顺序
@@ -58,17 +58,17 @@ public static Action&lt;string, string> UPRewardDidCloseCallback = null;
 * 插屏广告回调
 * 插屏广告显示时回调此代理
 */
-public static Action&lt;string, string> UPInterstitialDidShowCallback = null;
+public static Action<string, string> UPInterstitialDidShowCallback = null;
 
 /*
 * 插屏广告点击时回调此代理
 */
-public static Action&lt;string, string> UPInterstitialDidClickCallback = null;
+public static Action<string, string> UPInterstitialDidClickCallback = null;
 
 /*
 * 插屏广告关闭时回调此代理
 */
-public static Action&lt;string, string> UPInterstitialDidCloseCallback = null;
+public static Action<string, string> UPInterstitialDidCloseCallback = null;
 ```
 #### 回调接口调用顺序
 ###### 1. 插屏广告显示时回调
@@ -91,42 +91,42 @@ Bannber广告的显示回调仅在第一次展示时调用UPBannerDidShowCallbac
 * Banner广告回调
 * Banner广告显示时回调此代理
 */
-public static Action&lt;string, string> UPBannerDidShowCallback = null;
+public static Action<string, string> UPBannerDidShowCallback = null;
 		
 /*
 * Banner广告被点击时回调此代理
 */
-public static Action&lt;string, string> UPBannerDidClickCallback = null;
+public static Action<string, string> UPBannerDidClickCallback = null;
 		
 /*
 * Banner广告被删除时回调此代理
 */
-public static Action&lt;string, string> UPBannerDidRemoveCallback = null;
+public static Action<string, string> UPBannerDidRemoveCallback = null;
 
 #if UNITY_ANDROID && !UNITY_EDITOR
 /* 退出广告，仅android支持
 * 退出广告显示出来
 */
-public static Action&lt;string> UPExitAdDidShowCallback = null;
+public static Action<string> UPExitAdDidShowCallback = null;
 		
 /*
 * 退出广告点击回调
 */
-public static Action&lt;string> UPExitAdDidClickCallback = null;
+public static Action<string> UPExitAdDidClickCallback = null;
 		
 /*
 * 退出广告点击更多的回调
 */
-public static Action&lt;string> UPExitAdDidClickMoreCallback = null;
+public static Action<string> UPExitAdDidClickMoreCallback = null;
 		
 /*
 * 退出广告退出回调
 */
-public static Action&lt;string> UPExitAdOnExitCallback = null;
+public static Action<string> UPExitAdOnExitCallback = null;
 		
 /*
 * 退出广告取消回调
 */
-public static Action&lt;string> UPExitAdOnCancelCallback = null;
+public static Action<string> UPExitAdOnCancelCallback = null;
 #endif
 ```

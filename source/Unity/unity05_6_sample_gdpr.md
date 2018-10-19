@@ -18,7 +18,7 @@
         || result == UPConstant.UPAccessPrivacyInfoStatusEnum.UPAccessPrivacyInfoStatusFailed) {
         // 如果没有询问过授权，先定位用户是否是欧盟地区
         // isEuropeanUserCallback异步回调对象
-        UPSDK.isEuropeanUnionUser (new Action&lt;bool, string>(isEuropeanUserCallback));
+        UPSDK.isEuropeanUnionUser (new Action<bool, string>(isEuropeanUserCallback));
     } else {
         // 假定发行地区是海外
         UPSDK.initPolyAdSDK (UPConstant.SDKZONE_FOREIGN);
@@ -77,7 +77,7 @@ private void yourOwnGDPRCallback(bool result) {
         || result == UPConstant.UPAccessPrivacyInfoStatusEnum.UPAccessPrivacyInfoStatusFailed) {
         // 如果没有询问过授权，先定位用户是否是欧盟地区
         // isEuropeanUserCallback异步回调对象
-        UPSDK.isEuropeanUnionUser (new Action&lt;bool, string>(isEuropeanUserCallback));
+        UPSDK.isEuropeanUnionUser (new Action<bool, string>(isEuropeanUserCallback));
     } else {
         // 假定发行地区是海外
         UPSDK.initPolyAdSDK (UPConstant.SDKZONE_FOREIGN);
@@ -90,7 +90,7 @@ private void isEuropeanUserCallback(bool result, string msg) {
     // result: true 表示欧盟地区用户，否则非欧盟地区用户
     if (result) {
         // 欧盟地区用户，进行授权询问
-        UPSDK.notifyAccessPrivacyInfoStatus (new Action&lt;UPConstant.UPAccessPrivacyInfoStatusEnum, string> (accessPrivacyInforCallback));
+        UPSDK.notifyAccessPrivacyInfoStatus (new Action<UPConstant.UPAccessPrivacyInfoStatusEnum, string> (accessPrivacyInforCallback));
     } else {
         // 非欧盟地区用户，直接初始化SDK
         // 假定发行地区是海外
@@ -114,13 +114,13 @@ private void accessPrivacyInforCallback(UPConstant.UPAccessPrivacyInfoStatusEnum
 弹出授权窗口，向用户说明重要数据收集的情况并询问用户是否同意授权，如果用户拒绝授权将放弃相关数据的收集。请在初始化UPSDK之前调用。
 
 ```csharp
-public static void notifyAccessPrivacyInfoStatus(Action&lt;UPConstant.UPAccessPrivacyInfoStatusEnum, string> callback)
+public static void notifyAccessPrivacyInfoStatus(Action<UPConstant.UPAccessPrivacyInfoStatusEnum, string> callback)
 ```
 示例代码：
 
 ```csharp
 public void onBtnNotifyAccessStatus_Click() {
-    Polymer.UPSDK.notifyAccessPrivacyInfoStatus (new Action&lt;UPConstant.UPAccessPrivacyInfoStatusEnum, string>(accessPrivacyInforCallback));
+    Polymer.UPSDK.notifyAccessPrivacyInfoStatus (new Action<UPConstant.UPAccessPrivacyInfoStatusEnum, string>(accessPrivacyInforCallback));
 }
 
 private void accessPrivacyInforCallback(UPConstant.UPAccessPrivacyInfoStatusEnum result, string msg) {
@@ -165,12 +165,12 @@ public void onBtnGetAccessStatus_Click() {
 判断用户是否属于欧盟地区，异步返回结果。
 可以在初始化UPSDK之前调用。
 ```csharp
-public static void isEuropeanUnionUser(Action&lt;bool, string> callback)
+public static void isEuropeanUnionUser(Action<bool, string> callback)
 ```
 示例代码：
 ```csharp
 public void onBtnIsEuropeanUnionUser_Click() {
-    Polymer.UPSDK.isEuropeanUnionUser (new Action&lt;bool, string>(isEuropeanUserCallback));
+    Polymer.UPSDK.isEuropeanUnionUser (new Action<bool, string>(isEuropeanUserCallback));
 }
 
 private void isEuropeanUserCallback(bool result, string msg) {

@@ -127,11 +127,11 @@ public static void onBackPressed();
  * @param success 第一个参数，加载成功后的回调
  * @param fail 第二个参数，加载失败后的回调
  * 
- * 回调参数类型：Action&lt;string,string>
+ * 回调参数类型：Action<string,string>
  * 第一个为cpPlaceId，广告位，可能为空或null；第二个参数为描述信息，可能为空或null
  * supported from 2028
  */
-public static void setRewardVideoLoadCallback(Action&lt;string,string> success, Action&lt;string, string> fail);
+public static void setRewardVideoLoadCallback(Action<string,string> success, Action<string, string> fail);
 
 /*
  * upltv插屏广告加载回调接口
@@ -139,11 +139,11 @@ public static void setRewardVideoLoadCallback(Action&lt;string,string> success, 
  * @param success 第二个参数，加载成功后的回调
  * @param fail 第三个参数，加载失败后的回调
  * 
- * 回调参数类型：Action&lt;string,string>
+ * 回调参数类型：Action<string,string>
  * 第一个为cpPlaceId，广告位，可能为空或null；第二个参数为描述信息，可能为空或null
  * supported from 2028
  */
-public static void setIntersitialLoadCallback(string cpPlaceId, Action&lt;string,string> success, Action&lt;string, string> fail)
+public static void setIntersitialLoadCallback(string cpPlaceId, Action<string,string> success, Action<string, string> fail)
 
 /*
  * 用于展示upltv的激励视屏广告调试界面
@@ -187,7 +187,7 @@ public static void setTopBannerForIphonex(int padding);
 * @param callback
 * Version 3003 and above support this method
 */
-public static void notifyAccessPrivacyInfoStatus(Action&lt;UPConstant.UPAccessPrivacyInfoStatusEnum, string> callback);
+public static void notifyAccessPrivacyInfoStatus(Action<UPConstant.UPAccessPrivacyInfoStatusEnum, string> callback);
 
 /**
 * 外部进行GDPR授权时，将用户授权结果同步到UPSDK时，调用此方法
@@ -209,7 +209,7 @@ public static UPConstant.UPAccessPrivacyInfoStatusEnum getAccessPrivacyInfoStatu
 * 异步回调，可以在初始UPSDK之前调用
 * Version 3003 and above support this method
 */
-public static void isEuropeanUnionUser(Action&lt;bool, string> callback);
+public static void isEuropeanUnionUser(Action<bool, string> callback);
 ```
 ### 需要特殊说明的方法
 

@@ -6,7 +6,7 @@
 #### 引用方式：
 
 ```objective-c
-#import   &lt;UPSDK/UPSDK.h>
+#import   <UPSDK/UPSDK.h>
 ```
 
 #### 方法声明：
@@ -26,7 +26,7 @@
 * 设置回调代理对象
 * @ param delegate：UPIntersitialDelegate 代理对象
 **/
-- (void)setDelegate:(id&lt;UPIntersitialDelegate>)delegate;
+- (void)setDelegate:(id<UPIntersitialDelegate>)delegate;
 
 /**
 * 判断视屏广告是否可用
@@ -43,7 +43,7 @@
  * 设置广告加载回调接口
  * @param delegate，回调代理
  **/
- - (void)load:(id&lt;UPIntersitialLoadDelegate>)delegate;
+ - (void)load:(id<UPIntersitialLoadDelegate>)delegate;
 @end
 ```
 #### UPIntersitialDelegate 回调协议

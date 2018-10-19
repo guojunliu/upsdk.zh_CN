@@ -8,7 +8,7 @@
  1. 在AppDelegate.m添加如下引用
 
 ```objective-c
-#import   &lt;UPSDK/UPSDK.h>
+#import   <UPSDK/UPSDK.h>
 ```
 
  2. 在App启动入口方法中初始化SDK
