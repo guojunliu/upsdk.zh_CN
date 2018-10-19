@@ -9,13 +9,13 @@ Unity 5.5及以上版本支持，不用导出到Android Studio工程，直接在
 
 不同Unity版本，**Build Settings**略有差异，请灵活处理。
 
-![666](http://docs.upltv.com/uploads/201807/5b39e51a967db_5b39e51a.jpeg "666")
+![666](http://docc.upltv.com/uploads/201807/5b39e51a967db_5b39e51a.jpeg "666")
 
 ### 2.更改`Gradle settings`
 
 ###### (1) 对于Unity2017.2及以上版本，可以打开 `Player Settings`，如下勾选 `Custom Gradle Template`复选框。其它版本，需要复制 `mainTemplate.gradle` 文件(在Unity安装目录搜索mainTemplate )到 `Assets/Plugins/Android/mainTemplate.gradle`。
 
-![777](http://docs.upltv.com/uploads/201807/5b39ec4b74539_5b39ec4b.jpeg "777")
+![777](http://docc.upltv.com/uploads/201807/5b39ec4b74539_5b39ec4b.jpeg "777")
 
 ###### (2) 在**defaultConfig**中添加**multiDexEnabled true**
 

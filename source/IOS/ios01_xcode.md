@@ -12,7 +12,7 @@ UPSDK.framework是SDK的静态库，UPSDK.bundle主要包含一些静态库需�
 ### Xcode工程添加SDK包
 请将UPSDK.framework与UPSDK.bundle两个文件同时添加到你的Xcode工程目录下，比如FrameWork目录：
 
-![SDK包成功引入后的效果](http://docs.upltv.com/uploads/201805/5af568523c6de_5af56852.png "SDK包成功引入后的效果")
+![SDK包成功引入后的效果](http://docc.upltv.com/uploads/201805/5af568523c6de_5af56852.png "SDK包成功引入后的效果")
 </br>
 
 ### 加入第三方联盟广告依赖库
@@ -22,7 +22,7 @@ UPSDK需要依赖第三广告联盟才能使用，所以需要手动将第三方
 
 当前UPSDK依赖的部分重要广告联盟列表如下：
 
-![添加所有第三方SDK包](http://docs.upltv.com/uploads/201805/5af569379d9bb_5af56937.png "添加所有第三方SDK包")
+![添加所有第三方SDK包](http://docc.upltv.com/uploads/201805/5af569379d9bb_5af56937.png "添加所有第三方SDK包")
 
 - **第三方依赖库为可选库，请根据我们的要求选择添加，如不清楚可联系我们**
 
@@ -71,7 +71,7 @@ UPSDK需要依赖第三广告联盟才能使用，所以需要手动将第三方
 
 - 在`TARGETS` → `Build Setting` → `Linking` → `Other Linker Flags` 中加入 `-ObjC`和`-fobjc-arc` 如下图所示
 
-![分类编译符](http://docs.upltv.com/uploads/201709/59afb0af0f8bd_59afb0af.png "分类编译符")
+![分类编译符](http://docc.upltv.com/uploads/201709/59afb0af0f8bd_59afb0af.png "分类编译符")
   
 #### 2 在info.plist中加入以下节点，以兼容http模式
 
@@ -103,7 +103,7 @@ UPSDK需要依赖第三广告联盟才能使用，所以需要手动将第三方
 如果您使用的是cocos创建的项目，请检查项目的`Version`是否已经填写，如下图：
 （因为cocos创建出来的项目Version默认是没有填写的，如不填写会影响后续使用）
 
-![cocos项目Version字段配置](http://docs.upltv.com/uploads/201709/59afb01ec7612_59afb01e.png "cocos项目Version字段配置")
+![cocos项目Version字段配置](http://docc.upltv.com/uploads/201709/59afb01ec7612_59afb01e.png "cocos项目Version字段配置")
 <br>
 
 ### 查看版本号

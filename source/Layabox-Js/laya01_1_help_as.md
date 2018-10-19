@@ -3,7 +3,7 @@
 ### 一、UPSDK JavaScriptPlugin的目录结构
 针对Android Studio 或 Gradle 构建的工程，UPSDK提倡以`*.aar`的方式导入到项目中。UPSDK JavaScriptPlugin版本的下载包( [Android-LayaboxJsSDK](http://ads-sdk-doc.haloapps.com/docs/show/13 "SDK下载页面") 下载UPSDK JavaScriptPlugin包)解压后的目录结构如下：
 
-![](http://docs.upltv.com/uploads/201809/5b98ed83ade86_5b98ed83.png)
+![](http://docc.upltv.com/uploads/201809/5b98ed83ade86_5b98ed83.png)
 
 > 如上图所示，UPSDK JavaScriptPlugin主包命名为`UPAdsSdk_LayaJs_x.x.xx_dex.aar`。
 
@@ -22,7 +22,7 @@
 根据上文的介绍，在您下载好的文件目录中找到名为`UPAdsSdk_LayaJs_x.x.xx_dex.aar`的文件，并添加到项目的`libs`目录下（注:如果没有libs目录，则在app文件夹下和src同级的目录中创建libs）。
 添加后，工程的效果图如下所示：
 
-![](http://docs.upltv.com/uploads/201809/5b98f0d13705b_5b98f0d1.png)
+![](http://docc.upltv.com/uploads/201809/5b98f0d13705b_5b98f0d1.png)
 > `UPAdsSdk_LayaJs_3.0.05_dex`仅作为示例参考说明
 
 为了确保libs目录的aar包能正确被工程引用，请检查`app`目录下的`build.gradle`文件中，是否添加以下配置参数：
@@ -228,7 +228,7 @@ dependencies {
 
 如下图所示
 
-![](http://docs.upltv.com/uploads/201809/5b98f2c8af661_5b98f2c8.png)
+![](http://docc.upltv.com/uploads/201809/5b98f2c8af661_5b98f2c8.png)
 
 ### 六、修改 Proguard
 如果您的项目开启了混淆功能，请将 `proguard-project.txt` 文件中的内容复制粘贴到当前项目使用的 混淆配置文件中，否则会因为混淆的原因导致程序无法找到类文件出现崩溃异常。

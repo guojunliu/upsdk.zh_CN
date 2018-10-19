@@ -7,11 +7,11 @@ Unity插件IOS版本被成功导入后，在Assets目录下，检查`PolyADSDK/P
 
 成功导入IOS插件后，3003以下的版本，Assets中目录结构如下：
 
-![bbb](http://docs.upltv.com/uploads/201805/5af5744506897_5af57445.png "bbb")
+![bbb](http://docc.upltv.com/uploads/201805/5af5744506897_5af57445.png "bbb")
 
 3003及以后的版本，Assets中目录结构如下：
 
-![aaa](http://docs.upltv.com/uploads/201805/5af573a34f61b_5af573a3.png "aaa")
+![aaa](http://docc.upltv.com/uploads/201805/5af573a34f61b_5af573a3.png "aaa")
 
 为了保证UPSDK的目录资源的健全，请检查以下几方面的文件是否存在。
 

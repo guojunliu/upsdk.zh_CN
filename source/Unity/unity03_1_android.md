@@ -8,7 +8,7 @@ Unity插件Android版本被成功导入后，在Assets目录下检查是否存�
 
 #### 3002及以下版本
 正常导入后，在Assets会出现如下的文件结构目录：
-![工程结构](http://docs.upltv.com/uploads/201804/5acc569aeb642_5acc569a.png "工程结构")
+![工程结构](http://docc.upltv.com/uploads/201804/5acc569aeb642_5acc569a.png "工程结构")
 
 ###### 1. `libs_res`
 	此目录下主要包括`AvidlyAdsSdk_2.0.xx_dex.aar`,`support-v4-24.1.1.aar`,`proguard-project.txt`三个文件。
@@ -24,7 +24,7 @@ Unity插件Android版本被成功导入后，在Assets目录下检查是否存�
 #### 3003及以上版本
 `Assets`中目录结构如下：
 
-![55333](http://docs.upltv.com/uploads/201805/5b026a7687a70_5b026a76.jpeg "55333")
+![55333](http://docc.upltv.com/uploads/201805/5b026a7687a70_5b026a76.jpeg "55333")
 
 版本3003开始，删除`avidly_android`目录，且主包名由`AvidlyAdsSdk_x.x.xx_dex.aar`改为`UPAdsSdk_3.0.xx_dex.aar`。
 

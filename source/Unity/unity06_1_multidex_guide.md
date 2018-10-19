@@ -2,7 +2,7 @@
 
 当方法数超过65535的限制时，apk生成时会出现以下失败：
 
-![222](http://docs.upltv.com/uploads/201807/5b39ca2058b2a_5b39ca20.png "222")
+![222](http://docc.upltv.com/uploads/201807/5b39ca2058b2a_5b39ca20.png "222")
 
 > `trouble writing output: Too many method references to fit in one dex file: 67449; max is 65536.`
 
