@@ -22,6 +22,8 @@ div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(1) > dt:
  content: '语言切换:';
  color: #ffffff;
  font-weight: bold;
+ visibility: visible;
+ display: block;
 }
 
 

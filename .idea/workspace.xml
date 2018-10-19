@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84e338eb-619c-4008-a535-8d405c94f7a2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/source/_static/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/source/_static/css/custom.css" afterDir="false" />
-    </list>
+    <list default="true" id="84e338eb-619c-4008-a535-8d405c94f7a2" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,8 +53,8 @@
       <file leaf-file-name="custom.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/_static/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-27">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="125">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -221,17 +219,18 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36402000" />
+    <option name="totallyTimeSpent" value="37018000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.56776035" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.5363766" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.5235378" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15884718" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -479,8 +478,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_static/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="125">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" selection-end-column="85" />
         </state>
       </provider>
     </entry>
