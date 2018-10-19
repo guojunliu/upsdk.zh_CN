@@ -3,7 +3,7 @@
 ### 一、UPSDK CppPlugin的目录结构
 针对Android Studio 或 Gradle 构建的工程，UPSDK提倡以`*.aar`的方式导入到项目中。UPSDK CppPlugin版本的下载包( [Android-CPPSDK](http://ads-sdk-doc.haloapps.com/docs/show/13 "SDK下载页面") 下载UPSDK CppPlugin包)解压后的目录结构如下：
 
-![as-1-1](http://docs.upltv.com/uploads/201805/5afd2c552eab2_5afd2c55.png "as-1-1")
+![as-1-1](http://docc.upltv.com/uploads/201805/5afd2c552eab2_5afd2c55.png "as-1-1")
 > 如上图所示，UPSDK CppPlugin主包命名为`UPAdsSdk_Cpp_x.x.xx_dex.aar`。
 
 - `Android Studio`
@@ -21,7 +21,7 @@
 根据上文的介绍，在你下载好的文件目录中找到名为`UPAdsSdk_Cpp_x.x.xx_dex.aar`的文件，并添加到项目的`libs`目录下（注:如果没有libs目录，则在app文件夹下和src同级的目录中创建libs）。
 添加后，工程的效果图如下所示：
 
-![as-2-1](http://docs.upltv.com/uploads/201805/5afd2d4e483b6_5afd2d4e.png "as-2-1")
+![as-2-1](http://docc.upltv.com/uploads/201805/5afd2d4e483b6_5afd2d4e.png "as-2-1")
 > `UPAdsSdk_Cpp_3.0.03_dex`仅作为示例参考说明
 
 为了确保libs目录的aar包能正确被工程引用，请检查`app`目录下的`build.gradle`文件中，是否添加以下配置参数：
@@ -227,7 +227,7 @@ dependencies {
 当前Cocos工程是通过*cpp源文件实现与UPSDK的接口跨平台调用，因此必须将`cpp/upltv`中所有的*.cpp和*.h文件，复制到当前工程中。
 
 Cocos2d-x 3.16的版本可以复制到Classes文件夹中，其它版本若有差异请参考修改，效果如下：
-![classes](http://docs.upltv.com/uploads/201804/5acacf5c67cbc_5acacf5c.png "classes")
+![classes](http://docc.upltv.com/uploads/201804/5acacf5c67cbc_5acacf5c.png "classes")
 >This article is based on cocos2dx-3.16. If your directory does not match this, ask our support team for help.
 
 ### 2、修改jni目录中的android.mk

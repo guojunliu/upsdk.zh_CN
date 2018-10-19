@@ -83,4 +83,4 @@ mVideoAd.load(new UPRewardVideoLoadCallback() {
 
 页面显示效果如下图，通过左右滑动可以分别查看当前是否引入了对应联盟的SDK，服务器是否配置为您配置了当前联盟的广告位信息，以及联盟视频广告是否加载成功，在已经加载成功的情况下，点击条目可以观看联盟的广告效果。
 
-![](http://docs.upltv.com/uploads/201805/5af577cb48bf4_5af577cb.png)	![](http://docs.upltv.com/uploads/201805/5af5789e0836b_5af5789e.png)
+![](http://docc.upltv.com/uploads/201805/5af577cb48bf4_5af577cb.png)	![](http://docc.upltv.com/uploads/201805/5af5789e0836b_5af5789e.png)

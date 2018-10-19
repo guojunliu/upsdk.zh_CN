@@ -4,17 +4,17 @@ Unity 5.5开始支持Gradle build system，对于65535超量的错误可以考�
 
 #### 1.导出到Android Studio工程
 
-![3333](http://docs.upltv.com/uploads/201807/5b39cc6bd83bb_5b39cc6b.png "3333")
+![3333](http://docc.upltv.com/uploads/201807/5b39cc6bd83bb_5b39cc6b.png "3333")
 
 
 #### 2.打开Android Studio工程
 必须安装Android Studio2.2.3及上版本。
 
-![4444](http://docs.upltv.com/uploads/201807/5b39ccc80a994_5b39ccc8.png "4444")
+![4444](http://docc.upltv.com/uploads/201807/5b39ccc80a994_5b39ccc8.png "4444")
 
 #### 3.配置build.gradle
 如果你的gradle版本过低，请设置到2.2.3或以上。
-![555](http://docs.upltv.com/uploads/201807/5b39cd2136c17_5b39cd21.png "555")
+![555](http://docc.upltv.com/uploads/201807/5b39cd2136c17_5b39cd21.png "555")
 
 在build.gradle文件中添加分包设置：
 

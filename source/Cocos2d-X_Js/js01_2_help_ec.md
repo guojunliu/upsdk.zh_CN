@@ -4,7 +4,7 @@
 ### 一、UPSDK JavaScriptPlugin的目录结构
 针对Eclipse构建的工程，UPSDK以`*.jar`的方式导入到工程中。UPSDK JavaScriptPlugin版本的下载包( [Android-JsSDK下载](http://ads-sdk-doc.haloapps.com/docs/show/13 "SDK下载页面"))解压后的目录结构如下：
 
-![ec-1-1](http://docs.upltv.com/uploads/201805/5af3e73af0172_5af3e73a.png "ec-1-1")
+![ec-1-1](http://docc.upltv.com/uploads/201805/5af3e73af0172_5af3e73a.png "ec-1-1")
 - `Eclipse`
 	此目录主要包含Eclipse工程接入所需的广告依赖库文件。
 - `js`文件夹
@@ -22,7 +22,7 @@
 
 效果图如下：
 
-![ec-2-1](http://docs.upltv.com/uploads/201805/5af3e8f29e3c9_5af3e8f2.png "ec-2-1")
+![ec-2-1](http://docc.upltv.com/uploads/201805/5af3e8f29e3c9_5af3e8f2.png "ec-2-1")
 
 > `UPAdsSdk_Js_3.0.03.jar`仅作为示例参考说明
 
@@ -42,7 +42,7 @@
 ### 三、添加广告联盟
 #### 1.添加Google Ads SDK
 google广告联盟是主要的盈利来源，必须接入到项目中，请参考**添加UPSDK文件**的方式将其添加到您的工程中，效果图如下：
-![ec-3-2](http://docs.upltv.com/uploads/201805/5af3ebc528686_5af3ebc5.png "ec-3-2")
+![ec-3-2](http://docc.upltv.com/uploads/201805/5af3ebc528686_5af3ebc5.png "ec-3-2")
 > 特别地，如果您的工程中已经存在与UPSDK所依赖的gms play不同版时，请用更高的版本替换低版本
 
 #### 2.添加可选广告联盟
@@ -51,7 +51,7 @@ google广告联盟是主要的盈利来源，必须接入到项目中，请参�
 ### 四、加入 Android Support 支持库
 广告的正常展示需要 `support` 库的支持，所以请将其引入到您的项目中。命名为`android_support_library`的文件夹中是需要依赖的文件。请将其中*.jar文件依次加入到项目的libs目录中，目录格式应该如下：
 
-![ec-4-1](http://docs.upltv.com/uploads/201805/5af3e9c639e11_5af3e9c6.png "ec-4-1")
+![ec-4-1](http://docc.upltv.com/uploads/201805/5af3e9c639e11_5af3e9c6.png "ec-4-1")
 
 ### 五、修改 AndroidManifest.xml 文件
 将下载文件夹中的 `AndroidManifest.xml  `文件中的内容复制加入到您项目的对应节点中。
@@ -63,7 +63,7 @@ google广告联盟是主要的盈利来源，必须接入到项目中，请参�
 
 Cocos2d-x 3.16的版本可以将.js文件复制到assets/src中，效果如下：
 
-![ec-4-1](http://docs.upltv.com/uploads/201805/5af3ea86801bf_5af3ea86.png "ec-4-1")
+![ec-4-1](http://docc.upltv.com/uploads/201805/5af3ea86801bf_5af3ea86.png "ec-4-1")
 >本文基于cocos2dx-3.16进行编写，如果您的目录与此不符可联系我们的支持人员获得帮助。
 
 ### 2、修改jni目录中的application.mk

@@ -5,7 +5,7 @@
 针对Eclipse构建的工程，UPSDK以`*.jar`的方式导入到工程中。UPSDK LuaPlugin版本的下载包( [Android-LuaSDK下载](http://ads-sdk-doc.haloapps.com/docs/show/13 "SDK下载页面"))解压后的目录结构如下：
 
 
-![ec-1-1](http://docs.upltv.com/uploads/201805/5afe9bd143673_5afe9bd1.png "ec-1-1")
+![ec-1-1](http://docc.upltv.com/uploads/201805/5afe9bd143673_5afe9bd1.png "ec-1-1")
 - `Eclipse`
   此目录主要包含Eclipse工程接入所需的广告依赖库文件。
 - `lua`文件夹
@@ -23,7 +23,7 @@
 
 效果图如下：
 
-![ec-2-1](http://docs.upltv.com/uploads/201805/5afe9cf8d18fd_5afe9cf8.png "ec-2-1")
+![ec-2-1](http://docc.upltv.com/uploads/201805/5afe9cf8d18fd_5afe9cf8.png "ec-2-1")
 > `UPAdsSdk_Lua_3.0.03.jar`仅作为示例参考说明
 
 #### 2.检查Manifest中minSdkVersion与targetSdkVersion
@@ -43,7 +43,7 @@
 #### 1.添加Google Ads SDK
 google广告联盟是主要的盈利来源，必须接入到项目中，请参考**添加UPSDK文件**的方式将其添加到您的工程中，效果图如下：
 
-![ec-3-1](http://docs.upltv.com/uploads/201805/5afea0b542f2f_5afea0b5.png "ec-3-1")
+![ec-3-1](http://docc.upltv.com/uploads/201805/5afea0b542f2f_5afea0b5.png "ec-3-1")
 > 特别地，如果您的工程中已经 n存在与UPSDK所依赖的gms play不同版时，请用更高的版本替换低版本
 
 #### 2.添加可选广告联盟
@@ -52,7 +52,7 @@ google广告联盟是主要的盈利来源，必须接入到项目中，请参�
 ### 四、加入 Android Support 支持库
 广告的正常展示需要 `support` 库的支持，所以请将其引入到您的项目中。命名为`android_support_library`的文件夹中是需要依赖的文件。请将其中*.jar文件依次加入到项目的libs目录中，目录格式应该如下：
 
-![ec-4-1](http://docs.upltv.com/uploads/201805/5afea104016ef_5afea104.png "ec-4-1")
+![ec-4-1](http://docc.upltv.com/uploads/201805/5afea104016ef_5afea104.png "ec-4-1")
 
 ### 五、修改 AndroidManifest.xml 文件
 将下载文件夹中的 `AndroidManifest.xml  `文件中的内容复制加入到您项目的对应节点中。

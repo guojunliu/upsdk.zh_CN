@@ -3,7 +3,7 @@
 ### 一、UPSDK的目录结构
 如果您使用 Eclipse 或 Ant 构建 Android 项目，相比较于Android Studio 构建的工程，接入工作稍有一些复杂。UPSDK Eclipse版本的下载包解压后的目录结构如下：
 
-![](http://docs.upltv.com/uploads/201805/5af56a8672b4b_5af56a86.png)
+![](http://docc.upltv.com/uploads/201805/5af56a8672b4b_5af56a86.png)
 
 UPSDK Eclipse的主包体处于`upsdk_ads`的文件夹下，`upsdk_ads`中的内容必须添加到你的主工程中。
 

@@ -14,7 +14,7 @@
 
 如下图所示
 
-![](http://docs.upltv.com/uploads/201809/5b98bcb7c6c2b_5b98bcb7.png)
+![](http://docc.upltv.com/uploads/201809/5b98bcb7c6c2b_5b98bcb7.png)
 
 </br>
 
@@ -25,7 +25,7 @@
 
 移除UpltvLayaboxJsBridge文件夹包含的*.js脚本文件，只留Object-C++源码，如下图如示：
 
-![](http://docs.upltv.com/uploads/201809/5b98bf749a9ba_5b98bf74.png)
+![](http://docc.upltv.com/uploads/201809/5b98bf749a9ba_5b98bf74.png)
 
 
 #### 2、加入第三方依赖库
@@ -33,7 +33,7 @@ UPSDK运行时会依赖第三方广告联盟，所以需要手动将这些联盟
 
 UPSDK当前依赖第三方广告联盟如下：
 
-![添加所有第三方SDK包](http://docs.upltv.com/uploads/201709/59afafb9143e9_59afafb9.png "添加所有第三方SDK包")
+![添加所有第三方SDK包](http://docc.upltv.com/uploads/201709/59afafb9143e9_59afafb9.png "添加所有第三方SDK包")
 
 > 每个联盟对应一个文件夹，且命名都以广告联盟的名字为前缀，以版本号为后缀，因此很好识别。文件夹中除了包括广告联盟的依赖库或源码文件外，还有可能包括配套的资源文件，因此添加广告联盟时依赖库与对应的配套的资源要一同添加。
 
@@ -42,11 +42,11 @@ UPSDK当前依赖第三方广告联盟如下：
 当你完成第三方联盟广告添加后，在XCode工程中检查下`Linked Frameworks Libraries`是否正确引入了相应的库文件，避免不必要的失误。
 
 假设在当前项目中接入Applovin、Unity、Vungle、Tapjoy四家广告，需要先将这四家广告的库文件(依次是AppLovinSDK.framework,UnityAds.framework,VungleSDK.framework,Tapjoy.framework四个静态库)添加到工程里，成功添加后的效果图如下：
-![](http://docs.upltv.com/uploads/201804/5acc6644c33a5_5acc6644.png)
+![](http://docc.upltv.com/uploads/201804/5acc6644c33a5_5acc6644.png)
 
 在以上假设中，由于Tapjoy广告需要访问它一些外部资源文件，因此需要将它配套的资源文件也添加到项目中，可在TARGETS → Build Phases → Copy Bundle Resources查看，正确添加后的效果如下：
 <br>
-![](http://docs.upltv.com/uploads/201804/5acc70803fec8_5acc7080.png)
+![](http://docc.upltv.com/uploads/201804/5acc70803fec8_5acc7080.png)
 
 
 #### 3、加入系统依赖库
@@ -85,7 +85,7 @@ UPSDK当前依赖第三方广告联盟如下：
 ###### 1)、添加分类编译符
 
 - 在`TARGETS` → `Build Setting` → `Linking` → `Other Linker Flags` 中加入 `-ObjC` 如下图所示
-![](http://docs.upltv.com/uploads/201804/5ae28e70be73c_5ae28e70.png)
+![](http://docc.upltv.com/uploads/201804/5ae28e70be73c_5ae28e70.png)
 
 ###### 2)、在info.plist中加入以下节点，以兼容http模式
 

@@ -28,7 +28,7 @@
 
 选择你下载好的插件文件：如export_3001_both.unitypackage，然后选择“open”按钮，Unity会自动加载插件包。
 
-![open](http://docs.upltv.com/uploads/201804/5acc540715865_5acc5407.png "111")
+![open](http://docc.upltv.com/uploads/201804/5acc540715865_5acc5407.png "111")
 
 插件的命名规则：
 `export_` + `版本号` + `_` + `平台标识` + `后缀`
@@ -42,11 +42,11 @@ Untiy加载完成插件包后，会弹出一个询问界面，提示你导入哪
 
 以3001版本为例，效果图如下所示：
 
-![import plugin](http://docs.upltv.com/uploads/201804/5acc5b73f1774_5acc5b73.png "import plugin")
+![import plugin](http://docc.upltv.com/uploads/201804/5acc5b73f1774_5acc5b73.png "import plugin")
 
 自3003开始，UPSDK Unity插件包目录做了细微的修改，导入时相较于3003以下版本目录结果有以下些许不同。
 
-![24444](http://docs.upltv.com/uploads/201805/5b02619429610_5b026194.jpeg "24444")
+![24444](http://docc.upltv.com/uploads/201805/5b02619429610_5b026194.jpeg "24444")
 
 
 一般地选择“All”按键，然后点击“Import”开始导入。如果你的工程仅支持Android平台，那可以忽略“**IOS**”的勾选；如果仅支持IOS平台，请忽略“**Android**”的勾选。
@@ -57,10 +57,10 @@ Untiy加载完成插件包后，会弹出一个询问界面，提示你导入哪
 
 3003及更高的版本，插件文件全在`PolyADSDK`目录下
 
-![3444](http://docs.upltv.com/uploads/201805/5b050d981d064_5b050d98.jpeg "3444")
+![3444](http://docc.upltv.com/uploads/201805/5b050d981d064_5b050d98.jpeg "3444")
 
 3002及以前的版本，插件资源分别包含在`PolyADSDK`与`avidly_android`目录下
 
-![load ok](http://docs.upltv.com/uploads/201804/5acc58ed3691b_5acc58ed.png "load ok")
+![load ok](http://docc.upltv.com/uploads/201804/5acc58ed3691b_5acc58ed.png "load ok")
 
 

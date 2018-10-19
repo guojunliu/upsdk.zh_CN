@@ -3,7 +3,7 @@
 ### 一、UPSDK的目录结构
 针对Android Studio 或 Gradle 构建的工程，UPSDK提倡以`*.aar`的方式被其它主工程导入。UPSDK Studio版本的下载包解压后的目录结构如下：
 
-![](http://docs.upltv.com/uploads/201805/5af5689a90a1a_5af5689a.png)
+![](http://docc.upltv.com/uploads/201805/5af5689a90a1a_5af5689a.png)
 
 #### 1. UPSDK 主包
 如上图所示，命名为`UPAdsSdk_x.x.xx.aar`的文件即为UPSDK 主包，必须添加到你的主工程中。
@@ -23,7 +23,7 @@ UPSDK的本地文件中，提供了Admob与Facebook 两种广告平台的aar依�
 根据上文的介绍，在你下载好的文件目录中找到名为 `UPAdsSdk_x.x.xx.aar`的文件，并添加到项目的`libs`目录下。
 添加后，Studio工程的效果图如下所示：
 
-![](http://docs.upltv.com/uploads/201805/5af56922f4043_5af56922.png)
+![](http://docc.upltv.com/uploads/201805/5af56922f4043_5af56922.png)
 
 > `UPAdsSdk_3.0.03.aar`仅作为示例参考说明
 

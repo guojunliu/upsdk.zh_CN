@@ -3,7 +3,7 @@
 ### 一、UPSDK JavaScriptPlugin的目录结构
 针对Eclipse构建的工程，UPSDK以`*.jar`的方式导入到工程中。UPSDK JavaScriptPlugin版本的下载包( [Android-LayaboxJsSDK下载](http://ads-sdk-doc.haloapps.com/docs/show/13 "SDK下载页面"))解压后的目录结构如下：
 
-![](http://docs.upltv.com/uploads/201809/5b98f4a1c89a1_5b98f4a1.png)
+![](http://docc.upltv.com/uploads/201809/5b98f4a1c89a1_5b98f4a1.png)
 
 - `Eclipse`
 	此目录主要包含Eclipse工程接入所需的广告依赖库文件。
@@ -22,7 +22,7 @@
 
 效果图如下：
 
-![](http://docs.upltv.com/uploads/201809/5b98f614c67d9_5b98f614.png)
+![](http://docc.upltv.com/uploads/201809/5b98f614c67d9_5b98f614.png)
 
 > `UPAdsSdk_LayaJs_3.0.05.jar`仅作为示例参考说明
 
@@ -43,7 +43,7 @@
 #### 1.添加Google Ads SDK
 google广告联盟是主要的盈利来源，必须接入到项目中，请参考**添加UPSDK文件**的方式将其添加到您的工程中，效果图如下：
 
-![](http://docs.upltv.com/uploads/201809/5b98f679af237_5b98f679.png)
+![](http://docc.upltv.com/uploads/201809/5b98f679af237_5b98f679.png)
 
 > 特别地，如果您的工程中已经存在与UPSDK所依赖的gms play不同版时，请用更高的版本替换低版本
 
@@ -53,7 +53,7 @@ google广告联盟是主要的盈利来源，必须接入到项目中，请参�
 ### 四、加入 Android Support 支持库
 广告的正常展示需要 `support` 库的支持，所以请将其引入到您的项目中。命名为`android_support_library`的文件夹中是需要依赖的文件。请将其中*.jar文件依次加入到项目的libs目录中，目录格式应该如下：
 
-![](http://docs.upltv.com/uploads/201809/5b98f6edd1b61_5b98f6ed.png)
+![](http://docc.upltv.com/uploads/201809/5b98f6edd1b61_5b98f6ed.png)
 
 ### 五、修改 AndroidManifest.xml 文件
 将下载文件夹中的 `AndroidManifest.xml  `文件中的内容复制加入到您项目的对应节点中。
@@ -69,7 +69,7 @@ google广告联盟是主要的盈利来源，必须接入到项目中，请参�
 
 如下图所示
 
-![](http://docs.upltv.com/uploads/201809/5b98f2c8af661_5b98f2c8.png)
+![](http://docc.upltv.com/uploads/201809/5b98f2c8af661_5b98f2c8.png)
 
 ### 七、修改 Proguard
 如果您的项目开启了混淆功能，请将 `proguard-project.txt` 文件中的内容复制粘贴到当前项目使用的 混淆配置文件中，否则会因为混淆的原因导致程序无法找到类文件出现崩溃异常。

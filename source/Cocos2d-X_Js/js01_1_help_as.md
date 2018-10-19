@@ -4,7 +4,7 @@
 ### 一、UPSDK JavaScriptPlugin的目录结构
 针对Android Studio 或 Gradle 构建的工程，UPSDK提倡以`*.aar`的方式导入到项目中。UPSDK JavaScriptPlugin版本的下载包( [Android-JsSDK](http://ads-sdk-doc.haloapps.com/docs/show/13 "SDK下载页面") 下载UPSDK JavaScriptPlugin包)解压后的目录结构如下：
 
-![as-1-1](http://docs.upltv.com/uploads/201805/5af3e11a11839_5af3e11a.png "as-1-1")
+![as-1-1](http://docc.upltv.com/uploads/201805/5af3e11a11839_5af3e11a.png "as-1-1")
 
 > 如上图所示，UPSDK JavaScriptPlugin主包命名为`UPAdsSdk_Js_x.x.xx_dex.aar`。
 
@@ -23,7 +23,7 @@
 根据上文的介绍，在您下载好的文件目录中找到名为`UPAdsSdk_Js_x.x.xx_dex.aar`的文件，并添加到项目的`libs`目录下（注:如果没有libs目录，则在app文件夹下和src同级的目录中创建libs）。
 添加后，工程的效果图如下所示：
 
-![as-2-1](http://docs.upltv.com/uploads/201805/5af3e2cdeb793_5af3e2cd.png "as-2-1")
+![as-2-1](http://docc.upltv.com/uploads/201805/5af3e2cdeb793_5af3e2cd.png "as-2-1")
 > `UPAdsSdk_Js_3.0.03_dex`仅作为示例参考说明
 
 为了确保libs目录的aar包能正确被工程引用，请检查`app`目录下的`build.gradle`文件中，是否添加以下配置参数：
@@ -231,7 +231,7 @@ dependencies {
 
 Cocos2d-x 3.16的版本可以复制到`src`文件夹中,效果如下：
 
-![as-3-1](http://docs.upltv.com/uploads/201805/5af3e577f12a1_5af3e577.png "as-3-1")
+![as-3-1](http://docc.upltv.com/uploads/201805/5af3e577f12a1_5af3e577.png "as-3-1")
 >本文基于cocos2dx-3.16进行编写，如果您的目录与此不符可联系我们的支持人员获得帮助。
 
 ### 六、修改 Proguard
