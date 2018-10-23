@@ -63,7 +63,7 @@ public static void setRewardVideoLoadCallback(Action<string,string> success, Act
 
 //激励视屏的回调代理，不用区分广告位，因此相比于插屏加载接口少一个广告位的参数
 public void onBtn_ClickForRewardLoadCallback() {
-    Polymer.PolyADSDK.setRewardVideoLoadCallback ( 
+   UPSDK.setRewardVideoLoadCallback ( 
         new System.Action<string, string>(actionForRewardLoadSuccess),
         new System.Action<string, string>(actionForRewardLoadFail) 
     );

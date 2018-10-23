@@ -223,7 +223,7 @@
 <p>使用示例代码：</p>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="c1">//激励视屏的回调代理，不用区分广告位，因此相比于插屏加载接口少一个广告位的参数</span>
 <span class="k">public</span> <span class="k">void</span> <span class="nf">onBtn_ClickForRewardLoadCallback</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">Polymer</span><span class="p">.</span><span class="n">PolyADSDK</span><span class="p">.</span><span class="n">setRewardVideoLoadCallback</span> <span class="p">(</span> 
+   <span class="n">UPSDK</span><span class="p">.</span><span class="n">setRewardVideoLoadCallback</span> <span class="p">(</span> 
         <span class="k">new</span> <span class="n">System</span><span class="p">.</span><span class="n">Action</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;(</span><span class="n">actionForRewardLoadSuccess</span><span class="p">),</span>
         <span class="k">new</span> <span class="n">System</span><span class="p">.</span><span class="n">Action</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;(</span><span class="n">actionForRewardLoadFail</span><span class="p">)</span> 
     <span class="p">);</span>
