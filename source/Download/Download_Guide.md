@@ -57,5 +57,4 @@
 [gms v15.0.1](http://cnimg.dataverse.cn/upsdk/gms15.0.1.zip "gms_v15.0.1")
 
 ## 更新日志
-
 **当前版本号：3.0.05**

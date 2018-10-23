@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>LuaPlugin 接入帮助 &mdash; UPInteractive Document  documentation</title>
+  <title>UPSDK 概述 &mdash; UPInteractive Document  documentation</title>
   
 
   
@@ -29,8 +29,8 @@
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Android Studio接入帮助" href="lua01_1_help_as.html" />
-    <link rel="prev" title="UPSDK Cocos2d-X Lua帮助文档" href="../chapters/chapter05.html" /> 
+    <link rel="next" title="UPSDK Android帮助文档" href="chapter01.html" />
+    <link rel="prev" title="UPSDK 接入文档" href="../index.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -80,27 +80,20 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter00.html">UPSDK 概述</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter01.html">UPSDK Android帮助文档</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter02.html">UPSDK IOS帮助文档</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter03.html">UPSDK UnityPlugin帮助文档</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter04.html">UPSDK Cocos2d-X Cpp帮助文档</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../chapters/chapter05.html">UPSDK Cocos2d-X Lua帮助文档</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">LuaPlugin 接入帮助</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="lua01_1_help_as.html">Android Studio接入帮助</a></li>
-<li class="toctree-l3"><a class="reference internal" href="lua01_2_help_ec.html">Android Eclipse接入帮助</a></li>
-<li class="toctree-l3"><a class="reference internal" href="lua01_3_help_ios.html">IOS Xcode接入帮助</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">UPSDK 概述</a><ul class="simple">
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="lua02_sample_catalog.html">LuaPlugin 使用实例</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter06.html">UPSDK Cocos2d-X JavaScript帮助文档</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter07.html">UPSDK Layabox JavaScript帮助文档</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter08.html">UPSDK Egret TypeScript帮助文档</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter09.html">UPSDK 下载</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter10.html">GDPR支持</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../chapters/chapter11.html">常见问题</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter01.html">UPSDK Android帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter02.html">UPSDK IOS帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter03.html">UPSDK UnityPlugin帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter04.html">UPSDK Cocos2d-X Cpp帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter05.html">UPSDK Cocos2d-X Lua帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter06.html">UPSDK Cocos2d-X JavaScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter07.html">UPSDK Layabox JavaScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter08.html">UPSDK Egret TypeScript帮助文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter09.html">UPSDK 下载</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter10.html">GDPR支持</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter11.html">常见问题</a></li>
 </ul>
 
             
@@ -146,9 +139,7 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="../chapters/chapter05.html">UPSDK Cocos2d-X Lua帮助文档</a> &raquo;</li>
-        
-      <li>LuaPlugin 接入帮助</li>
+      <li>UPSDK 概述</li>
     
     
 
@@ -160,19 +151,30 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="luaplugin">
-<h1>LuaPlugin 接入帮助<a class="headerlink" href="#luaplugin" title="Permalink to this headline">¶</a></h1>
-<blockquote>
-<div><p><strong>请注意，本接入文档以cocos2d-X 3.16为蓝本，如果您使用Cocos2d-X其它版本，不同之处请灵活处理。</strong>
-&lt;/br&gt;</p>
-<p>请根据你的开发工具，选择合适的帮助文档:</p>
-</div></blockquote>
+  <div class="section" id="upsdk">
+<h1>UPSDK 概述<a class="headerlink" href="#upsdk" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>UPSDK 简介<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>UPSDK（全称：UPLTV ADSDK），是UPLTV旗下的一款广告聚合产品。产品 <a class="reference external" href="http://upltv.com">官网</a>
+UPSDK 以提高游戏广告收益和游戏用户长期价值为努力方向。通过大数据和 AI 技术进行智能优化，帮助游戏开发者在稳定留存的前提下增加收益。</p>
+</div>
+<div class="section" id="id3">
+<h2>注册账号<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>请到 <a class="reference external" href="http://upltv.com/register/">官网</a> 注册开发者账号，或联系你的商务代表获得支持。</p>
+</div>
+<div class="section" id="id5">
+<h2>UPSDK 下载<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>如果你还未下载或更新至 UPSDK 的最新版本，请跳转到  <a class="reference external" href="http://docs.upltv.com/docs/show/13">UPSDK 下载页</a> 下载适合你的版本。</p>
+<p>&gt; 我们分别针对Eclipse与AndroidStudio工程结构的差异做了设计优化，下载时请根据你实际的开发工具选择匹配的版本。</p>
+<p>如果你是Unity工程，我们 <strong>*强烈*</strong> 推荐使用*Unity Plugin*，这样可以更快更方便地完成UPSDK的接入工作。请点击
+<a class="reference external" href="http://docs.upltv.com/docs/show/51">Unity Plugin下载</a> 了解更多相关内容。</p>
+</div>
+<div class="section" id="id7">
+<h2>支持反馈<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p>如果您有专属的商务代表，请直接和他们沟通
+您也可以通过 <a class="reference external" href="mailto:contact&#37;&#52;&#48;upltv&#46;com">contact<span>&#64;</span>upltv<span>&#46;</span>com</a> 联系我们</p>
 <div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="lua01_1_help_as.html">Android Studio接入帮助</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lua01_2_help_ec.html">Android Eclipse接入帮助</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lua01_3_help_ios.html">IOS Xcode接入帮助</a></li>
-</ul>
+</div>
 </div>
 </div>
 
@@ -184,10 +186,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="lua01_1_help_as.html" class="btn btn-neutral float-right" title="Android Studio接入帮助" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="chapter01.html" class="btn btn-neutral float-right" title="UPSDK Android帮助文档" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../chapters/chapter05.html" class="btn btn-neutral" title="UPSDK Cocos2d-X Lua帮助文档" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../index.html" class="btn btn-neutral" title="UPSDK 接入文档" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
