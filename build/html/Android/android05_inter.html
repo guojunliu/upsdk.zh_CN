@@ -165,90 +165,88 @@
 <span id="id1"></span><h1>插屏广告<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="">
 <span id="id2"></span><h2>广告对象初始化<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
-<p>使用如下方式初始化视频广告</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mVideoAd</span> <span class="o">=</span> <span class="n">UPRewardVideoAd</span><span class="o">.</span><span class="n">getInstance</span><span class="p">(</span><span class="n">this</span><span class="p">);</span>
+<p>使用如下方式初始化插屏广告</p>
+<blockquote>
+<div>以下【广告位】可由接入方向<strong>我方技术支持同事询问</strong>。不同广告使用场景请尽量保持【广告位】的独立性，方便未来区分不同广告展示的收益来源。例如：在暂停界面中初始化广告时，【广告位】可传入”Pause” or “Menu”</div></blockquote>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mInterstitialAd</span> <span class="o">=</span> <span class="n">new</span> <span class="n">UPInterstitialAd</span><span class="p">(</span><span class="n">this</span><span class="p">,</span> <span class="s2">&quot;广告位&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="">
 <span id="id3"></span><h2>广告加载监听<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
-<p>监听激励视屏加载结果，如果长时间未加载成功，会产生onLoadFailed()的回调。</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">load</span><span class="o">(</span><span class="n">UPRewardVideoLoadCallback</span> <span class="n">callback</span><span class="o">)</span>
+<p>监听插屏广告加载结果，如果长时间未加载成功，会产生onLoadFailed()的回调。</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">load</span><span class="o">(</span><span class="n">UPInterstitialLoadCallback</span> <span class="n">callback</span><span class="o">)</span>
 </pre></div>
 </div>
 <p>示例代码：</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">mVideoAd</span> <span class="o">=</span> <span class="n">UPRewardVideoAd</span><span class="o">.</span><span class="na">getInstance</span><span class="o">(</span><span class="n">VideoActivity</span><span class="o">.</span><span class="na">this</span><span class="o">);</span>
-<span class="n">mVideoAd</span><span class="o">.</span><span class="na">load</span><span class="o">(</span><span class="k">new</span> <span class="n">UPRewardVideoLoadCallback</span><span class="o">()</span> <span class="o">{</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">UPInterstitialAd</span> <span class="n">mInterstitialAdAAA</span> <span class="o">=</span> <span class="k">new</span> <span class="n">UPInterstitialAd</span><span class="o">(</span><span class="n">InterstitialActivity</span><span class="o">.</span><span class="na">this</span><span class="o">,</span> <span class="s">&quot;inter_aaa&quot;</span><span class="o">);</span>
+<span class="kd">final</span> <span class="n">UPInterstitialLoadCallback</span> <span class="n">callback</span> <span class="o">=</span> <span class="k">new</span> <span class="n">UPInterstitialLoadCallback</span><span class="o">()</span> <span class="o">{</span>
         <span class="nd">@Override</span>
-        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onLoadFailed</span><span class="o">()</span> <span class="o">{</span>
-            <span class="c1">// code</span>
-            <span class="c1">// 激励视屏加载失败，请等待加载成功</span>
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onLoadSuccessed</span><span class="o">(</span><span class="n">String</span> <span class="n">placement</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">Log</span><span class="o">.</span><span class="na">i</span><span class="o">(</span><span class="n">TAG</span><span class="o">,</span> <span class="s">&quot;InterstitialAd &quot;</span> <span class="o">+</span> <span class="n">placement</span> <span class="o">+</span> <span class="s">&quot; onLoadSuccessed:&quot;</span><span class="o">);</span>
+
+            <span class="k">if</span> <span class="o">(</span><span class="n">placement</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="s">&quot;inter_aaa&quot;</span><span class="o">))</span> <span class="o">{</span>
+                <span class="c1">// inter_aaa位的插屏广告加载成功，可以展示</span>
+            <span class="o">}</span>
         <span class="o">}</span>
 
         <span class="nd">@Override</span>
-        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onLoadSuccessed</span><span class="o">()</span> <span class="o">{</span>
-            <span class="c1">// code</span>
-            <span class="c1">// 激励视屏加载成功，可以展示</span>
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onLoadFailed</span><span class="o">(</span><span class="n">String</span> <span class="n">placement</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">Log</span><span class="o">.</span><span class="na">i</span><span class="o">(</span><span class="n">TAG</span><span class="o">,</span> <span class="s">&quot;InterstitialAd &quot;</span> <span class="o">+</span> <span class="n">placement</span> <span class="o">+</span> <span class="s">&quot; onLoadFailed:&quot;</span><span class="o">);</span>
+            <span class="k">if</span> <span class="o">(</span><span class="n">placement</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="s">&quot;inter_aaa&quot;</span><span class="o">))</span> <span class="o">{</span>
+                <span class="c1">// inter_aaa位的插屏广告加载失败</span>
+            <span class="o">}</span>
         <span class="o">}</span>
-    <span class="o">});</span>
+    <span class="o">};</span>
+
+<span class="c1">// 设置回调接口</span>
+<span class="n">mInterstitialAdAAA</span><span class="o">.</span><span class="na">load</span><span class="o">(</span><span class="n">callback</span><span class="o">);</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="">
-<span id="id4"></span><h2>显示视频广告<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
-<p>根据您的业务逻辑，在您希望显示视频广告的时机，调用<code class="docutils literal notranslate"><span class="pre">isReady()</span></code>方法判断是否有可播放的视频广告，来决定您是否显示播放视频广告的按钮，然后调用<code class="docutils literal notranslate"><span class="pre">show(&quot;广告位&quot;)</span></code>方法显示视频广告，在<code class="docutils literal notranslate"><span class="pre">show(&quot;广告位&quot;)</span></code>方法中，传入可以帮助您区分视频广告入口的参数</p>
-<p><strong>【注意】在播放之前需要调用<code class="docutils literal notranslate"><span class="pre">isReady()</span></code>方法判断当前是否有视频广告可以播放，<code class="docutils literal notranslate"><span class="pre">show(&quot;广告位&quot;)</span></code>在不同的激励视频广告点传入可以代表当前广告点的参数，用于后期分析各广告点广告的数据情况，<font color=red>不同的广告点请不要传入相同的参数</font></strong></p>
-<blockquote>
-<div>以下【广告位】可由接入方自定义。不同广告使用场景请尽量保持【广告位】的独立性，方便未来区分不同广告展示的收益来源。例如：在暂停界面中初始化广告时，【广告位】可传入”Pause” or “Menu”,为了保证此参数有意义，不能传空值(“”或null)。在无法明确用途时，可以设定为”avidly_rewardvideo”</div></blockquote>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">mVideoAd</span> <span class="o">!=</span> <span class="n">null</span> <span class="o">&amp;&amp;</span> <span class="n">mVideoAd</span><span class="o">.</span><span class="n">isReady</span><span class="p">())</span> <span class="p">{</span>
-    <span class="n">mVideoAd</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s2">&quot;广告位&quot;</span><span class="p">);</span>
+<span id="id4"></span><h2>显示插屏广告<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<p>根据您的业务逻辑，在您希望显示插屏广告的时机，调用show方法显示插屏广告</p>
+<p><strong>请注意在显示之前需要调用<code class="docutils literal notranslate"><span class="pre">isReady()</span></code>方法判断当前是否有广告可以显示</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">mInterstitialAd</span> <span class="o">!=</span> <span class="n">null</span> <span class="o">&amp;&amp;</span> <span class="n">mInterstitialAd</span><span class="o">.</span><span class="n">isReady</span><span class="p">())</span> <span class="p">{</span>
+    <span class="n">mInterstitialAd</span><span class="o">.</span><span class="n">show</span><span class="p">();</span>
 <span class="p">}</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="">
 <span id="id5"></span><h2>回调接口<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
-<p>插屏广告可以通过<code class="docutils literal notranslate"><span class="pre">setUpVideoAdListener</span></code>方法设置回调接口，原则上您只需要关心<code class="docutils literal notranslate"><span class="pre">onVideoAdReward</span></code>和<code class="docutils literal notranslate"><span class="pre">onVideoAdDontReward</span></code>两个回调方法，来决定您是否需要向用户发送奖励</p>
-<p><strong>【注意】只有在收到<code class="docutils literal notranslate"><span class="pre">onVideoAdReward</span></code>这个回调之后，才发奖励，其他情况不发</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>mVideoAd.setUpVideoAdListener(new UPRewardVideoAdListener() {
-    @Override
-    public void onVideoAdClicked() {
-        // 此处为广告点击的回调
-    }
+<p>插屏广告可以通过<code class="docutils literal notranslate"><span class="pre">setAvidlyInterstitialAdListener</span></code>方法设置回调接口，您的业务中如果没有需要针对相应回调的特殊处理，可以不使用回调。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mInterstitialAd</span><span class="o">.</span><span class="n">setUpInterstitialAdListener</span><span class="p">(</span><span class="n">new</span> <span class="n">UPInterstitialAdListener</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nd">@Override</span>
+    <span class="n">public</span> <span class="n">void</span> <span class="n">onClicked</span><span class="p">()</span> <span class="p">{</span>
+        <span class="o">//</span> <span class="n">此处为广告点击的回调</span>
+    <span class="p">}</span>
 
-    @Override
-    public void onVideoAdClosed() {
-        // 此处为广告关闭的回调
-    }
+    <span class="nd">@Override</span>
+    <span class="n">public</span> <span class="n">void</span> <span class="n">onClosed</span><span class="p">()</span> <span class="p">{</span>
+        <span class="o">//</span> <span class="n">此处为广告关闭的回调</span>
+    <span class="p">}</span>
 
-    @Override
-    public void onVideoAdDisplayed() {
-        // 此处为广告展示的回调
-    }
-
-    @Override
-    public void onVideoAdReward() {
-        // 此处为广告可以发放奖励的回调
-    }
-
-    @Override
-    public void onVideoAdDontReward(String reason) {
-        // 此处为广告观看不符合条件，不发放奖励的回调，一般是因为观看视频时间短
-    }
-});
+    <span class="nd">@Override</span>
+    <span class="n">public</span> <span class="n">void</span> <span class="n">onDisplayed</span><span class="p">()</span> <span class="p">{</span>
+        <span class="o">//</span> <span class="n">此处为广告展示的回调</span>
+    <span class="p">}</span>
+<span class="p">});</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="">
 <span id="id6"></span><h2>调试页面<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
 <p>为方便您了解视频广告的使用和加载状态，我们提供了视频广告调试页面，帮助您在开发过程中更好的了解视频广告的使用情况，可通过如下方法调用</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">mVideoAd</span> <span class="o">!=</span> <span class="n">null</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">mVideoAd</span><span class="o">.</span><span class="n">showVideoDebugActivity</span><span class="p">(</span><span class="n">this</span><span class="p">);</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">mInterstitialAd</span> <span class="o">!=</span> <span class="n">null</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">mInterstitialAd</span><span class="o">.</span><span class="n">showInterstitialDebugActivity</span><span class="p">(</span><span class="n">this</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>页面显示效果如下图，通过左右滑动可以分别查看当前是否引入了对应联盟的SDK，服务器是否配置为您配置了当前联盟的广告位信息，以及联盟视频广告是否加载成功，在已经加载成功的情况下，点击条目可以观看联盟的广告效果。</p>
-<p><img alt="" src="http://docc.upltv.com/uploads/201805/5af577cb48bf4_5af577cb.png" />    <img alt="" src="http://docc.upltv.com/uploads/201805/5af5789e0836b_5af5789e.png" /></p>
+<p>页面显示效果如下图，通过左右滑动您可以分别查看当前是否引入了对应联盟的SDK，服务器是否配置为您配置了当前联盟的广告位信息，以及联盟广告是否加载成功，在已经加载成功的情况下，点击条目可以观看联盟的广告效果。
+<img alt="as_debug_inter_view1" src="http://docc.upltv.com/uploads/201810/5bcd4065a93a4_5bcd4065.png" />
+<img alt="as_debug_inter_view2" src="http://docc.upltv.com/uploads/201810/5bcd408d13bcb_5bcd408d.png" /></p>
 </div>
 </div>
 
