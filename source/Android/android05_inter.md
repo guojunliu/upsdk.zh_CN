@@ -80,5 +80,6 @@ mInterstitialAdAAA.load(callback);
     }
 
 页面显示效果如下图，通过左右滑动您可以分别查看当前是否引入了对应联盟的SDK，服务器是否配置为您配置了当前联盟的广告位信息，以及联盟广告是否加载成功，在已经加载成功的情况下，点击条目可以观看联盟的广告效果。
-![as_debug_inter_view1](http://docc.upltv.com/uploads/201810/5bcd4065a93a4_5bcd4065.png "as_debug_inter_view1")
-![as_debug_inter_view2](http://docc.upltv.com/uploads/201810/5bcd408d13bcb_5bcd408d.png "as_debug_inter_view2")
+
+<img src="http://docc.upltv.com/uploads/201810/5bcd4065a93a4_5bcd4065.png">
+<img src="http://docc.upltv.com/uploads/201810/5bcd408d13bcb_5bcd408d.png">
