@@ -36,18 +36,18 @@ public void onBtnIntertitial_CCC_Click()
 
 
 
-### Unity Plugin 激励视屏广告
+### Unity Plugin 激励视频广告
 
-#### 激励视屏显示API
+#### 激励视频显示API
 
 ```csharp
 public static void showRewardAd(string cpCustomId)
 ```
 参数：cpCustomId为用户自定义标识
-showRewardAd()运行时也会在内部检查视屏广告是否准备就绪。
+showRewardAd()运行时也会在内部检查视频广告是否准备就绪。
 
-#### 检测视屏状态API
-一般情况下，直接调用showRewardAd()方法就能实现视屏的显示。此方法与isInterstitialReady()类似，也是用于满足特定要求而提供的。
+#### 检测视频状态API
+一般情况下，直接调用showRewardAd()方法就能实现视频的显示。此方法与isInterstitialReady()类似，也是用于满足特定要求而提供的。
 ```csharp
 public static bool isRewardReady()
 ```
@@ -62,4 +62,4 @@ public void onBtnReward_aaa_Click()
 }
 ```
 
-> 点击测试激励视屏的按钮时，调用onBtnReward_aaa_Click()方法。参数"aaa"是用户自定义标识，用于统计打点做区分。
+> 点击测试激励视频的按钮时，调用onBtnReward_aaa_Click()方法。参数"aaa"是用户自定义标识，用于统计打点做区分。

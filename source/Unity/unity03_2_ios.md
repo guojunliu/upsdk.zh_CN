@@ -16,7 +16,7 @@ Unity插件IOS版本被成功导入后，在Assets目录下，检查`PolyADSDK/P
 为了保证UPSDK的目录资源的健全，请检查以下几方面的文件是否存在。
 
 #### 1. UPSDK 主包
-`PolyADSDK/Plugins/IOS/frameworks/UPSDK.framework`文件是Avidly ADSDK 主包的主包文件，如果缺少此文件，或许下载的插件包不对，请尽快与我们的技术支持人员联系，寻求帮助。
+`PolyADSDK/Plugins/IOS/frameworks/UPSDK.framework`文件是UPSDK 主包的主包文件，如果缺少此文件，或许下载的插件包不对，请尽快与我们的技术支持人员联系，寻求帮助。
 > 版本3003开始，原AvidlyAdsSDK.framework改名为UPSDK.framework，相应的bundle文件也改成UPSDK.bundle
 
 #### 2. UPSDK 联盟商依赖库

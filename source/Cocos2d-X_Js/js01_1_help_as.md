@@ -118,7 +118,7 @@ dependencies {
    }
 ```
 
-> 特别地，如果您的工程中已经存在与Avidly ADSDK所依赖的gms play不同版时，请用更高的版本替换低版本
+> 特别地，如果您的工程中已经存在与UPSDK所依赖的gms play不同版时，请用更高的版本替换低版本
 
 #### 2.添加其他广告联盟
 为了保证您能获得更大收益，请将广告联盟包尽可能多地将其它联盟广告的aar文件添加到您的项目中。
@@ -239,7 +239,7 @@ Cocos2d-x 3.16的版本可以复制到`src`文件夹中,效果如下：
 
 ### 七、65535方法数限制问题解决方案
 
-如果因为接入UPSDK导致方法数超过65535，无法正常打包，请使用Android的分包方案打包。关于分包若有疑问，请阅读使用我们提供的[MultiDex分包方案](http://docs.upltv.com/docs/show/78 "如下方案")。
+如果因为接入UPSDK导致方法数超过65535，无法正常打包，请使用Android的分包方案打包。关于分包若有疑问，请阅读使用我们提供的[MultiDex分包方案](http://docs.upltv.com/zh/master/Android/android02_65535.html "如下方案")。
 
 ### 八、Demo工程
 为帮助您更好的了解广告SDK的接入以及使用，我们在这里提供了一个简单的[Demo工程](https://github.com/AvidlyGit/AdSdkDemo-Studio "Demo工程")。

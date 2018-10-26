@@ -5,7 +5,7 @@
     mVideoAd = UPRewardVideoAd.getInstance(this);
 
 ### 广告加载监听
-监听激励视屏加载结果，如果长时间未加载成功，会产生onLoadFailed()的回调。
+监听激励视频加载结果，如果长时间未加载成功，会产生onLoadFailed()的回调。
 ```java
 public void load(UPRewardVideoLoadCallback callback)
 ```
@@ -18,13 +18,13 @@ mVideoAd.load(new UPRewardVideoLoadCallback() {
         @Override
         public void onLoadFailed() {
             // code
-            // 激励视屏加载失败，请等待加载成功
+            // 激励视频加载失败，请等待加载成功
         }
 
         @Override
         public void onLoadSuccessed() {
             // code
-            // 激励视屏加载成功，可以展示
+            // 激励视频加载成功，可以展示
         }
     });
 ```

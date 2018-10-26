@@ -1,5 +1,5 @@
 ## UnityPlugin 简介
-UPSDK Unity Plugin集成了UPLTV AD SDK（Android与IOS双平台以及依赖库），直接面向Unity C#，提供原生API调用，实现插屏、激励视屏、横幅广告等业务功能。
+UPSDK Unity Plugin集成了UPLTV AD SDK（Android与IOS双平台以及依赖库），直接面向Unity C#，提供原生API调用，实现插屏、激励视频、横幅广告等业务功能。
 
 由于Unity的版本更新过多，我们仅对于以下平台以下版本做过适配支持：
 1. android平台，仅支持Unity 5.0.0及以上的版本

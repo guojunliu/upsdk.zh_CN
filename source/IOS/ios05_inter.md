@@ -29,7 +29,7 @@
 - (void)setDelegate:(id<UPIntersitialDelegate>)delegate;
 
 /**
-* 判断视屏广告是否可用
+* 判断视频广告是否可用
 **/
 - (BOOL)isReady;
 

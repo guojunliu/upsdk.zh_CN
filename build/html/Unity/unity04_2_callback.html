@@ -169,35 +169,35 @@
 <span id="id1"></span><h1>回调接口<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h1>
 <p>版本3003，我们修改了Unity Plugin的访问类为<code class="docutils literal notranslate"><span class="pre">UPSDK.cs</span></code>，<code class="docutils literal notranslate"><span class="pre">UPSDK.cs</span></code>中的回调接口(Action)以静态方法定义，因此其它模块可以直接访问。</p>
 <div class="section" id="">
-<span id="id2"></span><h2>1. 激励视屏回调接口：<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<span id="id2"></span><h2>1. 激励视频回调接口：<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="">
 <span id="id3"></span><h2>回调接口调定义<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">static</span> <span class="n">Action</span><span class="p">&lt;</span><span class="kt">bool</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPSDKInitFinishedCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
      
 <span class="cm">/*</span>
-<span class="cm">* 激励视屏回调</span>
-<span class="cm">* 激励视屏打开时（显示出来）回调此代理</span>
+<span class="cm">* 激励视频回调</span>
+<span class="cm">* 激励视频打开时（显示出来）回调此代理</span>
 <span class="cm">*/</span>
 <span class="k">public</span> <span class="k">static</span> <span class="n">Action</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPRewardDidOpenCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
         
 <span class="cm">/*</span>
-<span class="cm">* 激励视屏被点击时回调此代理</span>
+<span class="cm">* 激励视频被点击时回调此代理</span>
 <span class="cm">*/</span>
 <span class="k">public</span> <span class="k">static</span> <span class="n">Action</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPRewardDidClickCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
         
 <span class="cm">/*</span>
-<span class="cm">* 激励视屏奖励发放时回调此代理</span>
+<span class="cm">* 激励视频奖励发放时回调此代理</span>
 <span class="cm">*/</span>
 <span class="k">public</span> <span class="k">static</span> <span class="n">Action</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPRewardDidGivenCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
         
 <span class="cm">/*</span>
-<span class="cm">* 激励视屏奖励发放失败时或发放条件不成立时回调此代理</span>
+<span class="cm">* 激励视频奖励发放失败时或发放条件不成立时回调此代理</span>
 <span class="cm">*/</span>
 <span class="k">public</span> <span class="k">static</span> <span class="n">Action</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPRewardDidAbandonCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
         
 <span class="cm">/*</span>
-<span class="cm">* 激励视屏被关闭回调此代理</span>
+<span class="cm">* 激励视频被关闭回调此代理</span>
 <span class="cm">*/</span>
 <span class="k">public</span> <span class="k">static</span> <span class="n">Action</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">UPRewardDidCloseCallback</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span> 
 </pre></div>
@@ -206,23 +206,23 @@
 <div class="section" id="">
 <span id="id4"></span><h2>回调接口调用顺序<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="">
-<span id="id5"></span><h3>1. 激励视屏显示时回调<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h3>
-<p>激励视屏只要显示成功，必定会首先调用UPRewardDidOpenCallback。</p>
+<span id="id5"></span><h3>1. 激励视频显示时回调<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h3>
+<p>激励视频只要显示成功，必定会首先调用UPRewardDidOpenCallback。</p>
 </div>
 </div>
 <div class="section" id="">
-<span id="id6"></span><h2>2. 激励视屏被点击时回调<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<span id="id6"></span><h2>2. 激励视频被点击时回调<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
 <p>仅当用户有点击行为时才会调用UPRewardDidClickCallback，因此点击回调有可能不被调用。</p>
 </div>
 <div class="section" id="">
-<span id="id7"></span><h2>3. 激励视屏奖励发放回调<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
-<p>激励视屏只要显示成功，都会根据结果产生奖励发放或不发放事件。奖励发放时调用UPRewardDidGivenCallback，不发放时UPRewardDidAbandonCallback，且只能调用二之一。</p>
+<span id="id7"></span><h2>3. 激励视频奖励发放回调<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<p>激励视频只要显示成功，都会根据结果产生奖励发放或不发放事件。奖励发放时调用UPRewardDidGivenCallback，不发放时UPRewardDidAbandonCallback，且只能调用二之一。</p>
 </div>
 <div class="section" id="">
-<span id="id8"></span><h2>4. 激励视屏关闭时回调<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
-<p>激励视屏被关闭时必定会回调UPRewardDidCloseCallback，而且是最后被执行的回调。</p>
+<span id="id8"></span><h2>4. 激励视频关闭时回调<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<p>激励视频被关闭时必定会回调UPRewardDidCloseCallback，而且是最后被执行的回调。</p>
 <blockquote>
-<div>激励视屏回调顺序简而言之：RewardDidOpen-&gt;RewardDidClick(如果有则调用)-&gt;RewardDidGiven(or RewardDidAbandon)-&gt;RewardDidClose。</div></blockquote>
+<div>激励视频回调顺序简而言之：RewardDidOpen-&gt;RewardDidClick(如果有则调用)-&gt;RewardDidGiven(or RewardDidAbandon)-&gt;RewardDidClose。</div></blockquote>
 </div>
 <div class="section" id="">
 <span id="id9"></span><h2>2. 插屏广告回调接口<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
@@ -336,7 +336,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, upltv.
+        &copy; Copyright 2018, upltv
 
     </p>
   </div>
@@ -355,21 +355,15 @@
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../',
-            VERSION:'',
-            LANGUAGE:'zh-CN',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../_static/jquery.js"></script>
-      <script type="text/javascript" src="../_static/underscore.js"></script>
-      <script type="text/javascript" src="../_static/doctools.js"></script>
-      <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
 
   
 

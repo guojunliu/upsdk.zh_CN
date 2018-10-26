@@ -210,18 +210,18 @@ showIntersitialAd()方法，首先会根据参数cpPlaceId查询对应的广告�
 <div>由于示例代码不关心插屏是否准备就绪，因此无须调用<em>isInterstitialReady(string cpPlaceId)</em>的方法判断广告状态。</div></blockquote>
 </div>
 <div class="section" id="unity-plugin">
-<span id="id3"></span><h2>Unity Plugin 激励视屏广告<a class="headerlink" href="#unity-plugin" title="Permalink to this headline">¶</a></h2>
+<span id="id3"></span><h2>Unity Plugin 激励视频广告<a class="headerlink" href="#unity-plugin" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="api">
-<span id="id4"></span><h3>激励视屏显示API<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h3>
+<span id="id4"></span><h3>激励视频显示API<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">showRewardAd</span><span class="p">(</span><span class="kt">string</span> <span class="n">cpCustomId</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>参数：cpCustomId为用户自定义标识
-showRewardAd()运行时也会在内部检查视屏广告是否准备就绪。</p>
+showRewardAd()运行时也会在内部检查视频广告是否准备就绪。</p>
 </div>
 <div class="section" id="api">
-<span id="id5"></span><h3>检测视屏状态API<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h3>
-<p>一般情况下，直接调用showRewardAd()方法就能实现视屏的显示。此方法与isInterstitialReady()类似，也是用于满足特定要求而提供的。</p>
+<span id="id5"></span><h3>检测视频状态API<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h3>
+<p>一般情况下，直接调用showRewardAd()方法就能实现视频的显示。此方法与isInterstitialReady()类似，也是用于满足特定要求而提供的。</p>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">static</span> <span class="kt">bool</span> <span class="nf">isRewardReady</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -237,7 +237,7 @@ showRewardAd()运行时也会在内部检查视屏广告是否准备就绪。</p
 </pre></div>
 </div>
 <blockquote>
-<div>点击测试激励视屏的按钮时，调用onBtnReward_aaa_Click()方法。参数”aaa”是用户自定义标识，用于统计打点做区分。</div></blockquote>
+<div>点击测试激励视频的按钮时，调用onBtnReward_aaa_Click()方法。参数”aaa”是用户自定义标识，用于统计打点做区分。</div></blockquote>
 </div>
 </div>
 </div>
@@ -262,7 +262,7 @@ showRewardAd()运行时也会在内部检查视屏广告是否准备就绪。</p
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, upltv.
+        &copy; Copyright 2018, upltv
 
     </p>
   </div>
@@ -281,21 +281,15 @@ showRewardAd()运行时也会在内部检查视屏广告是否准备就绪。</p
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../',
-            VERSION:'',
-            LANGUAGE:'zh-CN',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../_static/jquery.js"></script>
-      <script type="text/javascript" src="../_static/underscore.js"></script>
-      <script type="text/javascript" src="../_static/doctools.js"></script>
-      <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
 
   
 

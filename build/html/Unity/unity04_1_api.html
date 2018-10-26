@@ -229,13 +229,13 @@
 <span class="k">public</span> <span class="k">static</span> <span class="kt">bool</span> <span class="nf">isInterstitialReady</span><span class="p">(</span><span class="kt">string</span> <span class="n">cpPlaceId</span><span class="p">);</span>
 
 <span class="cm">/*</span>
-<span class="cm">* 判断激励视屏是否可以加载播放</span>
+<span class="cm">* 判断激励视频是否可以加载播放</span>
 <span class="cm">* 请不要在代码中持续不断地调用此方法来实现某个特定目标，如更新UI按钮的状态。对于这种情况，请用setRewardVideoLoadCallback()设置回调监听。</span>
 <span class="cm">*/</span>
 <span class="k">public</span> <span class="k">static</span> <span class="kt">bool</span> <span class="nf">isRewardReady</span><span class="p">();</span>
 
 <span class="cm">/*</span>
-<span class="cm">* 显示激励视屏，参数cpCustomId为CP自定义标识，不能为空(广告无法显示)</span>
+<span class="cm">* 显示激励视频，参数cpCustomId为CP自定义标识，不能为空(广告无法显示)</span>
 <span class="cm">*/</span>
 <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">showRewardAd</span><span class="p">(</span><span class="kt">string</span> <span class="n">cpCustomId</span><span class="p">);</span>
 
@@ -290,7 +290,7 @@
 <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">onBackPressed</span><span class="p">();</span>
 
 <span class="cm">/*</span>
-<span class="cm"> * upltv激励视屏广告加载回调接口</span>
+<span class="cm"> * upltv激励视频广告加载回调接口</span>
 <span class="cm"> * @param success 第一个参数，加载成功后的回调</span>
 <span class="cm"> * @param fail 第二个参数，加载失败后的回调</span>
 <span class="cm"> * </span>
@@ -313,7 +313,7 @@
 <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">setIntersitialLoadCallback</span><span class="p">(</span><span class="kt">string</span> <span class="n">cpPlaceId</span><span class="p">,</span> <span class="n">Action</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="kt">string</span><span class="p">&gt;</span> <span class="n">success</span><span class="p">,</span> <span class="n">Action</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;</span> <span class="n">fail</span><span class="p">)</span>
 
 <span class="cm">/*</span>
-<span class="cm"> * 用于展示upltv的激励视屏广告调试界面</span>
+<span class="cm"> * 用于展示upltv的激励视频广告调试界面</span>
 <span class="cm"> * supported from 2028</span>
 <span class="cm"> */</span>
 <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">showRewardDebugView</span><span class="p">();</span>
@@ -417,7 +417,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, upltv.
+        &copy; Copyright 2018, upltv
 
     </p>
   </div>
@@ -436,21 +436,15 @@
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../',
-            VERSION:'',
-            LANGUAGE:'zh-CN',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../_static/jquery.js"></script>
-      <script type="text/javascript" src="../_static/underscore.js"></script>
-      <script type="text/javascript" src="../_static/doctools.js"></script>
-      <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
 
   
 

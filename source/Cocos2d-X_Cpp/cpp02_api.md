@@ -21,7 +21,7 @@ class UpltvAdEventEnum
 public:
     enum class AdEventType
     {
-        // 激励视屏回调事件类型
+        // 激励视频回调事件类型
         VIDEO_EVENT_DID_SHOW = 0,  //激励视频广告展示
         VIDEO_EVENT_DID_CLICK = 1,  //激励视频广告点击
         VIDEO_EVENT_DID_CLOSE = 2,  //激励视频广告关闭
@@ -118,21 +118,21 @@ static const char* getAbtConfig(const char* cpPlaceId);
 #### 3.3 激励视频接口：
 ```cpp
 /**
-* 打开激励视屏的debug界面
+* 打开激励视频的debug界面
 */
 static void showRewardVideoDebugUI();
 
 /**
-* 设置激励视屏加载回调接口
-* 用于监听当前激励视屏的加载结果（成功或失败）
+* 设置激励视频加载回调接口
+* 用于监听当前激励视频的加载结果（成功或失败）
 * 此接口一旦回调，内部会自动释放，再次监听时需要重新设定回调接口
-* @param successCall 激励视屏加载成功时回调，successCall(cpadid, msg)
-* @param failCall    激励视屏加载失败时回调，failCall(cpadid, msg)
+* @param successCall 激励视频加载成功时回调，successCall(cpadid, msg)
+* @param failCall    激励视频加载失败时回调，failCall(cpadid, msg)
 */
 static void setRewardVideoLoadCallback(UpltvSdkStringCallback_2 successCall, UpltvSdkStringCallback_2 failCall);
 
 /**
-* 设置激励视屏展示回调接口，用于监听激励视屏广告的在某次展示时诸如点击，关闭，奖励发放等事件回调
+* 设置激励视频展示回调接口，用于监听激励视频广告的在某次展示时诸如点击，关闭，奖励发放等事件回调
 * 展示接口的引用会被内部保存，不会释放
 * 回调接口调用方式，callback(type, cpid)，type表示事件类型，有：展示回调，点击回调，关闭回调，激励发放成功回调，激励发放失败回调五种类型
 * @param callback(type, cpid)
@@ -140,7 +140,7 @@ static void setRewardVideoLoadCallback(UpltvSdkStringCallback_2 successCall, Upl
 static void setRewardVideoShowCallback(UpltvSdkStringCallback_1 callback);
 
 /**
-* 判断激励视屏是否准备好
+* 判断激励视频是否准备好
 * 同步返回boolean结果，true 表示广告准备就绪可以展示，false表示广告还在请求中无法展示
 * 通常在showRewardVideo(cpPlaceId)前，调用此方法
 * @return bool
@@ -148,8 +148,8 @@ static void setRewardVideoShowCallback(UpltvSdkStringCallback_1 callback);
 static bool isRewardReady();
 
 /**
-* 展示激励视屏
-* @param cpPlaceId 激励视屏展示时的广告位，用于业务打点，便于区分收益来源
+* 展示激励视频
+* @param cpPlaceId 激励视频展示时的广告位，用于业务打点，便于区分收益来源
 */
 static void showRewardVideo(const char* cpPlaceId);
 ```
