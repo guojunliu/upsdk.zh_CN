@@ -246,9 +246,9 @@
 <p>Admob广告联盟的接入，我们提供两种方式，在网络允许的条件下推荐使用 <strong>【方案一】</strong> 来进行接入。</p>
 <div class="section" id="">
 <span id="id3"></span><h4>1.<strong>【方案一】</strong><a class="headerlink" href="#" title="Permalink to this headline">¶</a></h4>
-<p>在<code class="docutils literal notranslate"><span class="pre">build.gradle</span></code>文件中，通过compile命令从Google的远程仓库下载gms play-service15.0.1的包。</p>
+<p>在<code class="docutils literal notranslate"><span class="pre">build.gradle</span></code>文件中，通过compile命令从Google的远程仓库下载gms play-service16.0.0的包。</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dependencies</span> <span class="p">{</span>
-    <span class="nb">compile</span> <span class="s1">&#39;com.google.android.gms:play-services-ads:15.0.1&#39;</span>
+    <span class="nb">compile</span> <span class="s1">&#39;com.google.android.gms:play-services-ads:16.0.0&#39;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -259,12 +259,12 @@
 <p>首先请将<code class="docutils literal notranslate"><span class="pre">Android</span> <span class="pre">Studio/aar/admob-gms-play-services</span></code>目录下aar文件全部复制到工程的<code class="docutils literal notranslate"><span class="pre">libs</span></code>目录下。</p>
 <p>参考如下方式修改<code class="docutils literal notranslate"><span class="pre">build.gradle</span></code>文件，将Admob依赖的aar包添加到工程。</p>
 <div class="highlight-groovy notranslate"><div class="highlight"><pre><span></span><span class="n">dependencies</span> <span class="o">{</span>
-    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;play-services-ads-15.0.1&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
-    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;play-services-ads-base-15.0.1&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
-    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;play-services-ads-identifier-15.0.1&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
-    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;play-services-ads-lite-15.0.1&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
-    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;play-services-basement-15.0.1&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
-    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;play-services-gass-15.0.1&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;play-services-ads-16.0.0&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;play-services-ads-base-16.0.0&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;play-services-ads-identifier-16.0.0&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;play-services-ads-lite-16.0.0&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;play-services-basement-16.0.0&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
+    <span class="n">compile</span><span class="o">(</span><span class="nl">name:</span> <span class="s1">&#39;play-services-gass-16.0.0&#39;</span><span class="o">,</span> <span class="nl">ext:</span> <span class="s1">&#39;aar&#39;</span><span class="o">)</span>
    <span class="o">}</span>
 </pre></div>
 </div>

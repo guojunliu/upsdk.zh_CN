@@ -143,7 +143,7 @@ dependencies {
 如果您的项目中希望接入Admob的广告，我们需要您在的项目中加入 Google Ads 支持，可以按以下的方式添加依赖
 
     dependencies {
-        compile 'com.google.android.gms:play-services-ads:15.0.1'
+        compile 'com.google.android.gms:play-services-ads:16.0.0'
     }
 
 > 如果你只想通过本地添加gms play所依赖的aar文件，也可以在gradle文件中忽略此配置。

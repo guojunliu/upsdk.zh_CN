@@ -90,10 +90,10 @@ defaultConfig {
 Admob广告联盟的接入，我们提供两种方式，在网络允许的条件下推荐使用 **【方案一】** 来进行接入。
 
 ###### 1.**【方案一】**
-在`build.gradle`文件中，通过compile命令从Google的远程仓库下载gms play-service15.0.1的包。
+在`build.gradle`文件中，通过compile命令从Google的远程仓库下载gms play-service16.0.0的包。
     
     dependencies {
-        compile 'com.google.android.gms:play-services-ads:15.0.1'
+        compile 'com.google.android.gms:play-services-ads:16.0.0'
     }
 
 
@@ -106,12 +106,12 @@ Admob广告联盟的接入，我们提供两种方式，在网络允许的条件
 参考如下方式修改`build.gradle`文件，将Admob依赖的aar包添加到工程。
 ```groovy
 dependencies {
-    compile(name: 'play-services-ads-15.0.1', ext: 'aar')
-    compile(name: 'play-services-ads-base-15.0.1', ext: 'aar')
-    compile(name: 'play-services-ads-identifier-15.0.1', ext: 'aar')
-    compile(name: 'play-services-ads-lite-15.0.1', ext: 'aar')
-    compile(name: 'play-services-basement-15.0.1', ext: 'aar')
-    compile(name: 'play-services-gass-15.0.1', ext: 'aar')
+    compile(name: 'play-services-ads-16.0.0', ext: 'aar')
+    compile(name: 'play-services-ads-base-16.0.0', ext: 'aar')
+    compile(name: 'play-services-ads-identifier-16.0.0', ext: 'aar')
+    compile(name: 'play-services-ads-lite-16.0.0', ext: 'aar')
+    compile(name: 'play-services-basement-16.0.0', ext: 'aar')
+    compile(name: 'play-services-gass-16.0.0', ext: 'aar')
    }
 ```
 
