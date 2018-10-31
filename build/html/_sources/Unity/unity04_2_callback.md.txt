@@ -36,16 +36,16 @@ public static Action<string, string> UPRewardDidCloseCallback = null;
 
 ```
 #### 回调接口调用顺序
-###### 1. 激励视频显示时回调
+##### 1. 激励视频显示时回调
 激励视频只要显示成功，必定会首先调用UPRewardDidOpenCallback。
 
-#### 2. 激励视频被点击时回调
+##### 2. 激励视频被点击时回调
 仅当用户有点击行为时才会调用UPRewardDidClickCallback，因此点击回调有可能不被调用。
 
-#### 3. 激励视频奖励发放回调
+##### 3. 激励视频奖励发放回调
 激励视频只要显示成功，都会根据结果产生奖励发放或不发放事件。奖励发放时调用UPRewardDidGivenCallback，不发放时UPRewardDidAbandonCallback，且只能调用二之一。
 
-#### 4. 激励视频关闭时回调
+##### 4. 激励视频关闭时回调
 激励视频被关闭时必定会回调UPRewardDidCloseCallback，而且是最后被执行的回调。
 
 > 激励视频回调顺序简而言之：RewardDidOpen->RewardDidClick(如果有则调用)->RewardDidGiven(or RewardDidAbandon)->RewardDidClose。
@@ -71,11 +71,11 @@ public static Action<string, string> UPInterstitialDidClickCallback = null;
 public static Action<string, string> UPInterstitialDidCloseCallback = null;
 ```
 #### 回调接口调用顺序
-###### 1. 插屏广告显示时回调
+##### 1. 插屏广告显示时回调
 插屏广告只要显示成功，UPInterstitialDidShowCallback。
-###### 2. 插屏广告被点击时回调
+##### 2. 插屏广告被点击时回调
 仅当用户有点击行为时才会调用UPInterstitialDidClickCallback，因此点击回调有可能不被调用。
-###### 3. 插屏广告关闭时回调
+##### 3. 插屏广告关闭时回调
 插屏广告被关闭时必定会回调UPInterstitialDidCloseCallback，而且是最后被执行的回调。
 > 插屏广告回调顺序简而言之：DidOpen->DidClick(如果有则调用)->DidClose。
 

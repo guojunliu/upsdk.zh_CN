@@ -209,20 +209,20 @@
 <span id="id5"></span><h3>1. 激励视频显示时回调<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h3>
 <p>激励视频只要显示成功，必定会首先调用UPRewardDidOpenCallback。</p>
 </div>
-</div>
 <div class="section" id="">
-<span id="id6"></span><h2>2. 激励视频被点击时回调<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<span id="id6"></span><h3>2. 激励视频被点击时回调<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h3>
 <p>仅当用户有点击行为时才会调用UPRewardDidClickCallback，因此点击回调有可能不被调用。</p>
 </div>
 <div class="section" id="">
-<span id="id7"></span><h2>3. 激励视频奖励发放回调<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<span id="id7"></span><h3>3. 激励视频奖励发放回调<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h3>
 <p>激励视频只要显示成功，都会根据结果产生奖励发放或不发放事件。奖励发放时调用UPRewardDidGivenCallback，不发放时UPRewardDidAbandonCallback，且只能调用二之一。</p>
 </div>
 <div class="section" id="">
-<span id="id8"></span><h2>4. 激励视频关闭时回调<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
+<span id="id8"></span><h3>4. 激励视频关闭时回调<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h3>
 <p>激励视频被关闭时必定会回调UPRewardDidCloseCallback，而且是最后被执行的回调。</p>
 <blockquote>
 <div>激励视频回调顺序简而言之：RewardDidOpen-&gt;RewardDidClick(如果有则调用)-&gt;RewardDidGiven(or RewardDidAbandon)-&gt;RewardDidClose。</div></blockquote>
+</div>
 </div>
 <div class="section" id="">
 <span id="id9"></span><h2>2. 插屏广告回调接口<a class="headerlink" href="#" title="Permalink to this headline">¶</a></h2>
